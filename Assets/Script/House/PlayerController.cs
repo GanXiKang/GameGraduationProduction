@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        //cc.Move();
+        cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
     }
 
     void OnMove(InputValue value)
