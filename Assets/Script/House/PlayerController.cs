@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    private Vector3 _moveInput;
+
     void Start()
     {
         
@@ -17,6 +19,6 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        print("yes");
+        print(value);
     }
 }
