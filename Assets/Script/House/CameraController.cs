@@ -8,12 +8,11 @@ public class CameraController : MonoBehaviour
     public Transform target;
     public float _smoothTime = 0.3f;
 
-    void Start()
+    private Vector3 velocity = Vector3.zero;
+
+    void LateUpdate()
     {
-        
-    }
-    void Update()
-    {
-        
+        Vector3 _targetPosition = target.position + new Vector3(0f, 10f, -20f);
+        target.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
     }
 }
