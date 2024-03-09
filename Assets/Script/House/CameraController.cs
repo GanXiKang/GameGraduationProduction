@@ -10,9 +10,21 @@ public class CameraController : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
+    float _distance;
+
     void LateUpdate()
     {
-        Vector3 _targetPosition = target.position + new Vector3(0f, 7f, -13f);
-        transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
+        _distance = Vector3.Distance(transform.position, target.position);
+        print(_distance);
+
+        //if ()
+        //{
+            
+        //}
+        //else
+        //{
+            Vector3 _targetPosition = target.position + new Vector3(0f, 7f, -13f);
+            transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
+        //}
     }
 }
