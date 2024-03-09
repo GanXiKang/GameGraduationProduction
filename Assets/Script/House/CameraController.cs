@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
         _distance = Vector3.Distance(transform.position, target.position);
         print(_distance);
 
-        if (transform.position.z <= -20)
+        if (transform.position.z <= -20f || transform.position.x <= -20f || transform.position.x >= 20f)
         {
             if (_distance > _maxDistance)
             {
