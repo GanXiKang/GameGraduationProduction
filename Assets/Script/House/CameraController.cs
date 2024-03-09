@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        Vector3 _targetPosition = target.position + new Vector3(0f, 10f, -20f);
-        target.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
+        Vector3 _targetPosition = target.position + new Vector3(0f, 7f, -20f);
+        transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
     }
 }
