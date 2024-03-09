@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 _lookDirection;
 
     [Header("Movement")]
-    public float _moveSpeed = 4f;
-    public float _turnSpeed = 8f;
+    public float _moveSpeed = 10f;
+    public float _turnSpeed = 15f;
     float _targetRotation;
 
     void Start()
@@ -26,6 +26,14 @@ public class PlayerController : MonoBehaviour
         Quaternion _rotation = Quaternion.Euler(0f, _targetRotation, 0f);
         transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, _turnSpeed * Time.fixedDeltaTime);
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            _moveSpeed = 18f;
+        }
+        else
+        {
+            _moveSpeed = 10f;
+        }
         cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
     }
 
