@@ -8,17 +8,17 @@ public class UIController : MonoBehaviour
     [Header("InteractionButton")]
     public GameObject interactionButton;
     public Text interactionButton_text;
-    public static bool isActive;
+    public static bool isInteractionButtonActive;
     public static int _conveyColliderNumber;
 
     void Start()
     {
-        isActive = false;
+        isInteractionButtonActive = false;
     }
 
     void Update()
     {
-        interactionButton.SetActive(isActive);
+        interactionButton.SetActive(isInteractionButtonActive);
         ColliderObjectName();
     }
 
