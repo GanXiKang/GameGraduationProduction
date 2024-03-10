@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     [Header("CameraMovement")]
     public Transform target;
-    public float _smoothTime = 0.3f;
+    public float _smoothTime = 0.5f;
 
     private Vector3 velocity = Vector3.zero;
 
@@ -23,7 +23,6 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         _distance = Vector3.Distance(transform.position, target.position);
-        print(_distance);
 
         if (transform.position.z <= -20f || transform.position.x <= -20f || transform.position.x >= 20f)
         {
