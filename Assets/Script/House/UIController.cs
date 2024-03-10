@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     public GameObject interactionButton;
     public Text interactionButton_text;
     public static bool isActive;
+    public static int _conveyColliderNumber;
 
     void Start()
     {
@@ -18,5 +19,23 @@ public class UIController : MonoBehaviour
     void Update()
     {
         interactionButton.SetActive(isActive);
+    }
+
+    void ColliderObjectName()
+    {
+        switch (_conveyColliderNumber)
+        {
+            case 1:
+                interactionButton_text.text = "Ë¯´²";
+                break;
+
+            case 2:
+                interactionButton_text.text = "™™×Ó";
+                break;
+
+            case 3:
+                interactionButton_text.text = "Ñu×÷Å_";
+                break;
+        }
     }
 }

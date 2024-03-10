@@ -6,21 +6,12 @@ public class PlayerColliderControl : MonoBehaviour
 {
     public int _serialNumber;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             UIController.isActive = true;
+            UIController._conveyColliderNumber = _serialNumber;
         }
     }
 
