@@ -795,6 +795,7 @@ GameObject:
   m_Component:
   - component: {fileID: 738855417}
   - component: {fileID: 738855418}
+  - component: {fileID: 738855419}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -838,6 +839,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &738855419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738855416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serialNumber: 3
 --- !u!1 &850562193
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,6 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionButton: {fileID: 1756793600}
+  interactionButton_text: {fileID: 355064774}
 --- !u!1 &874350010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,6 +2117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1613432035}
   - component: {fileID: 1613432036}
+  - component: {fileID: 1613432037}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -2145,6 +2161,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1613432037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613432034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serialNumber: 1
 --- !u!1 &1626772736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,6 +2184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1626772737}
   - component: {fileID: 1626772738}
+  - component: {fileID: 1626772739}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -2198,6 +2228,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1626772739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626772736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serialNumber: 2
 --- !u!1 &1631107280
 GameObject:
   m_ObjectHideFlags: 0
