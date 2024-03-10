@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour
 
     [Header("CameraMovement")]
     public Transform lookWorkbenchPoint;
+    public float _moveTime = 2f;
     public static bool isLookWorkbench;
 
     float _distance;
@@ -48,7 +49,8 @@ public class CameraController : MonoBehaviour
 
         if (isLookWorkbench)
         {
-            transform.position = Vector3.Lerp(transform.position, lookWorkbenchPoint.position, 0.2f);
+            transform.position = Vector3.Lerp(transform.position, lookWorkbenchPoint.position, _moveTime * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookWorkbenchPoint.rotation, _moveTime * Time.deltaTime);
             print(transform.position);
         }
     }
