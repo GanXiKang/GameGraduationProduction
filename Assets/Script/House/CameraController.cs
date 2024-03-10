@@ -7,17 +7,21 @@ public class CameraController : MonoBehaviour
     [Header("CameraMovement")]
     public Transform target;
     public float _smoothTime = 0.5f;
-
+    public static bool isFollow;
     private Vector3 velocity = Vector3.zero;
 
-    bool isFollow;
+    [Header("CameraMovement")]
+    public Transform lookWorkbenchPoint;
+    public static bool isLookWorkbench;
+
     float _distance;
     float _maxDistance;
 
     private void Start()
     {
-        isFollow = true;
         _maxDistance = 14.5f;
+        isFollow = true;
+        isLookWorkbench = false;
     }
 
     void LateUpdate()
@@ -40,6 +44,11 @@ public class CameraController : MonoBehaviour
         {
             Vector3 _targetPosition = target.position + new Vector3(0f, 7f, -13f);
             transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
+        }
+
+        if (isLookWorkbench)
+        {
+            transform.position = Vector3.Lerp(transform.position, lookWorkbenchPoint.position, _smoothTime);
         }
     }
 }
