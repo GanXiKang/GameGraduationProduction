@@ -19,6 +19,7 @@ public class UIController : MonoBehaviour
     void Update()
     {
         interactionButton.SetActive(isActive);
+        ColliderObjectName();
     }
 
     void ColliderObjectName()
@@ -30,11 +31,11 @@ public class UIController : MonoBehaviour
                 break;
 
             case 2:
-                interactionButton_text.text = "櫃子";
+                interactionButton_text.text = "製作台";
                 break;
 
             case 3:
-                interactionButton_text.text = "製作臺";
+                interactionButton_text.text = "櫃子";
                 break;
         }
     }
