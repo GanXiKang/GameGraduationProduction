@@ -12,14 +12,11 @@ public class UIController : MonoBehaviour
 
     void Start()
     {
-        isActive = true;
+        isActive = false;
     }
 
     void Update()
     {
-        if (isActive)
-        {
-            interactionButton.SetActive(true);
-        }
+        interactionButton.SetActive(isActive);
     }
 }
