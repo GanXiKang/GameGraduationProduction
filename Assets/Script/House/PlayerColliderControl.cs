@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerColliderControl : MonoBehaviour
 {
+    public int _serialNumber;
+
     void Start()
     {
         
