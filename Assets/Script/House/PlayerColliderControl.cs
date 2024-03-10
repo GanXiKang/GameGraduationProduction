@@ -5,24 +5,16 @@ using UnityEngine;
 public class PlayerColliderControl : MonoBehaviour
 {
     public int _serialNumber;
+    public static int _nowNumber;
 
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if (other.tag == "Player")
-        {
-            UIController.isInteractionButtonActive = true;
-            UIController._conveyColliderNumber = _serialNumber;
-        }
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Player")
+        if (UIController.isInteractionButtonActive)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
                 UIController.isInteractionButtonActive = false;
-                switch (_serialNumber)
+                switch (_nowNumber)
                 {
                     case 1:
                         print("one");
@@ -39,6 +31,20 @@ public class PlayerColliderControl : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            UIController.isInteractionButtonActive = true;
+            UIController._conveyColliderNumber = _serialNumber;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        _nowNumber = _serialNumber;
     }
 
     private void OnTriggerExit(Collider other)
