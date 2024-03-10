@@ -10,8 +10,19 @@ public class PlayerColliderControl : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            UIController.isActive = true;
+            UIController.isInteractionButtonActive = true;
             UIController._conveyColliderNumber = _serialNumber;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                UIController.isInteractionButtonActive = false;
+            }
         }
     }
 
@@ -19,7 +30,7 @@ public class PlayerColliderControl : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            UIController.isActive = false;
+            UIController.isInteractionButtonActive = false;
         }
     }
 }
