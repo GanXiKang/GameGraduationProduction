@@ -48,7 +48,8 @@ public class CameraController : MonoBehaviour
 
         if (isLookWorkbench)
         {
-            transform.position = Vector3.Lerp(transform.position, lookWorkbenchPoint.position, _smoothTime);
+            transform.position = Vector3.Lerp(transform.position, lookWorkbenchPoint.position, 0.2f);
+            print(transform.position);
         }
     }
 }
