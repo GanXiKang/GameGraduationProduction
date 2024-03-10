@@ -22,6 +22,21 @@ public class PlayerColliderControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 UIController.isInteractionButtonActive = false;
+                switch (_serialNumber)
+                {
+                    case 1:
+                        print("one");
+                        break;
+
+                    case 2:
+                        CameraController.isFollow = false;
+                        CameraController.isLookWorkbench = true;
+                        break;
+
+                    case 3:
+                        print("three");
+                        break;
+                }
             }
         }
     }
