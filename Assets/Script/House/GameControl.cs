@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GameControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (CameraController.isLookWorkbench)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                CameraController.isLookWorkbench = false;
+                CameraController.isFollow = true;
+            }
+        }
     }
 }
