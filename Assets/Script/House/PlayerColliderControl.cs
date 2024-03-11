@@ -19,7 +19,9 @@ public class PlayerColliderControl : MonoBehaviour
                     case 1:                                                     //bed
                         CameraController.isFollow = false;
                         CameraController.isLookBed = true;
+                        UIController.isChooseStoryActive = true;
                         BedControl.isSleep = true;
+                        
                         break;
 
                     case 2:                                                     //workbench
