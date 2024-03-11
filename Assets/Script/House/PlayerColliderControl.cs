@@ -26,7 +26,8 @@ public class PlayerColliderControl : MonoBehaviour
                         break;
 
                     case 3:
-                        print("three");
+                        CameraController.isFollow = false;
+                        CameraController.isLookBed = true;
                         break;
                 }
             }
