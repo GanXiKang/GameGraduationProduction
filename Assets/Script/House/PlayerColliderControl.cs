@@ -16,18 +16,19 @@ public class PlayerColliderControl : MonoBehaviour
                 UIController.isInteractionButtonActive = false;
                 switch (_nowNumber)
                 {
-                    case 1:
-                        print("one");
+                    case 1:                                                     //bed
+                        CameraController.isFollow = false;
+                        CameraController.isLookBed = true;
+                        BedControl.isSleep = true;
                         break;
 
-                    case 2:
+                    case 2:                                                     //workbench
                         CameraController.isFollow = false;
                         CameraController.isLookWorkbench = true;
                         break;
 
                     case 3:
-                        CameraController.isFollow = false;
-                        CameraController.isLookBed = true;
+                        print("three");
                         break;
                 }
             }
