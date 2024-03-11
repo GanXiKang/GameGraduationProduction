@@ -5,5 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
-    
+    public void Story_LittleGirl()
+    {
+        SceneManager.LoadScene(1);
+
+    }
 }
