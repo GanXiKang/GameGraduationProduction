@@ -438,14 +438,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197810296}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.70710677, z: -0.70710677, w: 0}
-  m_LocalPosition: {x: 21.02, y: 3.71, z: 9.74}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1696008632}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -90, y: 90, z: -270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &197810303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,6 +1591,7 @@ GameObject:
   - component: {fileID: 1235917372}
   - component: {fileID: 1235917371}
   - component: {fileID: 1235917370}
+  - component: {fileID: 1235917373}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -1686,6 +1687,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235917368}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1235917373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235917368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058529e3bcacbd64f9f7b361d6d6aaa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sleepPoint: {fileID: 1249810888}
+  player: {fileID: 197810296}
 --- !u!1 &1249810887
 GameObject:
   m_ObjectHideFlags: 0
