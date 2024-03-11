@@ -46,7 +46,12 @@ public class CameraController : MonoBehaviour
             }
         }
 
-        if(isFollow)
+        CameraMode();
+    }
+
+    void CameraMode()
+    {
+        if (isFollow)
         {
             Vector3 _targetPosition = target.position + new Vector3(0f, 7f, -13f);
 
@@ -58,6 +63,12 @@ public class CameraController : MonoBehaviour
         {
             transform.position = Vector3.Lerp(transform.position, lookWorkbenchPoint.position, _moveTime * Time.deltaTime);
             transform.rotation = Quaternion.Lerp(transform.rotation, lookWorkbenchPoint.rotation, _moveTime * Time.deltaTime);
+        }
+
+        if (isLookBed)
+        {
+            transform.position = Vector3.Lerp(transform.position, lookBedPoint.position, _moveTime * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookBedPoint.rotation, _moveTime * Time.deltaTime);
         }
     }
 }
