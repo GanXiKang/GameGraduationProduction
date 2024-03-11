@@ -10,11 +10,15 @@ public class CameraController : MonoBehaviour
     public static bool isFollow;
     private Vector3 velocity = Vector3.zero;
 
-    [Header("CameraMovement")]
+    [Header("LookWorkbench")]
     public Transform lookWorkbenchPoint;
-    public float _moveTime = 2f;
     public static bool isLookWorkbench;
 
+    [Header("LookBed")]
+    public Transform lookBedPoint;
+    public static bool isLookBed;
+
+    public float _moveTime = 2f;
     float _distance;
     float _maxDistance;
 
@@ -23,6 +27,7 @@ public class CameraController : MonoBehaviour
         _maxDistance = 14.5f;
         isFollow = true;
         isLookWorkbench = false;
+        isLookBed = false;
     }
 
     void LateUpdate()
