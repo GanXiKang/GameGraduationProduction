@@ -2058,6 +2058,7 @@ GameObject:
   - component: {fileID: 1300338022}
   - component: {fileID: 1300338021}
   - component: {fileID: 1300338020}
+  - component: {fileID: 1300338024}
   m_Layer: 0
   m_Name: Workbench
   m_TagString: Untagged
@@ -2153,6 +2154,18 @@ Transform:
   - {fileID: 1626772737}
   m_Father: {fileID: 441705030}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1300338024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300338019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec95210793a7f142964a9e96ed055d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1319492826
 GameObject:
   m_ObjectHideFlags: 0
