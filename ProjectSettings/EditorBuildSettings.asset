@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House.unity
     guid: dda89179ca7bf0b4ebed4e3aca6cb309
+  - enabled: 1
+    path: Assets/Scenes/Story_LittleGirl.unity
+    guid: ea20a7d4acb0796449e8b15d65ab34fa
   m_configObjects: {}
