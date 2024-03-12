@@ -29,7 +29,10 @@ public class StoryPlayerController : MonoBehaviour
             _moveSpeed = 10f;
         }
 
-        _storyMoveInput.y -= _gravity;
+        if (!cc.isGrounded)
+        {
+            _storyMoveInput.y -= _gravity * Time.fixedDeltaTime;
+        }
 
         cc.Move(_storyMoveInput * _moveSpeed * Time.fixedDeltaTime);
     }
