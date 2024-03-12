@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
         Vector2 input = value.Get<Vector2>();
         _moveInput = new Vector3(input.x, 0f, input.y);
         _lookDirection = new Vector3(_moveInput.x, 0f, _moveInput.z).normalized;
-        print("ok");
+
+        StoryPlayerController._storyMoveInput = _moveInput;
     }
 }

@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class StoryPlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    CharacterController cc;
+
+    public static Vector3 _storyMoveInput;
+
+    [Header("Movement")]
+    public float _moveSpeed = 10f;
+
     void Start()
     {
-        
+        cc = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            _moveSpeed = 18f;
+        }
+        else
+        {
+            _moveSpeed = 10f;
+        }
+        cc.Move(_storyMoveInput * _moveSpeed * Time.fixedDeltaTime);
     }
 }
