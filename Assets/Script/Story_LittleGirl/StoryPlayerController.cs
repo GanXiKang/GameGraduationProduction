@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class StoryPlayerController : MonoBehaviour
 {
     CharacterController cc;
 
-    public static Vector3 _storyMoveInput;
+    private Vector3 _storyMoveInput;
 
     [Header("Movement")]
     public float _moveSpeed = 10f;
@@ -18,7 +19,6 @@ public class StoryPlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        print(_storyMoveInput);
         if (Input.GetKey(KeyCode.LeftShift))
         {
             _moveSpeed = 18f;
@@ -29,5 +29,11 @@ public class StoryPlayerController : MonoBehaviour
         }
 
         cc.Move(_storyMoveInput * _moveSpeed * Time.fixedDeltaTime);
+    }
+
+    void OnMove(InputValue value)
+    {
+        Vector2 input = value.Get<Vector2>();
+        _storyMoveInput = new Vector3(input.x, 0f, input.y);
     }
 }
