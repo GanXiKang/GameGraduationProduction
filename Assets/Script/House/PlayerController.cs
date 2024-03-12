@@ -23,8 +23,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         _targetRotation = Quaternion.LookRotation(_lookDirection).eulerAngles.y;
-        //Quaternion _rotation = Quaternion.Euler(0f, _targetRotation, 0f);
-        //transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, _turnSpeed * Time.fixedDeltaTime);
+        Quaternion _rotation = Quaternion.Euler(0f, _targetRotation, 0f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, _rotation, _turnSpeed * Time.fixedDeltaTime);
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -42,5 +42,6 @@ public class PlayerController : MonoBehaviour
         Vector2 input = value.Get<Vector2>();
         _moveInput = new Vector3(input.x, 0f, input.y);
         _lookDirection = new Vector3(_moveInput.x, 0f, _moveInput.z).normalized;
+        print("ok");
     }
 }
