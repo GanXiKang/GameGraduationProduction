@@ -24,10 +24,10 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        _maxDistance = 14.5f;
         isFollow = true;
         isLookWorkbench = false;
         isLookBed = false;
+        _maxDistance = 14.5f;
     }
 
     void LateUpdate()
