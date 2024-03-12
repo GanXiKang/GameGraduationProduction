@@ -11,6 +11,7 @@ public class StoryPlayerController : MonoBehaviour
 
     [Header("Movement")]
     public float _moveSpeed = 10f;
+    public float _gravity = 20f;
 
     void Start()
     {
@@ -27,6 +28,8 @@ public class StoryPlayerController : MonoBehaviour
         {
             _moveSpeed = 10f;
         }
+
+        _storyMoveInput.y -= _gravity;
 
         cc.Move(_storyMoveInput * _moveSpeed * Time.fixedDeltaTime);
     }
