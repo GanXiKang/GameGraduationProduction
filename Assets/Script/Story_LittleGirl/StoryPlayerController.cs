@@ -18,6 +18,7 @@ public class StoryPlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        print(_storyMoveInput);
         if (Input.GetKey(KeyCode.LeftShift))
         {
             _moveSpeed = 18f;
@@ -26,6 +27,7 @@ public class StoryPlayerController : MonoBehaviour
         {
             _moveSpeed = 10f;
         }
+
         cc.Move(_storyMoveInput * _moveSpeed * Time.fixedDeltaTime);
     }
 }
