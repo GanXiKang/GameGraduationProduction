@@ -39,8 +39,11 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        Vector2 input = value.Get<Vector2>();
-        _moveInput = new Vector3(input.x, 0f, input.y);
-        _lookDirection = new Vector3(_moveInput.x, 0f, _moveInput.z).normalized;
+        if (!CameraController.isLookWorkbench)
+        {
+            Vector2 input = value.Get<Vector2>();
+            _moveInput = new Vector3(input.x, 0f, input.y);
+            _lookDirection = new Vector3(_moveInput.x, 0f, _moveInput.z).normalized;
+        }
     }
 }
