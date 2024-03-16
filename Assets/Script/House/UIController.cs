@@ -20,13 +20,13 @@ public class UIController : MonoBehaviour
     public Transform target;
     public Text content_text;
     public static bool isContentActive;
-    public static int _conveyContentTextNumber = 1;
+    public static int _conveyContentTextNumber;
 
     void Start()
     {
         isInteractionButtonActive = false;
         isChooseStoryActive = false;
-        isContentActive = true;
+        isContentActive = false;
     }
 
     void Update()
