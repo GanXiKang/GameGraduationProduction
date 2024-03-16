@@ -17,10 +17,8 @@ public class StoryObjectColliderControl : MonoBehaviour
                 switch (_nowNumber)
                 {
                     case 1:                                                     //clothing
-
+                        Destroy(this.gameObject);
                         break;
-
-
                 }
             }
         }
@@ -30,7 +28,21 @@ public class StoryObjectColliderControl : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            print("yes");
+            StoryLittleGirlUIControl.isInteractionButtonActive = true;
+            StoryLittleGirlUIControl._conveyColliderNumber = _serialNumber;
+        }
+    }
+    
+    private void OnTriggerStay(Collider other)
+    {
+        _nowNumber = _serialNumber;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            StoryLittleGirlUIControl.isInteractionButtonActive = false;
         }
     }
 }

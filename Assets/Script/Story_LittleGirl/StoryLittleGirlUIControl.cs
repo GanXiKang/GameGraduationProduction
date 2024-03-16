@@ -18,6 +18,18 @@ public class StoryLittleGirlUIControl : MonoBehaviour
 
     void Update()
     {
-        
+        interactionButton.SetActive(isInteractionButtonActive);
+
+        ColliderObjectName();
+    }
+
+    void ColliderObjectName()
+    {
+        switch (_conveyColliderNumber)
+        {
+            case 1:
+                interactionButton_text.text = "ÆÆÅfµÄÃ«ÒÂ";
+                break;
+        }
     }
 }
