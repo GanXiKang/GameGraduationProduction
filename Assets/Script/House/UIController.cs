@@ -17,7 +17,7 @@ public class UIController : MonoBehaviour
 
     [Header("Content")]
     public GameObject content;
-    public Text contentText;
+    public Text content_text;
     public static bool isContentActive;
 
     void Start()
