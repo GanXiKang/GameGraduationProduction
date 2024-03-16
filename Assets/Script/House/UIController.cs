@@ -17,8 +17,10 @@ public class UIController : MonoBehaviour
 
     [Header("Content")]
     public GameObject content;
+    public Transform target;
     public Text content_text;
     public static bool isContentActive;
+    public static int _conveyContentTextNumber = 1;
 
     void Start()
     {
@@ -31,7 +33,14 @@ public class UIController : MonoBehaviour
     {
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
+        content.SetActive(isContentActive);
+
+        Vector3 offset = new Vector3(0f, 30f, 0f);
+        Vector3 p = Camera.main.WorldToScreenPoint(target.position);
+        content.transform.position = p + offset;
+
         ColliderObjectName();
+        PlayerContentText();
     }
 
     void ColliderObjectName()
@@ -48,6 +57,16 @@ public class UIController : MonoBehaviour
 
             case 3:
                 interactionButton_text.text = "櫃子";
+                break;
+        }
+    }
+
+    void PlayerContentText()
+    {
+        switch (_conveyContentTextNumber)
+        {
+            case 1:
+                content_text.text = "有很多書";
                 break;
         }
     }
