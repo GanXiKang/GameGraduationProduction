@@ -810,8 +810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e6b37e44ec20b4eaca818fa632d9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionButton: {fileID: 0}
-  interactionButton_text: {fileID: 0}
+  interactionButton: {fileID: 187569270}
+  interactionButton_text: {fileID: 2095987345}
 --- !u!1 &533263177
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10be0d8407791ba49a383b5b97580bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 1975595112}
   _serialNumber: 1
 --- !u!1 &682263058
 GameObject:
