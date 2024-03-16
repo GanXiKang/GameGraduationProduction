@@ -77,7 +77,6 @@ public class UIController : MonoBehaviour
 
     void CloseContent()
     {
-        print("k");
         isContentActive = false;
     }
 }
