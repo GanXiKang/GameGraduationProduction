@@ -26,7 +26,7 @@ public class UIController : MonoBehaviour
     {
         isInteractionButtonActive = false;
         isChooseStoryActive = false;
-        isContentActive = false;
+        isContentActive = true;
     }
 
     void Update()
