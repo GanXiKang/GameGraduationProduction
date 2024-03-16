@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StoryObjectColliderControl : MonoBehaviour
 {
+    public GameObject target;
     public int _serialNumber;
     public static int _nowNumber;
 
@@ -17,7 +18,7 @@ public class StoryObjectColliderControl : MonoBehaviour
                 switch (_nowNumber)
                 {
                     case 1:                                                     //clothing
-                        Destroy(this.gameObject);
+                        Destroy(target);
                         break;
                 }
             }
