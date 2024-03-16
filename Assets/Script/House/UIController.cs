@@ -11,14 +11,20 @@ public class UIController : MonoBehaviour
     public static bool isInteractionButtonActive;
     public static int _conveyColliderNumber;
 
-    [Header("InteractionButton")]
+    [Header("Story")]
     public GameObject chooseStory;
     public static bool isChooseStoryActive;
+
+    [Header("Content")]
+    public GameObject content;
+    public Text contentText;
+    public static bool isContentActive;
 
     void Start()
     {
         isInteractionButtonActive = false;
         isChooseStoryActive = false;
+        isContentActive = false;
     }
 
     void Update()
