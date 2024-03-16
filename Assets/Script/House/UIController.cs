@@ -33,7 +33,11 @@ public class UIController : MonoBehaviour
     {
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
-        content.SetActive(isContentActive);
+        if (isContentActive)
+        {
+            content.SetActive(isContentActive);
+            Invoke("CloseContent", 2f);
+        }
 
         Vector3 offset = new Vector3(0f, 120f, 0f);
         Vector3 p = Camera.main.WorldToScreenPoint(target.position);
@@ -69,5 +73,10 @@ public class UIController : MonoBehaviour
                 content_text.text = "ÓÐºÜ¶à•ø";
                 break;
         }
+    }
+
+    void CloseContent()
+    {
+        isContentActive = false;
     }
 }
