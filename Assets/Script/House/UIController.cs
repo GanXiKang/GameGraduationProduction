@@ -35,7 +35,7 @@ public class UIController : MonoBehaviour
         chooseStory.SetActive(isChooseStoryActive);
         content.SetActive(isContentActive);
 
-        Vector3 offset = new Vector3(0f, 100f, 0f);
+        Vector3 offset = new Vector3(0f, 120f, 0f);
         Vector3 p = Camera.main.WorldToScreenPoint(target.position);
         content.transform.position = p + offset;
 
