@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class StoryObjectColliderControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int _serialNumber;
+    public static int _nowNumber;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (StoryLittleGirlUIControl.isInteractionButtonActive)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                StoryLittleGirlUIControl.isInteractionButtonActive = false;
+                switch (_nowNumber)
+                {
+                    case 1:                                                     //clothing
+
+                        break;
+
+
+                }
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            print("yes");
+        }
     }
 }
