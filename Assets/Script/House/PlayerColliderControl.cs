@@ -31,6 +31,7 @@ public class PlayerColliderControl : MonoBehaviour
 
                     case 3:                                                     //cabinet
                         UIController.isContentActive = true;
+                        UIController._conveyContentTextNumber = 1;
                         break;
                 }
             }
