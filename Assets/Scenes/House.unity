@@ -182,7 +182,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 12
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1262,6 +1262,7 @@ MonoBehaviour:
   interactionButton_text: {fileID: 355064774}
   chooseStory: {fileID: 236709880}
   content: {fileID: 1677107056}
+  target: {fileID: 197810302}
   content_text: {fileID: 188864412}
 --- !u!1 &874350010
 GameObject:
