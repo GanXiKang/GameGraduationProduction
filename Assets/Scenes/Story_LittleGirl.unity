@@ -756,6 +756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509659325}
   - component: {fileID: 509659326}
+  - component: {fileID: 509659327}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -797,6 +798,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagUI: {fileID: 1110120772}
+--- !u!114 &509659327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509659324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e6b37e44ec20b4eaca818fa632d9b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionButton: {fileID: 0}
+  interactionButton_text: {fileID: 0}
 --- !u!1 &533263177
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,9 +985,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 570331219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b82cf87c06644734f8b5f511c255b753, type: 3}
+  m_Script: {fileID: 11500000, guid: 10be0d8407791ba49a383b5b97580bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _serialNumber: 1
 --- !u!1 &682263058
 GameObject:
   m_ObjectHideFlags: 0
