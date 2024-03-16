@@ -33,10 +33,10 @@ public class UIController : MonoBehaviour
     {
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
+        content.SetActive(isContentActive);
         if (isContentActive)
         {
-            content.SetActive(isContentActive);
-            Invoke("CloseContent", 2f);
+            Invoke("CloseContent", 1f);
         }
 
         Vector3 offset = new Vector3(0f, 120f, 0f);
@@ -77,6 +77,7 @@ public class UIController : MonoBehaviour
 
     void CloseContent()
     {
+        print("k");
         isContentActive = false;
     }
 }
