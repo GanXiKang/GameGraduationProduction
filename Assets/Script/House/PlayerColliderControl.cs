@@ -29,8 +29,8 @@ public class PlayerColliderControl : MonoBehaviour
                         CameraController.isLookWorkbench = true;
                         break;
 
-                    case 3:
-                        print("three");
+                    case 3:                                                     //cabinet
+                        UIController.isContentActive = true;
                         break;
                 }
             }
