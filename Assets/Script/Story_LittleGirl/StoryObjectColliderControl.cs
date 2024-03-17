@@ -17,6 +17,7 @@ public class StoryObjectColliderControl : MonoBehaviour
                 switch (_serialNumber)
                 {
                     case 1:                                                     //clothing
+                        StoryBagControl.isItemSlotAcite[_serialNumber] = true;
                         Destroy(target);
                         break;
                 }
