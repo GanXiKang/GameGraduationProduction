@@ -23,11 +23,5 @@ public class StoryBagControl : MonoBehaviour
         {
             isBagActive = !isBagActive; 
         }
-
-    }
-
-    void ItemSlotActive()
-    {
-
     }
 }
