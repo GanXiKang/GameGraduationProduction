@@ -6,6 +6,7 @@ public class StoryObjectColliderControl : MonoBehaviour
 {
     public GameObject target;
     public int _serialNumber;
+    public static int _nowNumber;
 
     void Update()
     {
@@ -14,9 +15,14 @@ public class StoryObjectColliderControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 StoryLittleGirlUIControl.isInteractionButtonActive = false;
-                switch (_serialNumber)
+                switch (_nowNumber)
                 {
                     case 1:                                                     //clothing
+                        StoryBagControl.isItemSlotAcite[_serialNumber] = true;
+                        Destroy(target);
+                        break;
+
+                    case 2:                                                     //hat
                         StoryBagControl.isItemSlotAcite[_serialNumber] = true;
                         Destroy(target);
                         break;
@@ -32,6 +38,11 @@ public class StoryObjectColliderControl : MonoBehaviour
             StoryLittleGirlUIControl.isInteractionButtonActive = true;
             StoryLittleGirlUIControl._conveyColliderNumber = _serialNumber;
         }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        _nowNumber = _serialNumber;
     }
 
     private void OnTriggerExit(Collider other)
