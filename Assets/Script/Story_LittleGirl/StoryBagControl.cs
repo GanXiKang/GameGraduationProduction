@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class StoryBagControl : MonoBehaviour
 {
-    GameObject[] itemSlot;
+    public GameObject[] itemSlot;
     public GameObject bagUI;
 
     bool isBagActive;
@@ -13,15 +13,21 @@ public class StoryBagControl : MonoBehaviour
     void Start()
     {
         isBagActive = false;
-        itemSlot = GameObject.FindGameObjectsWithTag("Item");
     }
 
     void Update()
     {
+        bagUI.SetActive(isBagActive);
+
         if (Input.GetKeyDown(KeyCode.B))
         {
-            isBagActive = !isBagActive;
-            bagUI.SetActive(isBagActive);
+            isBagActive = !isBagActive; 
         }
+
+    }
+
+    void ItemSlotActive()
+    {
+
     }
 }
