@@ -13,7 +13,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
 
     void Start()
     {
-        isInteractionButtonActive = false;
+        isInteractionButtonActive = true;
     }
 
     void Update()
