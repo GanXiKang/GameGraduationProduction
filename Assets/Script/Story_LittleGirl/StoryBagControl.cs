@@ -15,12 +15,10 @@ public class StoryBagControl : MonoBehaviour
     void Start()
     {
         isBagActive = false;
-        print(itemSlot.Length);
         isItemSlotAcite = new bool[itemSlot.Length]; 
         for (int i = 0; i < itemSlot.Length; i++)
         {
             isItemSlotAcite[i] = false;
-            print("ok");
         }
     }
 
