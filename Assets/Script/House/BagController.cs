@@ -14,12 +14,13 @@ public class BagController : MonoBehaviour
     void Start()
     {
         isBagActive = false;
-
-        isItemSlotAcite = new bool[itemSlot.Length];
-
+       
         if (MenuGameControl.isNewGameModel)
         {
             MenuGameControl.isNewGameModel = false;
+
+            isItemSlotAcite = new bool[itemSlot.Length];
+
             for (int i = 0; i < itemSlot.Length; i++)
             {
                 isItemSlotAcite[i] = false;
