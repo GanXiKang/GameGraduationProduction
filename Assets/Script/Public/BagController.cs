@@ -4,15 +4,45 @@ using UnityEngine;
 
 public class BagController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject[] itemSlot;
+    public GameObject bagUI;
+
+    public static bool[] isItemSlotAcite;
+
+    bool isBagActive;
+
     void Start()
     {
-        
+        isBagActive = false;
+
+        isItemSlotAcite = new bool[itemSlot.Length];
+
+        if (MenuGameControl.isNewGameModel)
+        {
+            MenuGameControl.isNewGameModel = false;
+            for (int i = 0; i < itemSlot.Length; i++)
+            {
+                isItemSlotAcite[i] = false;
+            }
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        bagUI.SetActive(isBagActive);
+        ItemSlotActive();
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            isBagActive = !isBagActive;
+        }
+    }
+
+    void ItemSlotActive()
+    {
+        for (int k = 1; k < itemSlot.Length; k++)
+        {
+            itemSlot[k].SetActive(isItemSlotAcite[k]);
+        }
     }
 }
