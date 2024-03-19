@@ -975,7 +975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10be0d8407791ba49a383b5b97580bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1975595112}
   _serialNumber: 1
 --- !u!1 &682263058
 GameObject:
@@ -1219,6 +1218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f861a8131e30144b83bbf293d587d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colliderObject:
+  - {fileID: 0}
+  - {fileID: 1975595112}
+  - {fileID: 1605690863}
 --- !u!1 &734193279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,7 +2538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10be0d8407791ba49a383b5b97580bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1605690863}
   _serialNumber: 2
 --- !u!135 &1566426620
 SphereCollider:
