@@ -11,7 +11,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         if (_task >= 2)
         {
-            SceneManager.LoadScene(1);
+            Invoke("GoHouseScene", 1f);
         }
+    }
+
+    void GoHouseScene()
+    {
+        SceneManager.LoadScene(1);
     }
 }
