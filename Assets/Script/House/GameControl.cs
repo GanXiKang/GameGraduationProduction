@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
+    public static int _day = 1;
+
     public void Story_LittleGirl()
     {
         SceneManager.LoadScene(2);
