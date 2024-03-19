@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuGameControl : MonoBehaviour
 {
-    public static bool isNewGameModel = true; //•º•rµÄ
+    public static bool isNewGameModel; //•º•rµÄ
 
     public void Start_Button()
     {
