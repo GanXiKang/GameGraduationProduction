@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class StoryBagControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject bagUI;
+    public GameObject[] itemSlot;
+
+    bool isBagActive;
+
     void Start()
     {
-        
+        isBagActive = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        bagUI.SetActive(isBagActive);
+        ItemSlotActive();
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            isBagActive = !isBagActive;
+        }
+    }
+
+    void ItemSlotActive()
+    {
+        for (int k = 1; k < itemSlot.Length; k++)
+        {
+            itemSlot[k].SetActive(BagController.isItemSlotAcite[k]);
+        }
     }
 }
