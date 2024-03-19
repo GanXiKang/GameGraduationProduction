@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class StoryBagControl : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class StoryBagControl : MonoBehaviour
     {
         isBagActive = false;
 
-        isItemSlotAcite = new bool[itemSlot.Length]; 
+        isItemSlotAcite = new bool[itemSlot.Length];
         for (int i = 0; i < itemSlot.Length; i++)
         {
             isItemSlotAcite[i] = false;
@@ -30,7 +29,7 @@ public class StoryBagControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.B))
         {
-            isBagActive = !isBagActive; 
+            isBagActive = !isBagActive;
         }
     }
 
