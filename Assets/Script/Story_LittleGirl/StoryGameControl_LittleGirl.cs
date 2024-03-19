@@ -8,6 +8,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject[] colliderObject;
     public static int _task = 0;
 
+    bool isOnce;
+
+    void Start()
+    {
+        isOnce = true;
+    }
+
     void Update()
     {
         if (StoryLittleGirlUIControl.isInteractionButtonActive)
@@ -34,7 +41,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
         if (_task >= 2)
         {
-            Invoke("GoHouseScene", 1f);
+            if (isOnce)
+            {
+                Invoke("GoHouseScene", 1f);
+            }
         }
     }
 
@@ -42,6 +52,5 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         DayControl._day++;
-        print(DayControl._day++);
     }
 }
