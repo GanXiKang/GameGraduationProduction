@@ -41,5 +41,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     void GoHouseScene()
     {
         SceneManager.LoadScene(1);
+        DayControl._day++;
+        print(DayControl._day++);
     }
 }

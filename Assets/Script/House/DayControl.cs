@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class DayControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static int _day = 1;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        print(_day);
     }
 }
