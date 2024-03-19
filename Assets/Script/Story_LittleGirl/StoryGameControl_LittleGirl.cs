@@ -43,6 +43,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         {
             if (isOnce)
             {
+                isOnce = false;
                 Invoke("GoHouseScene", 1f);
             }
         }
