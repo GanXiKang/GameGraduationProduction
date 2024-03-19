@@ -18,14 +18,14 @@ public class StoryObjectColliderControl : MonoBehaviour
                 switch (_nowNumber)
                 {
                     case 1:                                                     //clothing
-                        BagController.isItemSlotAcite[_serialNumber] = true;
-                        StoryGameControl_LittleGirl._task++;
+                        BagController.isItemSlotAcite[_nowNumber] = true;
+                        //StoryGameControl_LittleGirl._task++;
                         Destroy(target);
                         break;
 
                     case 2:                                                     //hat
-                        BagController.isItemSlotAcite[_serialNumber] = true;
-                        StoryGameControl_LittleGirl._task++;
+                        BagController.isItemSlotAcite[_nowNumber] = true;
+                        //StoryGameControl_LittleGirl._task++;
                         Destroy(target);
                         break;
                 }
@@ -44,7 +44,10 @@ public class StoryObjectColliderControl : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        _nowNumber = _serialNumber;
+        if (other.tag == "Player")
+        {
+            _nowNumber = _serialNumber;
+        }
     }
 
     private void OnTriggerExit(Collider other)

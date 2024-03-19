@@ -48,7 +48,10 @@ public class PlayerColliderControl : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        _nowNumber = _serialNumber;
+        if (other.tag == "Player")
+        {
+            _nowNumber = _serialNumber;
+        }
     }
 
     private void OnTriggerExit(Collider other)
