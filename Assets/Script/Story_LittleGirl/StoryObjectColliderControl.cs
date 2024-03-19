@@ -4,35 +4,8 @@ using UnityEngine;
 
 public class StoryObjectColliderControl : MonoBehaviour
 {
-    public GameObject[] target;
     public int _serialNumber;
     public static int _nowNumber;
-
-    void Update()
-    {
-        if (StoryLittleGirlUIControl.isInteractionButtonActive)
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                print(_nowNumber);
-                StoryLittleGirlUIControl.isInteractionButtonActive = false;
-                switch (_nowNumber)
-                {
-                    case 1:                                                     //clothing
-                        BagController.isItemSlotAcite[_nowNumber] = true;
-                        StoryGameControl_LittleGirl._task++;
-                        Destroy(target[_nowNumber]);
-                        break;
-
-                    case 2:                                                     //hat
-                        BagController.isItemSlotAcite[_nowNumber] = true;
-                        StoryGameControl_LittleGirl._task++;
-                        Destroy(target[_nowNumber]);
-                        break;
-                }
-            }
-        }
-    }
 
     private void OnTriggerEnter(Collider other)
     {
