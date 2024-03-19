@@ -6,8 +6,5 @@ public class DayControl : MonoBehaviour
 {
     public static int _day = 1;
 
-    void Start()
-    {
-        print(_day);
-    }
+
 }
