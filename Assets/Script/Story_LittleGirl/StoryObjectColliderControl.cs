@@ -19,11 +19,13 @@ public class StoryObjectColliderControl : MonoBehaviour
                 {
                     case 1:                                                     //clothing
                         BagController.isItemSlotAcite[_serialNumber] = true;
+                        StoryGameControl_LittleGirl._task++;
                         Destroy(target);
                         break;
 
                     case 2:                                                     //hat
                         BagController.isItemSlotAcite[_serialNumber] = true;
+                        StoryGameControl_LittleGirl._task++;
                         Destroy(target);
                         break;
                 }
