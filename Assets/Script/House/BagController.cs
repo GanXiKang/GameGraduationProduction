@@ -19,7 +19,6 @@ public class BagController : MonoBehaviour
 
         if (MenuGameControl.isNewGameModel)
         {
-            print("1");
             MenuGameControl.isNewGameModel = false;
             for (int i = 0; i < itemSlot.Length; i++)
             {
@@ -41,7 +40,6 @@ public class BagController : MonoBehaviour
 
     void ItemSlotActive()
     {
-        print("2");
         for (int k = 1; k < itemSlot.Length; k++)
         {
             itemSlot[k].SetActive(isItemSlotAcite[k]);
