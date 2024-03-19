@@ -20,14 +20,14 @@ public class StoryObjectColliderControl : MonoBehaviour
                 {
                     case 1:                                                     //clothing
                         BagController.isItemSlotAcite[_nowNumber] = true;
-                        //StoryGameControl_LittleGirl._task++;
-                        Destroy(target);
+                        StoryGameControl_LittleGirl._task++;
+                        Destroy(target[_nowNumber]);
                         break;
 
                     case 2:                                                     //hat
                         BagController.isItemSlotAcite[_nowNumber] = true;
-                        //StoryGameControl_LittleGirl._task++;
-                        Destroy(target);
+                        StoryGameControl_LittleGirl._task++;
+                        Destroy(target[_nowNumber]);
                         break;
                 }
             }
