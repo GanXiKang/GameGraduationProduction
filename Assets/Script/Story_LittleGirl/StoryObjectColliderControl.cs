@@ -18,12 +18,12 @@ public class StoryObjectColliderControl : MonoBehaviour
                 switch (_nowNumber)
                 {
                     case 1:                                                     //clothing
-                        StoryBagControl.isItemSlotAcite[_serialNumber] = true;
+                        BagController.isItemSlotAcite[_serialNumber] = true;
                         Destroy(target);
                         break;
 
                     case 2:                                                     //hat
-                        StoryBagControl.isItemSlotAcite[_serialNumber] = true;
+                        BagController.isItemSlotAcite[_serialNumber] = true;
                         Destroy(target);
                         break;
                 }
