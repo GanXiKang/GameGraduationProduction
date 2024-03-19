@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BagController : MonoBehaviour
 {
-    public GameObject[] itemSlot;
     public GameObject bagUI;
+    public GameObject[] itemSlot;
 
     public static bool[] isItemSlotAcite;
 
