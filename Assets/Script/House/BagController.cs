@@ -19,7 +19,6 @@ public class BagController : MonoBehaviour
 
         if (MenuGameControl.isNewGameModel)
         {
-            print("yes");
             MenuGameControl.isNewGameModel = false;
             for (int i = 0; i < itemSlot.Length; i++)
             {
@@ -36,8 +35,6 @@ public class BagController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             isBagActive = !isBagActive;
-            print(isItemSlotAcite[1]);
-            print(isItemSlotAcite[2]);
         }
     }
 
