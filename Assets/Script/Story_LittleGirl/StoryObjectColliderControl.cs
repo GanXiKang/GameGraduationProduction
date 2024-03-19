@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StoryObjectColliderControl : MonoBehaviour
 {
-    public GameObject target;
+    public GameObject[] target;
     public int _serialNumber;
     public static int _nowNumber;
 
@@ -14,6 +14,7 @@ public class StoryObjectColliderControl : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                print(_nowNumber);
                 StoryLittleGirlUIControl.isInteractionButtonActive = false;
                 switch (_nowNumber)
                 {
