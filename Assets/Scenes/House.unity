@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 8a51e6b888ad5ee4fad041e57ef0586d, type: 3}
+  m_Texture: {fileID: 2800000, guid: 750c5a461bc23044b83283a8238d8554, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3763,6 +3763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1480171937}
   - component: {fileID: 1480171938}
+  - component: {fileID: 1480171939}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -3797,6 +3798,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33d9d3cc033cef4f910be9a059215d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1480171939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480171936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86823fc2ff4bac4ca9688dcc98ded10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bagUI: {fileID: 873830858}
+  itemSlot:
+  - {fileID: 0}
+  - {fileID: 2032329168}
+  - {fileID: 18457400}
+  - {fileID: 816395171}
+  - {fileID: 765115038}
+  - {fileID: 910807370}
 --- !u!1 &1488920927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5501,7 +5522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 265d5a582c557d24ab4a33d6973308c3, type: 3}
+  m_Texture: {fileID: 2800000, guid: 7083463f1a4a5ec4d8fd8313485eb018, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
