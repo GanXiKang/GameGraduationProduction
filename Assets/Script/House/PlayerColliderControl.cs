@@ -32,6 +32,10 @@ public class PlayerColliderControl : MonoBehaviour
                         UIController.isContentActive = true;
                         UIController._conveyContentTextNumber = 1;
                         break;
+
+                    case 4:                                                     //flower
+                        print("flower");
+                        break;
                 }
             }
         }

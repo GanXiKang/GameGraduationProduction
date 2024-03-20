@@ -62,6 +62,10 @@ public class UIController : MonoBehaviour
             case 3:
                 interactionButton_text.text = "™™×Ó";
                 break;
+
+            case 4:
+                interactionButton_text.text = "»¨¶ä";
+                break;
         }
     }
 
