@@ -35,6 +35,7 @@ public class GameControl : MonoBehaviour
 
                     case 4:                                                     //flower
                         FlowerControl.isDestory = true;
+                        BagController.isItemSlotAcite[3] = true;
                         break;
                 }
             }
