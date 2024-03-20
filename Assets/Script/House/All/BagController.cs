@@ -12,7 +12,7 @@ public class BagController : MonoBehaviour
     public static bool[] isItemSlotAcite;
     public static int quantity;
 
-    bool isBagActive;
+    public static bool isBagActive;
 
     void Start()
     {
