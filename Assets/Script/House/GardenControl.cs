@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class GardenControl : MonoBehaviour
 {
+    public Transform insFlowerPoint;
+    public GameObject flowerPerfab;
 
     void Start()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        if (GameControl._day == 2)
+        {
+            Instantiate(flowerPerfab, insFlowerPoint.position, insFlowerPoint.rotation);
+        }
     }
 }
