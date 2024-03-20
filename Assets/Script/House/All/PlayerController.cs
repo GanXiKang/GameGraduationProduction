@@ -45,5 +45,9 @@ public class PlayerController : MonoBehaviour
             _moveInput = new Vector3(input.x, 0f, input.y);
             _lookDirection = new Vector3(_moveInput.x, 0f, _moveInput.z).normalized;
         }
+        else
+        {
+            _moveInput = Vector3.zero;
+        }
     }
 }
