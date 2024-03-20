@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BagController : MonoBehaviour
 {
     public GameObject bagUI;
     public GameObject[] itemSlot;
+    public Text quantity03_Text;
 
     public static bool[] isItemSlotAcite;
+    public static int quantity;
 
     bool isBagActive;
 
@@ -45,5 +48,7 @@ public class BagController : MonoBehaviour
         {
             itemSlot[k].SetActive(isItemSlotAcite[k]);
         }
+
+        quantity03_Text.text = quantity.ToString();
     }
 }
