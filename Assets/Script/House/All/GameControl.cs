@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
-    public static int _day = 2;
+    public static int _day = 1;
 
     void Update()
     {
