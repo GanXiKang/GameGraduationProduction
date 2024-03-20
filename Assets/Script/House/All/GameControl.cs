@@ -34,7 +34,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 4:                                                     //flower
-                        print("flower");
+                        FlowerControl.isDestory = true;
                         break;
                 }
             }
