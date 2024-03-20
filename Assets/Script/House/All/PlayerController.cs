@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (!CameraController.isLookWorkbench && !UIController.isContentActive && !BedControl.isSleep)
+        if (!CameraController.isLookWorkbench && !UIController.isContentActive && !BedControl.isSleep && !BagController.isBagActive)
         {
             Vector2 input = value.Get<Vector2>();
             _moveInput = new Vector3(input.x, 0f, input.y);
