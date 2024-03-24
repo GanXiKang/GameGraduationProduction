@@ -56,7 +56,7 @@ public class WorkbenchControl : MonoBehaviour
         Drawing_CheckDrawingCompletion();
     }
 
-    bool Drawing_isWithInBoundary(Vector2 pos)
+    bool Drawing_isWithInBoundary(Vector3 pos)
     {
         Bounds _bounds = boxC.bounds;
 
