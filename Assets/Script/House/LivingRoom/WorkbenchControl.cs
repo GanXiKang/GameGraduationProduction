@@ -71,7 +71,7 @@ public class WorkbenchControl : MonoBehaviour
             {
                 print("ÀL®‹Íê³É£¡");
                 isDrawingComplete = true;
-                //Drawing_ClearAllPencils();
+                Invoke("Drawing_ClearAllPencils", 2f);
             }
         }
     }
