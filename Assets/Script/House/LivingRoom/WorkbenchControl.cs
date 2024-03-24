@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class WorkbenchControl : MonoBehaviour
 {
+    public GameObject storyBook, materialWindow;
+    int _whatDate;
+
     void Update()
     {
         if (CameraController.isLookWorkbench)
@@ -14,5 +17,12 @@ public class WorkbenchControl : MonoBehaviour
                 CameraController.isFollow = true;
             }
         }
+    }
+
+    public void Vacancy_Button(int date)
+    {
+        _whatDate = date;
+        storyBook.SetActive(false);
+        materialWindow.SetActive(true);
     }
 }
