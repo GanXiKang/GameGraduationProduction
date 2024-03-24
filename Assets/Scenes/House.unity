@@ -3754,8 +3754,8 @@ Transform:
   m_GameObject: {fileID: 1091245014}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0.043, y: 0.874, z: -0.087000005}
-  m_LocalScale: {x: 0.05, y: 0.50739735, z: 0.15410693}
+  m_LocalPosition: {x: 0.061, y: 0.896, z: -0.087000005}
+  m_LocalScale: {x: 0.1, y: 0.5640737, z: 0.26034823}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1300338023}
@@ -4493,8 +4493,8 @@ MonoBehaviour:
   pencil: {fileID: 1155251805653073979, guid: f7457c1c2691d9c47bb8fdfca6bca4d7, type: 3}
   boxC: {fileID: 1091245016}
   isDrawingComplete: 0
-  _completionThreshold: 90
-  _completionPercentage: 15
+  _completionThreshold: 80
+  _completionPercentage: 20
 --- !u!1 &1319492826
 GameObject:
   m_ObjectHideFlags: 0
