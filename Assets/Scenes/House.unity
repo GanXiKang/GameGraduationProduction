@@ -1153,8 +1153,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1300338024}
-        m_TargetAssemblyTypeName: WorkbenchControl, Assembly-CSharp
+      - m_Target: {fileID: 865770027}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
         m_MethodName: Vacancy_Button
         m_Mode: 3
         m_Arguments:
@@ -1364,7 +1364,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 385361700}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 865770027}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: Make_Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &385361700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2533,6 +2545,8 @@ MonoBehaviour:
   target: {fileID: 197810302}
   content_text: {fileID: 188864412}
   workbench: {fileID: 1791062033}
+  storyBook: {fileID: 247843901}
+  materialWindow: {fileID: 436594121}
 --- !u!1 &873830858
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,7 +3161,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 913547706}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 865770027}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: Back_Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &913547706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4398,8 +4424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec95210793a7f142964a9e96ed055d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyBook: {fileID: 247843901}
-  materialWindow: {fileID: 436594121}
 --- !u!1 &1319492826
 GameObject:
   m_ObjectHideFlags: 0
