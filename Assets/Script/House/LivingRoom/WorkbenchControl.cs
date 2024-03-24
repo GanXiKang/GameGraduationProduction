@@ -45,12 +45,12 @@ public class WorkbenchControl : MonoBehaviour
 
         if (!isDrawingComplete && isPress)
         {
-            if (Drawing_isWithInBoundary(Camera.main.ScreenToWorldPoint(mousePos)))
-            {
+            //if (Drawing_isWithInBoundary(Camera.main.ScreenToWorldPoint(mousePos)))
+            //{
                 pencils[pencils.Count - 1].transform.position = Camera.main.ScreenToWorldPoint(mousePos);
                 _drawnArea += _completionPercentage * Time.deltaTime;
                 print(_drawnArea);
-            }
+            //}
         }
 
         Drawing_CheckDrawingCompletion();
