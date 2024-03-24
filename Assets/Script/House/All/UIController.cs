@@ -22,6 +22,10 @@ public class UIController : MonoBehaviour
     public static bool isContentActive;
     public static int _conveyContentTextNumber;
 
+    [Header("Workbench")]
+    public GameObject workbench;
+
+
     void Start()
     {
         isInteractionButtonActive = false;
@@ -34,6 +38,8 @@ public class UIController : MonoBehaviour
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
         content.SetActive(isContentActive);
+        workbench.SetActive(CameraController.isLookWorkbench);
+
         if (isContentActive)
         {
             Invoke("CloseContent", 1f);
