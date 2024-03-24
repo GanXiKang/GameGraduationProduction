@@ -26,7 +26,7 @@ public class UIController : MonoBehaviour
     public GameObject workbench;
     public GameObject storyBook;
     public GameObject materialWindow;
-
+    public static int _whatDate;
 
     void Start()
     {
@@ -102,5 +102,22 @@ public class UIController : MonoBehaviour
     void WorkbenchUI()
     {
         workbench.SetActive(CameraController.isLookWorkbench);
+    }
+
+    //Button
+    public void Vacancy_Button(int date)
+    {
+        _whatDate = date;
+        storyBook.SetActive(false);
+        materialWindow.SetActive(true);
+    }
+    public void Make_Button()
+    {
+        
+    }
+    public void Back_Button()
+    {
+        materialWindow.SetActive(false);
+        storyBook.SetActive(true);  
     }
 }
