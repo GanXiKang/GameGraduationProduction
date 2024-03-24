@@ -27,6 +27,7 @@ public class UIController : MonoBehaviour
     public GameObject storyBook;
     public GameObject materialWindow;
     public GameObject[] materialNeeded;
+    public Sprite[] itemImage;
     public static int _whatDate;
 
     void Start()
