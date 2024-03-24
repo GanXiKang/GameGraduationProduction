@@ -141,6 +141,7 @@ public class UIController : MonoBehaviour
     }
     public void Make_Button()
     {
+        WorkbenchControl.isDrawing = true;
         storyBook.SetActive(false);
         materialWindow.SetActive(false);
     }
