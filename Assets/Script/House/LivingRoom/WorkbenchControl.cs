@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class WorkbenchControl : MonoBehaviour
 {
+    public static bool isDrawing;
  
 }
