@@ -29,6 +29,7 @@ public class UIController : MonoBehaviour
     public GameObject[] materialNeeded;
     public Sprite[] itemImage;
     public static int _whatDate;
+    int needMaterialQuantity;
 
     void Start()
     {
@@ -62,6 +63,7 @@ public class UIController : MonoBehaviour
 
         ColliderObjectName();
         PlayerContentText();
+        MaterialWindowInformation();
     }
 
     void ColliderObjectName()
@@ -104,6 +106,30 @@ public class UIController : MonoBehaviour
     void WorkbenchUI()
     {
         workbench.SetActive(CameraController.isLookWorkbench);
+    }
+
+    void MaterialWindowInformation()
+    {
+        switch (_whatDate)
+        {
+            case 1:                               //Ã«ÒÂÃ«Ã±
+                needMaterialQuantity = 3;
+                for (int i = 1; i < materialNeeded.Length; i++)
+                {
+                    if (i <= needMaterialQuantity)
+                    {
+                        materialNeeded[i].SetActive(true);
+                    }
+                    else
+                    {
+                        materialNeeded[i].SetActive(false);
+                    }
+                }
+                materialNeeded[1].GetComponent<Image>().sprite = itemImage[1];
+                materialNeeded[2].GetComponent<Image>().sprite = itemImage[2];
+                materialNeeded[3].GetComponent<Image>().sprite = itemImage[3];
+                break;
+        }
     }
 
     //Button
