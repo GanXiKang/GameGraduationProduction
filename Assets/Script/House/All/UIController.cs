@@ -24,6 +24,8 @@ public class UIController : MonoBehaviour
 
     [Header("Workbench")]
     public GameObject workbench;
+    public GameObject storyBook;
+    public GameObject materialWindow;
 
 
     void Start()

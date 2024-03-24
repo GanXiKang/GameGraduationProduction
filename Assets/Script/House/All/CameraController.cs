@@ -45,7 +45,14 @@ public class CameraController : MonoBehaviour
                 isFollow = false;
             }
         }
-
+        if (isLookWorkbench)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                isLookWorkbench = false;
+                isFollow = true;
+            }
+        }
         CameraMode();
     }
 
