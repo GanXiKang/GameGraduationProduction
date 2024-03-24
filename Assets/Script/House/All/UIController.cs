@@ -141,11 +141,12 @@ public class UIController : MonoBehaviour
     }
     public void Make_Button()
     {
-        
+        storyBook.SetActive(false);
+        materialWindow.SetActive(false);
     }
     public void Back_Button()
     {
+        storyBook.SetActive(true);
         materialWindow.SetActive(false);
-        storyBook.SetActive(true);  
     }
 }
