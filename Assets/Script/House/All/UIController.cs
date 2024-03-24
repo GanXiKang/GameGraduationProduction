@@ -40,11 +40,18 @@ public class UIController : MonoBehaviour
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
         content.SetActive(isContentActive);
-        workbench.SetActive(CameraController.isLookWorkbench);
 
         if (isContentActive)
         {
             Invoke("CloseContent", 1f);
+        }
+        if (CameraController.isLookWorkbench)
+        {
+            Invoke("WorkbenchUI", 2f);
+        }
+        else
+        {
+            WorkbenchUI();
         }
 
         Vector3 offset = new Vector3(0f, 300f, 0f);
@@ -90,5 +97,10 @@ public class UIController : MonoBehaviour
     void CloseContent()
     {
         isContentActive = false;
+    }
+
+    void WorkbenchUI()
+    {
+        workbench.SetActive(CameraController.isLookWorkbench);
     }
 }
