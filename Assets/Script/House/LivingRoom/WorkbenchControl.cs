@@ -71,7 +71,6 @@ public class WorkbenchControl : MonoBehaviour
             {
                 print("ÀL®‹Íê³É£¡");
                 isDrawingComplete = true;
-                UIController.isFinish = true;
                 Invoke("Drawing_ClearAllPencils", 2f);
             }
         }
@@ -84,5 +83,6 @@ public class WorkbenchControl : MonoBehaviour
             Destroy(pencils[i]);
         }
         pencils.Clear();
+        UIController.isFinish = true;
     }
 }
