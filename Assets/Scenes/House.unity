@@ -4648,9 +4648,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pencil: {fileID: 1155251805653073979, guid: f7457c1c2691d9c47bb8fdfca6bca4d7, type: 3}
+  drawFinishText: {fileID: 1762746756}
   boxC: {fileID: 1091245016}
   isDrawingComplete: 0
-  _completionThreshold: 80
+  _completionThreshold: 90
   _completionPercentage: 20
 --- !u!1 &1319492826
 GameObject:
