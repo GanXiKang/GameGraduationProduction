@@ -7,6 +7,7 @@ public class WorkbenchControl : MonoBehaviour
     [Header("Drawing")]
     public static bool isDrawing;
     public GameObject pencil;
+    public GameObject drawFinishText;
     public BoxCollider boxC;
     public bool isDrawingComplete;
     public float _completionThreshold;
@@ -69,7 +70,7 @@ public class WorkbenchControl : MonoBehaviour
         {
             if (_drawnArea >= _completionThreshold)
             {
-                print("ÀL®‹Íê³É£¡");
+                drawFinishText.SetActive(true);
                 isDrawingComplete = true;
                 Invoke("Drawing_ClearAllPencils", 2f);
             }
@@ -84,5 +85,6 @@ public class WorkbenchControl : MonoBehaviour
         }
         pencils.Clear();
         UIController.isFinish = true;
+        drawFinishText.SetActive(false);
     }
 }
