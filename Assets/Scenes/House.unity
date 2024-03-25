@@ -2548,6 +2548,7 @@ MonoBehaviour:
   workbench: {fileID: 1791062033}
   storyBook: {fileID: 247843901}
   materialWindow: {fileID: 436594121}
+  finishItemImage: {fileID: 970781363}
   materialNeeded:
   - {fileID: 0}
   - {fileID: 659062063}
