@@ -26,11 +26,14 @@ public class UIController : MonoBehaviour
     public GameObject workbench;
     public GameObject storyBook;
     public GameObject materialWindow;
+    public GameObject finishItemImage;
     public GameObject[] materialNeeded;
     public Sprite[] itemImage;
     public Button makeButton;
     public static int _whatDate;
+    public static bool isFinish;
     int needMaterialQuantity;
+    bool isOnce;
 
     void Start()
     {
@@ -52,12 +55,17 @@ public class UIController : MonoBehaviour
         if (CameraController.isLookWorkbench)
         {
             Invoke("WorkbenchUI", 2f);
-            storyBook.SetActive(true);
-            materialWindow.SetActive(false);
+            isOnce = true;
         }
         else
         {
             WorkbenchUI();
+            if (isOnce)
+            {
+                isOnce = false;
+                storyBook.SetActive(true);
+                materialWindow.SetActive(false);
+            }
         }
 
         Vector3 offset = new Vector3(0f, 300f, 0f);
@@ -68,6 +76,7 @@ public class UIController : MonoBehaviour
         PlayerContentText();
         MaterialWindowInformation();
         JudgmentMakeButtonInteractable();
+        JudgmentFinish();
     }
 
     void ColliderObjectName()
@@ -153,6 +162,20 @@ public class UIController : MonoBehaviour
         }
     }
 
+    void JudgmentFinish()
+    {
+        switch (_whatDate)
+        {
+            case 1:                               //Ã«ÒÂÃ«Ã±
+                if (isFinish)
+                {
+                    storyBook.SetActive(true);
+                    finishItemImage.SetActive(true);
+                }
+                break;
+        }
+    }
+
     //Button
     public void Vacancy_Button(int date)
     {
@@ -162,6 +185,7 @@ public class UIController : MonoBehaviour
     }
     public void Make_Button()
     {
+        isFinish = false;
         WorkbenchControl.isDrawing = true;
         storyBook.SetActive(false);
         materialWindow.SetActive(false);
