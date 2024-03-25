@@ -52,6 +52,8 @@ public class UIController : MonoBehaviour
         if (CameraController.isLookWorkbench)
         {
             Invoke("WorkbenchUI", 2f);
+            storyBook.SetActive(true);
+            materialWindow.SetActive(false);
         }
         else
         {
@@ -108,8 +110,6 @@ public class UIController : MonoBehaviour
     void WorkbenchUI()
     {
         workbench.SetActive(CameraController.isLookWorkbench);
-        storyBook.SetActive(true);
-        materialWindow.SetActive(false);
     }
 
     void MaterialWindowInformation()
