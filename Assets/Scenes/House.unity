@@ -2559,6 +2559,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7083463f1a4a5ec4d8fd8313485eb018, type: 3}
   - {fileID: 21300000, guid: 750c5a461bc23044b83283a8238d8554, type: 3}
   - {fileID: 21300000, guid: 2243259f0b718664fa5409384cf1f5a0, type: 3}
+  makeButton: {fileID: 385361699}
 --- !u!1 &873830858
 GameObject:
   m_ObjectHideFlags: 0
