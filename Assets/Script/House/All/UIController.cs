@@ -28,6 +28,7 @@ public class UIController : MonoBehaviour
     public GameObject materialWindow;
     public GameObject[] materialNeeded;
     public Sprite[] itemImage;
+    public Button makeButton;
     public static int _whatDate;
     int needMaterialQuantity;
 
@@ -64,6 +65,7 @@ public class UIController : MonoBehaviour
         ColliderObjectName();
         PlayerContentText();
         MaterialWindowInformation();
+        JudgmentMakeButtonInteractable();
     }
 
     void ColliderObjectName()
@@ -128,6 +130,23 @@ public class UIController : MonoBehaviour
                 materialNeeded[1].GetComponent<Image>().sprite = itemImage[1];
                 materialNeeded[2].GetComponent<Image>().sprite = itemImage[2];
                 materialNeeded[3].GetComponent<Image>().sprite = itemImage[3];
+                break;
+        }
+    }
+
+    void JudgmentMakeButtonInteractable()
+    {
+        switch (_whatDate)
+        {
+            case 1:                               //Ã«ÒÂÃ«Ã±
+                if (BagController.isItemSlotAcite[1] && BagController.isItemSlotAcite[2] && BagController.isItemSlotAcite[3])
+                {
+                    makeButton.interactable = true;
+                }
+                else
+                {
+                    makeButton.interactable = false;
+                }
                 break;
         }
     }
