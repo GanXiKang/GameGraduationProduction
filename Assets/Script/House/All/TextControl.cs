@@ -17,7 +17,6 @@ public class TextControl : MonoBehaviour
     void Awake()
     {
         GetTextFormFile(textFile);
-        index = 0;
     }
     void OnEnable()
     {
@@ -25,13 +24,18 @@ public class TextControl : MonoBehaviour
         index++;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (GameControl.isOpening)
         {
             textLabel.text = textList[index];
             index++;
-        }
+            if (index == textList.Count)
+            {
+                index = 0;
+                GameControl.isOpening = false;
+            }
+        }  
     }
 
     void GetTextFormFile(TextAsset file)
