@@ -69,7 +69,6 @@ public class TextControl : MonoBehaviour
         switch (textList[index])
         {
             case "A":
-                print("ok");
                 faceImage.sprite = littleGirl;
                 index++;
                 break;
