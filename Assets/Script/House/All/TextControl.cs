@@ -11,7 +11,8 @@ public class TextControl : MonoBehaviour
     [Header("TextFile")]
     public TextAsset textFile;
     public int index;
-    public float textSpend = 0.1f;
+    public float textSpend;
+    bool textFinish;
 
     List<string> textList = new List<string>();
 
@@ -27,14 +28,18 @@ public class TextControl : MonoBehaviour
 
     void Update()
     {
-        if (GameControl.isOpening)
+        if (GameControl.isOpening && textFinish)
         {
-            StartCoroutine(SetTextLabelIndexUI());
-            if (index == textList.Count)
+            if (Input.GetMouseButtonDown(0))
             {
-                index = 0;
-                GameControl.isOpening = false;
-                UIController.isAutoCloseContent = true;
+                StartCoroutine(SetTextLabelIndexUI());
+
+                if (index == textList.Count)
+                {
+                    index = 0;
+                    GameControl.isOpening = false;
+                    UIController.isContentActive = false;
+                }
             }
         }  
     }
@@ -54,6 +59,7 @@ public class TextControl : MonoBehaviour
 
     IEnumerator SetTextLabelIndexUI()
     {
+        textFinish = false;
         textLabel.text = "";
         for (int i = 0; i < textList[index].Length; i++)
         {
@@ -61,6 +67,7 @@ public class TextControl : MonoBehaviour
 
             yield return new WaitForSeconds(textSpend);
         }
+        textFinish = true;
         index++;
     }
 }
