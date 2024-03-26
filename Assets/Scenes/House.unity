@@ -5068,6 +5068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textLabel: {fileID: 188864412}
   textFile: {fileID: 4900000, guid: ed32f8716fc6f064eb5de7054b86184a, type: 3}
+  index: 0
 --- !u!1 &1488920927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5977,7 +5978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1677107057
 RectTransform:
   m_ObjectHideFlags: 0
