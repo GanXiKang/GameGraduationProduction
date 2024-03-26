@@ -18,6 +18,7 @@ public class TextControl : MonoBehaviour
     {
         GetTextFormFile(textFile);
     }
+
     void OnEnable()
     {
         textLabel.text = textList[index];
@@ -29,7 +30,7 @@ public class TextControl : MonoBehaviour
         if (GameControl.isOpening)
         {
             textLabel.text = textList[index];
-            index++;
+            StartCoroutine(TextLabelIndex());
             if (index == textList.Count)
             {
                 index = 0;
@@ -48,6 +49,15 @@ public class TextControl : MonoBehaviour
         foreach (var line in lineDate)
         {
             textList.Add(line);
+        }
+    }
+
+    IEnumerator TextLabelIndex()
+    {
+        for (int i = 1; i < textList.Count; i++)
+        {
+            yield return new WaitForSeconds(2f);
+            index++;
         }
     }
 }
