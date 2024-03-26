@@ -6,6 +6,19 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour
 {
     public static int _day = 1;
+    public static bool isOpening;
+
+    void Start()
+    {
+        if (_day == 1)
+        {
+            isOpening = true;
+        }
+        else
+        {
+            isOpening = false;
+        }
+    }
 
     void Update()
     {
