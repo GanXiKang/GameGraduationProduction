@@ -14,13 +14,18 @@ public class TextControl : MonoBehaviour
 
     List<string> textList = new List<string>();
 
-    void Start()
+    void Awake()
     {
         GetTextFormFile(textFile);
         index = 0;
     }
+    void OnEnable()
+    {
+        textLabel.text = textList[index];
+        index++;
+    }
 
-    void Update()
+    void FixedUpdate()
     {
         if (GameControl.isOpening)
         {
