@@ -13,7 +13,7 @@ public class GameControl : MonoBehaviour
         if (_day == 1)
         {
             isOpening = true;
-            Invoke("OpeningText", 1f);
+            UIController.isContentActive = true;
         }
         else
         {
@@ -26,13 +26,6 @@ public class GameControl : MonoBehaviour
         InteractionButton();
     }
 
-    void OpeningText()
-    {
-        if (isOpening)
-        {
-            UIController.isContentActive = true;
-        }
-    }
     void InteractionButton()
     {
         if (UIController.isInteractionButtonActive)
