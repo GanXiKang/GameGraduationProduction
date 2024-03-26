@@ -10,6 +10,16 @@ public class GameControl : MonoBehaviour
 
     void Start()
     {
+        Invoke("OpeningText", 1f);
+    }
+
+    void Update()
+    {
+        InteractionButton();
+    }
+
+    void OpeningText()
+    {
         if (_day == 1)
         {
             isOpening = true;
@@ -20,12 +30,6 @@ public class GameControl : MonoBehaviour
             isOpening = false;
         }
     }
-
-    void Update()
-    {
-        InteractionButton();
-    }
-
     void InteractionButton()
     {
         if (UIController.isInteractionButtonActive)
