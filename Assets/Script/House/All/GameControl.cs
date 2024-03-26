@@ -8,7 +8,14 @@ public class GameControl : MonoBehaviour
     public static int _day = 1;
     public static bool isOpening;
 
-    void Start()
+    void Update()
+    {
+        Invoke("OpeningText", 1f);
+        InteractionButton();
+        
+    }
+
+    void OpeningText()
     {
         if (_day == 1)
         {
@@ -20,8 +27,7 @@ public class GameControl : MonoBehaviour
             isOpening = false;
         }
     }
-
-    void Update()
+    void InteractionButton()
     {
         if (UIController.isInteractionButtonActive)
         {
@@ -57,6 +63,7 @@ public class GameControl : MonoBehaviour
         }
     }
 
+    //button
     public void Story_LittleGirl()
     {
         SceneManager.LoadScene(2);
