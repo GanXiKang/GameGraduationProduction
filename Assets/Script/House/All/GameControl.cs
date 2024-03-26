@@ -13,6 +13,7 @@ public class GameControl : MonoBehaviour
         if (_day == 1)
         {
             isOpening = true;
+            UIController.isContentActive = true;
         }
         else
         {
