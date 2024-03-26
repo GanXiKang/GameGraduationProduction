@@ -7,12 +7,17 @@ public class TextControl : MonoBehaviour
 {
     [Header("UIComponents")]
     public Text textLabel;
+    public Image faceImage;
 
     [Header("TextFile")]
     public TextAsset textFile;
     public int index;
     public float textSpend;
     bool textFinish;
+
+    [Header("Avatar")]
+    public Sprite littleGirl;
+    public Sprite grandmother;
 
     List<string> textList = new List<string>();
 
