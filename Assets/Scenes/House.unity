@@ -5069,6 +5069,7 @@ MonoBehaviour:
   textLabel: {fileID: 188864412}
   textFile: {fileID: 4900000, guid: ed32f8716fc6f064eb5de7054b86184a, type: 3}
   index: 0
+  textSpend: 0.1
 --- !u!1 &1488920927
 GameObject:
   m_ObjectHideFlags: 0
