@@ -66,11 +66,9 @@ public class TextControl : MonoBehaviour
     {
         textFinish = false;
         textLabel.text = "";
-        print("a");
         switch (textList[index])
         {
             case "A":
-                print("b");
                 faceImage.sprite = littleGirl;
                 index++;
                 break;
