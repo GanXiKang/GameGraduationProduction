@@ -66,6 +66,19 @@ public class TextControl : MonoBehaviour
     {
         textFinish = false;
         textLabel.text = "";
+        switch (textList[index])
+        {
+            case "A":
+                print("ok");
+                faceImage.sprite = littleGirl;
+                index++;
+                break;
+
+            case "B":
+                faceImage.sprite = grandmother;
+                index++;
+                break;
+        }
         for (int i = 0; i < textList[index].Length; i++)
         {
             textLabel.text += textList[index][i];
