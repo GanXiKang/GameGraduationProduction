@@ -20,6 +20,7 @@ public class UIController : MonoBehaviour
     public Transform target;
     public Text content_text;
     public static bool isContentActive;
+    public static bool isAutoCloseContent;
     public static int _conveyContentTextNumber;
 
     [Header("Workbench")]
@@ -40,6 +41,7 @@ public class UIController : MonoBehaviour
         isInteractionButtonActive = false;
         isChooseStoryActive = false;
         isContentActive = false;
+        isAutoCloseContent = false;
     }
 
     void Update()
@@ -48,7 +50,7 @@ public class UIController : MonoBehaviour
         chooseStory.SetActive(isChooseStoryActive);
         content.SetActive(isContentActive);
 
-        if (isContentActive)
+        if (isAutoCloseContent)
         {
             Invoke("CloseContent", 1f);
         }
@@ -114,6 +116,7 @@ public class UIController : MonoBehaviour
     void CloseContent()
     {
         isContentActive = false;
+        isAutoCloseContent = false;
     }
 
     void WorkbenchUI()

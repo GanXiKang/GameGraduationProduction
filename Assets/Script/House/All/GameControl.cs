@@ -8,7 +8,6 @@ public class GameControl : MonoBehaviour
     public static int _day = 1;
     public static bool isOpening;
 
-
     void Start()
     {
         if (_day == 1)
@@ -57,6 +56,7 @@ public class GameControl : MonoBehaviour
 
                     case 3:                                                     //cabinet
                         UIController.isContentActive = true;
+                        UIController.isAutoCloseContent = true;
                         UIController._conveyContentTextNumber = 1;
                         break;
 
