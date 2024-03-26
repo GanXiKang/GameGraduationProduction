@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TextControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [Header("UIComponents")]
+    public Text textLabel;
+
+    [Header("TextFile")]
+    public TextAsset textFile;
+
     void Start()
     {
         
