@@ -77,10 +77,6 @@ public class TextControl : MonoBehaviour
                 faceImage.sprite = grandmother;
                 index++;
                 break;
-
-            default:
-                print("OK");
-                break;
         }
         for (int i = 0; i < textList[index].Length; i++)
         {
