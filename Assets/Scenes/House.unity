@@ -5058,7 +5058,6 @@ GameObject:
   - component: {fileID: 1480171938}
   - component: {fileID: 1480171939}
   - component: {fileID: 1480171940}
-  - component: {fileID: 1480171941}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -5129,25 +5128,6 @@ MonoBehaviour:
   insFlowerPoint: {fileID: 1137546491}
   flowerPerfab: {fileID: 253929770003099472, guid: 680e7fc90c5912140be1f0ef59cfd63c,
     type: 3}
---- !u!114 &1480171941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480171936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe9cf820d3a7f04c83fe809b0cfac32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textLabel: {fileID: 188864412}
-  faceImage: {fileID: 660936846}
-  textFile: {fileID: 4900000, guid: 1404e76ec831bfb4788b0c95eccd5981, type: 3}
-  index: 0
-  textSpend: 0.1
-  littleGirl: {fileID: 21300000, guid: f4bef26f32b8ee940946f5cd0b8a7d30, type: 3}
-  grandmother: {fileID: 21300000, guid: 9fe1186183653cb40abba5cb6248d086, type: 3}
 --- !u!1 &1488920927
 GameObject:
   m_ObjectHideFlags: 0
@@ -6051,6 +6031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1677107057}
+  - component: {fileID: 1677107058}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -6080,6 +6061,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -291}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1677107058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677107056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe9cf820d3a7f04c83fe809b0cfac32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textLabel: {fileID: 188864412}
+  faceImage: {fileID: 660936846}
+  textFile: {fileID: 4900000, guid: 1404e76ec831bfb4788b0c95eccd5981, type: 3}
+  index: 0
+  textSpend: 0.1
+  littleGirl: {fileID: 21300000, guid: f4bef26f32b8ee940946f5cd0b8a7d30, type: 3}
+  grandmother: {fileID: 21300000, guid: 9fe1186183653cb40abba5cb6248d086, type: 3}
 --- !u!1 &1684306942
 GameObject:
   m_ObjectHideFlags: 0
