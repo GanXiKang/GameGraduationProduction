@@ -67,9 +67,9 @@ public class TextControl : MonoBehaviour
         textFinish = false;
         textLabel.text = "";
         print(textList[index]);
-        switch (textList[index])
+        switch (textList[index].Trim())
         {
-            case "我叫做千荷，今年18歲。":
+            case "A":
                 faceImage.sprite = littleGirl;
                 index++;
                 break;
