@@ -33,7 +33,7 @@ public class TextControl : MonoBehaviour
 
     void Update()
     {
-        if (!GameControl.isOpening && textFinish)
+        if (GameControl.isOpening && textFinish)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -66,9 +66,10 @@ public class TextControl : MonoBehaviour
     {
         textFinish = false;
         textLabel.text = "";
+        print(textList[index]);
         switch (textList[index])
         {
-            case "A":
+            case "我叫做千荷，今年18歲。":
                 faceImage.sprite = littleGirl;
                 index++;
                 break;
