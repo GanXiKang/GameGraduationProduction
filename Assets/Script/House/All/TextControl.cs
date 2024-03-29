@@ -64,8 +64,6 @@ public class TextControl : MonoBehaviour
 
     IEnumerator SetTextLabelIndexUI()
     {
-        textFinish = false;
-        textLabel.text = "";
         switch (textList[index])
         {
             case "A":
@@ -78,6 +76,8 @@ public class TextControl : MonoBehaviour
                 index++;
                 break;
         }
+        textFinish = false;
+        textLabel.text = "";
         for (int i = 0; i < textList[index].Length; i++)
         {
             textLabel.text += textList[index][i];
