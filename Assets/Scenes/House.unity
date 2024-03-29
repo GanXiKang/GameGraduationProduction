@@ -5143,7 +5143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textLabel: {fileID: 188864412}
   faceImage: {fileID: 660936846}
-  textFile: {fileID: 4900000, guid: ed32f8716fc6f064eb5de7054b86184a, type: 3}
+  textFile: {fileID: 4900000, guid: 1404e76ec831bfb4788b0c95eccd5981, type: 3}
   index: 0
   textSpend: 0.1
   littleGirl: {fileID: 21300000, guid: f4bef26f32b8ee940946f5cd0b8a7d30, type: 3}
