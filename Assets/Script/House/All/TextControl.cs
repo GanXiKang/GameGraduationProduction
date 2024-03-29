@@ -37,6 +37,7 @@ public class TextControl : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                textSpend = 0.1f;
                 StartCoroutine(SetTextLabelIndexUI());
 
                 if (index == textList.Count)
@@ -46,7 +47,14 @@ public class TextControl : MonoBehaviour
                     UIController.isContentActive = false;
                 }
             }
-        }  
+        }
+        else 
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                textSpend = 0f;
+            }
+        }
     }
 
     void GetTextFormFile(TextAsset file)
@@ -66,7 +74,6 @@ public class TextControl : MonoBehaviour
     {
         textFinish = false;
         textLabel.text = "";
-        print(textList[index]);
         switch (textList[index].Trim())
         {
             case "A":
