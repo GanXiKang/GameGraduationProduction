@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
     public GameObject[] colliderObject;
-    public static int _task = 0;
+    public static int _task;
+    public static int _chapter;
 
     bool isOnce;
 
     void Start()
     {
+        _task = 0;
+        _chapter = 1;
         isOnce = true;
     }
 
