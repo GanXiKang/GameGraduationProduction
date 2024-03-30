@@ -1200,6 +1200,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f861a8131e30144b83bbf293d587d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 47488463}
+  cameraTrans: {fileID: 1820943386}
+  chapter1PlayerPoint: {fileID: 1730217118}
+  chapter2PlayerPoint: {fileID: 1678772322}
   colliderObject:
   - {fileID: 0}
   - {fileID: 1975595112}
