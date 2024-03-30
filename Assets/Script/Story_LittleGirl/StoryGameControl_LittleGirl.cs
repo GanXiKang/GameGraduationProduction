@@ -61,6 +61,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         SceneManager.LoadScene(1);
         GameControl._day++;
         _chapter++;
+        _task = 0;
     }
 
     void StartingSettings()
