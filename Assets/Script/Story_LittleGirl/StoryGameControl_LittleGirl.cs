@@ -11,7 +11,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject[] colliderObject;
 
     public static int _task = 0;
-    public static int _chapter = 1;
+    public static int _chapter = 2;
 
     bool isOnce;
 
