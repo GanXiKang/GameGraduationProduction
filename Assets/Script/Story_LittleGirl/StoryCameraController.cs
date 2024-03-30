@@ -10,7 +10,7 @@ public class StoryCameraController : MonoBehaviour
     public static bool isFollow;
     private Vector3 velocity = Vector3.zero;
 
-    private void Start()
+    void Start()
     {
         isFollow = true;
     }
