@@ -69,8 +69,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 2:
-                player.transform.position = chapter2PlayerPoint.transform.position;
-                cameraTrans.transform.position = chapter2PlayerPoint.transform.position;
+                player.transform.position = new Vector3(43f, 3.5f, 9f);
+                //cameraTrans.transform.position = chapter2PlayerPoint.transform.position;
                 colliderObject[1].SetActive(false);
                 colliderObject[2].SetActive(false);
                 break;
