@@ -69,6 +69,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             case 2:
                 player.transform.position = chapter2PlayerPoint.transform.position;
                 cameraTrans.transform.position = chapter2PlayerPoint.transform.position;
+                colliderObject[1].SetActive(false);
+                colliderObject[2].SetActive(false);
                 break;
         }
     }
