@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
+    public GameObject player;
+    public GameObject cameraTrans;
     public GameObject chapter1PlayerPoint;
     public GameObject chapter2PlayerPoint;
     public GameObject[] colliderObject;
