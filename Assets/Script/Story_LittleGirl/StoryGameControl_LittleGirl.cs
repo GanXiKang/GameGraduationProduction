@@ -7,20 +7,19 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 {
     public GameObject player;
     public GameObject cameraTrans;
-    public GameObject chapter1PlayerPoint;
     public GameObject chapter2PlayerPoint;
     public GameObject[] colliderObject;
 
-    public static int _task;
-    public static int _chapter;
+    public static int _task = 0;
+    public static int _chapter = 1;
 
     bool isOnce;
 
     void Start()
     {
-        _task = 0;
-        _chapter = 1;
         isOnce = true;
+
+        StartingSettings();
     }
 
     void Update()
@@ -61,5 +60,16 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         GameControl._day++;
+    }
+
+    void StartingSettings()
+    {
+        switch (_chapter)
+        {
+            case 2:
+                player.transform.position = chapter2PlayerPoint.transform.position;
+                cameraTrans.transform.position = chapter2PlayerPoint.transform.position;
+                break;
+        }
     }
 }
