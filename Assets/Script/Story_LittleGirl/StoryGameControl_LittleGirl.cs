@@ -24,6 +24,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
     void Update()
     {
+        print("3:" + player.transform.position);
         if (StoryLittleGirlUIControl.isInteractionButtonActive)
         {
             if (Input.GetKeyDown(KeyCode.F))
@@ -69,12 +70,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 2:
-                print(player.transform.position);
+                print("1:" + player.transform.position);
                 player.transform.position = chapter2PlayerPoint.transform.position;
                 cameraTrans.transform.position = chapter2PlayerPoint.transform.position;
                 colliderObject[1].SetActive(false);
                 colliderObject[2].SetActive(false);
-                print(player.transform.position);
+                print("2:" + player.transform.position);
                 break;
         }
     }
