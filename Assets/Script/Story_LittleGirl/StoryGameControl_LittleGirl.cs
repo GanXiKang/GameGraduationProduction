@@ -8,6 +8,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject chapter1PlayerPoint;
     public GameObject chapter2PlayerPoint;
     public GameObject[] colliderObject;
+
     public static int _task;
     public static int _chapter;
 
