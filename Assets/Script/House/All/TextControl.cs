@@ -13,17 +13,14 @@ public class TextControl : MonoBehaviour
     public TextAsset[] textFile;
     public int index;
     public float textSpend;
+    public static int textCount = 1;
     bool textFinish;
 
     List<string> textList = new List<string>();
 
-    void Awake()
-    {
-        GetTextFormFile(textFile[1]);
-    }
-
     void OnEnable()
     {
+        GetTextFormFile(textFile[textCount]);
         StartCoroutine(SetTextLabelIndexUI());
     }
 
@@ -60,8 +57,12 @@ public class TextControl : MonoBehaviour
                 if (index == textList.Count)
                 {
                     index = 0;
-                    GameControl.isOpening = false;
+                    textCount++;
                     UIController.isContentActive = false;
+                    if (GameControl.isOpening)
+                    {
+                        GameControl.isOpening = false;
+                    }
                 }
             }
         }
