@@ -70,6 +70,7 @@ public class UIController : MonoBehaviour
             }
         }
 
+        //Œ¦Ô’¿òÔÚî^ÉÏ
         //Vector3 offset = new Vector3(0f, 300f, 0f);
         //Vector3 p = Camera.main.WorldToScreenPoint(target.position);
         //content.transform.position = p + offset;
