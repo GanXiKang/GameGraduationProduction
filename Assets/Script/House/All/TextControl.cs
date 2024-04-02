@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TextControl : MonoBehaviour
 {
     [Header("UIComponents")]
+    public Text textName;
     public Text textLabel;
 
     [Header("TextFile")]
@@ -72,12 +73,12 @@ public class TextControl : MonoBehaviour
         switch (textList[index].Trim())
         {
             case "認塞":
-
+                textName.text = "認塞";
                 index++;
                 break;
 
             case "通通":
-                
+                textName.text = "通通";
                 index++;
                 break;
         }
