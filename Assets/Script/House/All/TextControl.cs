@@ -72,11 +72,11 @@ public class TextControl : MonoBehaviour
         switch (textList[index].Trim())
         {
             case "Ç§ºÉ":
-                print("ok");
+
                 index++;
                 break;
 
-            case "B":
+            case "ÄÌÄÌ":
                 
                 index++;
                 break;
