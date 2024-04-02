@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour
 {
     public static int _day = 1;
-    public static bool isOpening;
+    public static bool isOpeningContent;
+    public static bool isSleepingContent;
 
     void Start()
     {
@@ -22,12 +23,12 @@ public class GameControl : MonoBehaviour
     {
         if (_day == 1)
         {
-            isOpening = true;
+            isOpeningContent = true;
             UIController.isContentActive = true;
         }
         else
         {
-            isOpening = false;
+            isOpeningContent = false;
         }
     }
     void InteractionButton()
@@ -42,8 +43,16 @@ public class GameControl : MonoBehaviour
                     case 1:                                                     //bed
                         CameraController.isFollow = false;
                         CameraController.isLookBed = true;
-                        UIController.isChooseStoryActive = true;
+                        UIController.isContentActive = true;
                         BedControl.isSleep = true;
+                        if (_day == 1)
+                        {
+                            isSleepingContent = true;
+                        }
+                        else
+                        {
+                            UIController.isChooseStoryActive = true;
+                        }
                         break;
 
                     case 2:                                                     //workbench

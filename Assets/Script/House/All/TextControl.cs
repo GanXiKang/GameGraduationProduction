@@ -26,7 +26,7 @@ public class TextControl : MonoBehaviour
 
     void Update()
     {
-        if (GameControl.isOpening)
+        if (GameControl.isOpeningContent || GameControl.isSleepingContent)
         {
             TextController();
         }
@@ -59,9 +59,14 @@ public class TextControl : MonoBehaviour
                     index = 0;
                     textCount++;
                     UIController.isContentActive = false;
-                    if (GameControl.isOpening)
+                    if (GameControl.isOpeningContent)
                     {
-                        GameControl.isOpening = false;
+                        GameControl.isOpeningContent = false;
+                    }
+                    if (GameControl.isSleepingContent)
+                    {
+                        GameControl.isSleepingContent = false;
+                        UIController.isChooseStoryActive = true;
                     }
                 }
             }
