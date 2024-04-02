@@ -17,9 +17,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
     void Start()
     {
-        isOnce = true;
-
-        StartingSettings();
+        chapter[_chapter].SetActive(true);
     }
 
     void Update()
@@ -58,10 +56,5 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         SceneManager.LoadScene(1);
         GameControl._day++;
         _chapter++;
-    }
-
-    void StartingSettings()
-    {
-        chapter[_chapter].SetActive(true);
     }
 }
