@@ -7,7 +7,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 {
     public GameObject player;
     public GameObject cameraTrans;
-    public GameObject chapter2PlayerPoint;
     public GameObject[] colliderObject;
 
     public static int _task = 0;
@@ -69,8 +68,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 2:
-                player.transform.position = chapter2PlayerPoint.transform.position;
-                cameraTrans.transform.position = chapter2PlayerPoint.transform.position;
                 colliderObject[1].SetActive(false);
                 colliderObject[2].SetActive(false);
                 break;
