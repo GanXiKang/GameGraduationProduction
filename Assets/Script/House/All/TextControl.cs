@@ -10,7 +10,7 @@ public class TextControl : MonoBehaviour
     public Text textLabel;
 
     [Header("TextFile")]
-    public TextAsset textFile;
+    public TextAsset[] textFile;
     public int index;
     public float textSpend;
     bool textFinish;
@@ -19,7 +19,7 @@ public class TextControl : MonoBehaviour
 
     void Awake()
     {
-        GetTextFormFile(textFile);
+        GetTextFormFile(textFile[1]);
     }
 
     void OnEnable()
@@ -29,7 +29,28 @@ public class TextControl : MonoBehaviour
 
     void Update()
     {
-        if (GameControl.isOpening && textFinish)
+        if (GameControl.isOpening)
+        {
+            TextController();
+        }
+    }
+
+    void GetTextFormFile(TextAsset file)
+    {
+        textList.Clear();
+        index = 0;
+
+        var lineDate = file.text.Split("\n");
+
+        foreach (var line in lineDate)
+        {
+            textList.Add(line);
+        }
+    }
+
+    void TextController()
+    {
+        if (textFinish)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -44,25 +65,12 @@ public class TextControl : MonoBehaviour
                 }
             }
         }
-        else 
+        else
         {
             if (Input.GetMouseButtonDown(0))
             {
                 textSpend = 0f;
             }
-        }
-    }
-
-    void GetTextFormFile(TextAsset file)
-    {
-        textList.Clear();
-        index = 0;
-
-        var lineDate = file.text.Split("\n");
-
-        foreach (var line in lineDate)
-        {
-            textList.Add(line);
         }
     }
 
