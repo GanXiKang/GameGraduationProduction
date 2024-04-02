@@ -71,8 +71,8 @@ public class TextControl : MonoBehaviour
         textLabel.text = "";
         switch (textList[index].Trim())
         {
-            case "A":
-                
+            case "Ç§ºÉ":
+                print("ok");
                 index++;
                 break;
 
