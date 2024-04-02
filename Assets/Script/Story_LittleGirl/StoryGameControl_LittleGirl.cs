@@ -8,11 +8,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject player;
     public GameObject cameraTrans;
     public GameObject[] colliderObject;
+    public GameObject[] chapter;
 
     public static int _task = 0;
     public static int _chapter = 2;
-
-    bool isOnce;
+    public static bool isChapter1Finish = false;
+    public static bool isChapter2Finish = false;
 
     void Start()
     {
@@ -45,13 +46,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             }
         }
 
-        if (_task >= 2)
+        if (_task >= 2 && !isChapter1Finish)
         {
-            if (isOnce)
-            {
-                isOnce = false;
-                Invoke("GoHouseScene", 1f);
-            }
+            isChapter1Finish = true;
+            Invoke("GoHouseScene", 1f);
         }
     }
 
@@ -60,15 +58,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         SceneManager.LoadScene(1);
         GameControl._day++;
         _chapter++;
-        _task = 0;
     }
 
     void StartingSettings()
     {
-        switch (_chapter)
-        {
-            case 2:
-                break;
-        }
+        chapter[_chapter].SetActive(true);
     }
 }
