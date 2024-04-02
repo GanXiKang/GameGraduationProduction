@@ -43,10 +43,10 @@ public class GameControl : MonoBehaviour
                     case 1:                                                     //bed
                         CameraController.isFollow = false;
                         CameraController.isLookBed = true;
-                        UIController.isContentActive = true;
                         BedControl.isSleep = true;
                         if (_day == 1)
                         {
+                            UIController.isContentActive = true;
                             isSleepingContent = true;
                         }
                         else
