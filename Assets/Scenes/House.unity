@@ -5996,12 +5996,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textLabel: {fileID: 188864412}
-  faceImage: {fileID: 0}
-  textFile: {fileID: 4900000, guid: 1404e76ec831bfb4788b0c95eccd5981, type: 3}
+  textFile: {fileID: 4900000, guid: e481ac53482ae674c87d63f3f12ddde1, type: 3}
   index: 0
   textSpend: 0.1
-  littleGirl: {fileID: 21300000, guid: f4bef26f32b8ee940946f5cd0b8a7d30, type: 3}
-  grandmother: {fileID: 21300000, guid: 9fe1186183653cb40abba5cb6248d086, type: 3}
 --- !u!1 &1684306942
 GameObject:
   m_ObjectHideFlags: 0
