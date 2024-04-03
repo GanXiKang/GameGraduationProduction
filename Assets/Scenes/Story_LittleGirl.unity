@@ -975,7 +975,7 @@ GameObject:
   - component: {fileID: 468584149}
   - component: {fileID: 468584148}
   m_Layer: 5
-  m_Name: Content_Text
+  m_Name: CharacterContent_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1096,8 +1096,6 @@ MonoBehaviour:
   interactionButton: {fileID: 187569270}
   interactionButton_text: {fileID: 2095987345}
   content: {fileID: 1777243499}
-  systemContent: {fileID: 1744874145}
-  characterContent: {fileID: 348803842}
 --- !u!1 &514095332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,6 +3413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1777243500}
+  - component: {fileID: 1777243501}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -3443,6 +3442,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -291}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1777243501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777243499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d718ce861f1a375459c6f57e673361d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  systemContent: {fileID: 1744874145}
+  characterContent: {fileID: 348803842}
+  systemTextLabel: {fileID: 1997822841}
+  characterTextLabel: {fileID: 468584148}
+  textFile:
+  - {fileID: 0}
+  - {fileID: 4900000, guid: c5d30dde8e14f3448a7e684c5365e774, type: 3}
+  - {fileID: 4900000, guid: 6855ebf85512fc34e8710ff63d1fefe4, type: 3}
+  index: 0
+  textSpend: 0.1
 --- !u!1 &1778337370
 GameObject:
   m_ObjectHideFlags: 0
@@ -4067,7 +4088,7 @@ GameObject:
   - component: {fileID: 1997822842}
   - component: {fileID: 1997822841}
   m_Layer: 5
-  m_Name: Content_Text
+  m_Name: SystemContent_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
