@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class StoryTextControl : MonoBehaviour
 {
     [Header("UIComponents")]
-    public Text textLabel;
+    public GameObject systemContent;
+    public GameObject characterContent;
+    public Text systemTextLabel;
+    public Text characterTextLabel;
 
     [Header("TextFile")]
     public TextAsset[] textFile;
@@ -14,6 +17,7 @@ public class StoryTextControl : MonoBehaviour
     public float textSpend;
     public static int textCount = 1;
     bool textFinish;
+    int whoContent;
 
     List<string> textList = new List<string>();
 
@@ -86,23 +90,34 @@ public class StoryTextControl : MonoBehaviour
     IEnumerator SetTextLabelIndexUI()
     {
         textFinish = false;
-        textLabel.text = "";
         switch (textList[index].Trim())
         {
             case "Ç§ºÉ":
-               
+                characterTextLabel.text = "";
+                systemContent.SetActive(false);
+                characterContent.SetActive(true);
                 index++;
+                whoContent = 2;
                 break;
 
             case "ÄÌÄÌ":
-                
+                systemTextLabel.text = "";
+                systemContent.SetActive(true);
+                characterContent.SetActive(false);
                 index++;
+                whoContent = 1;
                 break;
         }
         for (int i = 0; i < textList[index].Length; i++)
         {
-            textLabel.text += textList[index][i];
-
+            if (whoContent == 1)
+            {
+                systemTextLabel.text += textList[index][i];
+            }
+            else
+            {
+                characterTextLabel.text += textList[index][i];
+            }
             yield return new WaitForSeconds(textSpend);
         }
         textFinish = true;

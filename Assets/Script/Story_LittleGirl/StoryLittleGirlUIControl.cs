@@ -13,8 +13,6 @@ public class StoryLittleGirlUIControl : MonoBehaviour
 
     [Header("Content")]
     public GameObject content;
-    public GameObject systemContent;
-    public GameObject characterContent;
     public static bool isContentActive;
 
     void Start()
@@ -25,6 +23,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
     void Update()
     {
         interactionButton.SetActive(isInteractionButtonActive);
+        content.SetActive(isContentActive);
 
         //Œ¦Ô’¿òÔÚî^ÉÏ
         //Vector3 offset = new Vector3(0f, 300f, 0f);
