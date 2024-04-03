@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class StoryTextControl : MonoBehaviour
 {
     [Header("UIComponents")]
+    public Transform target;
     public GameObject systemContent;
     public GameObject characterContent;
     public Text systemTextLabel;
@@ -33,6 +34,11 @@ public class StoryTextControl : MonoBehaviour
         //{
         //    TextController();
         //}
+
+        //Œ¦Ô’¿òÔÚî^ÉÏ
+        Vector3 offset = new Vector3(0f, 300f, 0f);
+        Vector3 p = Camera.main.WorldToScreenPoint(target.position);
+        characterContent.transform.position = p + offset;
     }
 
     void GetTextFormFile(TextAsset file)
