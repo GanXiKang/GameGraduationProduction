@@ -59,15 +59,7 @@ public class TextControl : MonoBehaviour
                     index = 0;
                     textCount++;
                     UIController.isContentActive = false;
-                    if (GameControl.isOpeningContent)
-                    {
-                        GameControl.isOpeningContent = false;
-                    }
-                    if (GameControl.isSleepingContent)
-                    {
-                        GameControl.isSleepingContent = false;
-                        UIController.isChooseStoryActive = true;
-                    }
+                    JudgmentAfterTheTextEnds();
                 }
             }
         }
@@ -77,6 +69,18 @@ public class TextControl : MonoBehaviour
             {
                 textSpend = 0f;
             }
+        }
+    }
+
+    void JudgmentAfterTheTextEnds()
+    {
+        if (GameControl.isOpeningContent)
+        {
+            GameControl.isOpeningContent = false;
+        }
+        if (GameControl.isSleepingContent)
+        {
+            GameControl.isSleepingContent = false;
         }
     }
 

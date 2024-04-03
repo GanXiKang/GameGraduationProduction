@@ -9,6 +9,8 @@ public class GameControl : MonoBehaviour
     public static bool isOpeningContent;
     public static bool isSleepingContent;
 
+    bool autoLoadStoryScene = false;
+
     void Start()
     {
         Invoke("OpeningText", 1f);
@@ -17,6 +19,12 @@ public class GameControl : MonoBehaviour
     void Update()
     {
         InteractionButton();
+
+        if (autoLoadStoryScene && !isSleepingContent)
+        {
+            Story_LittleGirl();
+            autoLoadStoryScene = false;
+        }
     }
 
     void OpeningText()
@@ -48,6 +56,7 @@ public class GameControl : MonoBehaviour
                         {
                             UIController.isContentActive = true;
                             isSleepingContent = true;
+                            autoLoadStoryScene = true;
                         }
                         else
                         {
