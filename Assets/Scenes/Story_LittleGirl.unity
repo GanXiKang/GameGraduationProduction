@@ -1095,6 +1095,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionButton: {fileID: 187569270}
   interactionButton_text: {fileID: 2095987345}
+  content: {fileID: 1777243499}
+  systemContent: {fileID: 1744874145}
+  characterContent: {fileID: 348803842}
 --- !u!1 &514095332
 GameObject:
   m_ObjectHideFlags: 0
