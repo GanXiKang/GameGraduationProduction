@@ -30,10 +30,10 @@ public class StoryTextControl : MonoBehaviour
 
     void Update()
     {
-        //if (GameControl.isOpeningContent || GameControl.isSleepingContent)
-        //{
-        //    TextController();
-        //}
+        if (StoryGameControl_LittleGirl.isStartStoryContent)
+        {
+            TextController();
+        }
 
         //Œ¦Ô’¿òÔÚî^ÉÏ
         Vector3 offset = new Vector3(0f, 80f, 0f);
@@ -83,14 +83,10 @@ public class StoryTextControl : MonoBehaviour
 
     void JudgmentAfterTheTextEnds()
     {
-        //if (GameControl.isOpeningContent)
-        //{
-        //    GameControl.isOpeningContent = false;
-        //}
-        //if (GameControl.isSleepingContent)
-        //{
-        //    GameControl.isSleepingContent = false;
-        //}
+        if (StoryGameControl_LittleGirl.isStartStoryContent)
+        {
+            StoryGameControl_LittleGirl.isStartStoryContent = false;
+        }
     }
 
     IEnumerator SetTextLabelIndexUI()

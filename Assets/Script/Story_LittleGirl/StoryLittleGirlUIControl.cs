@@ -27,6 +27,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
         content.SetActive(isContentActive);
 
         ColliderObjectName();
+        ContentActiveControl();
     }
 
     void ColliderObjectName()
@@ -40,6 +41,17 @@ public class StoryLittleGirlUIControl : MonoBehaviour
             case 2:
                 interactionButton_text.text = "ÆÆÅfµÄÃ«Ã±";
                 break;
+        }
+    }
+    void ContentActiveControl()
+    {
+        if (StoryGameControl_LittleGirl.isStartStoryContent)
+        {
+            isContentActive = true;
+        }
+        else 
+        {
+            isContentActive = false;
         }
     }
 }
