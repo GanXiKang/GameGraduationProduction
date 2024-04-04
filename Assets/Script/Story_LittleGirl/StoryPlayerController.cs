@@ -39,7 +39,14 @@ public class StoryPlayerController : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        Vector2 input = value.Get<Vector2>();
-        _storyMoveInput = new Vector3(input.x, 0f, input.y);
+        if (!StoryLittleGirlUIControl.isContentActive)
+        {
+            Vector2 input = value.Get<Vector2>();
+            _storyMoveInput = new Vector3(input.x, 0f, input.y);
+        }
+        else
+        {
+            _storyMoveInput = Vector3.zero;
+        }
     }
 }
