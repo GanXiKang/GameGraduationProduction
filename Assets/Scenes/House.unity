@@ -5512,8 +5512,8 @@ MonoBehaviour:
   player: {fileID: 197810302}
   doorPoint:
   - {fileID: 0}
-  - {fileID: 488191345}
   - {fileID: 1849971115}
+  - {fileID: 488191345}
   - {fileID: 665225830}
   - {fileID: 1284703752}
 --- !u!114 &1480171939
