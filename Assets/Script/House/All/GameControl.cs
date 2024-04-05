@@ -85,19 +85,19 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 5:                                                     //gotoLivingroom
-                        player.position = doorPoint[1].position;
+                        player.position = doorPoint[2].position;                //前往對面的位置
                         break;
 
                     case 6:                                                     //gotoBedroom
-                        player.position = doorPoint[2].position;
+                        player.position = doorPoint[1].position;
                         break;
 
                     case 7:                                                     //gotoLivingroom
-                        player.position = doorPoint[3].position;
+                        player.position = doorPoint[4].position;
                         break;
 
                     case 8:                                                     //gotoOutdoor
-                        player.position = doorPoint[4].position;
+                        player.position = doorPoint[3].position;
                         break;
                 }
             }
