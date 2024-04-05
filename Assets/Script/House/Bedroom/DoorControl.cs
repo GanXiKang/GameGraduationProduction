@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class DoorControl : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (GameControl._day == 1)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }
