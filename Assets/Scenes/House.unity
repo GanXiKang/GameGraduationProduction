@@ -1965,6 +1965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488191345}
   - component: {fileID: 488191346}
+  - component: {fileID: 488191347}
   m_Layer: 0
   m_Name: Collider2
   m_TagString: Untagged
@@ -2002,12 +2003,27 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &488191347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488191344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92293d050211e5441a1738c2d7d03de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPoint: {fileID: 197810302}
+  NextPlacePoint: {fileID: 1849971115}
+  _doorNumber: 2
 --- !u!1 &498493514
 GameObject:
   m_ObjectHideFlags: 0
@@ -7109,6 +7125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1849971115}
   - component: {fileID: 1849971116}
+  - component: {fileID: 1849971117}
   m_Layer: 0
   m_Name: Collider1
   m_TagString: Untagged
@@ -7146,12 +7163,27 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1849971117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849971114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92293d050211e5441a1738c2d7d03de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPoint: {fileID: 197810302}
+  NextPlacePoint: {fileID: 488191345}
+  _doorNumber: 1
 --- !u!1 &1917188392
 GameObject:
   m_ObjectHideFlags: 0
