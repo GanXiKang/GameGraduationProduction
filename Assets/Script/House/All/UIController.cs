@@ -114,7 +114,6 @@ public class UIController : MonoBehaviour
                 break;
         }
     }
-
     void PlayerContentText()
     {
         switch (_conveyContentTextNumber)
@@ -124,18 +123,15 @@ public class UIController : MonoBehaviour
                 break;
         }
     }
-
     void CloseContent()
     {
         isContentActive = false;
         isAutoCloseContent = false;
     }
-
     void WorkbenchUI()
     {
         workbench.SetActive(CameraController.isLookWorkbench);
     }
-
     void MaterialWindowInformation()
     {
         switch (_whatDate)
@@ -159,7 +155,6 @@ public class UIController : MonoBehaviour
                 break;
         }
     }
-
     void JudgmentMakeButtonInteractable()
     {
         switch (_whatDate)
@@ -176,7 +171,6 @@ public class UIController : MonoBehaviour
                 break;
         }
     }
-
     void JudgmentFinish()
     {
         switch (_whatDate)
