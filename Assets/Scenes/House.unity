@@ -412,7 +412,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6211\u53EB\u505A\u5343\u8377\uFF0C\u4ECA\u5E7418\u6B72\u3002\u6211\u5F9E\u5C0F\u5C31\u548C\u5976\u5976\u4E00\u8D77\u4F4F\u5728\u9019\u9593\u6EAB\u99A8\u7684\u5C0F\u6728\u5C4B\u88E1\u3002"
+  m_Text: 
 --- !u!222 &188864413
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2132,7 +2132,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5343\u8377"
+  m_Text: 
 --- !u!222 &752049219
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2703,6 +2703,7 @@ MonoBehaviour:
   chooseStory: {fileID: 236709880}
   content: {fileID: 1677107056}
   target: {fileID: 197810302}
+  name_text: {fileID: 752049218}
   content_text: {fileID: 188864412}
   workbench: {fileID: 1791062033}
   storyBook: {fileID: 247843901}
