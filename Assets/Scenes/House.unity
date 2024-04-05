@@ -5509,6 +5509,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33d9d3cc033cef4f910be9a059215d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 197810302}
+  doorPoint:
+  - {fileID: 0}
+  - {fileID: 1849971115}
+  - {fileID: 488191345}
+  - {fileID: 665225830}
+  - {fileID: 1284703752}
 --- !u!114 &1480171939
 MonoBehaviour:
   m_ObjectHideFlags: 0
