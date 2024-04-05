@@ -102,6 +102,11 @@ public class GameControl : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            player.position = new Vector3(22f, 3, 6f);
+        }
     }
 
     //button
