@@ -97,19 +97,19 @@ public class UIController : MonoBehaviour
                 interactionButton_text.text = "花朵";
                 break;
 
-            case 6:
+            case 5:
                 interactionButton_text.text = "客廳";
                 break;
 
-            case 7:
+            case 6:
                 interactionButton_text.text = "房間";
                 break;
 
-            case 8:
+            case 7:
                 interactionButton_text.text = "客廳";
                 break;
 
-            case 9:
+            case 8:
                 interactionButton_text.text = "花園";
                 break;
         }
