@@ -11,6 +11,7 @@ public class GameControl : MonoBehaviour
     public static bool isNextPlace = false;
 
     public static int _day = 1;
+    public static bool isOpeningStopMove;
     public static bool isOpeningContent;
     public static bool isSleepingContent;
 
@@ -18,7 +19,11 @@ public class GameControl : MonoBehaviour
 
     void Start()
     {
-        Invoke("OpeningText", 1f);
+        if (_day == 1)
+        {
+            isOpeningStopMove = true;
+            Invoke("OpeningText", 1f);
+        }
     }
 
     void Update()
@@ -34,15 +39,9 @@ public class GameControl : MonoBehaviour
 
     void OpeningText()
     {
-        if (_day == 1)
-        {
-            isOpeningContent = true;
-            UIController.isContentActive = true;
-        }
-        else
-        {
-            isOpeningContent = false;
-        }
+        isOpeningStopMove = false;
+        isOpeningContent = true;
+        UIController.isContentActive = true;
     }
     void InteractionButton()
     {
