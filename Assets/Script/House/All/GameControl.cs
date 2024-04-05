@@ -85,7 +85,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 5:                                                     //gotoLivingroom
-                        player.position = doorPoint[2].position;                //前往對面的位置
+                        player.position = new Vector3(22f, 3, 6f);
                         break;
 
                     case 6:                                                     //gotoBedroom
