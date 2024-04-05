@@ -88,20 +88,26 @@ public class GameControl : MonoBehaviour
 
                     case 5:                                                     //gotoLivingroom
                         isNextPlace = true;
-                        player.position = doorPoint[2].position;
+                        player.position = doorPoint[2].position;                //前往對面的位置
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
                     case 6:                                                     //gotoBedroom
-                        player.position = doorPoint[1].position;
+                        isNextPlace = true;
+                        player.position = doorPoint[1].position;                
+                        Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
                     case 7:                                                     //gotoLivingroom
+                        isNextPlace = true;
                         player.position = doorPoint[4].position;
+                        Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
                     case 8:                                                     //gotoOutdoor
+                        isNextPlace = true;
                         player.position = doorPoint[3].position;
+                        Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
                 }
             }
