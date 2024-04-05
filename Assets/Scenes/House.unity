@@ -1421,9 +1421,7 @@ Transform:
   m_LocalPosition: {x: -5.7, y: 5, z: 24.49}
   m_LocalScale: {x: 6.566984, y: 10, z: 0.68134}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1849971115}
-  - {fileID: 488191345}
+  m_Children: []
   m_Father: {fileID: 1619564538}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &356661061
@@ -1983,12 +1981,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488191344}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2, z: -3}
-  m_LocalScale: {x: 0.8, y: 0.5, z: 2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.7000012, y: 3, z: 22.445984}
+  m_LocalScale: {x: 5.253587, y: 5, z: 1.3626798}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 356661060}
+  m_Father: {fileID: 1619564538}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &488191346
 BoxCollider:
@@ -5512,7 +5510,7 @@ MonoBehaviour:
   player: {fileID: 197810302}
   doorPoint:
   - {fileID: 0}
-  - {fileID: 1849971115}
+  - {fileID: 488191345}
   - {fileID: 488191345}
   - {fileID: 665225830}
   - {fileID: 1284703752}
@@ -6125,6 +6123,8 @@ Transform:
   - {fileID: 1339156713}
   - {fileID: 498493515}
   - {fileID: 356661060}
+  - {fileID: 1849971115}
+  - {fileID: 488191345}
   m_Father: {fileID: 441705030}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626772736
@@ -7282,12 +7282,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849971114}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2, z: 3}
-  m_LocalScale: {x: 0.8, y: 0.5, z: 2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.7000012, y: 3, z: 26.534027}
+  m_LocalScale: {x: 5.253587, y: 5, z: 1.3626798}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 356661060}
+  m_Father: {fileID: 1619564538}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1849971116
 BoxCollider:
