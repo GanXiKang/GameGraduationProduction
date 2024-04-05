@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
+    [Header("Door")]
     public Transform player;
     public Transform[] doorPoint;
+    public static bool isNextPlace = false;
 
     public static int _day = 1;
     public static bool isOpeningContent;
@@ -85,7 +87,9 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 5:                                                     //gotoLivingroom
-                        player.position = new Vector3(22f, 3, 6f);
+                        isNextPlace = true;
+                        player.position = doorPoint[2].position;
+                        Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
                     case 6:                                                     //gotoBedroom
@@ -102,11 +106,10 @@ public class GameControl : MonoBehaviour
                 }
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            player.position = new Vector3(22f, 3, 6f);
-        }
+    }
+    void AutoFalseisNextPlace()
+    {
+        isNextPlace = false;
     }
 
     //button

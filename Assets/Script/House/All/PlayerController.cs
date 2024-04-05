@@ -37,7 +37,11 @@ public class PlayerController : MonoBehaviour
         {
             _moveSpeed = 10f;
         }
-        //cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
+
+        if (!GameControl.isNextPlace)
+        {
+            cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
+        }
     }
 
     void OnMove(InputValue value)
