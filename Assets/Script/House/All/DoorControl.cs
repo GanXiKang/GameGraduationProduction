@@ -8,7 +8,7 @@ public class DoorControl : MonoBehaviour
     public Transform NextPlacePoint;
     public int _doorNumber;
     public static int _whoDoor;
-    public static bool isNextPlace = false;
+
 
     void Update()
     {
