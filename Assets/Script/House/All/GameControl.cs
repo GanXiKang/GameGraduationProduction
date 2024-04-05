@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
+    public Transform player;
+    public Transform[] doorPoint;
+
     public static int _day = 1;
     public static bool isOpeningContent;
     public static bool isSleepingContent;
@@ -79,6 +82,22 @@ public class GameControl : MonoBehaviour
                         FlowerControl.isDestory = true;
                         BagController.isItemSlotAcite[3] = true;
                         BagController.quantity = 1;
+                        break;
+
+                    case 5:                                                     //gotoLivingroom
+                        player.position = doorPoint[1].position;
+                        break;
+
+                    case 6:                                                     //gotoBedroom
+                        player.position = doorPoint[2].position;
+                        break;
+
+                    case 7:                                                     //gotoLivingroom
+                        player.position = doorPoint[3].position;
+                        break;
+
+                    case 8:                                                     //gotoOutdoor
+                        player.position = doorPoint[4].position;
                         break;
                 }
             }
