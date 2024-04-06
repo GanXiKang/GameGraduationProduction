@@ -11,7 +11,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject[] chapter;
 
     public static int _task = 0;
-    public static int _chapter = 1;
+    public static int _chapter = 2;
     public static bool isChapter1Finish = false;
     public static bool isChapter2Finish = false;
     public static bool isStartStoryContent = false;
