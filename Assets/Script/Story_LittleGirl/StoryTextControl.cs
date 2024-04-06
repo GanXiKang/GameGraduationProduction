@@ -66,7 +66,6 @@ public class StoryTextControl : MonoBehaviour
                 if (index == textList.Count)
                 {
                     index = 0;
-                    textCount++;
                     UIController.isContentActive = false;
                     JudgmentAfterTheTextEnds();
                 }
