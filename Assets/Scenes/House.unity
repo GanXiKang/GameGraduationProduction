@@ -4848,6 +4848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sleepPoint: {fileID: 1249810888}
   player: {fileID: 197810296}
+  bedCollider: {fileID: 0}
 --- !u!1 &1249810887
 GameObject:
   m_ObjectHideFlags: 0
@@ -6509,14 +6510,13 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 743539b110d209d40b943ec7cc013809, type: 3}
   - {fileID: 4900000, guid: 058110a283056b34a8bd081e71c94e5a, type: 3}
   - {fileID: 4900000, guid: a46d74a32cf85514a8a8b760ba490d28, type: 3}
-  - {fileID: 4900000, guid: 1615522b3a6f73e46bdc8232bb330d40, type: 3}
-  - {fileID: 4900000, guid: fbaaee40e331d6042b73fac651ca2aa1, type: 3}
-  - {fileID: 4900000, guid: 37c9c21cf8de77f409ed56a2324a6411, type: 3}
-  - {fileID: 4900000, guid: 7e6f78f25df9d9e42a565a42f48461b7, type: 3}
+  - {fileID: 4900000, guid: 4ba078e10f4f6c14cb43f17f2ce910ee, type: 3}
+  - {fileID: 4900000, guid: 1d6cece7acba73c4fb224e196b7970c6, type: 3}
+  - {fileID: 4900000, guid: d6b4c08c3c9c8a24f910491932e96370, type: 3}
+  - {fileID: 4900000, guid: 4127a4989b587a04d8d54396a2afdb73, type: 3}
   - {fileID: 4900000, guid: 6236e709b75c9fd43817839f692a3510, type: 3}
   - {fileID: 4900000, guid: 5c9bbf92e73eb804eb1a5ec9b3f1027c, type: 3}
-  - {fileID: 4900000, guid: 8e32e592aaf2e074aaab9c6734c6d7e2, type: 3}
-  - {fileID: 4900000, guid: a9d2fba2523292c439077a3f12026966, type: 3}
+  - {fileID: 4900000, guid: 025fc9e208975c84b9cfc98358458956, type: 3}
   index: 0
   textSpend: 0.1
 --- !u!1 &1684306942
