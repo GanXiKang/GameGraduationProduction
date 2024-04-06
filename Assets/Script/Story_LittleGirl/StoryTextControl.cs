@@ -92,10 +92,11 @@ public class StoryTextControl : MonoBehaviour
     IEnumerator SetTextLabelIndexUI()
     {
         textFinish = false;
+        characterTextLabel.text = "";
+        systemTextLabel.text = "";
         switch (textList[index].Trim())
         {
             case "Ç§ºÉ":
-                characterTextLabel.text = "";
                 systemContent.SetActive(false);
                 characterContent.SetActive(true);
                 index++;
@@ -103,7 +104,6 @@ public class StoryTextControl : MonoBehaviour
                 break;
 
             case "ÄÌÄÌ":
-                systemTextLabel.text = "";
                 systemContent.SetActive(true);
                 characterContent.SetActive(false);
                 index++;
