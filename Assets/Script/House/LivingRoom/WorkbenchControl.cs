@@ -56,27 +56,19 @@ public class WorkbenchControl : MonoBehaviour
 
         Drawing_CheckDrawingCompletion();
     }
-
-    bool Drawing_isWithInBoundary(Vector3 pos)
-    {
-        Bounds _bounds = boxC.bounds;
-
-        return _bounds.Contains(pos);
-    }
-
     void Drawing_CheckDrawingCompletion()
     {
         if (!isDrawingComplete)
         {
             if (_drawnArea >= _completionThreshold)
             {
+                BedControl.isNight = true;           //•º•rµÄ
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
                 Invoke("Drawing_ClearAllPencils", 2f);
             }
         }
     }
-
     void Drawing_ClearAllPencils()
     {
         for (int i = 0; i < pencils.Count; i++)
@@ -87,4 +79,15 @@ public class WorkbenchControl : MonoBehaviour
         UIController.isFinish = true;
         drawFinishText.SetActive(false);
     }
+
+    bool Drawing_isWithInBoundary(Vector3 pos)
+    {
+        Bounds _bounds = boxC.bounds;
+
+        return _bounds.Contains(pos);
+    }
+
+    
+
+    
 }
