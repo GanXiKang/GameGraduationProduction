@@ -125,5 +125,6 @@ public class GameControl : MonoBehaviour
         CameraController.isLookBed = false;
         UIController.isChooseStoryActive = false;
         BedControl.isSleep = false;
+        BedControl.isNight = false;
     }
 }
