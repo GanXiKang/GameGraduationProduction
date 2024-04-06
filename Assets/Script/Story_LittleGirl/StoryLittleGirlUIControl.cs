@@ -41,6 +41,10 @@ public class StoryLittleGirlUIControl : MonoBehaviour
             case 2:
                 interactionButton_text.text = "ÆÆÅfµÄÃ«Ã±";
                 break;
+
+            case 3:
+                interactionButton_text.text = "Ä¾²Ä";
+                break;
         }
     }
     void ContentActiveControl()
