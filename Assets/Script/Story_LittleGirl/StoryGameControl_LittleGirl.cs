@@ -46,6 +46,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         BagController.isItemSlotAcite[StoryObjectColliderControl._nowNumber] = true;
                         Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
                         break;
+
+                    case 3:                                                                    //wood
+                        BagController.isItemSlotAcite[StoryObjectColliderControl._nowNumber] = true;
+                        Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
+                        break;
                 }
             }
         }
