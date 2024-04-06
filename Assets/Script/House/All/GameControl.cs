@@ -59,6 +59,7 @@ public class GameControl : MonoBehaviour
                         if (_day == 1)
                         {
                             UIController.isContentActive = true;
+                            TextControl.textCount = 2;
                             isSleepingContent = true;
                             autoLoadStoryScene = true;
                         }

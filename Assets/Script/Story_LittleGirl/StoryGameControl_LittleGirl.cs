@@ -20,6 +20,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         chapter[_chapter].SetActive(true);
         isStartStoryContent = true;
+        if (isChapter1Finish && !isChapter2Finish)
+        {
+            StoryTextControl.textCount = 4;
+        }
     }
 
     void Update()
