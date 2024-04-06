@@ -4848,7 +4848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sleepPoint: {fileID: 1249810888}
   player: {fileID: 197810296}
-  bedCollider: {fileID: 0}
+  bedCollider: {fileID: 1613432034}
 --- !u!1 &1249810887
 GameObject:
   m_ObjectHideFlags: 0
