@@ -44,7 +44,6 @@ public class TextControl : MonoBehaviour
             textList.Add(line);
         }
     }
-
     void TextController()
     {
         if (textFinish)
@@ -70,14 +69,13 @@ public class TextControl : MonoBehaviour
             }
         }
     }
-
     void JudgmentAfterTheTextEnds()
     {
         if (GameControl.isOpeningContent)
         {
             GameControl.isOpeningContent = false;
         }
-        if (GameControl.isSleepingContent)
+        else if (GameControl.isSleepingContent)
         {
             GameControl.isSleepingContent = false;
         }
