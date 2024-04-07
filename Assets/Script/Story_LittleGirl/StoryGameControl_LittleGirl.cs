@@ -56,7 +56,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     case 4:                                                                    //insfirepoint
                         Instantiate(fireWood, fireWoodPoint.position, fireWoodPoint.rotation);
                         BagController._itemQuantity[1] -= 8;
-                        //isChapter2Finish = true;
+                        isChapter2Finish = true;
                         break;
                         
                 }
