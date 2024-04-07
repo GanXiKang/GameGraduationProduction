@@ -160,7 +160,7 @@ public class UIController : MonoBehaviour
         switch (_whatDate)
         {
             case 1:                               //Ã«ÒÂÃ«Ã±
-                if (BagController.isItemSlotAcite[1] && BagController.isItemSlotAcite[2] && BagController.isItemSlotAcite[3])
+                if (BagController.isItemSlotAcite[4] && BagController.isItemSlotAcite[5] && BagController.isItemSlotAcite[25])
                 {
                     makeButton.interactable = true;
                 }
