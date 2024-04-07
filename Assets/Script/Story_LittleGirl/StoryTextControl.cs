@@ -30,7 +30,7 @@ public class StoryTextControl : MonoBehaviour
 
     void Update()
     {
-        if (StoryGameControl_LittleGirl.isStartStoryContent)
+        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent)
         {
             TextController();
         }
