@@ -180,6 +180,21 @@ public class UIController : MonoBehaviour
                 {
                     storyBook.SetActive(true);
                     finishItemImage.SetActive(true);
+                    DeleteUsedMaterial();
+                }
+                break;
+        }
+    }
+    void DeleteUsedMaterial()
+    {
+        switch (_whatDate)
+        {
+            case 1:                              
+                if (isFinish)
+                {
+                    BagController.isItemSlotAcite[4] = false;
+                    BagController.isItemSlotAcite[5] = false;
+                    BagController.isItemSlotAcite[25] = false;
                 }
                 break;
         }
