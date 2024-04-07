@@ -9,10 +9,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject[] chapter;
     public static int _task = 0;
     public static int _chapter = 1;
+    public static bool isStartStoryContent = false;
 
     //Chapter1
     public static bool isChapter1Finish = false;
-    public static bool isStartStoryContent = false;
     public static bool isGetSweaterAndHatContent = false;
     public static bool isChapter1EndContent = false;
     public static bool isWear = false;
@@ -21,6 +21,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject fireWood;
     public Transform fireWoodPoint;
     public static bool isChapter2Finish = false;
+    public static bool isEnoughWoodContent = false;
+    public static bool isInsFireWoodContent = false;
+    public static bool isChapter2EndContent = false;
 
     void Start()
     {
