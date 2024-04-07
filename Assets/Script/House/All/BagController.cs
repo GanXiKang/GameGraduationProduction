@@ -7,10 +7,10 @@ public class BagController : MonoBehaviour
 {
     public GameObject bagUI;
     public GameObject[] itemSlot;
-    public Text quantity03_Text;
+    public Text[] quantity_Text;
 
     public static bool[] isItemSlotAcite;
-    public static int quantity;
+    public static int[] _itemQuantity;
 
     public static bool isBagActive;
 
@@ -48,7 +48,5 @@ public class BagController : MonoBehaviour
         {
             itemSlot[k].SetActive(isItemSlotAcite[k]);
         }
-
-        quantity03_Text.text = quantity.ToString();
     }
 }
