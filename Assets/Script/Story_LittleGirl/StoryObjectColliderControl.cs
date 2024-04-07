@@ -11,8 +11,20 @@ public class StoryObjectColliderControl : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            StoryLittleGirlUIControl.isInteractionButtonActive = true;
-            StoryLittleGirlUIControl._conveyColliderNumber = _serialNumber;
+            if (_serialNumber != 4)
+            {
+                StoryLittleGirlUIControl.isInteractionButtonActive = true;
+                StoryLittleGirlUIControl._conveyColliderNumber = _serialNumber;
+            }
+            else
+            {
+                if (BagController._itemQuantity[1] >= 8)
+                {
+                    StoryLittleGirlUIControl.isInteractionButtonActive = true;
+                    StoryLittleGirlUIControl._conveyColliderNumber = _serialNumber;
+                }
+            }
+            
         }
     }
 
