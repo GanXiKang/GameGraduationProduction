@@ -53,7 +53,6 @@ public class StoryTextControl : MonoBehaviour
             textList.Add(line);
         }
     }
-
     void TextController()
     {
         if (textFinish)
@@ -79,12 +78,15 @@ public class StoryTextControl : MonoBehaviour
             }
         }
     }
-
     void JudgmentAfterTheTextEnds()
     {
         if (StoryGameControl_LittleGirl.isStartStoryContent)
         {
             StoryGameControl_LittleGirl.isStartStoryContent = false;
+        }
+        else if (StoryGameControl_LittleGirl.isGetSweaterAndHatContent)
+        {
+            StoryGameControl_LittleGirl.isGetSweaterAndHatContent = false;
         }
     }
 
