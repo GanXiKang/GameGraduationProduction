@@ -30,7 +30,7 @@ public class StoryTextControl : MonoBehaviour
 
     void Update()
     {
-        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent)
+        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent || StoryGameControl_LittleGirl.isChapter1EndContent)
         {
             TextController();
         }
@@ -87,7 +87,7 @@ public class StoryTextControl : MonoBehaviour
         else if (StoryGameControl_LittleGirl.isGetSweaterAndHatContent)
         {
             StoryGameControl_LittleGirl.isGetSweaterAndHatContent = false;
-            StoryGameControl_LittleGirl.isChapter1EndContent = true;
+            StoryGameControl_LittleGirl.isWear = true;
         }
         else if (StoryGameControl_LittleGirl.isChapter1EndContent)
         {

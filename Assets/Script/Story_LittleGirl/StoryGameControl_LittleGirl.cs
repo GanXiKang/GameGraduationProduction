@@ -16,6 +16,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isChapter2Finish = false;
     public static bool isStartStoryContent = false;
     public static bool isGetSweaterAndHatContent = false;
+    public static bool isWear = false;
     public static bool isChapter1EndContent = false;
 
     void Start()
@@ -66,15 +67,20 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             }
         }
 
-        if (_task >= 2 && !isChapter1Finish && !isGetSweaterAndHatContent)
+        if (!isGetSweaterAndHatContent && _task >= 2 && !isWear)
         {
             isGetSweaterAndHatContent = true;
             StoryTextControl.textCount = 2;
         }
+        if (!isChapter1EndContent && isWear && !isChapter1Finish)
+        {
+            isChapter1EndContent = true;
+            StoryTextControl.textCount = 3;
+        }
 
         if (_chapter == 1 && isChapter1Finish)
         {
-            GoHouseScene();
+            Invoke("GoHouseScene", 1f);
         }
         if (_chapter == 2 && isChapter2Finish)
         {
