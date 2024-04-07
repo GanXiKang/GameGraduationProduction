@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject cameraTrans;
     public GameObject[] colliderObject;
     public GameObject[] chapter;
+    public GameObject fireWood;
+    public Transform fireWoodPoint;
 
     public static int _task = 0;
     public static int _chapter = 1;
@@ -52,6 +52,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         BagController._itemQuantity[1] += 5;
                         Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
                         break;
+
+                    case 4:                                                                    //insfirepoint
+                        Instantiate(fireWood, fireWoodPoint.position, fireWoodPoint.rotation);
+                        BagController._itemQuantity[1] -= 8;
+                        //isChapter2Finish = true;
+                        break;
+                        
                 }
             }
         }
@@ -59,6 +66,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         if (_task >= 2 && !isChapter1Finish)
         {
             isChapter1Finish = true;
+            Invoke("GoHouseScene", 1f);
+        }
+        if (isChapter2Finish)
+        {
             Invoke("GoHouseScene", 1f);
         }
     }
