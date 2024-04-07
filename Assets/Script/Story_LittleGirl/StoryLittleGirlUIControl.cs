@@ -54,7 +54,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
     }
     void ContentActiveControl()
     {
-        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent)
+        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent || StoryGameControl_LittleGirl.isChapter1EndContent)
         {
             isContentActive = true;
         }

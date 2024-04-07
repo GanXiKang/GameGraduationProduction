@@ -87,6 +87,12 @@ public class StoryTextControl : MonoBehaviour
         else if (StoryGameControl_LittleGirl.isGetSweaterAndHatContent)
         {
             StoryGameControl_LittleGirl.isGetSweaterAndHatContent = false;
+            StoryGameControl_LittleGirl.isChapter1EndContent = true;
+        }
+        else if (StoryGameControl_LittleGirl.isChapter1EndContent)
+        {
+            StoryGameControl_LittleGirl.isChapter1EndContent = false;
+            StoryGameControl_LittleGirl.isChapter1Finish = true;
         }
     }
 
