@@ -82,7 +82,7 @@ public class GameControl : MonoBehaviour
 
                     case 4:                                                     //flower
                         FlowerControl.isDestory = true;
-                        BagController.isItemSlotAcite[3] = true;
+                        BagController.isItemSlotAcite[25] = true;
                         break;
 
                     case 5:                                                     //gotoLivingroom
