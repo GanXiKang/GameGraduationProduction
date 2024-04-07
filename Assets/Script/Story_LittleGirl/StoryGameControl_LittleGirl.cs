@@ -84,7 +84,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         }
         if (_chapter == 2 && isChapter2Finish)
         {
-            GoHouseScene();
+            Invoke("GoHouseScene", 1f);
         }
     }
 
