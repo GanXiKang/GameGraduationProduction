@@ -28,6 +28,10 @@ public class BagController : MonoBehaviour
             {
                 isItemSlotAcite[i] = false;
             }
+            for (int t = 1; t < quantity_Text.Length; t++)
+            {
+                _itemQuantity[t] = 0;
+            }
         }
     }
 
@@ -44,13 +48,16 @@ public class BagController : MonoBehaviour
 
     void ItemSlotActive()
     {
-        for (int k = 1; k < itemSlot.Length; k++)
+        if (isBagActive)
         {
-            itemSlot[k].SetActive(isItemSlotAcite[k]);
-        }
-        for (int q = 1; q < quantity_Text.Length; q++)
-        {
-            quantity_Text[q].text = _itemQuantity[q].ToString();
+            for (int k = 1; k < itemSlot.Length; k++)
+            {
+                itemSlot[k].SetActive(isItemSlotAcite[k]);
+            }
+            //for (int q = 1; q < quantity_Text.Length; q++)
+            //{
+                quantity_Text[1].text = _itemQuantity[1].ToString();
+            //}
         }
     }
 }
