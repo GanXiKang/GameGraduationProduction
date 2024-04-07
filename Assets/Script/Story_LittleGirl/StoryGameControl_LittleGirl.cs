@@ -10,6 +10,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static int _task = 0;
     public static int _chapter = 1;
     public static bool isStartStoryContent = false;
+    bool once;
 
     //Chapter1
     public static bool isChapter1Finish = false;
@@ -36,6 +37,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         {
             StoryTextControl.textCount = 4;
         }
+        once = true;
     }
 
     void Update()
@@ -90,14 +92,15 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isChapter1EndContent = true;
                     StoryTextControl.textCount = 3;
                 }
-                if (_chapter == 1 && isChapter1Finish)
+                if (_chapter == 1 && isChapter1Finish && once)
                 {
+                    once = false;
                     Invoke("GoHouseScene", 0.5f);
                 }
                 break;
 
             case 2:
-                if (!isEnoughWoodContent && _task >= 3 && !isEnough)
+                if (!isEnoughWoodContent && _task >= 4 && !isEnough)
                 {
                     isEnough = true;
                     isEnoughWoodContent = true;
@@ -114,8 +117,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isChapter2EndContent = true;
                     StoryTextControl.textCount = 7;
                 }
-                if (_chapter == 2 && isChapter2Finish)
+                if (_chapter == 2 && isChapter2Finish && once)d
                 {
+                    once = false;
                     Invoke("GoHouseScene", 0.5f);
                 }
                 break;
@@ -125,7 +129,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     void GoHouseScene()
     {
         SceneManager.LoadScene(1);
-        GameControl._day++;
-        _chapter++;
+        GameControl._day += 1;
+        _chapter += 1;
     }
 }
