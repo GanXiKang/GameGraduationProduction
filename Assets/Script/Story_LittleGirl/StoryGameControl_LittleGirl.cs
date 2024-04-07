@@ -41,18 +41,19 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     case 1:                                                               //clothing
                         _task++;
-                        BagController.isItemSlotAcite[StoryObjectColliderControl._nowNumber] = true;
+                        BagController.isItemSlotAcite[4] = true;
                         Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
                         break;
 
                     case 2:                                                                    //hat
                         _task++;
-                        BagController.isItemSlotAcite[StoryObjectColliderControl._nowNumber] = true;
+                        BagController.isItemSlotAcite[5] = true;
                         Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
                         break;
 
                     case 3:                                                                    //wood
-                        BagController.isItemSlotAcite[StoryObjectColliderControl._nowNumber] = true;
+                        BagController.isItemSlotAcite[1] = true;
+                        BagController._itemQuantity[1] += 5;
                         Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
                         break;
                 }
