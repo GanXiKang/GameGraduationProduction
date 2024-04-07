@@ -7,17 +7,20 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 {
     public GameObject[] colliderObject;
     public GameObject[] chapter;
-    public GameObject fireWood;
-    public Transform fireWoodPoint;
-
     public static int _task = 0;
     public static int _chapter = 1;
+
+    //Chapter1
     public static bool isChapter1Finish = false;
-    public static bool isChapter2Finish = false;
     public static bool isStartStoryContent = false;
     public static bool isGetSweaterAndHatContent = false;
-    public static bool isWear = false;
     public static bool isChapter1EndContent = false;
+    public static bool isWear = false;
+
+    //Chatper2
+    public GameObject fireWood;
+    public Transform fireWoodPoint;
+    public static bool isChapter2Finish = false;
 
     void Start()
     {
@@ -67,24 +70,31 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             }
         }
 
-        if (!isGetSweaterAndHatContent && _task >= 2 && !isWear)
+        switch (_chapter)
         {
-            isGetSweaterAndHatContent = true;
-            StoryTextControl.textCount = 2;
-        }
-        if (!isChapter1EndContent && isWear && !isChapter1Finish)
-        {
-            isChapter1EndContent = true;
-            StoryTextControl.textCount = 3;
-        }
+            case 1:
+                if (!isGetSweaterAndHatContent && _task >= 2 && !isWear)
+                {
+                    isGetSweaterAndHatContent = true;
+                    StoryTextControl.textCount = 2;
+                }
+                if (!isChapter1EndContent && isWear && !isChapter1Finish)
+                {
+                    isChapter1EndContent = true;
+                    StoryTextControl.textCount = 3;
+                }
+                if (_chapter == 1 && isChapter1Finish)
+                {
+                    Invoke("GoHouseScene", 1f);
+                }
+                break;
 
-        if (_chapter == 1 && isChapter1Finish)
-        {
-            Invoke("GoHouseScene", 1f);
-        }
-        if (_chapter == 2 && isChapter2Finish)
-        {
-            Invoke("GoHouseScene", 1f);
+            case 2:
+                if (_chapter == 2 && isChapter2Finish)
+                {
+                    Invoke("GoHouseScene", 1f);
+                }
+                break;
         }
     }
 
