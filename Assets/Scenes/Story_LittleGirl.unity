@@ -1821,6 +1821,26 @@ MonoBehaviour:
   - {fileID: 125702945}
   - {fileID: 1001439073}
   - {fileID: 533263177}
+  - {fileID: 1208976174}
+  - {fileID: 1903800703}
+  - {fileID: 818058194}
+  - {fileID: 932970911}
+  - {fileID: 85429021}
+  - {fileID: 692913899}
+  - {fileID: 905332195}
+  - {fileID: 996227843}
+  - {fileID: 390555185}
+  - {fileID: 305251028}
+  - {fileID: 1724032462}
+  - {fileID: 1628964543}
+  - {fileID: 1829899185}
+  - {fileID: 1813324994}
+  - {fileID: 1624039984}
+  quantity_Text:
+  - {fileID: 0}
+  - {fileID: 1587567781}
+  - {fileID: 348788716}
+  - {fileID: 1849629376}
 --- !u!1 &734193279
 GameObject:
   m_ObjectHideFlags: 0
