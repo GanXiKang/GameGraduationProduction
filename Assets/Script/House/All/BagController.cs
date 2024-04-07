@@ -48,5 +48,9 @@ public class BagController : MonoBehaviour
         {
             itemSlot[k].SetActive(isItemSlotAcite[k]);
         }
+        for (int q = 1; q < quantity_Text.Length; q++)
+        {
+            quantity_Text[q].text = _itemQuantity[q].ToString();
+        }
     }
 }
