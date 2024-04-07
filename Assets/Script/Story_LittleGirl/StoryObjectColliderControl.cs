@@ -11,7 +11,7 @@ public class StoryObjectColliderControl : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (_serialNumber != 4)
+            if (_serialNumber != 5)
             {
                 StoryLittleGirlUIControl.isInteractionButtonActive = true;
                 StoryLittleGirlUIControl._conveyColliderNumber = _serialNumber;

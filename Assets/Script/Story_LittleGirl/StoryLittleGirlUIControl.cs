@@ -43,10 +43,11 @@ public class StoryLittleGirlUIControl : MonoBehaviour
                 break;
 
             case 3:
+            case 4:
                 interactionButton_text.text = "д╬╡д";
                 break;
 
-            case 4:
+            case 5:
                 interactionButton_text.text = "ио╩П";
                 break;
         }

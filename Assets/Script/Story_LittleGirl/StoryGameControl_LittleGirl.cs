@@ -48,12 +48,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         break;
 
                     case 3:                                                                    //wood
+                    case 4:
                         BagController.isItemSlotAcite[1] = true;
                         BagController._itemQuantity[1] += 5;
                         Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
                         break;
 
-                    case 4:                                                                    //insfirepoint
+                    case 5:                                                                    //insfirepoint
                         Instantiate(fireWood, fireWoodPoint.position, fireWoodPoint.rotation);
                         BagController._itemQuantity[1] -= 8;
                         isChapter2Finish = true;
