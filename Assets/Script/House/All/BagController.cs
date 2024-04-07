@@ -20,10 +20,10 @@ public class BagController : MonoBehaviour
        
         if (MenuGameControl.isNewGameModel)
         {
-            print("ok");
             MenuGameControl.isNewGameModel = false;
 
             isItemSlotAcite = new bool[itemSlot.Length];
+            _itemQuantity = new int[quantity_Text.Length];
 
             for (int i = 0; i < itemSlot.Length; i++)
             {
@@ -32,7 +32,6 @@ public class BagController : MonoBehaviour
             for (int t = 1; t < quantity_Text.Length; t++)
             {
                 _itemQuantity[t] = 0;
-                print("yes");
             }
         }
     }
@@ -56,12 +55,10 @@ public class BagController : MonoBehaviour
             {
                 itemSlot[k].SetActive(isItemSlotAcite[k]);
             }
-            print(quantity_Text.Length);
-            print(_itemQuantity[1]);
-            //for (int q = 1; q < quantity_Text.Length; q++)
-            //{
-            //    quantity_Text[1].text = _itemQuantity[1].ToString();
-            //}
+            for (int q = 1; q < quantity_Text.Length; q++)
+            {
+                quantity_Text[1].text = _itemQuantity[1].ToString();
+            }
         }
     }
 }
