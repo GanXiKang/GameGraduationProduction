@@ -1801,9 +1801,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 1345698618}
   - {fileID: 639973674}
-  fireWood: {fileID: 7601533312227075182, guid: c87c6d39091622e4f95c9d08f6e946e0,
+  pileWood: {fileID: 7601533312227075182, guid: c87c6d39091622e4f95c9d08f6e946e0,
     type: 3}
-  fireWoodPoint: {fileID: 1132585153}
+  pileWoodPoint: {fileID: 1132585153}
 --- !u!114 &718922188
 MonoBehaviour:
   m_ObjectHideFlags: 0
