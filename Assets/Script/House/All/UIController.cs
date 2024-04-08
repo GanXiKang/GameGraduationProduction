@@ -122,7 +122,7 @@ public class UIController : MonoBehaviour
                 content_text.text = "有很多書";
                 break;
         }
-    }
+    }  //暫時的
     void CloseContent()
     {
         isContentActive = false;
