@@ -5,17 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
+    public static int _day = 1;
+    bool autoLoadStoryScene = false;
+
     [Header("Door")]
     public Transform player;
     public Transform[] doorPoint;
     public static bool isNextPlace = false;
 
-    public static int _day = 1;
+    //Content
     public static bool isOpeningStopMove;
     public static bool isOpeningContent;
     public static bool isSleepingContent;
-
-    bool autoLoadStoryScene = false;
+    public static bool isFirstOpenBag = true;
+    public static bool isOpenBagContent;
+    public static bool isFirstOpenWorkbench = true;
+    public static bool isOpenWorkbenchContent;
 
     void Start()
     {
@@ -88,6 +93,13 @@ public class GameControl : MonoBehaviour
                     case 2:                                                     //workbench
                         CameraController.isFollow = false;
                         CameraController.isLookWorkbench = true;
+                        if (_day == 2 && isFirstOpenWorkbench)
+                        {
+                            isFirstOpenWorkbench = false;
+                            GameControl.isOpenWorkbenchContent = true;
+                            TextControl.textCount = 6;
+                            UIController.isContentActive = true;
+                        }
                         break;
 
                     case 3:                                                     //cabinet
