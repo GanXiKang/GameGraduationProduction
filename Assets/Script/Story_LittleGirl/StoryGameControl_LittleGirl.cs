@@ -19,8 +19,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isWear = false;
 
     //Chatper2
-    public GameObject fireWood;
-    public Transform fireWoodPoint;
+    public GameObject pileWood;
+    public Transform pileWoodPoint;
     public static bool isChapter2Finish = false;
     public static bool isEnoughWoodContent = false;
     public static bool isInsFireWoodContent = false;
@@ -70,7 +70,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         break;
 
                     case 5:                                                                    //insfirepoint
-                        Instantiate(fireWood, fireWoodPoint.position, fireWoodPoint.rotation);
+                        Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
                         BagController._itemQuantity[1] -= 8;
                         isIgnite = true;
                         break;
