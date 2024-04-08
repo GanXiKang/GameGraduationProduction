@@ -117,7 +117,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isChapter2EndContent = true;
                     StoryTextControl.textCount = 7;
                 }
-                if (_chapter == 2 && isChapter2Finish && once)d
+                if (_chapter == 2 && isChapter2Finish && once)
                 {
                     once = false;
                     Invoke("GoHouseScene", 0.5f);
