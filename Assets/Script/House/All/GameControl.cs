@@ -21,6 +21,7 @@ public class GameControl : MonoBehaviour
     public static bool isOpenBagContent;
     public static bool isFirstOpenWorkbench = true;
     public static bool isOpenWorkbenchContent;
+    public static bool isFinishSweaterContent;
 
     void Start()
     {
@@ -77,15 +78,24 @@ public class GameControl : MonoBehaviour
                         CameraController.isFollow = false;
                         CameraController.isLookBed = true;
                         BedControl.isSleep = true;
-                        if (_day == 1)
+                        switch (_day)
                         {
-                            UIController.isContentActive = true;
-                            TextControl.textCount = 2;
-                            isSleepingContent = true;
-                            autoLoadStoryScene = true;
+                            case 1:
+                                UIController.isContentActive = true;
+                                TextControl.textCount = 2;
+                                isSleepingContent = true;
+                                autoLoadStoryScene = true;
+                                break;
+
+                            case 2:
+                                UIController.isContentActive = true;
+                                TextControl.textCount = 8;
+                                isSleepingContent = true;
+                                autoLoadStoryScene = true;
+                                break;
                         }
-                        else
-                        {
+                        if(!autoLoadStoryScene)
+                        { 
                             UIController.isChooseStoryActive = true;
                         }
                         break;
@@ -95,10 +105,10 @@ public class GameControl : MonoBehaviour
                         CameraController.isLookWorkbench = true;
                         if (_day == 2 && isFirstOpenWorkbench)
                         {
-                            isFirstOpenWorkbench = false;
-                            GameControl.isOpenWorkbenchContent = true;
-                            TextControl.textCount = 6;
                             UIController.isContentActive = true;
+                            TextControl.textCount = 6;
+                            isFirstOpenWorkbench = false;
+                            isOpenWorkbenchContent = true;
                         }
                         break;
 
