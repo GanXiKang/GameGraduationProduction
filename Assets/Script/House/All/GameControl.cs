@@ -19,11 +19,7 @@ public class GameControl : MonoBehaviour
 
     void Start()
     {
-        if (_day == 1)
-        {
-            isOpeningStopMove = true;
-            Invoke("OpeningText", 1f);
-        }
+        DayStartContent();
     }
 
     void Update()
@@ -37,6 +33,26 @@ public class GameControl : MonoBehaviour
         }
     }
 
+    void DayStartContent()
+    {
+        isOpeningStopMove = true;
+        switch (_day)
+        {
+            case 1:
+                Invoke("OpeningText", 1f);
+                break;
+
+            case 2:
+                Invoke("OpeningText", 1f);
+                TextControl.textCount = 3;
+                break;
+
+            case 3:
+                Invoke("OpeningText", 1f);
+                TextControl.textCount = 9;
+                break;
+        }
+    }
     void OpeningText()
     {
         isOpeningStopMove = false;
