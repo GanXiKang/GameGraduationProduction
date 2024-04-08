@@ -65,6 +65,12 @@ public class WorkbenchControl : MonoBehaviour
                 BedControl.isNight = true;           //•º•rµÄ
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
+                if (GameControl._day == 2)
+                {
+                    UIController.isContentActive = true;
+                    TextControl.textCount = 7;
+                    GameControl.isFinishSweaterContent = true;
+                }
                 Invoke("Drawing_ClearAllPencils", 2f);
             }
         }
