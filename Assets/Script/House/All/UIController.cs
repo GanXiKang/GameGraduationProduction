@@ -71,7 +71,6 @@ public class UIController : MonoBehaviour
         }
 
         ColliderObjectName();
-        PlayerContentText();
         MaterialWindowInformation();
         JudgmentMakeButtonInteractable();
         JudgmentFinish();
@@ -114,15 +113,6 @@ public class UIController : MonoBehaviour
                 break;
         }
     }
-    void PlayerContentText()
-    {
-        switch (_conveyContentTextNumber)
-        {
-            case 1:
-                content_text.text = "有很多書";
-                break;
-        }
-    }  //暫時的
     void CloseContent()
     {
         isContentActive = false;

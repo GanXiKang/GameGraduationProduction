@@ -113,9 +113,6 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 3:                                                     //cabinet
-                        UIController.isContentActive = true;
-                        UIController.isAutoCloseContent = true;
-                        UIController._conveyContentTextNumber = 1;
                         break;
 
                     case 4:                                                     //flower
