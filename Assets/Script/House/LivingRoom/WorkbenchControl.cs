@@ -92,8 +92,4 @@ public class WorkbenchControl : MonoBehaviour
 
         return _bounds.Contains(pos);
     }
-
-    
-
-    
 }
