@@ -28,7 +28,7 @@ public class GameControl : MonoBehaviour
 
     void Start()
     {
-        DayStartContent();
+        DayStart();
     }
 
     void Update()
@@ -42,7 +42,7 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    void DayStartContent()
+    void DayStart()
     {
         isOpeningStopMove = true;
         switch (_day)
@@ -59,6 +59,7 @@ public class GameControl : MonoBehaviour
             case 3:
                 Invoke("OpeningText", 1f);
                 TextControl.textCount = 9;
+                colliderObject[1].SetActive(true);
                 break;
         }
     }
