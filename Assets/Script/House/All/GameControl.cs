@@ -146,6 +146,11 @@ public class GameControl : MonoBehaviour
                         player.position = doorPoint[3].position;
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
+
+                    case 9:                                                     //storybook_crystal
+                        Destroy(colliderObject[1]);
+                        BagController.isItemSlotAcite[21] = true;
+                        break;
                 }
             }
         }

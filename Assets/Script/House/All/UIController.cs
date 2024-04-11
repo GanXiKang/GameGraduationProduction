@@ -111,6 +111,10 @@ public class UIController : MonoBehaviour
             case 8:
                 interactionButton_text.text = "»¨ˆ@";
                 break;
+
+            case 9:
+                interactionButton_text.text = "¹ÊÊÂ•ø";
+                break;
         }
     }
     void CloseContent()
