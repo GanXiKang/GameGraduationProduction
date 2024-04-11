@@ -8,6 +8,9 @@ public class GameControl : MonoBehaviour
     public static int _day = 1;
     bool autoLoadStoryScene = false;
 
+    [Header("Object")]
+    public GameObject[] colliderObject;
+
     [Header("Door")]
     public Transform player;
     public Transform[] doorPoint;
