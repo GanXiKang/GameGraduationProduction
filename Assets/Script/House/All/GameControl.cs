@@ -46,7 +46,6 @@ public class GameControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F11))                  //暫時放這 未來做setting系統在移
         {
-            print("OK");
             isFullScreen = !isFullScreen;
             Screen.fullScreen = isFullScreen;
         }
