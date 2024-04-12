@@ -26,6 +26,9 @@ public class GameControl : MonoBehaviour
     public static bool isOpenWorkbenchContent;
     public static bool isFinishSweaterContent;
 
+
+    bool isFullScreen;
+
     void Start()
     {
         DayStart();
@@ -39,6 +42,13 @@ public class GameControl : MonoBehaviour
         {
             Story_LittleGirl();
             autoLoadStoryScene = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.F11))                  //暫時放這 未來做setting系統在移
+        {
+            print("OK");
+            isFullScreen = !isFullScreen;
+            Screen.fullScreen = isFullScreen;
         }
     }
 
