@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class TaskController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject taskUI;
+
+    bool isTaskActive;
+
     void Start()
     {
-        
+        isTaskActive = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        taskUI.SetActive(isTaskActive);
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            isTaskActive = !isTaskActive;
+        }
     }
 }
