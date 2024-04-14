@@ -17,9 +17,12 @@ public class TaskController : MonoBehaviour
     {
         taskUI.SetActive(isTaskActive);
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (!UIController.isContentActive || GameControl._day == 1)
         {
-            isTaskActive = !isTaskActive;
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                isTaskActive = !isTaskActive;
+            }
         }
     }
 }

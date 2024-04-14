@@ -41,15 +41,18 @@ public class BagController : MonoBehaviour
         bagUI.SetActive(isBagActive);
         ItemSlotActive();
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (!UIController.isContentActive)
         {
-            isBagActive = !isBagActive;
-            if (GameControl._day == 2 && GameControl.isFirstOpenBag)
+            if (Input.GetKeyDown(KeyCode.B))
             {
-                UIController.isContentActive = true;
-                TextControl.textCount = 4;
-                GameControl.isFirstOpenBag = false;
-                GameControl.isOpenBagContent = true;
+                isBagActive = !isBagActive;
+                if (GameControl._day == 2 && GameControl.isFirstOpenBag)
+                {
+                    UIController.isContentActive = true;
+                    TextControl.textCount = 4;
+                    GameControl.isFirstOpenBag = false;
+                    GameControl.isOpenBagContent = true;
+                }
             }
         }
     }
