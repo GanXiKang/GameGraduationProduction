@@ -17,7 +17,7 @@ public class TaskController : MonoBehaviour
     {
         taskUI.SetActive(isTaskActive);
 
-        if (!UIController.isContentActive && GameControl._day != 1)
+        if (!UIController.isContentActive && !BagController.isBagActive && GameControl._day != 1)
         {
             if (Input.GetKeyDown(KeyCode.T))
             {

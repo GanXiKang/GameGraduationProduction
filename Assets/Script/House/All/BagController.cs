@@ -41,7 +41,7 @@ public class BagController : MonoBehaviour
         bagUI.SetActive(isBagActive);
         ItemSlotActive();
 
-        if (!UIController.isContentActive && GameControl._day != 1)
+        if (!UIController.isContentActive && !TaskController.isTaskActive && GameControl._day != 1)
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
