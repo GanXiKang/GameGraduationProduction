@@ -6780,6 +6780,7 @@ GameObject:
   - component: {fileID: 1480171938}
   - component: {fileID: 1480171939}
   - component: {fileID: 1480171940}
+  - component: {fileID: 1480171941}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -6889,6 +6890,19 @@ MonoBehaviour:
   insFlowerPoint: {fileID: 1137546491}
   flowerPerfab: {fileID: 253929770003099472, guid: 680e7fc90c5912140be1f0ef59cfd63c,
     type: 3}
+--- !u!114 &1480171941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480171936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f761d47e0f19794fabc23373c365d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskUI: {fileID: 1766127584}
 --- !u!1 &1488920927
 GameObject:
   m_ObjectHideFlags: 0
