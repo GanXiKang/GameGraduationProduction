@@ -126,6 +126,11 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 3:                                                     //cabinet
+                        if (_day == 3)
+                        {
+                            UIController.isContentActive = true;
+                            TextControl.textCount = 10;
+                        }
                         break;
 
                     case 4:                                                     //flower
