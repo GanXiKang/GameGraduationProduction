@@ -35,13 +35,15 @@ public class TaskController : MonoBehaviour
         switch (_taskNumber)
         {
             case 1:
-                taskText.text = "上床睡覺";
+                taskText.text = "檢查背包";
                 break;
 
             case 2:
+                taskText.text = "查看工作臺";
                 break;
 
             case 3:
+                taskText.text = "到花園采取顔料";
                 break;
         }
     }
