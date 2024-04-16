@@ -26,7 +26,9 @@ public class TextControl : MonoBehaviour
 
     void Update()
     {
-        if (GameControl.isOpeningContent || GameControl.isSleepingContent || GameControl.isOpenBagContent || GameControl.isOpenWorkbenchContent || GameControl.isFinishSweaterContent || GameControl.isCheckStoryBookContent || GameControl.isFindStoryBookContent)
+        if (GameControl.isOpeningContent || GameControl.isSleepingContent || GameControl.isOpenBagContent || 
+            GameControl.isOpenWorkbenchContent || GameControl.isFinishSweaterContent || GameControl.isCheckStoryBookContent || 
+            GameControl.isFindStoryBookContent)
         {
             TextController();
         }
@@ -90,6 +92,10 @@ public class TextControl : MonoBehaviour
         else if (GameControl.isFinishSweaterContent)
         {
             GameControl.isFinishSweaterContent = false;
+        }
+        else if (GameControl.isFindStoryBookContent)
+        {
+            GameControl.isFindStoryBookContent = false;
         }
     }
 
