@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story_LittleGirl.unity
     guid: ea20a7d4acb0796449e8b15d65ab34fa
+  - enabled: 1
+    path: Assets/Scenes/Story_Crystal.unity
+    guid: 26a20c45b14412f43a0abc67b0db52cc
   m_configObjects: {}
