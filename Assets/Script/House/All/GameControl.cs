@@ -25,6 +25,8 @@ public class GameControl : MonoBehaviour
     public static bool isFirstOpenWorkbench = true;
     public static bool isOpenWorkbenchContent;
     public static bool isFinishSweaterContent;
+    public static bool isCheckStoryBookContent = false;
+    public static bool isFindStoryBookContent;
 
 
     bool isFullScreen;
@@ -126,8 +128,9 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 3:                                                     //cabinet
-                        if (_day == 3)
+                        if (_day == 3 && !isCheckStoryBookContent)
                         {
+                            isCheckStoryBookContent = true;
                             UIController.isContentActive = true;
                             TextControl.textCount = 10;
                         }
@@ -163,6 +166,9 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 9:                                                     //storybook_crystal
+                        isFindStoryBookContent = true;
+                        UIController.isContentActive = true;
+                        TextControl.textCount = 11;
                         Destroy(colliderObject[1]);
                         BagController.isItemSlotAcite[21] = true;
                         break;
