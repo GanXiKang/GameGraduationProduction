@@ -42,7 +42,19 @@ public class GameControl : MonoBehaviour
 
         if (autoLoadStoryScene && !isSleepingContent)
         {
-            Story_LittleGirl();
+            switch (_day)
+            {
+                case 1:
+                case 2:
+                    Story_LittleGirl();
+                    break;
+
+                case 3:
+                    Story_Crystal()
+                    break;
+            
+            }
+            
             autoLoadStoryScene = false;
         }
 
@@ -105,6 +117,13 @@ public class GameControl : MonoBehaviour
                             case 2:
                                 UIController.isContentActive = true;
                                 TextControl.textCount = 8;
+                                isSleepingContent = true;
+                                autoLoadStoryScene = true;
+                                break;
+
+                            case 3:
+                                UIController.isContentActive = true;
+                                TextControl.textCount = 13;
                                 isSleepingContent = true;
                                 autoLoadStoryScene = true;
                                 break;
@@ -185,6 +204,15 @@ public class GameControl : MonoBehaviour
     public void Story_LittleGirl()
     {
         SceneManager.LoadScene(2);
+        CameraController.isFollow = true;
+        CameraController.isLookBed = false;
+        UIController.isChooseStoryActive = false;
+        BedControl.isSleep = false;
+        BedControl.isNight = false;
+    }
+    public void Story_Crystal()
+    {
+        SceneManager.LoadScene(3);
         CameraController.isFollow = true;
         CameraController.isLookBed = false;
         UIController.isChooseStoryActive = false;
