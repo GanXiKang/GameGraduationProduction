@@ -117,6 +117,11 @@ public class UIController : MonoBehaviour
                 break;
         }
     }
+    void CloseContent()
+    {
+        isContentActive = false;
+        isAutoCloseContent = false;
+    }
     void WorkbenchUI()
     {
         workbench.SetActive(CameraController.isLookWorkbench);
