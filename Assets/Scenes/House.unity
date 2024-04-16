@@ -6903,6 +6903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskUI: {fileID: 1766127584}
+  taskText: {fileID: 976034454}
 --- !u!1 &1488920927
 GameObject:
   m_ObjectHideFlags: 0
