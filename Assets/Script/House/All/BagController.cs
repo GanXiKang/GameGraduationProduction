@@ -52,7 +52,7 @@ public class BagController : MonoBehaviour
                     TextControl.textCount = 4;
                     GameControl.isFirstOpenBag = false;
                     GameControl.isOpenBagContent = true;
-                    TaskController._taskNumber++;
+                    TaskController._taskNumber = 2;
                 }
             }
         }
