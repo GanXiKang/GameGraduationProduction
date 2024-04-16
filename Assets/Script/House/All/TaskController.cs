@@ -9,7 +9,7 @@ public class TaskController : MonoBehaviour
     public Text taskText;
 
     public static bool isTaskActive;
-    public static int _taskNumber;
+    public static int _taskNumber = 1;
 
     void Start()
     {
@@ -35,6 +35,7 @@ public class TaskController : MonoBehaviour
         switch (_taskNumber)
         {
             case 1:
+                taskText.text = "ÉÏ´²Ë¯ÓX";
                 break;
 
             case 2:
