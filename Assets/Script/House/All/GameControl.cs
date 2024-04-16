@@ -143,6 +143,7 @@ public class GameControl : MonoBehaviour
                             TextControl.textCount = 6;
                             isFirstOpenWorkbench = false;
                             isOpenWorkbenchContent = true;
+                            TaskController._taskNumber++;
                         }
                         break;
 
