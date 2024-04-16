@@ -50,7 +50,7 @@ public class GameControl : MonoBehaviour
                     break;
 
                 case 3:
-                    Story_Crystal()
+                    Story_Crystal();
                     break;
             
             }
