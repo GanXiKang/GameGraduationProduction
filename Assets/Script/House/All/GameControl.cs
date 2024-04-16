@@ -190,6 +190,7 @@ public class GameControl : MonoBehaviour
                         TextControl.textCount = 11;
                         Destroy(colliderObject[1]);
                         BagController.isItemSlotAcite[21] = true;
+                        BedControl.isNight = true;
                         break;
                 }
             }
