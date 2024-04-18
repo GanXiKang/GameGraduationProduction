@@ -6,7 +6,7 @@ public class DoorControl : MonoBehaviour
 {
     public GameObject[] door;
 
-    void Start()
+    void FixedUpdate()
     {
         switch (GameControl._day)
         {
