@@ -2450,6 +2450,7 @@ GameObject:
   - component: {fileID: 488191345}
   - component: {fileID: 488191346}
   - component: {fileID: 488191347}
+  - component: {fileID: 488191348}
   m_Layer: 0
   m_Name: Collider6
   m_TagString: Untagged
@@ -2506,6 +2507,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 6
+--- !u!114 &488191348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488191344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92293d050211e5441a1738c2d7d03de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorNumber: 2
 --- !u!1 &498493514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,6 +2855,7 @@ GameObject:
   - component: {fileID: 665225830}
   - component: {fileID: 665225831}
   - component: {fileID: 665225832}
+  - component: {fileID: 665225833}
   m_Layer: 0
   m_Name: Collider7
   m_TagString: Untagged
@@ -2897,6 +2912,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 7
+--- !u!114 &665225833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665225829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92293d050211e5441a1738c2d7d03de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorNumber: 3
 --- !u!1 &668006304
 GameObject:
   m_ObjectHideFlags: 0
@@ -6041,6 +6069,7 @@ GameObject:
   - component: {fileID: 1284703752}
   - component: {fileID: 1284703753}
   - component: {fileID: 1284703754}
+  - component: {fileID: 1284703755}
   m_Layer: 0
   m_Name: Collider8
   m_TagString: Untagged
@@ -6097,6 +6126,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 8
+--- !u!114 &1284703755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284703751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92293d050211e5441a1738c2d7d03de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorNumber: 4
 --- !u!1 &1290623674
 GameObject:
   m_ObjectHideFlags: 0
@@ -8863,6 +8905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92293d050211e5441a1738c2d7d03de5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorNumber: 1
 --- !u!1 &1880811746
 GameObject:
   m_ObjectHideFlags: 0
