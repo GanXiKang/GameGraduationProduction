@@ -15,13 +15,20 @@ public class DoorControl : MonoBehaviour
                 break;
 
             case 2:
-                if (TaskController._taskNumber >= 3)
+                switch (TaskController._taskNumber)
                 {
-                    door[4].SetActive(true);
-                }
-                else
-                {
-                    door[4].SetActive(false);
+                    case 1:
+                        door[1].SetActive(false);
+                        break;
+
+                    case 2:
+                        door[1].SetActive(true);
+                        door[4].SetActive(false);
+                        break;
+
+                    case 3:
+                        door[4].SetActive(true);
+                        break;
                 }
                 break;
         }
