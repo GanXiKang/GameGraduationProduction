@@ -21,7 +21,7 @@ public class DoorControl : MonoBehaviour
                 }
                 else
                 {
-                    door[4].SetActive(true);
+                    door[4].SetActive(false);
                 }
                 break;
         }
