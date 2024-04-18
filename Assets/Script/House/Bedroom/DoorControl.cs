@@ -11,11 +11,14 @@ public class DoorControl : MonoBehaviour
         switch (GameControl._day)
         {
             case 1:
-                this.gameObject.SetActive(false);
+                if (doorNumber == 1)
+                {
+                    this.gameObject.SetActive(false);
+                }
                 break;
 
             case 2:
-                if (doorNumber == 3)
+                if (doorNumber == 4)
                 {
                     if (TaskController._taskNumber <= 2)
                     {
