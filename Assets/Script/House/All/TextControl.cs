@@ -118,7 +118,7 @@ public class TextControl : MonoBehaviour
         for (int i = 0; i < textList[index].Length; i++)
         {
             textLabel.text += textList[index][i];
-            textLabel.color = Color.blue;
+            
             yield return new WaitForSeconds(textSpend);
         }
         textFinish = true;
