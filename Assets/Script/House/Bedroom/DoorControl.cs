@@ -4,30 +4,24 @@ using UnityEngine;
 
 public class DoorControl : MonoBehaviour
 {
-    public int doorNumber;
+    public GameObject[] door;
 
     void Start()
     {
         switch (GameControl._day)
         {
             case 1:
-                if (doorNumber == 1)
-                {
-                    this.gameObject.SetActive(false);
-                }
+                door[1].SetActive(false);
                 break;
 
             case 2:
-                if (doorNumber == 4)
+                if (TaskController._taskNumber >= 3)
                 {
-                    if (TaskController._taskNumber <= 2)
-                    {
-                        this.gameObject.SetActive(false);
-                    }
-                    else
-                    {
-                        this.gameObject.SetActive(true);
-                    }
+                    door[4].SetActive(true);
+                }
+                else
+                {
+                    door[4].SetActive(true);
                 }
                 break;
         }
