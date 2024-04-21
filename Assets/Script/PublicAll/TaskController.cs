@@ -23,7 +23,7 @@ public class TaskController : MonoBehaviour
     void Update()
     {
         taskUI.SetActive(isTaskActive);
-        TaskTextControl();
+        taskText.text = taskList[_taskNumber];
 
         if (!UIController.isContentActive && !BagController.isBagActive && GameControl._day != 1)
         {
@@ -42,23 +42,5 @@ public class TaskController : MonoBehaviour
         {
             taskList.Add(line);
         }
-    }
-    void TaskTextControl()
-    {
-        taskText.text = taskList[_taskNumber];
-        //switch (_taskNumber)
-        //{
-        //    case 1:
-        //        taskText.text = "檢查背包";
-        //        break;
-
-        //    case 2:
-        //        taskText.text = "查看工作臺";
-        //        break;
-
-        //    case 3:
-        //        taskText.text = "到花園采取顔料";
-        //        break;
-        //}
     }
 }
