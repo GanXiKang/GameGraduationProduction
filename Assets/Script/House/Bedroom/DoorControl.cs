@@ -15,20 +15,21 @@ public class DoorControl : MonoBehaviour
                 break;
 
             case 2:
-                switch (TaskController._taskNumber)
+                if (GameControl.isFirstOpenBag)
                 {
-                    case 1:
-                        door[1].SetActive(false);
-                        break;
-
-                    case 2:
-                        door[1].SetActive(true);
-                        door[4].SetActive(false);
-                        break;
-
-                    case 3:
-                        door[4].SetActive(true);
-                        break;
+                    door[1].SetActive(false);
+                }
+                else 
+                {
+                    door[1].SetActive(true);
+                }
+                if (GameControl.isFirstOpenWorkbench)
+                {
+                    door[4].SetActive(false);
+                }
+                else
+                {
+                    door[4].SetActive(true);
                 }
                 break;
         }
