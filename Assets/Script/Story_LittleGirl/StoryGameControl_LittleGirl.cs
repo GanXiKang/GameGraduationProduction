@@ -49,19 +49,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 StoryLittleGirlUIControl.isInteractionButtonActive = false;
                 switch (StoryObjectColliderControl._nowNumber)
                 {
-                    case 1:                                                               //clothing
-                        _task++;
+                    case 1:                                                               //clothing&hat
+                        _task += 2;
                         BagController.isItemSlotAcite[4] = true;
-                        Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
-                        break;
-
-                    case 2:                                                                    //hat
-                        _task++;
                         BagController.isItemSlotAcite[5] = true;
-                        Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
                         break;
 
-                    case 3:                                                                    //wood
+                    case 3:                                                               //wood
                     case 4:
                         _task++;
                         BagController.isItemSlotAcite[1] = true;
@@ -69,7 +63,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
                         break;
 
-                    case 5:                                                                    //insfirepoint
+                    case 5:                                                               //insfirepoint
                         Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
                         BagController._itemQuantity[1] -= 8;
                         isIgnite = true;
