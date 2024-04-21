@@ -159,6 +159,10 @@ public class GameControl : MonoBehaviour
                     case 4:                                                     //flower
                         FlowerControl.isDestory = true;
                         BagController.isItemSlotAcite[25] = true;
+                        if (_day == 2)
+                        {
+                            TaskController._taskNumber = 5;
+                        }
                         break;
 
                     case 5:                                                     //gotoLivingroom
