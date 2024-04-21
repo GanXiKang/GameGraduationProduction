@@ -35,11 +35,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
         switch (_conveyColliderNumber)
         {
             case 1:
-                interactionButton_text.text = "ÆÆÅfµÄÃ«ÒÂ";
-                break;
-
-            case 2:
-                interactionButton_text.text = "ÆÆÅfµÄÃ«Ã±";
+                interactionButton_text.text = "À¬»øÍ°";
                 break;
 
             case 3:
