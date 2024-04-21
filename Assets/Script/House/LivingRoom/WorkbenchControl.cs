@@ -70,6 +70,7 @@ public class WorkbenchControl : MonoBehaviour
                     UIController.isContentActive = true;
                     TextControl.textCount = 7;
                     GameControl.isFinishSweaterContent = true;
+                    TaskController._taskNumber = 6;
                 }
                 Invoke("Drawing_ClearAllPencils", 2f);
             }

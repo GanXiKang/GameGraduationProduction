@@ -106,6 +106,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isEnough = true;
                     isEnoughWoodContent = true;
                     StoryTextControl.textCount = 5;
+                    TaskController._taskNumber = 9;
                 }
                 if (!isInsFireWoodContent && isIgnite)
                 {
@@ -121,6 +122,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 if (_chapter == 2 && isChapter2Finish && once)
                 {
                     once = false;
+                    TaskController._taskNumber = 10;
                     Invoke("GoHouseScene", 0.5f);
                 }
                 break;

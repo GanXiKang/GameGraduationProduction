@@ -45,8 +45,12 @@ public class GameControl : MonoBehaviour
             switch (_day)
             {
                 case 1:
+                    Story_LittleGirl();
+                    break;
+
                 case 2:
                     Story_LittleGirl();
+                    TaskController._taskNumber = 8;
                     break;
 
                 case 3:
@@ -54,7 +58,6 @@ public class GameControl : MonoBehaviour
                     break;
             
             }
-            
             autoLoadStoryScene = false;
         }
 
@@ -196,6 +199,7 @@ public class GameControl : MonoBehaviour
                         Destroy(colliderObject[1]);
                         BagController.isItemSlotAcite[21] = true;
                         BedControl.isNight = true;
+                        TaskController._taskNumber = 11;
                         break;
                 }
             }
