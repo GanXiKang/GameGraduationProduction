@@ -10,7 +10,7 @@ public class TaskController : MonoBehaviour
     public TextAsset taskFile;
 
     public static bool isTaskActive;
-    public static int _taskNumber = 0;
+    public static int _taskNumber = 1;
 
     List<string> taskList = new List<string>();
 
@@ -23,7 +23,7 @@ public class TaskController : MonoBehaviour
     void Update()
     {
         taskUI.SetActive(isTaskActive);
-        taskText.text = taskList[_taskNumber];
+        taskText.text = taskList[_taskNumber - 1];
         if (!UIController.isContentActive && !BagController.isBagActive && GameControl._day != 1)
         {
             if (Input.GetKeyDown(KeyCode.T))
