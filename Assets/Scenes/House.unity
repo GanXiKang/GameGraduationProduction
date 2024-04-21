@@ -7002,6 +7002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskUI: {fileID: 1766127584}
   taskText: {fileID: 976034454}
+  taskFile: {fileID: 4900000, guid: d5cbe7f94081764489e85cebb2a44a71, type: 3}
 --- !u!1 &1488920927
 GameObject:
   m_ObjectHideFlags: 0
