@@ -19,7 +19,7 @@ public class StoryCameraController : MonoBehaviour
     {
         if (isFollow)
         {
-            Vector3 _targetPosition = target.position + new Vector3(0f, 8f, -12f);
+            Vector3 _targetPosition = target.position + new Vector3(0f, 5f, -8f);
 
             transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
             transform.rotation = Quaternion.Euler(30f, 0f, 0f);
