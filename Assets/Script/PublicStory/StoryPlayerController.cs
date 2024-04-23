@@ -22,11 +22,11 @@ public class StoryPlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            _moveSpeed = 18f;
+            _moveSpeed = 15f;
         }
         else
         {
-            _moveSpeed = 10f;
+            _moveSpeed = 8f;
         }
 
         if (!cc.isGrounded)
