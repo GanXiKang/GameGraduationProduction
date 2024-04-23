@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 7455266cc1b17d046a3a7c19b2f38ac8,
+  m_LightingDataAsset: {fileID: 112000000, guid: c804890b2504731499352f320cc19fbc,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 4fa98957960224b49927a2dd1d42883c,
     type: 2}
@@ -871,7 +871,7 @@ Transform:
   m_GameObject: {fileID: 281031156}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.347, y: 10.83, z: 10.63}
+  m_LocalPosition: {x: -3.02, y: 5.59, z: 4.871}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -912,8 +912,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.94180727, g: 1, b: 0, a: 1}
-  m_Intensity: 25
-  m_Range: 25
+  m_Intensity: 8
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -951,13 +951,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 4.5904e-41, y: -8.683109e-28, z: 4.5904e-41, w: 9.403955e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -6043,8 +6043,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820943386}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 10, z: -13}
+  m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
+  m_LocalPosition: {x: 10.61, y: 3.6, z: -3.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6846,8 +6846,8 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1820943389}
   - {fileID: 783404063}
+  - {fileID: 1820943389}
   - {fileID: 547335184}
   - {fileID: 47488467}
   - {fileID: 3581878}
