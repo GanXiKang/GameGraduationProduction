@@ -1759,6 +1759,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 598f7a260e577d7409634f85344d52df,
+        type: 3}
+      propertyPath: m_Materials.Array.data[32]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7438462cb5c3fe94789f2ce4b34c48b2, type: 2}
     - target: {fileID: 919132149155446097, guid: 598f7a260e577d7409634f85344d52df,
         type: 3}
       propertyPath: m_Name
@@ -2892,6 +2897,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c8c87ac17a0e2e04f842d01f2c963751,
+        type: 3}
+      propertyPath: m_Materials.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7438462cb5c3fe94789f2ce4b34c48b2, type: 2}
+    - target: {fileID: -7511558181221131132, guid: c8c87ac17a0e2e04f842d01f2c963751,
+        type: 3}
+      propertyPath: m_Materials.Array.data[12]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7438462cb5c3fe94789f2ce4b34c48b2, type: 2}
     - target: {fileID: 919132149155446097, guid: c8c87ac17a0e2e04f842d01f2c963751,
         type: 3}
       propertyPath: m_Name
@@ -2972,7 +2987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &639973675
 Transform:
   m_ObjectHideFlags: 0
