@@ -8,7 +8,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject[] colliderObject;
     public GameObject[] chapter;
     public static int _task = 0;
-    public static int _chapter = 2;
+    public static int _chapter = 1;
     public static bool isStartStoryContent = false;
     bool once;
 
