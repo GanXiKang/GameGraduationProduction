@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class StoryPlayerController : MonoBehaviour
 {
     CharacterController cc;
+    Animation anim;
 
     private Vector3 _storyMoveInput;
 
@@ -16,6 +17,7 @@ public class StoryPlayerController : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        anim = GetComponent<Animation>();
     }
 
     void FixedUpdate()
