@@ -48,8 +48,6 @@ public class StoryPlayerController : MonoBehaviour
             Vector2 input = value.Get<Vector2>();
             _storyMoveInput = new Vector3(input.x, 0, input.y);
 
-            print(input.x);
-            anim.SetFloat("Direction", input.x);
         }
         else
         {
