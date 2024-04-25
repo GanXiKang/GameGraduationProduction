@@ -43,7 +43,7 @@ public class StoryPlayerController : MonoBehaviour
         {
             Vector2 input = value.Get<Vector2>();
             _storyMoveInput = new Vector3(input.x, 0, input.y);
-            print(_storyMoveInput);
+            print(_storyMoveInput.magnitude);
         }
         else
         {
