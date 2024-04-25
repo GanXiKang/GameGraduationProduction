@@ -22,7 +22,7 @@ public class StoryPlayerController : MonoBehaviour
         anim.SetInteger("Chapter", StoryGameControl_LittleGirl._chapter);
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -38,7 +38,7 @@ public class StoryPlayerController : MonoBehaviour
             _storyMoveInput.y -= _gravity * Time.fixedDeltaTime;
         }
 
-        cc.Move(_storyMoveInput * _moveSpeed * Time.fixedDeltaTime);
+        cc.Move(_storyMoveInput * _moveSpeed * Time.deltaTime);
     }
 
     void OnMove(InputValue value)
@@ -49,7 +49,7 @@ public class StoryPlayerController : MonoBehaviour
             _storyMoveInput = new Vector3(input.x, 0, input.y);
 
             print(input.x);
-            //anim.SetFloat("Direction", input.x);
+            anim.SetFloat("Direction", input.x);
         }
         else
         {
