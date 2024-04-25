@@ -14,6 +14,8 @@ public class StoryPlayerController : MonoBehaviour
     public float _moveSpeed = 10f;
     public float _gravity = 20f;
 
+    float _direction = 1;
+
     void Start()
     {
         cc = GetComponent<CharacterController>();
@@ -39,20 +41,30 @@ public class StoryPlayerController : MonoBehaviour
         }
 
         cc.Move(_storyMoveInput * _moveSpeed * Time.deltaTime);
+
+        anim.SetFloat("Direction", _direction);
+        anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
     }
 
     void OnMove(InputValue value)
     {
+        
         if (!StoryLittleGirlUIControl.isContentActive)
         {
             Vector2 input = value.Get<Vector2>();
             _storyMoveInput = new Vector3(input.x, 0, input.y);
-            anim.SetFloat("Direction", input.x);
+            if (input.x != 0)
+            {
+                _direction = input.x;
+                if (_direction < 0f)
+                {
+                    _direction = 0f;
+                }
+            }
         }
         else
         {
             _storyMoveInput = Vector3.zero;
-        }
-        anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
+        }   
     }
 }
