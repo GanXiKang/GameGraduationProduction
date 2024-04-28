@@ -34,17 +34,17 @@ public class CameraController : MonoBehaviour
     {
         _distance = Vector3.Distance(transform.position, target.position);
 
-        if (transform.position.z <= -20f)
-        {
-            if (_distance > _maxDistance)
-            {
-                isFollow = true;
-            }
-            else
-            {
-                isFollow = false;
-            }
-        }
+        //if (transform.position.z <= -20f)
+        //{
+        //    if (_distance > _maxDistance)
+        //    {
+        //        isFollow = true;
+        //    }
+        //    else
+        //    {
+        //        isFollow = false;
+        //    }
+        //}
         if (isLookWorkbench)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
