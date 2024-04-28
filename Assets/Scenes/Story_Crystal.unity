@@ -539,6 +539,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 169518612}
+  - component: {fileID: 169518613}
+  - component: {fileID: 169518614}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -561,6 +563,61 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &169518613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169518611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6bfa9d8f5cb6643a6ddc51bad7b236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bagUI: {fileID: 1871350391}
+  itemSlot:
+  - {fileID: 0}
+  - {fileID: 301212158}
+  - {fileID: 243083236}
+  - {fileID: 1624739656}
+  - {fileID: 1203084819}
+  - {fileID: 907436787}
+  - {fileID: 1884819386}
+  - {fileID: 1164591449}
+  - {fileID: 1184299146}
+  - {fileID: 1863660473}
+  - {fileID: 1749793167}
+  - {fileID: 1783445071}
+  - {fileID: 1435468989}
+  - {fileID: 1374340721}
+  - {fileID: 24149647}
+  - {fileID: 341144838}
+  - {fileID: 1529608520}
+  - {fileID: 257679906}
+  - {fileID: 2055076266}
+  - {fileID: 1631964813}
+  - {fileID: 2123712063}
+  quantity_Text:
+  - {fileID: 0}
+  - {fileID: 1292196571}
+  - {fileID: 1699965021}
+  - {fileID: 1354919735}
+--- !u!114 &169518614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169518611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f761d47e0f19794fabc23373c365d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskUI: {fileID: 258951040}
+  taskText: {fileID: 1536508891}
+  taskFile: {fileID: 4900000, guid: d5cbe7f94081764489e85cebb2a44a71, type: 3}
 --- !u!1 &177497721
 GameObject:
   m_ObjectHideFlags: 0
