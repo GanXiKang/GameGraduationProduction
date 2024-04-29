@@ -8,7 +8,7 @@ public class BedControl : MonoBehaviour
     public GameObject player;
     public GameObject bedCollider;
     public static bool isSleep;
-    public static bool isNight = true;
+    public static bool isNight = false;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class BedControl : MonoBehaviour
             player.transform.rotation = Quaternion.Euler(-90f, 90f, -270f);
         }
 
-        if (isNight || !GameControl.isOpeningContent)
+        if (isNight)
         {
             bedCollider.SetActive(true);
         }
