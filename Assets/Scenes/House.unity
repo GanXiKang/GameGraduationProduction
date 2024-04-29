@@ -3203,6 +3203,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      insertIndex: 47
+      addedObject: {fileID: 1091245015}
     - targetCorrespondingSourceObject: {fileID: 7491156907005536401, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
@@ -3243,10 +3247,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1626772737}
-    - targetCorrespondingSourceObject: {fileID: 8202902560360894017, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1091245015}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6479137908180158667, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
@@ -6384,11 +6384,11 @@ Transform:
   m_GameObject: {fileID: 1091245014}
   serializedVersion: 2
   m_LocalRotation: {x: -0.25881907, y: -0.9659259, z: -0, w: 0}
-  m_LocalPosition: {x: -0.476, y: -0.117, z: -0}
-  m_LocalScale: {x: 0.1, y: 0.7, z: 1}
+  m_LocalPosition: {x: 8.486788, y: 2.0094547, z: 2.8847415}
+  m_LocalScale: {x: 0.1, y: 0.69999987, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 563256783}
+  m_Father: {fileID: 722432147}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 30}
 --- !u!65 &1091245016
 BoxCollider:
@@ -7197,7 +7197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1300338020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7278,8 +7278,8 @@ Transform:
   m_GameObject: {fileID: 1300338019}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.12999918, y: 1.47, z: -20.620005}
-  m_LocalScale: {x: 6.6266446, y: 3.0466957, z: 12.977998}
+  m_LocalPosition: {x: -0.12999918, y: 1.47, z: -20.620012}
+  m_LocalScale: {x: 6.6266456, y: 3.0466957, z: 12.978}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2010311688}
@@ -7787,8 +7787,8 @@ Transform:
   - {fileID: 968375161}
   - {fileID: 984401332}
   - {fileID: 1684306943}
-  - {fileID: 1300338023}
   - {fileID: 1472062935}
+  - {fileID: 1300338023}
   m_Father: {fileID: 441705030}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1480171936
