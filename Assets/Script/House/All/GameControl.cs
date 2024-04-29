@@ -217,8 +217,6 @@ public class GameControl : MonoBehaviour
         CameraController.isFollow = true;
         CameraController.isLookBed = false;
         UIController.isChooseStoryActive = false;
-        BedControl.isSleep = false;
-        BedControl.isNight = false;
     }
     public void Story_Crystal()
     {
@@ -226,7 +224,5 @@ public class GameControl : MonoBehaviour
         CameraController.isFollow = true;
         CameraController.isLookBed = false;
         UIController.isChooseStoryActive = false;
-        BedControl.isSleep = false;
-        BedControl.isNight = false;
     }
 }
