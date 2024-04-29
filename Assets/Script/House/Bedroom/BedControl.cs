@@ -23,7 +23,7 @@ public class BedControl : MonoBehaviour
             player.transform.rotation = Quaternion.Euler(-90f, 90f, -270f);
         }
 
-        if (isNight)
+        if (isNight || !GameControl.isOpeningContent)
         {
             bedCollider.SetActive(true);
         }
