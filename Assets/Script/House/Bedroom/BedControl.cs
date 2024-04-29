@@ -8,12 +8,13 @@ public class BedControl : MonoBehaviour
     public GameObject player;
     public GameObject bedCollider;
     public static bool isSleep;
-    public static bool isNight = false;
+    public static bool isNight;
 
     void Start()
     {
-        bedCollider.SetActive(isNight);
         isSleep = false;
+        isNight = false;
+        bedCollider.SetActive(isNight);
     }
 
     void Update()
