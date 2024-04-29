@@ -12,24 +12,17 @@ public class BedControl : MonoBehaviour
 
     void Start()
     {
+        bedCollider.SetActive(isNight);
         isSleep = false;
     }
 
     void Update()
     {
+        bedCollider.SetActive(isNight);
         if (isSleep)
         {
             player.transform.position = sleepPoint.position;
             player.transform.rotation = Quaternion.Euler(-90f, 90f, -270f);
-        }
-
-        if (isNight)
-        {
-            bedCollider.SetActive(true);
-        }
-        else
-        {
-            bedCollider.SetActive(false);
         }
     }
 }
