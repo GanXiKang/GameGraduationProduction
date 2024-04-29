@@ -60,7 +60,7 @@ public class CameraController : MonoBehaviour
     {
         if (isFollow)
         {
-            Vector3 _targetPosition = target.position + new Vector3(0f, 7f, -13f);
+            Vector3 _targetPosition = target.position + new Vector3(0f, 5f, -10f);
 
             transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
             transform.rotation = Quaternion.Euler(30f, 0f, 0f);
