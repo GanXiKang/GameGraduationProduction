@@ -2187,6 +2187,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427819710}
   m_CullTransparentMesh: 1
+--- !u!1 &434370981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434370982}
+  m_Layer: 0
+  m_Name: InsFlowerB3
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434370982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434370981}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.804, y: 0.14999998, z: 0.37}
+  m_LocalScale: {x: 1, y: 0.6666667, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 757821371}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &436594121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,6 +2395,68 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 16.9437, y: 3.8726597, z: 0.46485758}
   m_Center: {x: -3.1832366, y: 0.3961714, z: -0.0030487552}
+--- !u!1 &519749107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519749108}
+  m_Layer: 0
+  m_Name: InsFlowerB2
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &519749108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519749107}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.88, y: 0.14999998, z: 0.37}
+  m_LocalScale: {x: 1, y: 0.6666667, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 757821371}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &533903406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533903407}
+  m_Layer: 0
+  m_Name: InsFlowerA2
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &533903407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533903406}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.885, y: 0.15, z: -0.214}
+  m_LocalScale: {x: 1, y: 0.6666667, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1766649076}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &563256783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8202902560360894017, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
@@ -2925,11 +3018,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5941331206138936183, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 533903407}
+    - targetCorrespondingSourceObject: {fileID: -5941331206138936183, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1280364313}
+    - targetCorrespondingSourceObject: {fileID: -5941331206138936183, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1940249848}
     - targetCorrespondingSourceObject: {fileID: -4742435131775543672, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 983550318}
+    - targetCorrespondingSourceObject: {fileID: -4742435131775543672, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 519749108}
+    - targetCorrespondingSourceObject: {fileID: -4742435131775543672, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 434370982}
     - targetCorrespondingSourceObject: {fileID: -4742435131775543672, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
@@ -3019,6 +3128,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 757821370}
+    - targetCorrespondingSourceObject: {fileID: -435200473532978272, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1766649079}
     - targetCorrespondingSourceObject: {fileID: 834916473561293104, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
@@ -5077,7 +5190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 983550318}
   m_Layer: 0
-  m_Name: InsFlower
+  m_Name: InsFlowerB1
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5092,7 +5205,7 @@ Transform:
   m_GameObject: {fileID: 983550317}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.14999998, z: 0}
+  m_LocalPosition: {x: 0, y: 0.14999998, z: -0.25}
   m_LocalScale: {x: 1, y: 0.6666667, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5586,7 +5699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1137546491}
   m_Layer: 0
-  m_Name: InsFlower
+  m_Name: InsFlowerA1
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5601,7 +5714,7 @@ Transform:
   m_GameObject: {fileID: 1137546490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalPosition: {x: -0, y: 0.15, z: 0.362}
   m_LocalScale: {x: 1, y: 0.6666667, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5798,6 +5911,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 20.076555, y: 0.110722095, z: 8.303515}
   m_Center: {x: 0, y: 0.00000006519258, z: -0.21944666}
+--- !u!1 &1280364312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280364313}
+  m_Layer: 0
+  m_Name: InsFlowerA3
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280364313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280364312}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.821, y: 0.15, z: -0.214}
+  m_LocalScale: {x: 1, y: 0.6666667, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1766649076}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1284703751
 GameObject:
   m_ObjectHideFlags: 0
@@ -6189,7 +6333,6 @@ GameObject:
   - component: {fileID: 1480171937}
   - component: {fileID: 1480171938}
   - component: {fileID: 1480171939}
-  - component: {fileID: 1480171940}
   - component: {fileID: 1480171941}
   m_Layer: 0
   m_Name: GameControl
@@ -6285,21 +6428,6 @@ MonoBehaviour:
   - {fileID: 1451764541}
   - {fileID: 1045352135}
   - {fileID: 1672928011}
---- !u!114 &1480171940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480171936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b9e6b6b6ee20342a6f2bee96777eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  insFlowerPoint: {fileID: 1137546491}
-  flowerPerfab: {fileID: 1125149738006263175, guid: b619cf2aa9c923141b67089a87f781f1,
-    type: 3}
 --- !u!114 &1480171941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7508,6 +7636,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 680922200}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1766649079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757821368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b9e6b6b6ee20342a6f2bee96777eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  insFlowerPoint:
+  - {fileID: 0}
+  - {fileID: 1137546491}
+  - {fileID: 533903407}
+  - {fileID: 1280364313}
+  - {fileID: 983550318}
+  - {fileID: 519749108}
+  - {fileID: 434370982}
+  flowerPerfab: {fileID: 1125149738006263175, guid: b619cf2aa9c923141b67089a87f781f1,
+    type: 3}
+  gardenA_Collider: {fileID: 1940249847}
+  gardenB_Collider: {fileID: 223962741}
 --- !u!65 &1771779646
 BoxCollider:
   m_ObjectHideFlags: 0
