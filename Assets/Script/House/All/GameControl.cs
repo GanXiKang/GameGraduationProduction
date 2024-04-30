@@ -159,13 +159,14 @@ public class GameControl : MonoBehaviour
                         }
                         break;
 
-                    case 4:                                                     //flower
-                        FlowerControl.isDestory = true;
-                        BagController.isItemSlotAcite[25] = true;
-                        if (_day == 2)
-                        {
-                            TaskController._taskNumber = 5;
-                        }
+                    case 4:                                                     //storybook_crystal
+                        isFindStoryBookContent = true;
+                        UIController.isContentActive = true;
+                        TextControl.textCount = 11;
+                        Destroy(colliderObject[1]);
+                        BagController.isItemSlotAcite[21] = true;
+                        BedControl.isNight = true;
+                        TaskController._taskNumber = 11;
                         break;
 
                     case 5:                                                     //gotoLivingroom
@@ -194,14 +195,17 @@ public class GameControl : MonoBehaviour
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
-                    case 9:                                                     //storybook_crystal
-                        isFindStoryBookContent = true;
-                        UIController.isContentActive = true;
-                        TextControl.textCount = 11;
-                        Destroy(colliderObject[1]);
-                        BagController.isItemSlotAcite[21] = true;
-                        BedControl.isNight = true;
-                        TaskController._taskNumber = 11;
+                    case 9:                                                     //Graden1
+                        FlowerControl.isDestory = true;
+                        BagController.isItemSlotAcite[25] = true;
+                        if (_day == 2)
+                        {
+                            TaskController._taskNumber = 5;
+                        }
+                        break;
+
+                    case 10:                                                    //Graden2
+                        
                         break;
                 }
             }
