@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class DoorControl : MonoBehaviour
 {
+    MeshRenderer mr_Wall;
+    MeshRenderer mr_FrontDoor;
+
     public GameObject[] door;
     public GameObject wall;
     public GameObject frontDoor;
 
+    public static bool isOutDoor = false;
 
     void Start()
     {
-        
+        mr_Wall = wall.GetComponent<MeshRenderer>();
+        mr_FrontDoor = frontDoor.GetComponent<MeshRenderer>();
     }
+
     void FixedUpdate()
     {
         switch (GameControl._day)
@@ -40,5 +46,11 @@ public class DoorControl : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    void Update()
+    {
+        mr_Wall.enabled = isOutDoor;
+        mr_FrontDoor.enabled = isOutDoor;
     }
 }
