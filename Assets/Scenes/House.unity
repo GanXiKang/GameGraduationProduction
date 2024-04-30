@@ -4109,6 +4109,7 @@ MonoBehaviour:
   - {fileID: 1284703751}
   wall: {fileID: 680922207}
   frontDoor: {fileID: 680922217}
+  glass: {fileID: 521912703}
   bedroom_G: {fileID: 865440830}
   livingRoom_G: {fileID: 412199305}
 --- !u!114 &749511419
