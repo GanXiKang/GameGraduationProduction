@@ -21,6 +21,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     //Chatper2
     public GameObject pileWood;
     public Transform pileWoodPoint;
+    public static bool isUseMatches = false;
     public static bool isChapter2Finish = false;
     public static bool isEnoughWoodContent = false;
     public static bool isInsFireWoodContent = false;
@@ -95,6 +96,15 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
 
             case 2:
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    if (!isUseMatches)
+                    {
+                        isUseMatches = true;
+                        Invoke("MatchBurned", 2f);
+                    }
+                }
+
                 if (!isEnoughWoodContent && _task >= 4 && !isEnough)
                 {
                     isEnough = true;
@@ -123,6 +133,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         }
     }
 
+    void MatchBurned()
+    {
+        isUseMatches = false;
+    }
     void GoHouseScene()
     {
         SceneManager.LoadScene(1);

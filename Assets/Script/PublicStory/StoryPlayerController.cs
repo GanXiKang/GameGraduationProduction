@@ -44,6 +44,7 @@ public class StoryPlayerController : MonoBehaviour
 
         anim.SetFloat("Direction", _direction);
         anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
+        anim.SetBool("isFire", StoryGameControl_LittleGirl.isUseMatches);
     }
 
     void OnMove(InputValue value)
