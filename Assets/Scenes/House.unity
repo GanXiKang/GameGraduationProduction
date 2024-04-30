@@ -358,6 +358,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24336476}
   m_CullTransparentMesh: 1
+--- !u!4 &48880578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1760143701912024705, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+    type: 3}
+  m_PrefabInstance: {fileID: 680922200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &65495751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,6 +1817,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4602053, y: 1.4277369, z: 1.2617745}
   m_Center: {x: 0.1265282, y: 0.067168295, z: 0.05356759}
+--- !u!4 &379549431 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1227045726820567358, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+    type: 3}
+  m_PrefabInstance: {fileID: 680922200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &383239379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2065,11 +2077,11 @@ Transform:
   m_GameObject: {fileID: 412199305}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 4.9, y: 1.46, z: 1.53}
+  m_LocalPosition: {x: -0.54366875, y: 1.0330153, z: -0.04649639}
   m_LocalScale: {x: 9.575701, y: 5.74542, z: 6.70299}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 722432147}
+  m_Father: {fileID: 379549431}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &412199307
 BoxCollider:
@@ -3251,7 +3263,7 @@ PrefabInstance:
     - target: {fileID: -8433379468463212183, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8232210578694446981, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
@@ -3316,14 +3328,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
-        type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 412199306}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
-        type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 865440831}
     - targetCorrespondingSourceObject: {fileID: 7491156907005536401, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
@@ -3340,6 +3344,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 488191345}
+    - targetCorrespondingSourceObject: {fileID: -1760143701912024705, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 865440831}
     - targetCorrespondingSourceObject: {fileID: 883784815681262612, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
@@ -3388,6 +3396,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 223962742}
+    - targetCorrespondingSourceObject: {fileID: -1227045726820567358, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 412199306}
     - targetCorrespondingSourceObject: {fileID: -2181940454068793936, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
@@ -4097,6 +4109,8 @@ MonoBehaviour:
   - {fileID: 1284703751}
   wall: {fileID: 680922207}
   frontDoor: {fileID: 680922217}
+  bedroom_G: {fileID: 865440830}
+  livingRoom_G: {fileID: 412199305}
 --- !u!114 &749511419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4814,7 +4828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &865440831
 Transform:
   m_ObjectHideFlags: 0
@@ -4824,11 +4838,11 @@ Transform:
   m_GameObject: {fileID: 865440830}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -3.33, y: 1.46, z: 1.5}
-  m_LocalScale: {x: 6.9556236, y: 5.74542, z: 6.70299}
+  m_LocalPosition: {x: -0.050096273, y: 1.0330153, z: -0.022135735}
+  m_LocalScale: {x: 6.955624, y: 5.74542, z: 6.70299}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 722432147}
+  m_Father: {fileID: 48880578}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &865440832
 BoxCollider:
