@@ -502,6 +502,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67998843}
   m_CullTransparentMesh: 1
+--- !u!1 &115781841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 115781842}
+  - component: {fileID: 115781843}
+  m_Layer: 0
+  m_Name: WorkbenchControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &115781842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115781841}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441705030}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115781843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115781841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec95210793a7f142964a9e96ed055d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pencil: {fileID: 1155251805653073979, guid: f7457c1c2691d9c47bb8fdfca6bca4d7, type: 3}
+  drawFinishText: {fileID: 1762746756}
+  boxC: {fileID: 1626772738}
+  isDrawingComplete: 0
+  _completionThreshold: 90
+  _completionPercentage: 20
 --- !u!65 &146766938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2495,6 +2545,8 @@ Transform:
   - {fileID: 1472676994}
   - {fileID: 722432147}
   - {fileID: 1798912527}
+  - {fileID: 1091245015}
+  - {fileID: 115781842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &488191344
@@ -3203,10 +3255,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
-        type: 3}
-      insertIndex: 47
-      addedObject: {fileID: 1091245015}
     - targetCorrespondingSourceObject: {fileID: 7491156907005536401, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
@@ -3364,10 +3412,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 351508304}
-    - targetCorrespondingSourceObject: {fileID: 3503809274035853217, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 816014786}
     - targetCorrespondingSourceObject: {fileID: 9022965351104119877, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       insertIndex: -1
@@ -4476,24 +4520,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808463881}
   m_CullTransparentMesh: 1
---- !u!114 &816014786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680922203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ec95210793a7f142964a9e96ed055d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pencil: {fileID: 1155251805653073979, guid: f7457c1c2691d9c47bb8fdfca6bca4d7, type: 3}
-  drawFinishText: {fileID: 1762746756}
-  boxC: {fileID: 1091245016}
-  isDrawingComplete: 0
-  _completionThreshold: 90
-  _completionPercentage: 20
 --- !u!1 &816395171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6383,12 +6409,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091245014}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.25881907, y: -0.9659259, z: -0, w: 0}
-  m_LocalPosition: {x: 8.486788, y: 2.0094547, z: 2.8847415}
-  m_LocalScale: {x: 0.1, y: 0.69999987, z: 1}
+  m_LocalRotation: {x: -0.18301271, y: -0.68301266, z: 0.18301271, w: 0.68301266}
+  m_LocalPosition: {x: 50.38582, y: 6.528372, z: -18.423073}
+  m_LocalScale: {x: 0.3000001, y: 2.1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 722432147}
+  m_Father: {fileID: 441705030}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 30}
 --- !u!65 &1091245016
 BoxCollider:
@@ -11281,9 +11307,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 1176681221}
   - {fileID: 197112527}
-  - {fileID: 197810302}
-  - {fileID: 441705030}
   - {fileID: 1411753128}
   - {fileID: 850562197}
+  - {fileID: 197810302}
+  - {fileID: 441705030}
   - {fileID: 1631107283}
   - {fileID: 1480171937}
