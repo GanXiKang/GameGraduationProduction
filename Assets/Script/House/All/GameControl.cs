@@ -195,17 +195,19 @@ public class GameControl : MonoBehaviour
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
-                    case 9:                                                     //Graden1
+                    case 9:                                                     //GradenA
+                        GardenControl.isGardenA = false;
                         FlowerControl.isDestory = true;
-                        BagController.isItemSlotAcite[25] = true;
                         if (_day == 2)
                         {
+                            BagController.isItemSlotAcite[25] = true;
                             TaskController._taskNumber = 5;
                         }
                         break;
 
-                    case 10:                                                    //Graden2
-                        
+                    case 10:                                                    //GradenB
+                        GardenControl.isGardenB = false;
+                        FlowerControl.isDestory = true;
                         break;
                 }
             }
