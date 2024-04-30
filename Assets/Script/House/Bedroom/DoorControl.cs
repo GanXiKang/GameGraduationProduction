@@ -10,8 +10,12 @@ public class DoorControl : MonoBehaviour
     public GameObject[] door;
     public GameObject wall;
     public GameObject frontDoor;
+    public GameObject bedroom_G;
+    public GameObject livingRoom_G;
 
     public static bool isOutDoor = false;
+    public static bool isBedroom = true;
+    public static bool isLivingRoom = false;
 
     void Start()
     {
@@ -52,5 +56,8 @@ public class DoorControl : MonoBehaviour
     {
         mr_Wall.enabled = isOutDoor;
         mr_FrontDoor.enabled = isOutDoor;
+
+        bedroom_G.SetActive(isLivingRoom);
+        livingRoom_G.SetActive(isBedroom);
     }
 }
