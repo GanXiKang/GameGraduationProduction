@@ -5,7 +5,14 @@ using UnityEngine;
 public class DoorControl : MonoBehaviour
 {
     public GameObject[] door;
+    public GameObject wall;
+    public GameObject frontDoor;
 
+
+    void Start()
+    {
+        
+    }
     void FixedUpdate()
     {
         switch (GameControl._day)
