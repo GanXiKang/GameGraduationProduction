@@ -6,10 +6,12 @@ public class DoorControl : MonoBehaviour
 {
     MeshRenderer mr_Wall;
     MeshRenderer mr_FrontDoor;
+    MeshRenderer mr_Glass;
 
     public GameObject[] door;
     public GameObject wall;
     public GameObject frontDoor;
+    public GameObject glass;
     public GameObject bedroom_G;
     public GameObject livingRoom_G;
 
@@ -21,6 +23,7 @@ public class DoorControl : MonoBehaviour
     {
         mr_Wall = wall.GetComponent<MeshRenderer>();
         mr_FrontDoor = frontDoor.GetComponent<MeshRenderer>();
+        mr_Glass = glass.GetComponent<MeshRenderer>();
     }
 
     void FixedUpdate()
@@ -56,6 +59,7 @@ public class DoorControl : MonoBehaviour
     {
         mr_Wall.enabled = isOutDoor;
         mr_FrontDoor.enabled = isOutDoor;
+        mr_Glass.enabled = isOutDoor;
 
         bedroom_G.SetActive(isLivingRoom);
         livingRoom_G.SetActive(isBedroom);
