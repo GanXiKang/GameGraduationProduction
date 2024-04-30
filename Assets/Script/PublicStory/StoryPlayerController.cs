@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class StoryPlayerController : MonoBehaviour
 {
     CharacterController cc;
-    Animator anim;
 
     private Vector3 _storyMoveInput;
 
@@ -19,9 +18,6 @@ public class StoryPlayerController : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
-        anim = GetComponent<Animator>();
-
-        anim.SetInteger("Chapter", StoryGameControl_LittleGirl._chapter);
     }
 
     void Update()
@@ -41,15 +37,10 @@ public class StoryPlayerController : MonoBehaviour
         }
 
         cc.Move(_storyMoveInput * _moveSpeed * Time.deltaTime);
-
-        anim.SetFloat("Direction", _direction);
-        anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
-        anim.SetBool("isFire", StoryGameControl_LittleGirl.isUseMatches);
     }
 
     void OnMove(InputValue value)
     {
-        
         if (!StoryLittleGirlUIControl.isContentActive)
         {
             Vector2 input = value.Get<Vector2>();
