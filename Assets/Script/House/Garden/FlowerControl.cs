@@ -16,7 +16,6 @@ public class FlowerControl : MonoBehaviour
         if (isDestory)
         {
             Destroy(this.gameObject);
-            isDestory = false;
         }
     }
 }
