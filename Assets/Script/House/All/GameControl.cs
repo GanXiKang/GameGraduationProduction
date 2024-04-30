@@ -182,12 +182,14 @@ public class GameControl : MonoBehaviour
 
                     case 7:                                                     //gotoLivingroom
                         isNextPlace = true;
+                        DoorControl.isOutDoor = false;
                         player.position = doorPoint[4].position;
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
                     case 8:                                                     //gotoOutdoor
                         isNextPlace = true;
+                        DoorControl.isOutDoor = true;
                         player.position = doorPoint[3].position;
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
