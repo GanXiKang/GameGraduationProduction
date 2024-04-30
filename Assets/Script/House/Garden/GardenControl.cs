@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class GardenControl : MonoBehaviour
 {
-    public Transform insFlowerPoint;
+    public Transform[] insFlowerPoint;
     public GameObject flowerPerfab;
+    public GameObject gardenA_Collider;
+    public GameObject gardenB_Collider;
 
     void Start()
     {
         if (GameControl._day == 2)
         {
-            Instantiate(flowerPerfab, insFlowerPoint.position, insFlowerPoint.rotation);
+            for (int i = 1; i < 4; i++)
+            {
+                Instantiate(flowerPerfab, insFlowerPoint[i].position, insFlowerPoint[i].rotation);
+            }
         }
+    }
+
+    void Update()
+    {
+        
     }
 }
