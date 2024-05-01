@@ -93,7 +93,7 @@ public class UIController : MonoBehaviour
                 break;
 
             case 4:
-                interactionButton_text.text = "采集";
+                interactionButton_text.text = "故事書";
                 break;
 
             case 5:
@@ -113,7 +113,8 @@ public class UIController : MonoBehaviour
                 break;
 
             case 9:
-                interactionButton_text.text = "故事書";
+            case 10:
+                interactionButton_text.text = "采集";
                 break;
         }
     }
