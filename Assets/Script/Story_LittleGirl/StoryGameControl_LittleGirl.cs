@@ -21,8 +21,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     //Chatper2
     public GameObject pileWood;
     public Transform pileWoodPoint;
-    public static bool isUseMatches = false;
     public static bool isChapter2Finish = false;
+    public static bool isUseMatches = false;
+    public static bool isFirstUseMatchesContent = false;
     public static bool isEnoughWoodContent = false;
     public static bool isInsFireWoodContent = false;
     public static bool isChapter2EndContent = false;
@@ -100,8 +101,16 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     if (!isUseMatches)
                     {
-                        isUseMatches = true;
-                        Invoke("MatchBurned", 2f);
+                        if (!isFirstUseMatchesContent)
+                        {
+                            isFirstUseMatchesContent = true;
+                            StoryTextControl.textCount = 5;
+                        }
+                        else
+                        {
+                            Invoke("MatchBurned", 2f);
+                        }
+                        isUseMatches = true;                        
                     }
                 }
 
@@ -109,19 +118,19 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     isEnough = true;
                     isEnoughWoodContent = true;
-                    StoryTextControl.textCount = 5;
+                    StoryTextControl.textCount = 7;
                     TaskController._taskNumber = 9;
                 }
                 if (!isInsFireWoodContent && isIgnite)
                 {
                     isIgnite = false;
                     isInsFireWoodContent = true;
-                    StoryTextControl.textCount = 6;
+                    StoryTextControl.textCount = 8;
                 }
                 if (!isChapter2EndContent && isStoryFinish && !isChapter2Finish)
                 {
                     isChapter2EndContent = true;
-                    StoryTextControl.textCount = 7;
+                    StoryTextControl.textCount = 9;
                 }
                 if (_chapter == 2 && isChapter2Finish && once)
                 {
