@@ -130,6 +130,13 @@ public class StoryTextControl : MonoBehaviour
                 whoContent = 2;
                 break;
 
+            case "╬╚Л`":
+                systemContent.SetActive(false);
+                characterContent.SetActive(true);
+                index++;
+                whoContent = 2;
+                break;
+
             case "длдл":
                 systemContent.SetActive(true);
                 characterContent.SetActive(false);
