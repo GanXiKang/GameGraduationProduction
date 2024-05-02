@@ -52,12 +52,14 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 switch (StoryObjectColliderControl._nowNumber)
                 {
                     case 1:                                                               //clothing&hat
-                        _task += 2;
+                        _task++;
                         BagController.isItemSlotAcite[4] = true;
                         BagController.isItemSlotAcite[5] = true;
                         break;
 
                     case 2:                                                               //Elf
+                        _task++;
+                        //µ√µΩºàèà∫Õƒæ≤ƒ
                         break;
 
                     //case 3:                                                             //wood
