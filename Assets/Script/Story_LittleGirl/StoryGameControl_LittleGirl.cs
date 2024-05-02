@@ -57,13 +57,16 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         BagController.isItemSlotAcite[5] = true;
                         break;
 
-                    case 3:                                                               //wood
-                    case 4:
-                        _task++;
-                        BagController.isItemSlotAcite[1] = true;
-                        BagController._itemQuantity[1] += 5;
-                        Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
+                    case 2:                                                               //Elf
                         break;
+
+                    //case 3:                                                             //wood
+                    //case 4:
+                    //    _task++;
+                    //    BagController.isItemSlotAcite[1] = true;
+                    //    BagController._itemQuantity[1] += 5;
+                    //    Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
+                    //    break;
 
                     case 5:                                                               //insfirepoint
                         Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
@@ -78,7 +81,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 1:
-                if (!isGetSweaterAndHatContent && _task >= 2 && !isWear)
+                if (!isGetSweaterAndHatContent && _task >= 1 && !isWear)
                 {
                     isGetSweaterAndHatContent = true;
                     StoryTextControl.textCount = 2;
@@ -114,7 +117,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     }
                 }
 
-                if (!isEnoughWoodContent && _task >= 4 && !isEnough)
+                if (!isEnoughWoodContent && _task >= 2 && !isEnough)
                 {
                     isEnough = true;
                     isEnoughWoodContent = true;
