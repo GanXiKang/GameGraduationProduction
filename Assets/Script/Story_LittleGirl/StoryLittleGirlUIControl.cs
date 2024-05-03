@@ -38,20 +38,19 @@ public class StoryLittleGirlUIControl : MonoBehaviour
                 interactionButton_text.text = "À¬»øÍ°";
                 break;
 
-            case 3:
-            case 4:
-                interactionButton_text.text = "Ä¾²Ä";
+            case 2:
+                interactionButton_text.text = "???";
                 break;
 
-            case 5:
-                interactionButton_text.text = "ÉÏ»ð";
+            case 3:
+                interactionButton_text.text = "Éú»ð";
                 break;
         }
     }
     void ContentActiveControl()
     {
         if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent || StoryGameControl_LittleGirl.isChapter1EndContent
-            || StoryGameControl_LittleGirl.isEnoughWoodContent || StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
+            || StoryGameControl_LittleGirl.isFirstUseMatchesContent || StoryGameControl_LittleGirl.isFindElfContent || StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
         {
             isContentActive = true;
         }
