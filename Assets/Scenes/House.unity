@@ -626,7 +626,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1091245015}
   m_Father: {fileID: 441705030}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &115781843
@@ -641,7 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec95210793a7f142964a9e96ed055d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pencil: {fileID: 8133970429651062932, guid: b3b69c656f9c4e3428572ed2d4a14753, type: 3}
+  pencil: {fileID: 6877726313400018096, guid: ccf20313e1fdcfa40aea926af31c3761, type: 3}
   drawFinishText: {fileID: 1762746756}
   boxC: {fileID: 1091245016}
   isDrawingComplete: 0
@@ -2426,7 +2427,6 @@ Transform:
   - {fileID: 722432147}
   - {fileID: 90188955}
   - {fileID: 1798912527}
-  - {fileID: 1091245015}
   - {fileID: 115781842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -6062,12 +6062,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091245014}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.18301271, y: -0.68301266, z: 0.18301271, w: 0.68301266}
-  m_LocalPosition: {x: 50.386032, y: 6.538, z: -18.489006}
-  m_LocalScale: {x: 0.3, y: 1.8, z: 3}
+  m_LocalRotation: {x: -0.18301274, y: -0.6830127, z: 0.18301274, w: 0.6830127}
+  m_LocalPosition: {x: 50.386047, y: 6.538, z: -18.489014}
+  m_LocalScale: {x: 0.29999998, y: 1.8, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 441705030}
+  m_Father: {fileID: 115781842}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 30}
 --- !u!65 &1091245016
 BoxCollider:
