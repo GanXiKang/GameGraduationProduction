@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
-    public GameObject[] colliderObject;
     public GameObject[] chapter;
     public static int _task = 0;
     public static int _chapter = 1;
@@ -62,15 +61,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         //µ√µΩºàèà∫Õƒæ≤ƒ
                         break;
 
-                    //case 3:                                                             //wood
-                    //case 4:
-                    //    _task++;
-                    //    BagController.isItemSlotAcite[1] = true;
-                    //    BagController._itemQuantity[1] += 5;
-                    //    Destroy(colliderObject[StoryObjectColliderControl._nowNumber]);
-                    //    break;
-
-                    case 5:                                                               //insfirepoint
+                    case 3:                                                               //insfirepoint
                         Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
                         BagController._itemQuantity[1] -= 8;
                         isIgnite = true;
