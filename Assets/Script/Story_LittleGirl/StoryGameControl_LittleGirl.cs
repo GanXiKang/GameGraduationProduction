@@ -23,7 +23,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isChapter2Finish = false;
     public static bool isUseMatches = false;
     public static bool isFirstUseMatchesContent = false;
-    public static bool isEnoughWoodContent = false;
+    public static bool isFindElfContent = false;
     public static bool isInsFireWoodContent = false;
     public static bool isChapter2EndContent = false;
     public static bool isStoryFinish = false;
@@ -110,10 +110,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     }
                 }
 
-                if (!isEnoughWoodContent && _task >= 2 && !isEnough)
+                if (!isFindElfContent && _task >= 2 && !isEnough)
                 {
                     isEnough = true;
-                    isEnoughWoodContent = true;
+                    isFindElfContent = true;
                     StoryTextControl.textCount = 7;
                     TaskController._taskNumber = 9;
                 }
