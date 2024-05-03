@@ -31,7 +31,7 @@ public class StoryTextControl : MonoBehaviour
     void Update()
     {
         if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent || StoryGameControl_LittleGirl.isChapter1EndContent 
-            || StoryGameControl_LittleGirl.isFirstUseMatchesContent || StoryGameControl_LittleGirl.isEnoughWoodContent || StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
+            || StoryGameControl_LittleGirl.isFirstUseMatchesContent || StoryGameControl_LittleGirl.isFindElfContent || StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
         {
             TextController();
         }
@@ -99,10 +99,14 @@ public class StoryTextControl : MonoBehaviour
         {
             //看火的畫面
             //不需要改變這個的bool
+
+            //暫時的
+            StoryGameControl_LittleGirl.isFirstUseMatchesContent = false;
+            StoryGameControl_LittleGirl.isUseMatches = false;
         }
-        else if (StoryGameControl_LittleGirl.isEnoughWoodContent)
+        else if (StoryGameControl_LittleGirl.isFindElfContent)
         {
-            StoryGameControl_LittleGirl.isEnoughWoodContent = false;
+            StoryGameControl_LittleGirl.isFindElfContent = false;
         }
         else if (StoryGameControl_LittleGirl.isInsFireWoodContent)
         {
