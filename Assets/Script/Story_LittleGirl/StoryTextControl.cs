@@ -84,6 +84,10 @@ public class StoryTextControl : MonoBehaviour
         if (StoryGameControl_LittleGirl.isStartStoryContent)
         {
             StoryGameControl_LittleGirl.isStartStoryContent = false;
+            if (StoryGameControl_LittleGirl._chapter == 2)
+            {
+                StoryGameControl_LittleGirl.isUseMatchesUI = true;
+            }
         }
         else if (StoryGameControl_LittleGirl.isGetSweaterAndHatContent)
         {

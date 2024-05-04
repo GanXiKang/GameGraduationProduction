@@ -21,9 +21,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isWear = false;
 
     //Chatper2
+    public GameObject UseMatchesUI;
     public GameObject pileWood;
     public Transform pileWoodPoint;
     public static bool isChapter2Finish = false;
+    public static bool isUseMatchesUI = false;
     public static bool isUseMatches = false;
     public static bool isFirstUseMatchesContent = false;
     public static bool isFindElfContent = false;
@@ -112,12 +114,14 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
 
             case 2:
+                UseMatchesUI.SetActive(isUseMatchesUI);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (!isUseMatches)
                     {
                         if (!isFirstUseMatchesContent)
                         {
+                            isUseMatchesUI = false;
                             isFirstUseMatchesContent = true;
                             StoryTextControl.textCount = 5;
                         }
