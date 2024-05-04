@@ -84,12 +84,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         chapter[1].SetActive(false);
                         chapter[2].SetActive(true);
                         break;
-
-                    case 5:                                                               //GoSideWalk
-                        chapter[1].SetActive(true);
-                        chapter[2].SetActive(false);
-                        break;
-
                 }
             }
         }
