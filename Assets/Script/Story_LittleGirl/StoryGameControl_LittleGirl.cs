@@ -35,7 +35,16 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
     void Start()
     {
-        chapter[_chapter].SetActive(true);
+        switch (_chapter)
+        {
+            case 1:
+                gameCollider[4].SetActive(false);
+                break;
+
+            case 2:
+                gameCollider[1].SetActive(false);
+                break;
+        }
         isStartStoryContent = true;
         if (isChapter1Finish && !isChapter2Finish)
         {
@@ -129,6 +138,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     isEnough = true;
                     isFindElfContent = true;
+                    gameCollider[3].SetActive(true);
                     StoryTextControl.textCount = 7;
                     TaskController._taskNumber = 9;
                 }
