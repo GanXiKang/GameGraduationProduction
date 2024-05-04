@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
+    public GameObject player;
     public GameObject[] chapter;
     public GameObject[] gameCollider;
+    public Transform startScenePoint;
     public static int _task = 0;
     public static int _chapter = 1;
     public static bool isStartStoryContent = false;
@@ -69,11 +71,15 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         break;
 
                     case 4:                                                               //GoAlley
-                        
+                        chapter[1].SetActive(false);
+                        chapter[2].SetActive(true);
+                        player.transform.position = startScenePoint.position;
                         break;
 
                     case 5:                                                               //GoSideWalk
-                        
+                        chapter[1].SetActive(true);
+                        chapter[2].SetActive(false);
+                        player.transform.position = startScenePoint.position
                         break;
 
                 }
