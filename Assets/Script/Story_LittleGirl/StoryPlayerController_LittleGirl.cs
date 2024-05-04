@@ -62,9 +62,5 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            _storyMoveInput = Vector3.zero;
-        }
     }
 }
