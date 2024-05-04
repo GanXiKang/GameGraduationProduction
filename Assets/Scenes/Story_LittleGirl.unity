@@ -8337,6 +8337,7 @@ GameObject:
   - component: {fileID: 718922187}
   - component: {fileID: 718922188}
   - component: {fileID: 718922189}
+  - component: {fileID: 718922190}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -8383,7 +8384,6 @@ MonoBehaviour:
   - {fileID: 1132585152}
   - {fileID: 529175222}
   - {fileID: 2138453715}
-  startScenePoint: {fileID: 1804715300}
   pileWood: {fileID: 3748487018370010383, guid: b9a1f62ffbc30e44d9546f74467a39a0,
     type: 3}
   pileWoodPoint: {fileID: 1132585153}
@@ -8442,6 +8442,18 @@ MonoBehaviour:
   taskUI: {fileID: 1040374827}
   taskText: {fileID: 1179799646}
   taskFile: {fileID: 4900000, guid: d5cbe7f94081764489e85cebb2a44a71, type: 3}
+--- !u!114 &718922190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718922184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc69db09102a904aa234997ddbcaf53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &734193279
 GameObject:
   m_ObjectHideFlags: 0
