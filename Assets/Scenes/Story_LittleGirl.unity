@@ -17248,7 +17248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 47488467}
-  _smoothTime: 0.5
+  _smoothTime: 0.15
 --- !u!114 &1820943392
 MonoBehaviour:
   m_ObjectHideFlags: 0
