@@ -79,7 +79,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     case 5:                                                               //GoSideWalk
                         chapter[1].SetActive(true);
                         chapter[2].SetActive(false);
-                        player.transform.position = startScenePoint.position
+                        player.transform.position = startScenePoint.position;
                         break;
 
                 }
