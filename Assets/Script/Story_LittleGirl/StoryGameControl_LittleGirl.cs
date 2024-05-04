@@ -9,6 +9,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject[] chapter;
     public GameObject[] gameCollider;
     public Transform startScenePoint;
+    public Transform chapter1FinishPoint;
     public static int _task = 0;
     public static int _chapter = 1;
     public static bool isStartStoryContent = false;
@@ -43,6 +44,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
             case 2:
                 gameCollider[1].SetActive(false);
+                player.transform.position = chapter1FinishPoint.position;
                 break;
         }
         isStartStoryContent = true;
@@ -112,6 +114,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     once = false;
                     TaskController._taskNumber = 2;
+                    chapter1FinishPoint.position = player.transform.position;
                     Invoke("GoHouseScene", 0.5f);
                 }
                 break;
