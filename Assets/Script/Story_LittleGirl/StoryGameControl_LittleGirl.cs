@@ -39,6 +39,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         {
             case 1:
                 //gameCollider[4].SetActive(false);
+                player.transform.position = new Vector3(36f, 1.43f, 3f);
                 break;
 
             case 2:
