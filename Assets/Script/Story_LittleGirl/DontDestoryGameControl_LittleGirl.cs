@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DontDestoryGameControl_LittleGirl : MonoBehaviour
 {
-    static DontDestoryControl instance;
+    static DontDestoryGameControl_LittleGirl instance;
 
     void Start()
     {
