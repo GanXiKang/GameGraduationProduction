@@ -8,7 +8,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject player;
     public GameObject[] chapter;
     public GameObject[] gameCollider;
-    public Transform startScenePoint;
+    public static Transform startScenePoint;
     public static int _task = 0;
     public static int _chapter = 1;
     public static bool isStartStoryContent = false;
@@ -31,6 +31,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isInsFireWoodContent = false;
     public static bool isChapter2EndContent = false;
     public static bool isStoryFinish = false;
+    public static bool isDestoryGameControl = false;
     bool isEnough = false;
     bool isIgnite = false;
 
@@ -39,6 +40,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 1:
+                startScenePoint = player.transform;
                 gameCollider[4].SetActive(false);
                 break;
 
@@ -177,6 +179,16 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         GameControl._day += 1;
-        _chapter += 1;
+        switch (_chapter)
+        {
+            case 1:
+                _chapter++;
+                break;
+
+            case 2:
+                isDestoryGameControl = true;
+                break;
+
+        }
     }
 }
