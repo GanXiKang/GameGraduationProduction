@@ -8,14 +8,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject player;
     public GameObject[] chapter;
     public GameObject[] gameCollider;
-    public static Transform startScenePoint;
     public static int _task = 0;
     public static int _chapter = 1;
     public static bool isStartStoryContent = false;
     bool once;
 
     //Chapter1
-    public static Transform chapter1FinishPoint;
     public static bool isChapter1Finish = false;
     public static bool isGetSweaterAndHatContent = false;
     public static bool isChapter1EndContent = false;
@@ -40,15 +38,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 1:
-                startScenePoint = player.transform;
-                gameCollider[4].SetActive(false);
+                //gameCollider[4].SetActive(false);
                 break;
 
             case 2:
                 gameCollider[1].SetActive(false);
-                print(chapter1FinishPoint.position);
-                player.transform.position = chapter1FinishPoint.position;
-                print(player.transform.position);
+                player.transform.position = new Vector3(36f, 1.43f, 3f);
                 break;
         }
         isStartStoryContent = true;
@@ -88,13 +83,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     case 4:                                                               //GoAlley
                         chapter[1].SetActive(false);
                         chapter[2].SetActive(true);
-                        player.transform.position = startScenePoint.position;
+                        player.transform.position = new Vector3(10.61f, 1.43f, -0.31f);
                         break;
 
                     case 5:                                                               //GoSideWalk
                         chapter[1].SetActive(true);
                         chapter[2].SetActive(false);
-                        player.transform.position = startScenePoint.position;
+                        player.transform.position = new Vector3(10.61f, 1.43f, -0.31f);
                         break;
 
                 }
@@ -118,8 +113,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     once = false;
                     TaskController._taskNumber = 2;
-                    chapter1FinishPoint = player.transform;
-                    print(chapter1FinishPoint.position);
                     Invoke("GoHouseScene", 0.5f);
                 }
                 break;
