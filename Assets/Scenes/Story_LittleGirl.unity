@@ -8338,6 +8338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 47488463}
+  camera: {fileID: 1820943386}
   chapter:
   - {fileID: 0}
   - {fileID: 1345698618}
