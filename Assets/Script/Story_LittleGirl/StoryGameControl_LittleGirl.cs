@@ -38,7 +38,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 1:
-                gameCollider[4].SetActive(false);
+                //gameCollider[4].SetActive(false);
                 break;
 
             case 2:
