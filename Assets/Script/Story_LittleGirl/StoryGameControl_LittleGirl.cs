@@ -45,6 +45,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             case 2:
                 gameCollider[1].SetActive(false);
                 player.transform.position = chapter1FinishPoint.position;
+                print(player.transform.position);
                 break;
         }
         isStartStoryContent = true;
@@ -114,7 +115,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     once = false;
                     TaskController._taskNumber = 2;
-                    //chapter1FinishPoint.position = player.transform.position;
+                    chapter1FinishPoint = player.transform;
+                    print(chapter1FinishPoint.position);
                     Invoke("GoHouseScene", 0.5f);
                 }
                 break;
