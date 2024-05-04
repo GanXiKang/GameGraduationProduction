@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
     public GameObject player;
+    public GameObject camera;
     public GameObject[] chapter;
     public GameObject[] gameCollider;
     public static int _task = 0;
@@ -38,13 +39,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 1:
-                //gameCollider[4].SetActive(false);
-                player.transform.position = new Vector3(36f, 1.43f, 3f);
+                gameCollider[4].SetActive(false);
                 break;
 
             case 2:
                 gameCollider[1].SetActive(false);
                 player.transform.position = new Vector3(36f, 1.43f, 3f);
+                camera.transform.position = new Vector3(36f, 3.6f, 0f);
                 break;
         }
         isStartStoryContent = true;
