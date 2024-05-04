@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
     public GameObject[] chapter;
+    public GameObject[] gameCollider;
     public static int _task = 0;
     public static int _chapter = 1;
     public static bool isStartStoryContent = false;
@@ -66,7 +67,15 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         BagController._itemQuantity[1] -= 8;
                         isIgnite = true;
                         break;
+
+                    case 4:                                                               //GoAlley
                         
+                        break;
+
+                    case 5:                                                               //GoSideWalk
+                        
+                        break;
+
                 }
             }
         }
