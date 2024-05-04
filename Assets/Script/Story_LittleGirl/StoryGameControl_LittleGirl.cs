@@ -44,6 +44,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
             case 2:
                 gameCollider[1].SetActive(false);
+                print(chapter1FinishPoint.position);
                 player.transform.position = chapter1FinishPoint.position;
                 print(player.transform.position);
                 break;
