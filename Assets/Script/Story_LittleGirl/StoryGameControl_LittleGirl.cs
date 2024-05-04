@@ -15,7 +15,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     bool once;
 
     //Chapter1
-    Transform chapter1FinishPoint;
+    public static Transform chapter1FinishPoint;
     public static bool isChapter1Finish = false;
     public static bool isGetSweaterAndHatContent = false;
     public static bool isChapter1EndContent = false;
