@@ -38,7 +38,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 1:
-                //gameCollider[4].SetActive(false);
+                gameCollider[4].SetActive(false);
                 break;
 
             case 2:
@@ -83,13 +83,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     case 4:                                                               //GoAlley
                         chapter[1].SetActive(false);
                         chapter[2].SetActive(true);
-                        player.transform.position = new Vector3(10.61f, 1.43f, -0.31f);
                         break;
 
                     case 5:                                                               //GoSideWalk
                         chapter[1].SetActive(true);
                         chapter[2].SetActive(false);
-                        player.transform.position = new Vector3(10.61f, 1.43f, -0.31f);
                         break;
 
                 }
