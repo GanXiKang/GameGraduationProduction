@@ -646,7 +646,7 @@ MonoBehaviour:
   drawFinishText: {fileID: 1762746756}
   boxC: {fileID: 1091245016}
   isDrawingComplete: 0
-  _completionThreshold: 90
+  _completionThreshold: 80
   _completionPercentage: 20
 --- !u!4 &141749544 stripped
 Transform:
