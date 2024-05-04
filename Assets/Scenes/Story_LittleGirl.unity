@@ -8374,6 +8374,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 1345698618}
   - {fileID: 639973674}
+  gameCollider:
+  - {fileID: 0}
+  - {fileID: 570331219}
+  - {fileID: 826992579}
+  - {fileID: 1132585152}
+  - {fileID: 529175222}
+  - {fileID: 2138453715}
   pileWood: {fileID: 3748487018370010383, guid: b9a1f62ffbc30e44d9546f74467a39a0,
     type: 3}
   pileWoodPoint: {fileID: 1132585153}
@@ -8709,7 +8716,7 @@ GameObject:
   - component: {fileID: 826992582}
   - component: {fileID: 826992581}
   m_Layer: 0
-  m_Name: Collider2
+  m_Name: Collider2_Elf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10012,7 +10019,7 @@ GameObject:
   - component: {fileID: 1132585154}
   - component: {fileID: 1132585155}
   m_Layer: 0
-  m_Name: InsFirePoint
+  m_Name: InsFirePoint_Collider3
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
