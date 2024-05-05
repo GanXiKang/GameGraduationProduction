@@ -164,7 +164,7 @@ public class GameControl : MonoBehaviour
                         UIController.isContentActive = true;
                         TextControl.textCount = 11;
                         Destroy(colliderObject[1]);
-                        BagController.isItemSlotAcite[21] = true;
+                        BagController.isItemSlotAcite[18] = true;
                         BedControl.isNight = true;
                         TaskController._taskNumber = 11;
                         break;
@@ -204,7 +204,7 @@ public class GameControl : MonoBehaviour
                         FlowerControl.isDestory = true;
                         if (_day == 2)
                         {
-                            BagController.isItemSlotAcite[25] = true;
+                            BagController.isItemSlotAcite[22] = true;
                             TaskController._taskNumber = 5;
                         }
                         break;

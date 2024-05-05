@@ -74,8 +74,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     case 1:                                                               //clothing&hat
                         _task++;
-                        BagController.isItemSlotAcite[4] = true;
-                        BagController.isItemSlotAcite[5] = true;
+                        BagController.isItemSlotAcite[2] = true;
                         break;
 
                     case 2:                                                               //Elf
