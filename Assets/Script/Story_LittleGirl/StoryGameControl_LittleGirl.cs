@@ -130,7 +130,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         }
                         else
                         {
-                            Invoke("MatchBurned", 2f);
+                            Invoke("MatchBurned", 3f);
                         }
                         isUseMatches = true;                        
                     }
