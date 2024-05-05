@@ -8580,6 +8580,7 @@ MonoBehaviour:
   - {fileID: 826992579}
   - {fileID: 1132585152}
   - {fileID: 529175222}
+  matchesLight: {fileID: 82637035}
   useMatchesUI: {fileID: 556707799}
   loadingUI: {fileID: 419310311}
   pileWood: {fileID: 3748487018370010383, guid: b9a1f62ffbc30e44d9546f74467a39a0,
