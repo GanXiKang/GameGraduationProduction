@@ -23,6 +23,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     //Chatper2
     public GameObject matchesLight;
     public GameObject useMatchesUI;
+    public GameObject fantasyUI;
     public GameObject loadingUI;
     public GameObject pileWood;
     public Transform pileWoodPoint;
@@ -30,6 +31,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isUseMatchesUI = false;
     public static bool isUseMatches = false;
     public static bool isFirstUseMatchesContent = false;
+    public static bool isFantasy = false;
     public static bool isFindElfContent = false;
     public static bool isInsFireWoodContent = false;
     public static bool isChapter2EndContent = false;
@@ -119,6 +121,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
             case 2:
                 useMatchesUI.SetActive(isUseMatchesUI);
+                fantasyUI.SetActive(isFantasy);
+                if (isFantasy)
+                {
+                    Invoke("FantasyEnd", 4f);
+                }
+
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (!isUseMatches)
@@ -169,6 +177,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
     void MatchBurned()
     {
+        isUseMatches = false;
+        matchesLight.SetActive(false);
+    }
+    void FantasyEnd()
+    {
+        isFantasy = false;
         isUseMatches = false;
         matchesLight.SetActive(false);
     }

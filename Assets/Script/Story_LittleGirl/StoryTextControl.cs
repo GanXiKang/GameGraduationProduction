@@ -101,12 +101,7 @@ public class StoryTextControl : MonoBehaviour
         }
         else if (StoryGameControl_LittleGirl.isFirstUseMatchesContent)
         {
-            //看火的畫面
-            //不需要改變這個的bool
-
-            //暫時的
-            StoryGameControl_LittleGirl.isFirstUseMatchesContent = false;
-            StoryGameControl_LittleGirl.isUseMatches = false;
+            StoryGameControl_LittleGirl.isFantasy = true;
         }
         else if (StoryGameControl_LittleGirl.isFindElfContent)
         {
