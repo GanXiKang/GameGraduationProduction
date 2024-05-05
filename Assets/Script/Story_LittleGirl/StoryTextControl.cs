@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class StoryTextControl : MonoBehaviour
 {
     [Header("UIComponents")]
+    public Transform player;
     public Transform target;
     public GameObject systemContent;
     public GameObject characterContent;
@@ -17,6 +18,7 @@ public class StoryTextControl : MonoBehaviour
     public int index;
     public float textSpend;
     public static int textCount = 1;
+    bool isPlayerTalk;
     bool textFinish;
     int whoContent;
 
@@ -38,8 +40,16 @@ public class StoryTextControl : MonoBehaviour
 
         //Œ¦Ô’¿òÔÚî^ÉÏ
         Vector3 offset = new Vector3(0f, 80f, 0f);
-        Vector3 p = Camera.main.WorldToScreenPoint(target.position);
-        characterContent.transform.position = p + offset;
+        if (isPlayerTalk)
+        {
+            Vector3 p = Camera.main.WorldToScreenPoint(player.position);
+            characterContent.transform.position = p + offset;
+        }
+        else 
+        {
+            Vector3 p = Camera.main.WorldToScreenPoint(target.position);
+            characterContent.transform.position = p + offset;
+        } 
     }
 
     void GetTextFormFile(TextAsset file)
@@ -129,6 +139,7 @@ public class StoryTextControl : MonoBehaviour
         switch (textList[index].Trim())
         {
             case "Ç§ºÉ":
+                isPlayerTalk = true;
                 systemContent.SetActive(false);
                 characterContent.SetActive(true);
                 index++;
@@ -136,6 +147,7 @@ public class StoryTextControl : MonoBehaviour
                 break;
 
             case "¾«ì`":
+                isPlayerTalk = false;
                 systemContent.SetActive(false);
                 characterContent.SetActive(true);
                 index++;
