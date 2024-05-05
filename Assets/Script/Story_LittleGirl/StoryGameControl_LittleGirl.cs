@@ -91,8 +91,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
                     case 4:                                                               //GoAlley
                         loadingUI.SetActive(true);
-                        chapter[2].SetActive(true);
-                        chapter[1].SetActive(false);
                         Invoke("CloseLoadingUI", 3f);
                         break;
                 }
@@ -193,6 +191,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     void CloseLoadingUI()
     {
         loadingUI.SetActive(false);
+        chapter[1].SetActive(false);
+        chapter[2].SetActive(true);  
     }
     void GoHouseScene()
     {
