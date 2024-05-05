@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 18457403}
   - component: {fileID: 18457402}
   m_Layer: 5
-  m_Name: Lattice02_Iron
+  m_Name: Lattice02_Sweater&Hat
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,8 +242,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1045352134}
+  m_Children: []
   m_Father: {fileID: 18151969}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -271,7 +270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 7083463f1a4a5ec4d8fd8313485eb018, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -376,7 +375,7 @@ GameObject:
   - component: {fileID: 65495754}
   - component: {fileID: 65495753}
   m_Layer: 5
-  m_Name: Lattice22
+  m_Name: Lattice22_Bluecolor
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -421,7 +420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 2243259f0b718664fa5409384cf1f5a0, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -448,7 +447,7 @@ GameObject:
   - component: {fileID: 67998846}
   - component: {fileID: 67998845}
   m_Layer: 5
-  m_Name: Lattice18
+  m_Name: Lattice18_Crystal
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -493,7 +492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: e86494e90438e6a468b0f4519c0f9961, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1637,7 +1636,7 @@ GameObject:
   - component: {fileID: 351071328}
   - component: {fileID: 351071327}
   m_Layer: 5
-  m_Name: Lattice25_Redcolor
+  m_Name: Lattice25
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1682,7 +1681,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 2243259f0b718664fa5409384cf1f5a0, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4350,7 +4349,7 @@ GameObject:
   - component: {fileID: 765115041}
   - component: {fileID: 765115040}
   m_Layer: 5
-  m_Name: Lattice04_Sweater
+  m_Name: Lattice04
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4395,7 +4394,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 7083463f1a4a5ec4d8fd8313485eb018, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -4576,7 +4575,7 @@ GameObject:
   - component: {fileID: 816395174}
   - component: {fileID: 816395173}
   m_Layer: 5
-  m_Name: Lattice03_Steel
+  m_Name: Lattice03_Matches
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4593,8 +4592,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1672928010}
+  m_Children: []
   m_Father: {fileID: 18151969}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -5255,7 +5253,7 @@ GameObject:
   - component: {fileID: 910807373}
   - component: {fileID: 910807372}
   m_Layer: 5
-  m_Name: Lattice05_Hat
+  m_Name: Lattice05
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5300,7 +5298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 750c5a461bc23044b83283a8238d8554, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5834,87 +5832,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019492478}
-  m_CullTransparentMesh: 1
---- !u!1 &1045352133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1045352134}
-  - component: {fileID: 1045352136}
-  - component: {fileID: 1045352135}
-  m_Layer: 5
-  m_Name: Quantity02_Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1045352134
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045352133}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7115292, y: 1.1052257, z: 1.2969999}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 18457401}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.1, y: -33.1}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1045352135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045352133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 2
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: '0
-
-'
---- !u!222 &1045352136
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045352133}
   m_CullTransparentMesh: 1
 --- !u!1 &1052029629
 GameObject:
@@ -7002,11 +6919,7 @@ MonoBehaviour:
   - {fileID: 1701008159}
   - {fileID: 1396958968}
   - {fileID: 1135585334}
-  quantity_Text:
-  - {fileID: 0}
-  - {fileID: 1451764541}
-  - {fileID: 1045352135}
-  - {fileID: 1672928011}
+  quantity_Text: {fileID: 1451764541}
 --- !u!114 &1480171941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7633,87 +7546,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4634677, y: 0.95225656, z: 1.4208806}
   m_Center: {x: 0.0010694265, y: -0.2664978, z: 0.003041625}
---- !u!1 &1672928009
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1672928010}
-  - component: {fileID: 1672928012}
-  - component: {fileID: 1672928011}
-  m_Layer: 5
-  m_Name: Quantity03_Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1672928010
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672928009}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.71152925, y: 1.1052257, z: 1.297}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 816395172}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.1, y: -33.1}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1672928011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672928009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 2
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: '0
-
-'
---- !u!222 &1672928012
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1672928009}
-  m_CullTransparentMesh: 1
 --- !u!1 &1677107056
 GameObject:
   m_ObjectHideFlags: 0
@@ -8676,7 +8508,7 @@ GameObject:
   - component: {fileID: 1880811749}
   - component: {fileID: 1880811748}
   m_Layer: 5
-  m_Name: Lattice21_Crystal
+  m_Name: Lattice21
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8721,7 +8553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: e86494e90438e6a468b0f4519c0f9961, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -9161,7 +8993,7 @@ GameObject:
   - component: {fileID: 2032329171}
   - component: {fileID: 2032329170}
   m_Layer: 5
-  m_Name: Lattice01_Wood
+  m_Name: Lattice01_Paper
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
