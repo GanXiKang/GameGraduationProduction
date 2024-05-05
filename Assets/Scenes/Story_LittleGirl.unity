@@ -8621,6 +8621,7 @@ MonoBehaviour:
   - {fileID: 529175222}
   matchesLight: {fileID: 82637035}
   useMatchesUI: {fileID: 556707799}
+  fantasyUI: {fileID: 0}
   loadingUI: {fileID: 419310311}
   pileWood: {fileID: 3748487018370010383, guid: b9a1f62ffbc30e44d9546f74467a39a0,
     type: 3}
@@ -16726,6 +16727,7 @@ GameObject:
   - component: {fileID: 1638881041}
   - component: {fileID: 1638881040}
   - component: {fileID: 1638881039}
+  - component: {fileID: 1638881042}
   m_Layer: 0
   m_Name: Elf
   m_TagString: Untagged
@@ -16822,6 +16824,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638881037}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1638881042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638881037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56f1ec251040d647b2daa26c864cc6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1654109035
 GameObject:
   m_ObjectHideFlags: 0
