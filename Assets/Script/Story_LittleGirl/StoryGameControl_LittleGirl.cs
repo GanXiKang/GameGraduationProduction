@@ -21,7 +21,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isWear = false;
 
     //Chatper2
-    public GameObject UseMatchesUI;
+    public GameObject useMatchesUI;
+    public GameObject loadingUI;
     public GameObject pileWood;
     public Transform pileWoodPoint;
     public static bool isChapter2Finish = false;
@@ -85,8 +86,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         break;
 
                     case 4:                                                               //GoAlley
-                        chapter[1].SetActive(false);
+                        loadingUI.SetActive(true);
                         chapter[2].SetActive(true);
+                        chapter[1].SetActive(false);
+                        Invoke("CloseLoadingUI", 2f);
                         break;
                 }
             }
@@ -114,7 +117,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
 
             case 2:
-                UseMatchesUI.SetActive(isUseMatchesUI);
+                useMatchesUI.SetActive(isUseMatchesUI);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (!isUseMatches)
@@ -181,5 +184,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
 
         }
+    }
+    void CloseLoadingUI()
+    {
+        loadingUI.SetActive(false);
     }
 }
