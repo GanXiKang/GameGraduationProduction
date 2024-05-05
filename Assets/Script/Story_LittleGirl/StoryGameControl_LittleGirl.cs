@@ -122,9 +122,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
             case 2:
                 useMatchesUI.SetActive(isUseMatchesUI);
-                fantasyUI.SetActive(isFantasy);
+               
                 if (isFantasy)
                 {
+                    isFantasy = false;
+                    fantasyUI.SetActive(true);
                     Invoke("FantasyEnd", 4f);
                 }
 
@@ -183,9 +185,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         matchesLight.SetActive(false);
     }
     void FantasyEnd()
-    {
-        isFantasy = false;
+    {  
         isUseMatches = false;
+        fantasyUI.SetActive(false);
         matchesLight.SetActive(false);
     }
     void CloseLoadingUI()
