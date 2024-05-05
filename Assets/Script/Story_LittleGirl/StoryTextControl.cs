@@ -32,8 +32,8 @@ public class StoryTextControl : MonoBehaviour
 
     void Update()
     {
-        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent || StoryGameControl_LittleGirl.isChapter1EndContent 
-            || StoryGameControl_LittleGirl.isFirstUseMatchesContent || StoryGameControl_LittleGirl.isFindElfContent || StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
+        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent || StoryGameControl_LittleGirl.isChapter1EndContent || StoryGameControl_LittleGirl.isFirstUseMatchesContent 
+            || StoryGameControl_LittleGirl.isFantasyEndContent || StoryGameControl_LittleGirl.isFindElfContent || StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
         {
             TextController();
         }
@@ -113,6 +113,10 @@ public class StoryTextControl : MonoBehaviour
         {
             StoryGameControl_LittleGirl.isFantasy = true;
             StoryGameControl_LittleGirl.isFirstUseMatchesContent = false;
+        }
+        else if (StoryGameControl_LittleGirl.isFantasyEndContent)
+        {
+            StoryGameControl_LittleGirl.isFantasyEndContent = false;
         }
         else if (StoryGameControl_LittleGirl.isFindElfContent)
         {
