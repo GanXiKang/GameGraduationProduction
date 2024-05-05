@@ -102,6 +102,7 @@ public class StoryTextControl : MonoBehaviour
         else if (StoryGameControl_LittleGirl.isFirstUseMatchesContent)
         {
             StoryGameControl_LittleGirl.isFantasy = true;
+            StoryGameControl_LittleGirl.isFirstUseMatchesContent = false;
         }
         else if (StoryGameControl_LittleGirl.isFindElfContent)
         {

@@ -30,6 +30,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isChapter2Finish = false;
     public static bool isUseMatchesUI = false;
     public static bool isUseMatches = false;
+    public static bool isFirstUseMatches = false;
     public static bool isFirstUseMatchesContent = false;
     public static bool isFantasy = false;
     public static bool isFindElfContent = false;
@@ -131,9 +132,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     if (!isUseMatches)
                     {
-                        if (!isFirstUseMatchesContent)
+                        if (!isFirstUseMatches)
                         {
                             isUseMatchesUI = false;
+                            isFirstUseMatches = true;
                             isFirstUseMatchesContent = true;
                             StoryTextControl.textCount = 5;
                         }
