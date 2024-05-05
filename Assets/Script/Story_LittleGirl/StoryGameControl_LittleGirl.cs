@@ -21,6 +21,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isWear = false;
 
     //Chatper2
+    public GameObject matchesLight;
     public GameObject useMatchesUI;
     public GameObject loadingUI;
     public GameObject pileWood;
@@ -131,8 +132,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         else
                         {
                             Invoke("MatchBurned", 3f);
-                        }
-                        isUseMatches = true;                        
+                        } 
+                        isUseMatches = true;
+                        matchesLight.SetActive(true);
                     }
                 }
 
@@ -168,6 +170,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     void MatchBurned()
     {
         isUseMatches = false;
+        matchesLight.SetActive(false);
+    }
+    void CloseLoadingUI()
+    {
+        loadingUI.SetActive(false);
     }
     void GoHouseScene()
     {
@@ -184,9 +191,5 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
 
         }
-    }
-    void CloseLoadingUI()
-    {
-        loadingUI.SetActive(false);
-    }
+    }   
 }
