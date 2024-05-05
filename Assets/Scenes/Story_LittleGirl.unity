@@ -8621,7 +8621,7 @@ MonoBehaviour:
   - {fileID: 529175222}
   matchesLight: {fileID: 82637035}
   useMatchesUI: {fileID: 556707799}
-  fantasyUI: {fileID: 0}
+  fantasyUI: {fileID: 1284490896}
   loadingUI: {fileID: 419310311}
   pileWood: {fileID: 3748487018370010383, guid: b9a1f62ffbc30e44d9546f74467a39a0,
     type: 3}
