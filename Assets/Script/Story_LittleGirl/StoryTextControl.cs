@@ -107,6 +107,7 @@ public class StoryTextControl : MonoBehaviour
         else if (StoryGameControl_LittleGirl.isFindElfContent)
         {
             StoryGameControl_LittleGirl.isFindElfContent = false;
+            StoryElfControl.isFlyLeave = true;
         }
         else if (StoryGameControl_LittleGirl.isInsFireWoodContent)
         {
