@@ -127,7 +127,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     isFantasy = false;
                     fantasyUI.SetActive(true);
-                    Invoke("FantasyEnd", 4f);
+                    Invoke("FantasyEnd", 3f);
                 }
 
                 if (Input.GetKeyDown(KeyCode.E))
