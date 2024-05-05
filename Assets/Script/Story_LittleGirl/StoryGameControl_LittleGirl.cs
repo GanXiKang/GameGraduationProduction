@@ -204,7 +204,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
             case 2:
                 isDestoryGameControl = true;
-                BagController.isItemSlotAcite[3] = true;
                 break;
 
         }
