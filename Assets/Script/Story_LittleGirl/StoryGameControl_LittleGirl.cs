@@ -89,7 +89,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
                     case 4:                                                               //GoAlley
                         loadingUI.SetActive(true);
-                        Invoke("CloseLoadingUI", 3f);
+                        Invoke("CloseLoadingUI", 4f);
                         break;
                 }
             }
