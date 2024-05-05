@@ -8661,11 +8661,7 @@ MonoBehaviour:
   - {fileID: 1829899185}
   - {fileID: 1813324994}
   - {fileID: 1624039984}
-  quantity_Text:
-  - {fileID: 0}
-  - {fileID: 1587567781}
-  - {fileID: 348788716}
-  - {fileID: 1849629376}
+  quantity_Text: {fileID: 0}
 --- !u!114 &718922189
 MonoBehaviour:
   m_ObjectHideFlags: 0
