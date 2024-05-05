@@ -8579,7 +8579,7 @@ MonoBehaviour:
   - {fileID: 1829899185}
   - {fileID: 1813324994}
   - {fileID: 1624039984}
-  quantity_Text: {fileID: 0}
+  quantity_Text: {fileID: 1587567781}
 --- !u!114 &718922189
 MonoBehaviour:
   m_ObjectHideFlags: 0
