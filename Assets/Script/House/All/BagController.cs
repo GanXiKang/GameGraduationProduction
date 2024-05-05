@@ -7,10 +7,10 @@ public class BagController : MonoBehaviour
 {
     public GameObject bagUI;
     public GameObject[] itemSlot;
-    public Text[] quantity_Text;
+    public Text quantity_Text;
 
     public static bool[] isItemSlotAcite;
-    public static int[] _itemQuantity;
+    public static int _itemQuantity = 0;
 
     public static bool isBagActive;
 
@@ -23,15 +23,10 @@ public class BagController : MonoBehaviour
             MenuGameControl.isNewGameModel = false;
 
             isItemSlotAcite = new bool[itemSlot.Length];
-            _itemQuantity = new int[quantity_Text.Length];
 
             for (int i = 0; i < itemSlot.Length; i++)
             {
                 isItemSlotAcite[i] = false;
-            }
-            for (int t = 1; t < quantity_Text.Length; t++)
-            {
-                _itemQuantity[t] = 0;
             }
         }
     }
@@ -66,10 +61,8 @@ public class BagController : MonoBehaviour
             {
                 itemSlot[k].SetActive(isItemSlotAcite[k]);
             }
-            for (int q = 1; q < quantity_Text.Length; q++)
-            {
-                quantity_Text[1].text = _itemQuantity[1].ToString();
-            }
+            
+            quantity_Text.text = _itemQuantity.ToString();
         }
     }
 }

@@ -7,7 +7,7 @@ public class StoryBagControl : MonoBehaviour
 {
     public GameObject bagUI;
     public GameObject[] itemSlot;
-    public Text[] quantity_Text;
+    public Text quantity_Text;
 
     bool isBagActive;
 
@@ -33,9 +33,7 @@ public class StoryBagControl : MonoBehaviour
         {
             itemSlot[k].SetActive(BagController.isItemSlotAcite[k]);
         }
-        for (int q = 1; q < quantity_Text.Length; q++)
-        {
-            quantity_Text[q].text = BagController._itemQuantity[q].ToString();
-        }
+
+        quantity_Text.text = BagController._itemQuantity.ToString();
     }
 }

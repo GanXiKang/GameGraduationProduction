@@ -85,7 +85,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
                     case 3:                                                               //insfirepoint
                         Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
-                        BagController._itemQuantity[1] -= 8;
                         isIgnite = true;
                         break;
 
