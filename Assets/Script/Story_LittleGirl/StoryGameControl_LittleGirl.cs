@@ -90,7 +90,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         loadingUI.SetActive(true);
                         chapter[2].SetActive(true);
                         chapter[1].SetActive(false);
-                        Invoke("CloseLoadingUI", 2f);
+                        Invoke("CloseLoadingUI", 3f);
                         break;
                 }
             }
