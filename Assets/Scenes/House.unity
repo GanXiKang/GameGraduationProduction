@@ -3299,6 +3299,11 @@ PrefabInstance:
       propertyPath: m_MotionVectors
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3050962747267814038, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5628001488927733817, guid: d19c46f9dfdd01b4e85ec059d2eb1069,
         type: 3}
       propertyPath: m_Name
