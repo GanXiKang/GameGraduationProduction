@@ -1066,7 +1066,7 @@ MonoBehaviour:
   lookBedPoint: {fileID: 969992880}
   lookBookCasePoint: {fileID: 49753307}
   lookWorkbenchPoint: {fileID: 1936532658}
-  lookMakePoint: {fileID: 0}
+  lookMakePoint: {fileID: 1319492827}
   _moveTime: 2
 --- !u!1 &197810296
 GameObject:
