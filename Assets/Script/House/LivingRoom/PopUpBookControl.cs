@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PopUpBookControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Animator anim;
+
+    public static bool isOpenBook;
+
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
