@@ -8,7 +8,6 @@ public class GameControl : MonoBehaviour
     public static int _day = 1;
     public static bool isGotoStroy;
     int _whichStory;
-    bool autoLoadStoryScene = false;
     bool isFullScreen;
 
 
@@ -42,12 +41,6 @@ public class GameControl : MonoBehaviour
     void Update()
     {
         InteractionButton();
-
-        if (autoLoadStoryScene && !isSleepingContent)           //只有第一天會自動進去故事裏
-        {
-            Story_LittleGirl();
-            autoLoadStoryScene = false;
-        }
 
         if (isGotoStroy)
         {
@@ -105,7 +98,7 @@ public class GameControl : MonoBehaviour
                         switch (_day)
                         {
                             case 1:
-                                autoLoadStoryScene = true;
+                                Story_LittleGirl();
                                 break;
 
                             case 2:
