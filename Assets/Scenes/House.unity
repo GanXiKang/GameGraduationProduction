@@ -725,6 +725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cinderella_StoryBook
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a44295e7e27f7384d8c7f9f1c210afca,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2904,6 +2909,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Beanstalk_StoryBook
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c3afc92aa4267f14e8c654dca408a42a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6472,6 +6482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Momotaro_StoryBook
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 45328d26da0cd3042a86f214079d5e32,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
