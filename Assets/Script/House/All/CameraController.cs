@@ -22,9 +22,9 @@ public class CameraController : MonoBehaviour
     public Transform lookWorkbenchPoint;
     public static bool isLookWorkbench;
 
-    [Header("LookOpenStoryBook")]
-    public Transform lookOpenStoryBookPoint;
-    public static bool isLookOpenStoryBook;
+    [Header("LookMake")]
+    public Transform lookMakePoint;
+    public static bool isLookMake;
 
     public float _moveTime = 2f;
     float _distance;
@@ -36,7 +36,7 @@ public class CameraController : MonoBehaviour
         isLookBed = false;
         isLookBookCase = false;
         isLookWorkbench = false;
-        isLookOpenStoryBook = false;
+        isLookMake = false;
 
         _maxDistance = 14.5f;
     }
@@ -56,12 +56,11 @@ public class CameraController : MonoBehaviour
         //        isFollow = false;
         //    }
         //}
-        if (isLookWorkbench || isLookOpenStoryBook)
+        if (isLookWorkbench)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 isLookWorkbench = false;
-                isLookOpenStoryBook = false;
                 isFollow = true;
             }
         }
@@ -96,10 +95,10 @@ public class CameraController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, lookWorkbenchPoint.rotation, _moveTime * Time.deltaTime);
         }
 
-        if (isLookOpenStoryBook)
+        if (isLookMake)
         {
-            transform.position = Vector3.Lerp(transform.position, lookOpenStoryBookPoint.position, _moveTime * Time.deltaTime);
-            transform.rotation = Quaternion.Lerp(transform.rotation, lookOpenStoryBookPoint.rotation, _moveTime * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, lookMakePoint.position, _moveTime * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookMakePoint.rotation, _moveTime * Time.deltaTime);
         }
     }
 }
