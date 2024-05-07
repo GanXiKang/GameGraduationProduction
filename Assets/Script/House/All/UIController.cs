@@ -55,7 +55,7 @@ public class UIController : MonoBehaviour
         }
         if (CameraController.isLookWorkbench)
         {
-            Invoke("WorkbenchUI", 3f);
+            Invoke("WorkbenchUI", 3.5f);
             PopUpBookControl.isOpenBook = true;
             isOnce = true;
         }
@@ -173,7 +173,6 @@ public class UIController : MonoBehaviour
             case 1:                               //Ã«ÒÂ
                 if (isFinish)
                 {
-                    storyBook.SetActive(true);
                     PopUpBookControl.isFinishQuiz = true;
                     DeleteUsedMaterial();
                 }
