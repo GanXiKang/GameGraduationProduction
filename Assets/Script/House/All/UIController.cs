@@ -131,7 +131,7 @@ public class UIController : MonoBehaviour
     {
         switch (_whatDate)
         {
-            case 1:                               //Ã«ÒÂÃ«Ã±
+            case 1:                               //Ã«ÒÂ
                 needMaterialQuantity = 3;
                 for (int i = 1; i < materialNeeded.Length; i++)
                 {
@@ -154,7 +154,7 @@ public class UIController : MonoBehaviour
     {
         switch (_whatDate)
         {
-            case 1:                               //Ã«ÒÂ&Ã±&Ë{É«îÁÏ
+            case 1:                               //Ã«ÒÂ&Ë{É«îÁÏ
                 if (BagController.isItemSlotAcite[2] && BagController.isItemSlotAcite[22])
                 {
                     makeButton.interactable = true;
@@ -170,7 +170,7 @@ public class UIController : MonoBehaviour
     {
         switch (_whatDate)
         {
-            case 1:                               //Ã«ÒÂÃ«Ã±
+            case 1:                               //Ã«ÒÂ
                 if (isFinish)
                 {
                     storyBook.SetActive(true);
