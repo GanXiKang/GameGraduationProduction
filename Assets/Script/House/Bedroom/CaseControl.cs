@@ -46,4 +46,53 @@ public class CaseControl : MonoBehaviour
                 break;
         }
     }
+
+    void Update()
+    { 
+        if (isStoryBookLittleGirlFinish)
+        {
+            storyLittleGirl_Button.SetActive(false);
+        }
+        else
+        {
+            storyBookLitteGirl.SetActive(isStoryBookLittleGirl);
+            storyLittleGirl_Button.SetActive(isStoryBookLittleGirl);
+        }
+        if (isStoryBookCrystalFinish)
+        {
+            storyCrystal_Button.SetActive(false);
+        }
+        else
+        {
+            storyBookCrystal.SetActive(isStoryBookCrystal);
+            storyCrystal_Button.SetActive(isStoryBookCrystal);
+        }
+        if (isStoryBookMomotaroFinish)
+        {
+            storyMomotaro_Button.SetActive(false);
+        }
+        else
+        {
+            storyBookMomotaro.SetActive(isStoryBookMomotaro);
+            storyMomotaro_Button.SetActive(isStoryBookMomotaro);
+        }
+        if (isStoryBookBeanstalkFinish)
+        {
+            storyBeanstalk_Button.SetActive(false);
+        }
+        else
+        {
+            storyBookBeanstalk.SetActive(isStoryBookBeanstalk);
+            storyBeanstalk_Button.SetActive(isStoryBookBeanstalk);
+        }
+        if (isStoryBookCinderellaFinish)
+        {
+            storyCinderella_Button.SetActive(false);
+        }
+        else
+        {
+            storyBookCinderella.SetActive(isStoryBookCinderella);
+            storyCinderella_Button.SetActive(isStoryBookCinderella);
+        }
+    }
 }
