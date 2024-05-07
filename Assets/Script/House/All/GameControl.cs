@@ -114,9 +114,6 @@ public class GameControl : MonoBehaviour
 
                             case 3:
                                 Invoke("ChooseStoryBook", 1f);
-                                //UIController.isContentActive = true;
-                                //TextControl.textCount = 13;
-                                //isSleepingContent = true;
                                 break;
                         }
                         break;
@@ -237,6 +234,11 @@ public class GameControl : MonoBehaviour
     public void Story_Crystal()
     {
         _whichStory = 3;
+
+        UIController.isContentActive = true;
+        TextControl.textCount = 13;
+        isSleepingContent = true;
+
         CameraController.isLookBed = true;
         CameraController.isLookBookCase = false;
         UIController.isChooseStoryActive = false;
