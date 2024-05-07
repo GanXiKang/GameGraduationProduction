@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2345440506397346064
+--- !u!1001 &19858001216133043
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,26 +8,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4561756893381121973}
     m_Modifications:
-    - target: {fileID: 1003711502020236777, guid: 827dc890cadb0954e9af3584323fc822,
-        type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003711502020236777, guid: 827dc890cadb0954e9af3584323fc822,
-        type: 3}
-      propertyPath: InitialModule.startSpeed.minScalar
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003711502020236777, guid: 827dc890cadb0954e9af3584323fc822,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.minScalar
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581185342872349267, guid: 827dc890cadb0954e9af3584323fc822,
-        type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6179629800758563291, guid: 827dc890cadb0954e9af3584323fc822,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -88,11 +68,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 827dc890cadb0954e9af3584323fc822, type: 3}
---- !u!4 &8452932311275641035 stripped
+--- !u!4 &6162323071866635880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6179629800758563291, guid: 827dc890cadb0954e9af3584323fc822,
     type: 3}
-  m_PrefabInstance: {fileID: 2345440506397346064}
+  m_PrefabInstance: {fileID: 19858001216133043}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4090434789332922462
 PrefabInstance:
@@ -120,17 +100,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 653be5be26da3da43940772015567f8b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.203493
+      value: 13.913282
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 653be5be26da3da43940772015567f8b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.048935
+      value: 2.048936
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 653be5be26da3da43940772015567f8b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -68.853294
+      value: -69.01914
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 653be5be26da3da43940772015567f8b,
         type: 3}
@@ -178,7 +158,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 653be5be26da3da43940772015567f8b,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8452932311275641035}
+      addedObject: {fileID: 6162323071866635880}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 653be5be26da3da43940772015567f8b,
         type: 3}
