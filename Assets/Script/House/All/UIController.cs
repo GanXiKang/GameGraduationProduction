@@ -55,7 +55,7 @@ public class UIController : MonoBehaviour
         }
         if (CameraController.isLookWorkbench)
         {
-            Invoke("WorkbenchUI", 2f);
+            Invoke("WorkbenchUI", 3f);
             PopUpBookControl.isOpenBook = true;
             isOnce = true;
         }

@@ -74,7 +74,7 @@ public class WorkbenchControl : MonoBehaviour
                     GameControl.isFinishSweaterContent = true;
                     TaskController._taskNumber = 6;
                 }
-                Invoke("Drawing_ClearAllPencils", 2f);
+                Invoke("Drawing_ClearAllPencils", 0.8f);
             }
         }
     }
