@@ -38,7 +38,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isInsFireWoodContent = false;
     public static bool isChapter2EndContent = false;
     public static bool isStoryFinish = false;
-    public static bool isDestoryGameControl = false;
     bool isEnough = false;
     bool isIgnite = false;
 
@@ -206,7 +205,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
 
             case 2:
-                isDestoryGameControl = true;
+                CaseControl.isStoryBookLittleGirlFinish = true;
                 break;
 
         }
