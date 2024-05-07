@@ -8,7 +8,7 @@ public class PopUpBookControl : MonoBehaviour
 
     public GameObject quizImage;
     public static bool isOpenBook;
-    public static bool isFinishQuiz;
+    public static bool isFinishQuiz = false;
 
     void Start()
     {
@@ -20,10 +20,7 @@ public class PopUpBookControl : MonoBehaviour
         if (isOpenBook)
         {
             anim.SetInteger("isChapter", StoryGameControl_LittleGirl._chapter);
-        }
-        if (isFinishQuiz)
-        {
-            quizImage.SetActive(true);
+            quizImage.SetActive(isFinishQuiz);
         }
     }
 }
