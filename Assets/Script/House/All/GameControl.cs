@@ -206,6 +206,7 @@ public class GameControl : MonoBehaviour
     public void Story_LittleGirl()
     {
         _whichStory = 2;
+        StoryGameControl_LittleGirl._chapter++;
         switch (StoryGameControl_LittleGirl._chapter)
         {
             case 1:
