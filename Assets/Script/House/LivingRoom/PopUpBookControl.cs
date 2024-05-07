@@ -19,7 +19,7 @@ public class PopUpBookControl : MonoBehaviour
     {
         if (isOpenBook)
         {
-            anim.SetInteger("IsChapter", StoryGameControl_LittleGirl._chapter);
+            anim.SetInteger("isChapter", StoryGameControl_LittleGirl._chapter);
             quizImage.SetActive(isFinishQuiz);
         }
     }

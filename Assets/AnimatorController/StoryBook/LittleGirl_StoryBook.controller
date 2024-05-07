@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 7
-    m_ConditionEvent: IsChapter
+    m_ConditionEvent: isChapter
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1669047496341983765}
@@ -61,7 +61,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 6
-    m_ConditionEvent: IsChapter
+    m_ConditionEvent: isChapter
     m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4735150126297020114}
@@ -86,7 +86,7 @@ AnimatorController:
   m_Name: LittleGirl_StoryBook
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: IsChapter
+  - m_Name: isChapter
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
