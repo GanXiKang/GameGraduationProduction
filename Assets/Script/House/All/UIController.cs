@@ -125,7 +125,10 @@ public class UIController : MonoBehaviour
     }
     void WorkbenchUI()
     {
-        workbench.SetActive(CameraController.isLookWorkbench);
+        if (!isFinish)
+        {
+            workbench.SetActive(CameraController.isLookWorkbench);
+        }
     }
     void MaterialWindowInformation()
     {
