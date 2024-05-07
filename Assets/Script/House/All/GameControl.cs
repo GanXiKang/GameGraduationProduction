@@ -40,24 +40,9 @@ public class GameControl : MonoBehaviour
     {
         InteractionButton();
 
-        if (autoLoadStoryScene && !isSleepingContent)
+        if (autoLoadStoryScene && !isSleepingContent)           //只有第一天會自動進去故事裏
         {
-            switch (_day)
-            {
-                case 1:
-                    Story_LittleGirl();
-                    break;
-
-                case 2:
-                    Story_LittleGirl();
-                    TaskController._taskNumber = 8;
-                    break;
-
-                case 3:
-                    Story_Crystal();
-                    break;
-            
-            }
+            Story_LittleGirl();
             autoLoadStoryScene = false;
         }
 
