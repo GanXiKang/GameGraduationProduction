@@ -84,6 +84,7 @@ public class TextControl : MonoBehaviour
         else if (GameControl.isSleepingContent)
         {
             GameControl.isSleepingContent = false;
+            GameControl.isGotoStroy = true;
         }
         else if (GameControl.isOpenBagContent)
         {

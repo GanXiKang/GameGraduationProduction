@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour
 {
     public static int _day = 1;
+    public static bool isGotoStroy;
+    int _whichStory;
     bool autoLoadStoryScene = false;
+    bool isFullScreen;
+
 
     [Header("Object")]
     public GameObject[] colliderObject;
@@ -28,12 +32,11 @@ public class GameControl : MonoBehaviour
     public static bool isCheckStoryBookContent = false;
     public static bool isFindStoryBookContent;
 
-
-    bool isFullScreen;
-
     void Start()
     {
         DayStart();
+        isGotoStroy = false;
+        _whichStory = 0;
     }
 
     void Update()
@@ -44,6 +47,12 @@ public class GameControl : MonoBehaviour
         {
             Story_LittleGirl();
             autoLoadStoryScene = false;
+        }
+
+        if (isGotoStroy)
+        {
+            SceneManager.LoadScene(_whichStory);
+            isGotoStroy = false;
         }
 
         if (Input.GetKeyDown(KeyCode.F11))                  //暫時放這 未來做setting系統在移
@@ -96,29 +105,19 @@ public class GameControl : MonoBehaviour
                         switch (_day)
                         {
                             case 1:
-                                UIController.isContentActive = true;
-                                TextControl.textCount = 2;
-                                isSleepingContent = true;
                                 autoLoadStoryScene = true;
                                 break;
 
                             case 2:
-                                UIController.isContentActive = true;
-                                TextControl.textCount = 8;
-                                isSleepingContent = true;
-                                autoLoadStoryScene = true;
+                                Invoke("ChooseStoryBook", 1f);        
                                 break;
 
                             case 3:
-                                UIController.isContentActive = true;
-                                TextControl.textCount = 13;
-                                isSleepingContent = true;
-                                autoLoadStoryScene = true;
+                                Invoke("ChooseStoryBook", 1f);
+                                //UIController.isContentActive = true;
+                                //TextControl.textCount = 13;
+                                //isSleepingContent = true;
                                 break;
-                        }
-                        if(!autoLoadStoryScene)
-                        { 
-                            UIController.isChooseStoryActive = true;
                         }
                         break;
 
@@ -202,6 +201,12 @@ public class GameControl : MonoBehaviour
             }
         }
     }
+    void ChooseStoryBook()
+    {
+        UIController.isChooseStoryActive = true;
+        CameraController.isLookBookCase = true;
+        CameraController.isLookBed = false;
+    }
     void AutoFalseisNextPlace()
     {
         isNextPlace = false;
@@ -210,16 +215,30 @@ public class GameControl : MonoBehaviour
     //button
     public void Story_LittleGirl()
     {
-        SceneManager.LoadScene(2);
-        CameraController.isFollow = true;
-        CameraController.isLookBed = false;
-        UIController.isChooseStoryActive = false;
+        _whichStory = 2;
+        switch (StoryGameControl_LittleGirl._chapter)
+        {
+            case 1:
+                UIController.isContentActive = true;
+                TextControl.textCount = 2;
+                isSleepingContent = true;
+                break;
+
+            case 2:
+                UIController.isContentActive = true;
+                TextControl.textCount = 8;
+                isSleepingContent = true;
+                break;
+        }
+        CameraController.isLookBed = true;
+        CameraController.isLookBookCase = false;
+        UIController.isChooseStoryActive = false;   
     }
     public void Story_Crystal()
     {
-        SceneManager.LoadScene(3);
-        CameraController.isFollow = true;
-        CameraController.isLookBed = false;
+        _whichStory = 3;
+        CameraController.isLookBed = true;
+        CameraController.isLookBookCase = false;
         UIController.isChooseStoryActive = false;
     }
 }
