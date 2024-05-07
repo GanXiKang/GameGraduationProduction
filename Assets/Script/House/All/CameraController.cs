@@ -33,8 +33,11 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         isFollow = true;
-        isLookWorkbench = false;
         isLookBed = false;
+        isLookBookCase = false;
+        isLookWorkbench = false;
+        isLookOpenStoryBook = false;
+
         _maxDistance = 14.5f;
     }
 
@@ -53,11 +56,12 @@ public class CameraController : MonoBehaviour
         //        isFollow = false;
         //    }
         //}
-        if (isLookWorkbench)
+        if (isLookWorkbench || isLookOpenStoryBook)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 isLookWorkbench = false;
+                isLookOpenStoryBook = false;
                 isFollow = true;
             }
         }
@@ -74,16 +78,28 @@ public class CameraController : MonoBehaviour
             transform.rotation = Quaternion.Euler(30f, 0f, 0f);
         }
 
+        if (isLookBed)
+        {
+            transform.position = Vector3.Lerp(transform.position, lookBedPoint.position, _moveTime * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookBedPoint.rotation, _moveTime * Time.deltaTime);
+        }
+
+        if (isLookBookCase)
+        {
+            transform.position = Vector3.Lerp(transform.position, lookBookCasePoint.position, _moveTime * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookBookCasePoint.rotation, _moveTime * Time.deltaTime);
+        }
+
         if (isLookWorkbench)
         {
             transform.position = Vector3.Lerp(transform.position, lookWorkbenchPoint.position, _moveTime * Time.deltaTime);
             transform.rotation = Quaternion.Lerp(transform.rotation, lookWorkbenchPoint.rotation, _moveTime * Time.deltaTime);
         }
 
-        if (isLookBed)
+        if (isLookOpenStoryBook)
         {
-            transform.position = Vector3.Lerp(transform.position, lookBedPoint.position, _moveTime * Time.deltaTime);
-            transform.rotation = Quaternion.Lerp(transform.rotation, lookBedPoint.rotation, _moveTime * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, lookOpenStoryBookPoint.position, _moveTime * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookOpenStoryBookPoint.rotation, _moveTime * Time.deltaTime);
         }
     }
 }
