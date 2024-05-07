@@ -15,6 +15,9 @@ public class PopUpBookControl : MonoBehaviour
 
     void Update()
     {
-        
+        if (isOpenBook)
+        {
+            anim.SetInteger("isChapter", StoryGameControl_LittleGirl._chapter);
+        }
     }
 }
