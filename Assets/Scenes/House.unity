@@ -1063,8 +1063,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 197810302}
   _smoothTime: 0.5
-  lookWorkbenchPoint: {fileID: 1319492827}
   lookBedPoint: {fileID: 969992880}
+  lookBookCasePoint: {fileID: 49753307}
+  lookWorkbenchPoint: {fileID: 1319492827}
+  lookOpenStoryBookPoint: {fileID: 1936532658}
   _moveTime: 2
 --- !u!1 &197810296
 GameObject:
