@@ -65,6 +65,8 @@ public class WorkbenchControl : MonoBehaviour
                 BedControl.isNight = true;           //•º•rµÄ
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
+                CameraController.isLookWorkbench = true;
+                CameraController.isLookMake = false;
                 if (GameControl._day == 2)
                 {
                     UIController.isContentActive = true;

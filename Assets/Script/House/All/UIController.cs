@@ -205,6 +205,8 @@ public class UIController : MonoBehaviour
     {
         isFinish = false;
         WorkbenchControl.isDrawing = true;
+        CameraController.isLookMake = true;
+        CameraController.isLookWorkbench = false;
         storyBook.SetActive(false);
         materialWindow.SetActive(false);
     }
