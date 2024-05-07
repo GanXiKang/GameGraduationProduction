@@ -72,7 +72,6 @@ public class WorkbenchControl : MonoBehaviour
                     GameControl.isFinishSweaterContent = true;
                     TaskController._taskNumber = 6;
                     StoryGameControl_LittleGirl._chapter++;
-                    print(StoryGameControl_LittleGirl._chapter);
                 }
                 Invoke("Drawing_ClearAllPencils", 2f);
             }
