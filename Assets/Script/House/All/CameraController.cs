@@ -10,13 +10,21 @@ public class CameraController : MonoBehaviour
     public static bool isFollow;
     private Vector3 velocity = Vector3.zero;
 
+    [Header("LookBed")]
+    public Transform lookBedPoint;
+    public static bool isLookBed;
+
+    [Header("LookBookCase")]
+    public Transform lookBookCasePoint;
+    public static bool isLookBookCase;
+
     [Header("LookWorkbench")]
     public Transform lookWorkbenchPoint;
     public static bool isLookWorkbench;
 
-    [Header("LookBed")]
-    public Transform lookBedPoint;
-    public static bool isLookBed;
+    [Header("LookOpenStoryBook")]
+    public Transform lookOpenStoryBookPoint;
+    public static bool isLookOpenStoryBook;
 
     public float _moveTime = 2f;
     float _distance;
