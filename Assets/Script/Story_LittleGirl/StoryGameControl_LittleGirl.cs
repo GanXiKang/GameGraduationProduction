@@ -201,7 +201,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         switch (_chapter)
         {
             case 1:
-                _chapter++;
+                //_chapter++;
                 break;
 
             case 2:
