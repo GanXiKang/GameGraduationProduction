@@ -27,7 +27,6 @@ public class UIController : MonoBehaviour
     public GameObject workbench;
     public GameObject storyBook;
     public GameObject materialWindow;
-    public GameObject finishItemImage;
     public GameObject[] materialNeeded;
     public Sprite[] itemImage;
     public Button makeButton;
@@ -57,6 +56,7 @@ public class UIController : MonoBehaviour
         if (CameraController.isLookWorkbench)
         {
             Invoke("WorkbenchUI", 2f);
+            PopUpBookControl.isOpenBook = true;
             isOnce = true;
         }
         else
@@ -174,7 +174,7 @@ public class UIController : MonoBehaviour
                 if (isFinish)
                 {
                     storyBook.SetActive(true);
-                    finishItemImage.SetActive(true);
+                    PopUpBookControl.isFinishQuiz = true;
                     DeleteUsedMaterial();
                 }
                 break;
