@@ -109,11 +109,11 @@ public class GameControl : MonoBehaviour
                                 break;
 
                             case 2:
-                                Invoke("ChooseStoryBook", 1f);        
+                                Invoke("ChooseStoryBook", 1.5f);        
                                 break;
 
                             case 3:
-                                Invoke("ChooseStoryBook", 1f);
+                                Invoke("ChooseStoryBook", 1.5f);
                                 break;
                         }
                         break;
