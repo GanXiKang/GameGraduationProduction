@@ -207,7 +207,6 @@ public class GameControl : MonoBehaviour
     {
         _whichStory = 2;
         StoryGameControl_LittleGirl._chapter++;
-        print(StoryGameControl_LittleGirl._chapter);
         switch (StoryGameControl_LittleGirl._chapter)
         {
             case 1:
