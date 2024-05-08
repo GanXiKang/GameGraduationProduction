@@ -8225,6 +8225,13 @@ MonoBehaviour:
   - {fileID: 1701008159}
   - {fileID: 1396958968}
   - {fileID: 1135585334}
+  - {fileID: 2309673}
+  - {fileID: 2105495323}
+  - {fileID: 1710462659}
+  - {fileID: 457392849}
+  - {fileID: 601608002}
+  - {fileID: 1398368695}
+  - {fileID: 1916895715}
   quantity_Text: {fileID: 1451764541}
 --- !u!114 &1480171941
 MonoBehaviour:
