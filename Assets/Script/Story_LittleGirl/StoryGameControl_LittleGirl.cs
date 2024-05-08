@@ -33,6 +33,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isFirstUseMatches = false;
     public static bool isFirstUseMatchesContent = false;
     public static bool isFantasy = false;
+    public static bool isSeeFantasy = false;
     public static bool isFantasyEndContent = false;
     public static bool isFindElfContent = false;
     public static bool isInsFireWoodContent = false;
@@ -126,6 +127,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 if (isFantasy)
                 {
                     isFantasy = false;
+                    isSeeFantasy = true;
                     fantasyUI.SetActive(true);
                     Invoke("FantasyEnd", 3f);
                 }
@@ -187,6 +189,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     void FantasyEnd()
     {  
         isUseMatches = false;
+        isSeeFantasy = false;
         fantasyUI.SetActive(false);
         matchesLight.SetActive(false);
         isFantasyEndContent = true;
