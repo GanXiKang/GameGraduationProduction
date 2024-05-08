@@ -31,6 +31,8 @@ public class GameControl : MonoBehaviour
     public static bool isCheckStoryBookContent = false;
     public static bool isFindStoryBookContent;
 
+    bool isFindCrystalStoryBook;
+
     void Start()
     {
         DayStart();
@@ -125,11 +127,22 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 3:                                                     //cabinet
-                        if (_day == 3 && !isCheckStoryBookContent)
+                        switch (_day)
                         {
-                            isCheckStoryBookContent = true;
-                            UIController.isContentActive = true;
-                            TextControl.textCount = 10;
+                            case 3:
+                                if (!isCheckStoryBookContent)
+                                {
+                                    isCheckStoryBookContent = true;
+                                    UIController.isContentActive = true;
+                                    TextControl.textCount = 10;
+                                }
+                                if (isFindCrystalStoryBook)
+                                {
+                                    isFindCrystalStoryBook = false;
+                                    BagController.isItemSlotAcite[29] = false;
+                                    CaseControl.isStoryBookCrystal = true;
+                                }
+                                break;
                         }
                         break;
 
@@ -138,7 +151,8 @@ public class GameControl : MonoBehaviour
                         UIController.isContentActive = true;
                         TextControl.textCount = 11;
                         Destroy(colliderObject[1]);
-                        BagController.isItemSlotAcite[18] = true;
+                        BagController.isItemSlotAcite[29] = true;
+                        isFindCrystalStoryBook = true;
                         BedControl.isNight = true;
                         TaskController._taskNumber = 11;
                         break;
@@ -178,7 +192,7 @@ public class GameControl : MonoBehaviour
                         FlowerControl.isDestory = true;
                         if (_day == 2)
                         {
-                            BagController.isItemSlotAcite[22] = true;
+                            BagController.isItemSlotAcite[29] = true;
                             TaskController._taskNumber = 5;
                         }
                         break;
