@@ -135,7 +135,7 @@ public class UIController : MonoBehaviour
         switch (_whatDate)
         {
             case 1:                               //√´“¬
-                needMaterialQuantity = 3;
+                needMaterialQuantity = 2;
                 for (int i = 1; i < materialNeeded.Length; i++)
                 {
                     if (i <= needMaterialQuantity)
@@ -149,7 +149,6 @@ public class UIController : MonoBehaviour
                 }
                 materialNeeded[1].GetComponent<Image>().sprite = itemImage[1];
                 materialNeeded[2].GetComponent<Image>().sprite = itemImage[2];
-                materialNeeded[3].GetComponent<Image>().sprite = itemImage[3];
                 break;
         }
     }
@@ -158,7 +157,7 @@ public class UIController : MonoBehaviour
         switch (_whatDate)
         {
             case 1:                               //√´“¬&À{…´ÓÅ¡œ
-                if (BagController.isItemSlotAcite[2] && BagController.isItemSlotAcite[22])
+                if (BagController.isItemSlotAcite[2] && BagController.isItemSlotAcite[33])
                 {
                     makeButton.interactable = true;
                 }
@@ -190,7 +189,7 @@ public class UIController : MonoBehaviour
                 if (isFinish)
                 {
                     BagController.isItemSlotAcite[2] = false;
-                    BagController.isItemSlotAcite[22] = false;
+                    BagController.isItemSlotAcite[33] = false;
                 }
                 break;
         }
