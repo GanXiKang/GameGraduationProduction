@@ -5818,9 +5818,8 @@ MonoBehaviour:
   - {fileID: 1558994223}
   itemImage:
   - {fileID: 0}
-  - {fileID: 21300000, guid: 7083463f1a4a5ec4d8fd8313485eb018, type: 3}
-  - {fileID: 21300000, guid: 750c5a461bc23044b83283a8238d8554, type: 3}
-  - {fileID: 21300000, guid: 2243259f0b718664fa5409384cf1f5a0, type: 3}
+  - {fileID: 21300000, guid: 7dcb9b08352c61841bd7fe95b289ecef, type: 3}
+  - {fileID: 21300000, guid: 2fad51aa26a1f174a95fede434391bbd, type: 3}
   makeButton: {fileID: 385361699}
 --- !u!1 &873830858
 GameObject:
