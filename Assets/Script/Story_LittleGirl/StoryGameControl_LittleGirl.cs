@@ -140,6 +140,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                             isFirstUseMatches = true;
                             isFirstUseMatchesContent = true;
                             StoryTextControl.textCount = 5;
+                            StoryPlayerController_LittleGirl.isStop = true;
                         }
                         else
                         {

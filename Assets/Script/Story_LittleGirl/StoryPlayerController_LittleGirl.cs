@@ -11,6 +11,8 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
     private Vector3 _storyMoveInput;
 
     [Header("Movement")]
+    public static bool isStop = false;
+
     public float _moveSpeed = 10f;
     public float _gravity = 20f;
 
@@ -60,6 +62,14 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
                 {
                     _direction = 0f;
                 }
+            }
+        }
+        else
+        {
+            if (isStop)
+            {
+                isStop = false;
+                _storyMoveInput = Vector3.zero;
             }
         }
     }
