@@ -81,7 +81,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
                     case 2:                                                               //Elf
                         _task++;
-                        //µ√µΩºàèà∫Õƒæ≤ƒ
+                        BagController.isItemSlotAcite[1] = true;
+                        BagController.isItemSlotAcite[3] = true;
                         break;
 
                     case 3:                                                               //insfirepoint
@@ -208,6 +209,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
             case 2:
                 CaseControl.isStoryBookLittleGirlFinish = true;
+                BagController.isItemSlotAcite[4] = true;
                 break;
 
         }
