@@ -5143,7 +5143,7 @@ GameObject:
   - component: {fileID: 765115041}
   - component: {fileID: 765115040}
   m_Layer: 5
-  m_Name: Lattice04
+  m_Name: Lattice04_Match
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5188,7 +5188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: a7e949f77d056ed44b315a6b10c1e2e1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5406,7 +5406,7 @@ GameObject:
   - component: {fileID: 816395174}
   - component: {fileID: 816395173}
   m_Layer: 5
-  m_Name: Lattice03_Match
+  m_Name: Lattice03_PileWood
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5451,7 +5451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: a7e949f77d056ed44b315a6b10c1e2e1, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
