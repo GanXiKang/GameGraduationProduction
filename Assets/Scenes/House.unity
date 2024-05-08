@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 24336479}
   - component: {fileID: 24336478}
   m_Layer: 5
-  m_Name: Lattice14
+  m_Name: Lattice14_Cloth
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: d53df2702cd30864585d2c6702589736, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 67998846}
   - component: {fileID: 67998845}
   m_Layer: 5
-  m_Name: Lattice18
+  m_Name: Lattice18_Mayo
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -602,7 +602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 77c8ca51095a0e94d8f6b832e6425b88, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3507,7 +3507,7 @@ GameObject:
   - component: {fileID: 603402723}
   - component: {fileID: 603402722}
   m_Layer: 5
-  m_Name: Lattice17
+  m_Name: Lattice17_Butter
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3552,7 +3552,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: e2dda244d8bd515439001a9a8845f070, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -9785,7 +9785,7 @@ GameObject:
   - component: {fileID: 1880811749}
   - component: {fileID: 1880811748}
   m_Layer: 5
-  m_Name: Lattice21
+  m_Name: Lattice21_Cake
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9830,7 +9830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 43566a9e15e0da64cb8af9ea95e3c9e4, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -11207,7 +11207,7 @@ GameObject:
   - component: {fileID: 2130115362}
   - component: {fileID: 2130115361}
   m_Layer: 5
-  m_Name: Lattice15
+  m_Name: Lattice15_Corn
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11252,7 +11252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: b3700ae3c641a10438846838601448b5, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
