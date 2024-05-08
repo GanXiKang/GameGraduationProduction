@@ -192,7 +192,7 @@ public class GameControl : MonoBehaviour
                         FlowerControl.isDestory = true;
                         if (_day == 2)
                         {
-                            BagController.isItemSlotAcite[29] = true;
+                            BagController.isItemSlotAcite[33] = true;
                             TaskController._taskNumber = 5;
                         }
                         break;
