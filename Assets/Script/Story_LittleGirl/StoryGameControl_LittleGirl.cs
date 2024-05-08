@@ -81,6 +81,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
                     case 2:                                                               //Elf
                         _task++;
+                        BagController._itemQuantity++;
                         BagController.isItemSlotAcite[1] = true;
                         BagController.isItemSlotAcite[3] = true;
                         break;
