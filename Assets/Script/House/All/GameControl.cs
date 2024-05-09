@@ -160,7 +160,7 @@ public class GameControl : MonoBehaviour
                                     isFindCrystalStoryBook = false;
                                     BagController.isItemSlotAcite[29] = false;
                                     CaseControl.isStoryBookCrystal = true;
-
+                                    TaskController._taskNumber = 11;
                                 }
                                 break;
                         }
