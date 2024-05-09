@@ -10,7 +10,7 @@ public class TaskController : MonoBehaviour
     public TextAsset taskFile;
 
     public static bool isTaskActive;
-    public static int _taskNumber = 1;                    //方便看Task
+    public static int _taskNumber = 1;                    //在text裏的第1行 = C#的第0行
 
     List<string> taskList = new List<string>();
 
