@@ -28,7 +28,7 @@ public class TaskController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.T))
             {
-                isTaskActive = !isTaskActive;
+                Back_Button();
             }
         }
     }
@@ -41,5 +41,10 @@ public class TaskController : MonoBehaviour
         {
             taskList.Add(line);
         }
+    }
+
+    public void Back_Button()
+    {
+        isTaskActive = !isTaskActive;
     }
 }
