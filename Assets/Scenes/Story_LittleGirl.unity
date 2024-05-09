@@ -5944,7 +5944,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 165363610}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 718922189}
+        m_TargetAssemblyTypeName: TaskController, Assembly-CSharp
+        m_MethodName: Back_Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &165363610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9490,7 +9502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1040374828
 RectTransform:
   m_ObjectHideFlags: 0
