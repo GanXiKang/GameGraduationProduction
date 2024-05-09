@@ -57,9 +57,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
         }
         isStartStoryContent = true;
+        StoryLittleGirlUIControl.isContentActive = true;
         if (isChapter1Finish && !isChapter2Finish)
         {
-            StoryLittleGirlUIControl.isContentActive = true;
             StoryTextControl.textCount = 4;
         }
         once = true;
