@@ -83,7 +83,7 @@ public class GameControl : MonoBehaviour
 
             case 2:
                 Invoke("OpeningText", 1f);
-                TextControl.textCount = 3;
+                TextControl.textCount = 2;
                 break;
 
             case 3:
