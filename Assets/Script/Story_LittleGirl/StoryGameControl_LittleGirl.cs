@@ -179,7 +179,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 if (_chapter == 2 && isChapter2Finish && once)
                 {
                     once = false;
-                    TaskController._taskNumber = 10;
+                    TaskController._taskNumber = 9;
                     Invoke("GoHouseScene", 0.5f);
                 }
                 break;
