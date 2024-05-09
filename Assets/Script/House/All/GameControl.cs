@@ -7,6 +7,7 @@ public class GameControl : MonoBehaviour
 {
     public static int _day = 1;
     public static bool isGotoStroy;
+    public static bool isChooseStoryBook;
     int _whichStory;
     bool isFullScreen;
 
@@ -22,12 +23,18 @@ public class GameControl : MonoBehaviour
     //Content
     public static bool isOpeningStopMove;
     public static bool isOpeningContent;
+
     public static bool isSleepingContent;
+
     public static bool isFirstOpenBag = true;
     public static bool isOpenBagContent;
+
     public static bool isFirstOpenWorkbench = true;
     public static bool isOpenWorkbenchContent;
+
     public static bool isFinishSweaterContent;
+
+    public static bool isBedContent;
     public static bool isCheckStoryBookContent = false;
     public static bool isFindStoryBookContent;
 
@@ -37,6 +44,7 @@ public class GameControl : MonoBehaviour
     {
         DayStart();
         isGotoStroy = false;
+        isChooseStoryBook = false;
         _whichStory = 0;
     }
 
@@ -48,6 +56,13 @@ public class GameControl : MonoBehaviour
         {
             SceneManager.LoadScene(_whichStory);
             isGotoStroy = false;
+        }
+        if (isChooseStoryBook)
+        {
+            isChooseStoryBook = false;
+            UIController.isChooseStoryActive = true;
+            CameraController.isLookBookCase = true;
+            CameraController.isLookBed = false;
         }
 
         if (Input.GetKeyDown(KeyCode.F11))                  //暫時放這 未來做setting系統在移
@@ -104,11 +119,15 @@ public class GameControl : MonoBehaviour
                                 break;
 
                             case 2:
-                                Invoke("ChooseStoryBook", 1.5f);        
+                                UIController.isContentActive = true;
+                                isBedContent = true;
+                                TextControl.textCount = 12;
                                 break;
 
                             case 3:
-                                Invoke("ChooseStoryBook", 1.5f);
+                                UIController.isContentActive = true;
+                                isBedContent = true;
+                                TextControl.textCount = 12;
                                 break;
                         }
                         break;
@@ -204,12 +223,6 @@ public class GameControl : MonoBehaviour
                 }
             }
         }
-    }
-    void ChooseStoryBook()
-    {
-        UIController.isChooseStoryActive = true;
-        CameraController.isLookBookCase = true;
-        CameraController.isLookBed = false;
     }
     void AutoFalseisNextPlace()
     {
