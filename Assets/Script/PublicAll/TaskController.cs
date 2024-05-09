@@ -24,7 +24,7 @@ public class TaskController : MonoBehaviour
     {
         taskUI.SetActive(isTaskActive);
         taskText.text = taskList[_taskNumber - 1];       //ÅäºÏnotepadµÄÐÐ”µ
-        if (!UIController.isContentActive && !BagController.isBagActive && GameControl._day != 1)
+        if (!UIController.isContentActive && !BagController.isBagActive && GameControl._day != 1 && CameraController.isFollow)
         {
             if (Input.GetKeyDown(KeyCode.T))
             {
