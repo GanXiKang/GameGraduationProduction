@@ -126,7 +126,7 @@ public class GameControl : MonoBehaviour
                         }
                         break;
 
-                    case 3:                                                     //cabinet
+                    case 3:                                                     //case
                         switch (_day)
                         {
                             case 3:
