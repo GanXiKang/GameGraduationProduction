@@ -27,7 +27,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
         content.SetActive(isContentActive);
 
         ColliderObjectName();
-        ContentActiveControl();
+        //ContentActiveControl();
     }
 
     void ColliderObjectName()
@@ -51,16 +51,16 @@ public class StoryLittleGirlUIControl : MonoBehaviour
                 break;
         }
     }
-    void ContentActiveControl()
-    {
-        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent || StoryGameControl_LittleGirl.isChapter1EndContent|| StoryGameControl_LittleGirl.isFirstUseMatchesContent 
-            || StoryGameControl_LittleGirl.isFantasyEndContent || StoryGameControl_LittleGirl.isFindElfContent || StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
-        {
-            isContentActive = true;
-        }
-        else 
-        {
-            isContentActive = false;
-        }
-    }
+    //void ContentActiveControl()
+    //{
+    //    if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent || StoryGameControl_LittleGirl.isChapter1EndContent|| StoryGameControl_LittleGirl.isFirstUseMatchesContent 
+    //        || StoryGameControl_LittleGirl.isFantasyEndContent || StoryGameControl_LittleGirl.isFindElfContent || StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
+    //    {
+    //        isContentActive = true;
+    //    }
+    //    else 
+    //    {
+    //        isContentActive = false;
+    //    }
+    //}
 }
