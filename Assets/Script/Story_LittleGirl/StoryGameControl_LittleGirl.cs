@@ -104,11 +104,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             case 1:
                 if (!isGetSweaterAndHatContent && _task >= 1 && !isWear)
                 {
+                    StoryLittleGirlUIControl.isContentActive = true;
                     isGetSweaterAndHatContent = true;
                     StoryTextControl.textCount = 2;
                 }
                 if (!isChapter1EndContent && isWear && !isChapter1Finish)
                 {
+                    StoryLittleGirlUIControl.isContentActive = true;
                     isChapter1EndContent = true;
                     StoryTextControl.textCount = 3;
                 }
@@ -139,6 +141,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         {
                             isUseMatchesUI = false;
                             isFirstUseMatches = true;
+                            StoryLittleGirlUIControl.isContentActive = true;
                             isFirstUseMatchesContent = true;
                             StoryTextControl.textCount = 5;
                         }
@@ -156,17 +159,20 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isEnough = true;
                     isFindElfContent = true;
                     gameCollider[3].SetActive(true);
+                    StoryLittleGirlUIControl.isContentActive = true;
                     StoryTextControl.textCount = 7;
                     TaskController._taskNumber = 9;
                 }
                 if (!isInsFireWoodContent && isIgnite)
                 {
                     isIgnite = false;
+                    StoryLittleGirlUIControl.isContentActive = true;
                     isInsFireWoodContent = true;
                     StoryTextControl.textCount = 8;
                 }
                 if (!isChapter2EndContent && isStoryFinish && !isChapter2Finish)
                 {
+                    StoryLittleGirlUIControl.isContentActive = true;
                     isChapter2EndContent = true;
                     StoryTextControl.textCount = 9;
                 }
@@ -191,6 +197,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         isSeeFantasy = false;
         fantasyUI.SetActive(false);
         matchesLight.SetActive(false);
+        StoryLittleGirlUIControl.isContentActive = true;
         isFantasyEndContent = true;
         StoryTextControl.textCount = 6;
     }
