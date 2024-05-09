@@ -161,7 +161,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     gameCollider[3].SetActive(true);
                     StoryLittleGirlUIControl.isContentActive = true;
                     StoryTextControl.textCount = 7;
-                    TaskController._taskNumber = 9;
+                    TaskController._taskNumber = 8;
                 }
                 if (!isInsFireWoodContent && isIgnite)
                 {
@@ -200,6 +200,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         StoryLittleGirlUIControl.isContentActive = true;
         isFantasyEndContent = true;
         StoryTextControl.textCount = 6;
+        TextControl.textCount = 7;
     }
     void CloseLoadingUI()
     {
