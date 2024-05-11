@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class SettingControl : MonoBehaviour
 {
-    public GameObject settingUI;
     public Image bookUI;
+    public GameObject[] settingUI;
     public Button[] labelColor;
     public Sprite[] turnPage;
 
@@ -25,17 +25,8 @@ public class SettingControl : MonoBehaviour
 
     void ButtonInteractable()
     {
-        for (int i = 1; i < labelColor.Length; i++)
-        {
-            if (i == _page)
-            {
-                labelColor[i].interactable = false;
-            }
-            else
-            {
-                labelColor[i].interactable = true;
-            }
-        }
+        settingUI[_page].SetActive(true);
+        labelColor[_page].interactable = false;
     }
 
     //Button
@@ -53,7 +44,7 @@ public class SettingControl : MonoBehaviour
     }
     public void LabelRed_Button()               //êPé]
     {
-        settingUI.SetActive(false);
+        settingUI[0].SetActive(false);
     }
 
     //·­•ø„Ó®‹
