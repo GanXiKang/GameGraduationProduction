@@ -12,32 +12,44 @@ public class SettingControl : MonoBehaviour
 
     public static int _page = 1;
 
+    bool isUIInteractable;
+
     void Start()
     {
-        
+        isUIInteractable = true;
     }
 
     
     void Update()
     {
-     
+        ButtonInteractable();
     }
 
     void ButtonInteractable()
     {
-        for (int i = 1; i < settingUI.Length; i++)
+        if (isUIInteractable)
         {
-            if (i == _page)
+            for (int i = 1; i < settingUI.Length; i++)
             {
-                settingUI[_page].SetActive(true);
-                labelColor[_page].interactable = false;
-            }
-            else
-            {
-                settingUI[_page].SetActive(false);
-                labelColor[_page].interactable = true;
+                if (i == _page)
+                {
+                    settingUI[i].SetActive(true);
+                    labelColor[i].interactable = false;
+                }
+                else
+                {
+                    settingUI[i].SetActive(false);
+                    labelColor[i].interactable = true;
+                }
             }
         }
+        else 
+        {
+            for (int i = 1; i < settingUI.Length; i++)
+            {
+                 settingUI[_page].SetActive(false);
+            }
+        }    
     }
 
     //Button
@@ -45,13 +57,11 @@ public class SettingControl : MonoBehaviour
     {
         _page = 1;
         StartCoroutine(TurnPageRight()); 
-        ButtonInteractable();
     }
     public void LabelBlue_Button()              //²Ù×÷
     {
         _page = 2;
         StartCoroutine(TurnPageLeft());
-        ButtonInteractable();
     }
     public void LabelRed_Button()               //êPé]
     {
@@ -61,6 +71,7 @@ public class SettingControl : MonoBehaviour
     //·­•ø„Ó®‹
     IEnumerator TurnPageLeft()
     {
+        isUIInteractable = false;
         bookUI.sprite = turnPage[1];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[2];
@@ -70,9 +81,11 @@ public class SettingControl : MonoBehaviour
         bookUI.sprite = turnPage[3];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[0];
+        isUIInteractable = true;
     }
     IEnumerator TurnPageRight()
     {
+        isUIInteractable = false;
         bookUI.sprite = turnPage[3];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[4];
@@ -82,5 +95,6 @@ public class SettingControl : MonoBehaviour
         bookUI.sprite = turnPage[1];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[0];
+        isUIInteractable = true;
     }
 }
