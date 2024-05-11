@@ -416,6 +416,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingUI: {fileID: 797634640}
   bookUI: {fileID: 1460235336}
+  labelColor:
+  - {fileID: 0}
+  - {fileID: 335989826}
+  - {fileID: 1959142425}
+  - {fileID: 275243767}
   turnPage:
   - {fileID: 21300000, guid: 88f36bbcbb4cb824abe7b11d79aaaa5b, type: 3}
   - {fileID: 21300000, guid: 2ea3245a93a86974eb818d48b12d1a5a, type: 3}
@@ -457,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 488, y: 405.00018}
+  m_AnchoredPosition: {x: 488, y: 405.30017}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275243767
@@ -708,7 +713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -515, y: 403}
+  m_AnchoredPosition: {x: -515, y: 403.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335989826
@@ -751,7 +756,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 335989827}
   m_OnClick:
     m_PersistentCalls:
@@ -977,10 +982,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1460235331}
   - {fileID: 335989825}
   - {fileID: 1959142424}
   - {fileID: 275243766}
-  - {fileID: 1460235331}
   m_Father: {fileID: 1443906667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1295,7 +1300,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -320.7, y: 424}
+  m_AnchoredPosition: {x: -320.7, y: 424.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959142425
