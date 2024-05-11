@@ -47,7 +47,7 @@ public class SettingControl : MonoBehaviour
         {
             for (int i = 1; i < settingUI.Length; i++)
             {
-                 settingUI[_page].SetActive(false);
+                 settingUI[i].SetActive(false);
             }
         }    
     }
