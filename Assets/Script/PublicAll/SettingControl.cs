@@ -40,29 +40,20 @@ public class SettingControl : MonoBehaviour
 
     //Button
     public void LabelGreen_Button()             //ÔO¶¨
-    {  
-        StartCoroutine(TurnPageRight());
+    {
         _page = 1;
+        StartCoroutine(TurnPageRight()); 
         ButtonInteractable();
     }
     public void LabelBlue_Button()              //²Ù×÷
     {
-        if (_page == 1)
-        {
-            StartCoroutine(TurnPageLeft());
-        } 
-        else
-        {
-            StartCoroutine(TurnPageRight());
-        }
         _page = 2;
+        StartCoroutine(TurnPageLeft());
         ButtonInteractable();
     }
     public void LabelRed_Button()               //êPé]
     {
-        StartCoroutine(TurnPageLeft());
-        _page = 3;
-        ButtonInteractable();
+        settingUI.SetActive(false);
     }
 
     //·­•ø„Ó®‹
