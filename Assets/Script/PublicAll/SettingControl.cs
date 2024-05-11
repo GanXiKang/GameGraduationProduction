@@ -23,9 +23,9 @@ public class SettingControl : MonoBehaviour
     IEnumerator TurnPageLeft()
     {
         bookUI.sprite = turnPage[1];
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         bookUI.sprite = turnPage[2];
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         bookUI.sprite = turnPage[0];
     }
     IEnumerator TurnPageRight()
