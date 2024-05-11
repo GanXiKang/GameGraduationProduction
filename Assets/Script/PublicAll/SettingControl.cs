@@ -25,8 +25,19 @@ public class SettingControl : MonoBehaviour
 
     void ButtonInteractable()
     {
-        settingUI[_page].SetActive(true);
-        labelColor[_page].interactable = false;
+        for (int i = 1; i < settingUI.Length; i++)
+        {
+            if (i == _page)
+            {
+                settingUI[_page].SetActive(true);
+                labelColor[_page].interactable = false;
+            }
+            else
+            {
+                settingUI[_page].SetActive(false);
+                labelColor[_page].interactable = true;
+            }
+        }
     }
 
     //Button
