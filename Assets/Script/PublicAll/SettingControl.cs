@@ -11,13 +11,26 @@ public class SettingControl : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(TurnPageLeft());
+        //StartCoroutine(TurnPageRight());
     }
 
     
     void Update()
     {
         
+    }
+
+    public void LabelGreen_Button()             //ÔO¶¨
+    {
+        
+    }
+    public void LabelBlue_Button()              //²Ù×÷
+    {
+
+    }
+    public void LabelRed_Button()               //êPé]
+    {
+
     }
 
     IEnumerator TurnPageLeft()
@@ -31,9 +44,9 @@ public class SettingControl : MonoBehaviour
     IEnumerator TurnPageRight()
     {
         bookUI.sprite = turnPage[3];
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         bookUI.sprite = turnPage[4];
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         bookUI.sprite = turnPage[0];
     }
 }
