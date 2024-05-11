@@ -270,6 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 269828604}
   - component: {fileID: 269828603}
+  - component: {fileID: 269828606}
   - component: {fileID: 269828605}
   m_Layer: 0
   m_Name: GameControl
@@ -401,6 +402,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &269828606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269828602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a0615d713d8fe849a662ea0084b36a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settingUI: {fileID: 797634640}
+  bookUI: {fileID: 1460235336}
+  turnPage:
+  - {fileID: 21300000, guid: 88f36bbcbb4cb824abe7b11d79aaaa5b, type: 3}
+  - {fileID: 21300000, guid: 2ea3245a93a86974eb818d48b12d1a5a, type: 3}
+  - {fileID: 21300000, guid: 0c6157c30a49a1543850c4758d3bb915, type: 3}
+  - {fileID: 21300000, guid: 5382caa5f09239743997aa6f3393f053, type: 3}
+  - {fileID: 21300000, guid: 0745f6520680aa94faa349f1c7b19bc1, type: 3}
 --- !u!1 &294646737
 GameObject:
   m_ObjectHideFlags: 0
