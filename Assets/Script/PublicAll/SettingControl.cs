@@ -33,7 +33,7 @@ public class SettingControl : MonoBehaviour
     
     void Update()
     {
-        UIInteractable();
+        
     }
 
     void UIInteractable()
@@ -105,6 +105,7 @@ public class SettingControl : MonoBehaviour
     IEnumerator TurnPageLeft()
     {
         isUIInteractable = false;
+        UIInteractable();
         bookUI.sprite = turnPage[1];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[2];
@@ -116,10 +117,12 @@ public class SettingControl : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[0];
         isUIInteractable = true;
+        UIInteractable();
     }
     IEnumerator TurnPageRight()
     {
         isUIInteractable = false;
+        UIInteractable();
         bookUI.sprite = turnPage[3];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[4];
@@ -131,5 +134,6 @@ public class SettingControl : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[0];
         isUIInteractable = true;
+        UIInteractable();
     }
 }
