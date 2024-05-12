@@ -65,4 +65,9 @@ public class BagController : MonoBehaviour
             quantity_Text.text = _itemQuantity.ToString();
         }
     }
+
+    public void BagClose_Button()
+    {
+        isBagActive = !isBagActive;
+    }
 }
