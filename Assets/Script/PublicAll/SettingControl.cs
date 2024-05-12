@@ -19,6 +19,7 @@ public class SettingControl : MonoBehaviour
     public static int _page = 1;
 
     bool isUIInteractable;
+    bool isLabelInteractable;
 
     void Start()
     {
@@ -32,10 +33,10 @@ public class SettingControl : MonoBehaviour
     
     void Update()
     {
-        ButtonInteractable();
+        UIInteractable();
     }
 
-    void ButtonInteractable()
+    void UIInteractable()
     {
         if (isUIInteractable)
         {
@@ -44,12 +45,10 @@ public class SettingControl : MonoBehaviour
                 if (i == _page)
                 {
                     settingUI[i].SetActive(true);
-                    labelColor[i].interactable = false;
                 }
                 else
                 {
                     settingUI[i].SetActive(false);
-                    labelColor[i].interactable = true;
                 }
             }
         }
@@ -60,6 +59,20 @@ public class SettingControl : MonoBehaviour
                  settingUI[i].SetActive(false);
             }
         }    
+    }
+    void LabelInteractable()
+    {
+        for (int i = 1; i < settingUI.Length; i++)
+        {
+            if (i == _page)
+            {
+                labelColor[i].interactable = false;
+            }
+            else
+            {
+                labelColor[i].interactable = true;
+            }
+        }
     }
 
     //Button
@@ -98,6 +111,7 @@ public class SettingControl : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[4];
         yield return new WaitForSeconds(0.2f);
+        LabelInteractable();
         bookUI.sprite = turnPage[3];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[0];
@@ -110,6 +124,7 @@ public class SettingControl : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[4];
         yield return new WaitForSeconds(0.2f);
+        LabelInteractable();
         bookUI.sprite = turnPage[2];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[1];
