@@ -6,7 +6,11 @@ public class StoryElfControl : MonoBehaviour
 {
     Animator anim;
 
+    public Transform appearPoint;
+
+    public static bool isAppear = false;
     public static bool isFlyLeave = false;
+
     float speed = 5f;
 
     void Start()
@@ -16,6 +20,11 @@ public class StoryElfControl : MonoBehaviour
 
     void Update()
     {
+        if (isAppear)
+        {
+            isAppear = false;
+            transform.position = appearPoint.position;
+        }
         if (isFlyLeave)
         {
             anim.SetBool("isFlyLeave", isFlyLeave);
