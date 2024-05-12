@@ -84,6 +84,14 @@ public class SettingControl : MonoBehaviour
     {
         settingUI[0].SetActive(false);
     }
+    public void Save_Button() 
+    { 
+
+    }
+    public void LeaveGame_Button() 
+    {
+
+    }
     public void Volume_BGM()
     {
         volumeBGM = sliderBGM.value;
@@ -94,6 +102,7 @@ public class SettingControl : MonoBehaviour
         Screen.fullScreen = isFullScreen;
         isFullS = isFullScreen;
     }
+
 
     //·­•ø„Ó®‹
     IEnumerator TurnPageLeft()
