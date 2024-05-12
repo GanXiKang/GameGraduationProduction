@@ -46,7 +46,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
         anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
         anim.SetBool("isFire", StoryGameControl_LittleGirl.isUseMatches);
 
-        if (StoryElfControl.isAppear)
+        if (StoryElfControl.isAppear || StoryGameControl_LittleGirl.isChangeScene)
         {
             ForceMoveDirection();
         }
