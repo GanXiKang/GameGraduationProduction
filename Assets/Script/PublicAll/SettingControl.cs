@@ -82,7 +82,7 @@ public class SettingControl : MonoBehaviour
     }
     public void LabelRed_Button()               //ÍPÈ]
     {
-        settingUI[0].SetActive(false);
+        MenuGameControl.isSettingUI = false;
     }
     public void Save_Button() 
     { 
