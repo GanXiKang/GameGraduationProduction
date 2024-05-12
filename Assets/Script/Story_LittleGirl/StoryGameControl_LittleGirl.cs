@@ -84,6 +84,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         BagController._itemQuantity++;
                         BagController.isItemSlotAcite[1] = true;
                         BagController.isItemSlotAcite[3] = true;
+                        StoryElfControl.isAppear = true;
                         break;
 
                     case 3:                                                               //insfirepoint
