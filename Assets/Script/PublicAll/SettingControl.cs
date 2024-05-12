@@ -88,7 +88,7 @@ public class SettingControl : MonoBehaviour
     { 
 
     }
-    public void LeaveGame_Button() 
+    public void ExitGame_Button() 
     {
 
     }
