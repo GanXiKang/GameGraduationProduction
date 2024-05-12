@@ -45,6 +45,11 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
         anim.SetFloat("Direction", _direction);
         anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
         anim.SetBool("isFire", StoryGameControl_LittleGirl.isUseMatches);
+
+        if (StoryElfControl.isAppear)
+        {
+            ForceMoveDirection();
+        }
     }
 
     void OnMove(InputValue value)
@@ -63,4 +68,9 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
             }
         }
     }
+    void ForceMoveDirection()
+    {
+        anim.SetFloat("Direction", 1);
+    }
+        
 }
