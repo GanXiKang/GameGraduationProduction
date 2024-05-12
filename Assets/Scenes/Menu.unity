@@ -291,8 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc42c25bc398e804e9204a2f9450aa4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settingUI: {fileID: 0}
-  interactiveUI: {fileID: 0}
+  settingUI: {fileID: 797634640}
+  interactiveUI: {fileID: 1960029093}
 --- !u!4 &269828604
 Transform:
   m_ObjectHideFlags: 0
@@ -1085,7 +1085,7 @@ RectTransform:
   m_LocalScale: {x: 19.31291, y: 10.930328, z: 10.930328}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1960029094}
+  m_Father: {fileID: 1443906667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1819,7 +1819,7 @@ RectTransform:
   m_LocalScale: {x: 4.52698, y: 4.52698, z: 4.52698}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1960029094}
+  m_Father: {fileID: 1443906667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2046,6 +2046,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 683462278}
+  - {fileID: 1132531959}
   - {fileID: 1960029094}
   - {fileID: 797634641}
   m_Father: {fileID: 2093212156}
@@ -2673,8 +2675,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 683462278}
-  - {fileID: 1132531959}
   - {fileID: 1991123507}
   - {fileID: 1904409250}
   m_Father: {fileID: 1443906667}
