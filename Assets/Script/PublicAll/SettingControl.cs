@@ -90,7 +90,7 @@ public class SettingControl : MonoBehaviour
     }
     public void ExitGame_Button() 
     {
-
+        Application.Quit();
     }
     public void Volume_BGM()
     {
