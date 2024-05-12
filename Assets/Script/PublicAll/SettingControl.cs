@@ -30,12 +30,6 @@ public class SettingControl : MonoBehaviour
         isUIInteractable = true;
     }
 
-    
-    void Update()
-    {
-        
-    }
-
     void UIInteractable()
     {
         if (isUIInteractable)
