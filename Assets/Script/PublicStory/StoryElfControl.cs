@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class StoryElfControl : MonoBehaviour
 {
+    Animator anim;
+
     public static bool isFlyLeave = false;
     float speed = 5f;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
         if (isFlyLeave)
         {
+            anim.SetBool("isFlyLeave", isFlyLeave);
             transform.Translate(Vector3.up * speed * Time.deltaTime);
             Invoke("DestroyElf", 3f);
         }
