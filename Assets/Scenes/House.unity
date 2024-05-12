@@ -5140,6 +5140,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: grandmother_idle
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: e83a9e2a0b3468846a38e93f70d3b3ac,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 57c087377f3f34f448717e3785d57bd7, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
