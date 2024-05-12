@@ -128,11 +128,11 @@ public class SettingControl : MonoBehaviour
         UIInteractable();
         bookUI.sprite = turnPage[3];
         yield return new WaitForSeconds(0.2f);
+        LabelInteractable();
         bookUI.sprite = turnPage[4];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[2];
         yield return new WaitForSeconds(0.2f);
-        LabelInteractable();
         bookUI.sprite = turnPage[1];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[0];
