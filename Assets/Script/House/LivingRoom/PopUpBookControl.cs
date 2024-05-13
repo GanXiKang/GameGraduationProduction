@@ -6,7 +6,7 @@ public class PopUpBookControl : MonoBehaviour
 {
     Animator anim;
 
-    public GameObject quizImage;
+    public GameObject[] quizImage;
     public static bool isOpenBook;
     public static bool isCloseBook;
     public static bool isFinishQuiz = false;
@@ -31,7 +31,9 @@ public class PopUpBookControl : MonoBehaviour
             Invoke("FalseOfCloseBook", 0.2f);
         }
 
-        quizImage.SetActive(isFinishQuiz);
+        quizImage[0].SetActive(!isFinishQuiz);
+        quizImage[1].SetActive(isFinishQuiz);
+        quizImage[2].SetActive(isFinishQuiz);
     }
 
     void FalseOfOpenBook()
