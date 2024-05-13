@@ -82,7 +82,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: none
+  m_Name: Chapter1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -113,6 +113,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 6
     m_ConditionEvent: isChapter
     m_EventTreshold: 1
+  - m_ConditionMode: 1
+    m_ConditionEvent: isOpenBook
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4735150126297020114}
   m_Solo: 0
@@ -138,6 +141,12 @@ AnimatorController:
   m_AnimatorParameters:
   - m_Name: isChapter
     m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: isOpenBook
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -222,7 +231,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1669047496341983765}
-    m_Position: {x: 250, y: 120, z: 0}
+    m_Position: {x: 270, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4735150126297020114}
     m_Position: {x: 520, y: 120, z: 0}
