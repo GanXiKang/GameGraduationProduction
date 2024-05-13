@@ -12,7 +12,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static int _task = 0;
     public static int _chapter = 1;
     public static bool isStartStoryContent = false;
-    public static bool isChangeScene;
     bool once;
 
     //Chapter1
@@ -95,7 +94,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         break;
 
                     case 4:                                                               //GoAlley
-                        isChangeScene = true;
                         loadingUI.SetActive(true);
                         Invoke("CloseLoadingUI", 4f);
                         break;
@@ -209,7 +207,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     }
     void CloseLoadingUI()
     {
-        isChangeScene = false;
         loadingUI.SetActive(false);
         chapter[1].SetActive(false);
         chapter[2].SetActive(true);  
