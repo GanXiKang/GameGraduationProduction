@@ -134,6 +134,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isFantasy = false;
                     isSeeFantasy = true;
                     fantasyUI.SetActive(true);
+                    StoryLittleGirlUIControl.isFantasyAnimation = true;
                     Invoke("FantasyEnd", 3f);
                 }
 
@@ -145,7 +146,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         {
                             isUseMatchesUI = false;
                             isFirstUseMatches = true;
-                            StoryLittleGirlUIControl.isFantasyAnimation = true;
                             StoryLittleGirlUIControl.isContentActive = true;
                             isFirstUseMatchesContent = true;
                             StoryTextControl.textCount = 5;
