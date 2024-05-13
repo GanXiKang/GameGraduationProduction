@@ -89,6 +89,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
                     case 3:                                                               //insfirepoint
                         Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
+                        StoryArrowTipControl_LittleGirl.isDestory = true;
                         BagController.isItemSlotAcite[3] = false;
                         isIgnite = true;
                         break;
