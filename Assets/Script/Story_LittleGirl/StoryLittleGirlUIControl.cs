@@ -15,6 +15,10 @@ public class StoryLittleGirlUIControl : MonoBehaviour
     public GameObject content;
     public static bool isContentActive;
 
+    [Header("Fantasy")]
+    public Image fantasy;
+    public Sprite[] fantasyPicture;
+
     void Start()
     {
         isInteractionButtonActive = false;
