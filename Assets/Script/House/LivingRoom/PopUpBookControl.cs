@@ -18,19 +18,28 @@ public class PopUpBookControl : MonoBehaviour
 
     void Update()
     {
-        quizImage.SetActive(isFinishQuiz);
+        anim.SetInteger("isChapter", StoryGameControl_LittleGirl._chapter);
+        anim.SetBool("isOpenBook", isOpenBook);
+        anim.SetBool("isCloseBook", isCloseBook);
 
         if (isOpenBook)
         {
-            anim.SetBool("isOpenBook", true);
-            anim.SetInteger("isChapter", StoryGameControl_LittleGirl._chapter);
-            isOpenBook = false;
+            Invoke("FalseOfOpenBook", 0.2f);
         }
         if (isCloseBook)
         {
-            anim.SetBool("isCloseBook", true);
-            anim.SetBool("isOpenBook", false);
-            isCloseBook = false;
+            Invoke("FalseOfCloseBook", 0.2f);
         }
+
+        quizImage.SetActive(isFinishQuiz);
+    }
+
+    void FalseOfOpenBook()
+    {
+        isOpenBook = false;
+    }
+    void FalseOfCloseBook()
+    {
+        isCloseBook = false;
     }
 }
