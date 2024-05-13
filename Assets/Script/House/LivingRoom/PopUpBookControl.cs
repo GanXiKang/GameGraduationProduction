@@ -8,6 +8,7 @@ public class PopUpBookControl : MonoBehaviour
 
     public GameObject quizImage;
     public static bool isOpenBook;
+    public static bool isCloseBook;
     public static bool isFinishQuiz = false;
 
     void Start()
