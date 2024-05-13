@@ -23,10 +23,10 @@ public class StoryElfControl : MonoBehaviour
         if (isAppear)
         {
             transform.position = appearPoint.position;
-            Invoke("FalseOfAppear", 0.2f);
         }
         if (isFlyLeave)
         {
+            isAppear = false;
             anim.SetBool("isFlyLeave", isFlyLeave);
             transform.Translate(Vector3.up * speed * Time.deltaTime);
             Invoke("DestroyElf", 3f);
@@ -37,9 +37,5 @@ public class StoryElfControl : MonoBehaviour
     {
         isFlyLeave = false;
         Destroy(gameObject); 
-    }
-    void FalseOfAppear()
-    {
-        isAppear = false;
     }
 }
