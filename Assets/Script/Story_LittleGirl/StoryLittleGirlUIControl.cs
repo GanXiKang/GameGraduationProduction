@@ -64,6 +64,17 @@ public class StoryLittleGirlUIControl : MonoBehaviour
     IEnumerator FantasyAnimation()
     {
         isFantasyAnimation = false;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
+        fantasy.sprite = fantasyPicture[2];
+        yield return new WaitForSeconds(0.5f);
+        fantasy.sprite = fantasyPicture[3];
+        yield return new WaitForSeconds(0.5f);
+        fantasy.sprite = fantasyPicture[4];
+        yield return new WaitForSeconds(0.5f);
+        fantasy.sprite = fantasyPicture[3];
+        yield return new WaitForSeconds(0.5f);
+        fantasy.sprite = fantasyPicture[4];
+        yield return new WaitForSeconds(0.5f);
+        fantasy.sprite = fantasyPicture[3];
     }
 }
