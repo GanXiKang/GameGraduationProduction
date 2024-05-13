@@ -7791,6 +7791,13 @@ MonoBehaviour:
   interactionButton: {fileID: 187569270}
   interactionButton_text: {fileID: 2095987345}
   content: {fileID: 1777243499}
+  fantasy: {fileID: 170488287}
+  fantasyPicture:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 9414a8c6ea0bb644f9d7c1025d47fc2f, type: 3}
+  - {fileID: 21300000, guid: b522a394af9d3414c86b299650ab4e9e, type: 3}
+  - {fileID: 21300000, guid: 71ab5ecacf8ade7429983589b37341b0, type: 3}
+  - {fileID: 21300000, guid: ab1a4290a22f75444869ce53812135f6, type: 3}
 --- !u!1 &514095332
 GameObject:
   m_ObjectHideFlags: 0
