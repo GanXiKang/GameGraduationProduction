@@ -35,7 +35,8 @@ public class GameControl : MonoBehaviour
     public static bool isFinishSweaterContent;
 
     public static bool isBedContent;
-    public static bool isCheckStoryBookContent = false;
+    public static bool isLittleGirlStoryFinish = false;
+    public static bool isCheckStoryBookContent;
     public static bool isFindStoryBookContent;
 
     bool isFindCrystalStoryBook;
@@ -149,8 +150,9 @@ public class GameControl : MonoBehaviour
                         switch (_day)
                         {
                             case 3:
-                                if (!isCheckStoryBookContent)
+                                if (!isLittleGirlStoryFinish)
                                 {
+                                    isLittleGirlStoryFinish = true;
                                     isCheckStoryBookContent = true;
                                     UIController.isContentActive = true;
                                     TextControl.textCount = 10;
