@@ -62,6 +62,7 @@ public class CameraController : MonoBehaviour
             {
                 isLookWorkbench = false;
                 isFollow = true;
+                PopUpBookControl.isCloseBook = true;
             }
         }
         CameraMode();
