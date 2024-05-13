@@ -145,6 +145,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         {
                             isUseMatchesUI = false;
                             isFirstUseMatches = true;
+                            StoryLittleGirlUIControl.isFantasyAnimation = true;
                             StoryLittleGirlUIControl.isContentActive = true;
                             isFirstUseMatchesContent = true;
                             StoryTextControl.textCount = 5;

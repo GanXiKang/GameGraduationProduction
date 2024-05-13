@@ -18,6 +18,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
     [Header("Fantasy")]
     public Image fantasy;
     public Sprite[] fantasyPicture;
+    public static bool isFantasyAnimation;
 
     void Start()
     {
@@ -31,6 +32,11 @@ public class StoryLittleGirlUIControl : MonoBehaviour
         content.SetActive(isContentActive);
 
         ColliderObjectName();
+
+        if (isFantasyAnimation)
+        {
+            StartCoroutine(FantasyAnimation());
+        }
     }
 
     void ColliderObjectName()
@@ -53,5 +59,11 @@ public class StoryLittleGirlUIControl : MonoBehaviour
                 interactionButton_text.text = "Ð¡Ïï";
                 break;
         }
+    }
+
+    IEnumerator FantasyAnimation()
+    {
+        isFantasyAnimation = false;
+        yield return new WaitForSeconds(1f);
     }
 }
