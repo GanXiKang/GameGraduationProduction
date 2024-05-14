@@ -19,7 +19,6 @@ public class SettingControl : MonoBehaviour
     public static int _page = 1;
 
     bool isUIInteractable;
-    bool isLabelInteractable;
 
     void Start()
     {
