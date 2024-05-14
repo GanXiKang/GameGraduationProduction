@@ -65,12 +65,6 @@ public class GameControl : MonoBehaviour
             CameraController.isLookBookCase = true;
             CameraController.isLookBed = false;
         }
-
-        if (Input.GetKeyDown(KeyCode.F11))                  //暫時放這 未來做setting系統在移
-        {
-            isFullScreen = !isFullScreen;
-            Screen.fullScreen = isFullScreen;
-        }
     }
 
     void DayStart()
