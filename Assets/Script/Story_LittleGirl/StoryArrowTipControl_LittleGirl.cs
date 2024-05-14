@@ -9,6 +9,8 @@ public class StoryArrowTipControl_LittleGirl : MonoBehaviour
     Vector3 endPos;
     bool isMoveUp;
 
+    public bool isObjectMove;
+
     public static bool isDestory = false;
 
     void Start()
@@ -22,20 +24,23 @@ public class StoryArrowTipControl_LittleGirl : MonoBehaviour
     {
         if (!isDestory)
         {
-            if (isMoveUp)
+            if (isObjectMove)
             {
-                transform.position = Vector3.MoveTowards(transform.position, endPos, speed * Time.deltaTime);
-                if (transform.position == endPos)
+                if (isMoveUp)
                 {
-                    isMoveUp = false;
+                    transform.position = Vector3.MoveTowards(transform.position, endPos, speed * Time.deltaTime);
+                    if (transform.position == endPos)
+                    {
+                        isMoveUp = false;
+                    }
                 }
-            }
-            else
-            {
-                transform.position = Vector3.MoveTowards(transform.position, startPos, speed * Time.deltaTime);
-                if (transform.position == startPos)
+                else
                 {
-                    isMoveUp = true;
+                    transform.position = Vector3.MoveTowards(transform.position, startPos, speed * Time.deltaTime);
+                    if (transform.position == startPos)
+                    {
+                        isMoveUp = true;
+                    }
                 }
             }
         }
