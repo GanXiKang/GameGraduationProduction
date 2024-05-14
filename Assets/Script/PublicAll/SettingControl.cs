@@ -37,16 +37,7 @@ public class SettingControl : MonoBehaviour
         {
             isSettingActive = !isSettingActive;
         }
-
-        settingUI[0].SetActive(isSettingActive);
-        if (isSettingActive)
-        {
-            Time.timeScale = 0f;
-        }
-        else
-        {
-            Time.timeScale = 1f;
-        }       
+        settingUI[0].SetActive(isSettingActive);      
     }
 
     void UIInteractable()
