@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuGameControl : MonoBehaviour
 {
-    public GameObject settingUI;
     public GameObject interactiveUI;
 
     public static bool isNewGameModel = true; //•º•rµÄ
@@ -24,6 +23,6 @@ public class MenuGameControl : MonoBehaviour
     }
     public void Setting_Button()
     {
-        isSettingUI = true;
+        SettingControl.isSettingActive = true;
     }
 }
