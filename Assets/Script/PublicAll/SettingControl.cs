@@ -33,11 +33,17 @@ public class SettingControl : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        settingUI[0].SetActive(isSettingActive);
+
+        if (!CameraController.isLookWorkbench && !UIController.isContentActive && !BagController.isBagActive && !TaskController.isTaskActive &&
+            !StoryLittleGirlUIControl.isContentActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI && !StoryBagControl.isBagActive)
         {
-            isSettingActive = !isSettingActive;
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                isSettingActive = !isSettingActive;
+            }
         }
-        settingUI[0].SetActive(isSettingActive);      
+             
     }
 
     void UIInteractable()
