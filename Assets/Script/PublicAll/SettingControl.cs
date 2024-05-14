@@ -90,7 +90,7 @@ public class SettingControl : MonoBehaviour
         _page = 2;
         StartCoroutine(TurnPageLeft());
     }
-    public void LabelRed_Button()               //ÍPÈ]
+    public void Close_Button()               //ÍPÈ]
     {
         isSettingActive = !isSettingActive;
     }
