@@ -26,6 +26,7 @@ public class SettingControl : MonoBehaviour
         BGM = GetComponent<AudioSource>();
 
         sliderBGM.value = volumeBGM;
+        BGM.volume = volumeBGM;
         fullScreen.isOn = Screen.fullScreen;
         isUIInteractable = true;
     }
