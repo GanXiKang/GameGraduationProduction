@@ -5240,7 +5240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepPoint: {fileID: 1249810888}
-  player: {fileID: 197810296}
+  player: {fileID: 588474254}
   bedCollider: {fileID: 1613432034}
 --- !u!1001 &751451776
 PrefabInstance:
@@ -5716,6 +5716,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Little_girl_idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798499885636412130, guid: c8a354d996923f245aee49bb1155e804,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4610889052081109080, guid: c8a354d996923f245aee49bb1155e804,
         type: 3}
