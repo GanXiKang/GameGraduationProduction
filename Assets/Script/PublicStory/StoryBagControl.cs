@@ -9,7 +9,7 @@ public class StoryBagControl : MonoBehaviour
     public GameObject[] itemSlot;
     public Text quantity_Text;
 
-    bool isBagActive;
+    public static bool isBagActive;
 
     void Start()
     {
