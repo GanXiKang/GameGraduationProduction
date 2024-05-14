@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class LightControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float rotationSpeed = 30f; 
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(Vector3.right, rotationSpeed * Time.deltaTime);
     }
 }
