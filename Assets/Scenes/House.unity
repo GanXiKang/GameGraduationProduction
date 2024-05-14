@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1480171943}
         m_TargetAssemblyTypeName: SettingControl, Assembly-CSharp
         m_MethodName: ExitGame_Button
         m_Mode: 1
@@ -3193,7 +3193,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1480171943}
         m_TargetAssemblyTypeName: SettingControl, Assembly-CSharp
         m_MethodName: FullScreen
         m_Mode: 0
@@ -5343,7 +5343,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1480171943}
         m_TargetAssemblyTypeName: SettingControl, Assembly-CSharp
         m_MethodName: Volume_BGM
         m_Mode: 1
@@ -7827,7 +7827,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1480171943}
         m_TargetAssemblyTypeName: SettingControl, Assembly-CSharp
         m_MethodName: LabelBlue_Button
         m_Mode: 1
@@ -8870,9 +8870,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1480171943}
         m_TargetAssemblyTypeName: SettingControl, Assembly-CSharp
-        m_MethodName: LabelRed_Button
+        m_MethodName: Close_Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10068,7 +10068,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1480171943}
         m_TargetAssemblyTypeName: SettingControl, Assembly-CSharp
         m_MethodName: LabelGreen_Button
         m_Mode: 1
@@ -12124,7 +12124,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1480171943}
         m_TargetAssemblyTypeName: SettingControl, Assembly-CSharp
         m_MethodName: Save_Button
         m_Mode: 1
