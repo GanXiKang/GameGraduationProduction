@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     CharacterController cc;
+    Animator anim;
 
     private Vector3 _moveInput;
     private Vector3 _lookDirection;
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -42,6 +44,8 @@ public class PlayerController : MonoBehaviour
         {
             cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
         }
+
+        anim.SetFloat("isWalk", _moveInput.magnitude);
     }
 
     void OnMove(InputValue value)
