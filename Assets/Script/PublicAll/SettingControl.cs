@@ -16,6 +16,7 @@ public class SettingControl : MonoBehaviour
 
     public static float volumeBGM = 0.7f;
     public static bool isFullS;
+    public static bool isSettingActive = false;
     public static int _page = 1;
 
     bool isUIInteractable;
@@ -28,6 +29,15 @@ public class SettingControl : MonoBehaviour
         BGM.volume = volumeBGM;
         fullScreen.isOn = Screen.fullScreen;
         isUIInteractable = true;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isSettingActive = !isSettingActive;
+            settingUI[0].SetActive(isSettingActive);
+        }
     }
 
     void UIInteractable()
