@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
         }
 
         anim.SetFloat("isWalk", _moveInput.magnitude);
+        print(_moveInput.magnitude);
     }
 
     void OnMove(InputValue value)
