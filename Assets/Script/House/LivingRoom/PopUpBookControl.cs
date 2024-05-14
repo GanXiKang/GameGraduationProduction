@@ -31,9 +31,9 @@ public class PopUpBookControl : MonoBehaviour
             Invoke("FalseOfCloseBook", 0.2f);
         }
 
-        //quizImage[0].SetActive(!isFinishQuiz);
+        quizImage[0].SetActive(!isFinishQuiz);
         quizImage[1].SetActive(isFinishQuiz);
-        //quizImage[2].SetActive(isFinishQuiz);
+        quizImage[2].SetActive(isFinishQuiz);
     }
 
     void FalseOfOpenBook()
