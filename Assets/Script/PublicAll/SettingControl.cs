@@ -36,8 +36,17 @@ public class SettingControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             isSettingActive = !isSettingActive;
-            settingUI[0].SetActive(isSettingActive);
         }
+
+        settingUI[0].SetActive(isSettingActive);
+        if (isSettingActive)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }       
     }
 
     void UIInteractable()
@@ -92,7 +101,7 @@ public class SettingControl : MonoBehaviour
     }
     public void LabelRed_Button()               //ÍPÈ]
     {
-        MenuGameControl.isSettingUI = false;
+        isSettingActive = !isSettingActive;
     }
     public void Save_Button() 
     { 
