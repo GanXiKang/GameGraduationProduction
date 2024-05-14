@@ -26,7 +26,7 @@ public class CameraController : MonoBehaviour
     public Transform lookMakePoint;
     public static bool isLookMake;
 
-    public float _moveTime = 2f;
+    public float _moveTime = 1f;
     float _distance;
     float _maxDistance;
 
