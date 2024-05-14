@@ -8,12 +8,10 @@ public class MenuGameControl : MonoBehaviour
     public GameObject interactiveUI;
 
     public static bool isNewGameModel = true; //•º•rµÄ
-    public static bool isSettingUI = false;
 
     void Update()
     {
-        settingUI.SetActive(isSettingUI);
-        interactiveUI.SetActive(!isSettingUI);
+        interactiveUI.SetActive(!SettingControl.isSettingActive);
     }
 
     public void Start_Button()
