@@ -13,7 +13,6 @@ public class StoryGrandmotherTalkControl : MonoBehaviour
     void Start()
     {
         isNewStartAnimator = true;
-        print("ok");
     }
 
     void Update()
