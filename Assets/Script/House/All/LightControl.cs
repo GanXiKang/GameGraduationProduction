@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class LightControl : MonoBehaviour
 {
-    public float rotationSpeed = 30f; 
+    public float rotationSpeed = 5f; 
 
     void Update()
     {
-        transform.Rotate(Vector3.right, rotationSpeed * Time.deltaTime);
+        //transform.Rotate(Vector3.right, rotationSpeed * Time.deltaTime);
     }
 }
