@@ -15,7 +15,7 @@ public class LightControl : MonoBehaviour
     void Update()
     {
         night.SetActive(BedControl.isNight);
-        daytime.SetActive(BedControl.isNight);
+        daytime.SetActive(!BedControl.isNight);
         roof.SetActive(BedControl.isNight);
 
         if (BedControl.isNight)
