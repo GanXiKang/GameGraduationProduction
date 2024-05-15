@@ -7599,6 +7599,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb3283b50ee3b9740bb537fe3256065f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionUI: {fileID: 1349851333}
+  bagButton: {fileID: 751633844}
+  taskButton: {fileID: 81219949}
   interactionButton: {fileID: 1756793600}
   interactionButton_text: {fileID: 355064774}
   chooseStory: {fileID: 236709880}
