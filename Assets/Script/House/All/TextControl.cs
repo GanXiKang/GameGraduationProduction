@@ -77,10 +77,6 @@ public class TextControl : MonoBehaviour
         if (GameControl.isOpeningContent)
         {
             GameControl.isOpeningContent = false;
-            if (GameControl._day == 1)
-            {
-                BedControl.isNight = true;
-            }
         }
         else if (GameControl.isSleepingContent)
         {
