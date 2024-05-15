@@ -47,9 +47,9 @@ public class StoryLittleGirlUIControl : MonoBehaviour
 
     void InteractableUI()
     {
-        if (GameControl._day == 1)
+        if (GameControl._day != 1 && !isContentActive && !StoryBagControl.isBagActive && !TaskController.isTaskActive)
         {
-            interactionUI.SetActive(false);
+            interactionUI.SetActive(true);
         }
     }
     void ColliderObjectName()
