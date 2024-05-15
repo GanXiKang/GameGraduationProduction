@@ -216,17 +216,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         GameControl._day += 1;
+        BedControl.isNight = false;
         switch (_chapter)
         {
-            case 1:
-                //_chapter++;
-                break;
-
             case 2:
                 CaseControl.isStoryBookLittleGirlFinish = true;
                 BagController.isItemSlotAcite[4] = true;
                 break;
-
         }
     }   
 }
