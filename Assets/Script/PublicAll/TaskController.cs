@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TaskController : MonoBehaviour
 {
     public GameObject taskUI;
+    public GameObject imageUI;
     public Text taskText;
     public TextAsset taskFile;
 
@@ -30,6 +31,17 @@ public class TaskController : MonoBehaviour
             {
                 Back_Button();
             }
+        }
+
+        switch (_taskNumber)
+        {
+            case 7:
+                imageUI.SetActive(true);
+                break;
+
+            default:
+                imageUI.SetActive(false);
+                break;
         }
     }
 
