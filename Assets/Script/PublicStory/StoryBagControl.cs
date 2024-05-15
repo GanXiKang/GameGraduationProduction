@@ -7,6 +7,7 @@ public class StoryBagControl : MonoBehaviour
 {
     public GameObject bagUI;
     public GameObject zipper;
+    public GameObject itemUI;
     public GameObject[] itemSlot;
     public Image bagOpen;
     public Sprite[] bagOpenAnim;
@@ -62,12 +63,14 @@ public class StoryBagControl : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         bagOpen.sprite = bagOpenAnim[3];
         zipper.SetActive(true);
+        itemUI.SetActive(true);
     }
     IEnumerator CloseBagAnimation()
     {
         yield return new WaitForSeconds(0.5f);
         bagOpen.sprite = bagOpenAnim[2];
         zipper.SetActive(false);
+        itemUI.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         bagOpen.sprite = bagOpenAnim[1]; 
     }
