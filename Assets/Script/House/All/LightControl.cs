@@ -20,11 +20,11 @@ public class LightControl : MonoBehaviour
 
         if (BedControl.isNight)
         {
-            catLamp.material = catLamp_Light;
+            catLamp.sharedMaterial = catLamp_Light;
         }
         else
         {
-            catLamp.material = catLamp_noLight;
+            catLamp.sharedMaterial = catLamp_noLight;
         }
     }
 }
