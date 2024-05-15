@@ -776,7 +776,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 81219952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1480171941}
+        m_TargetAssemblyTypeName: TaskController, Assembly-CSharp
+        m_MethodName: Task_Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &81219952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4445,7 +4457,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1480171939}
         m_TargetAssemblyTypeName: BagController, Assembly-CSharp
-        m_MethodName: BagClose_Button
+        m_MethodName: Bag_Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6362,7 +6374,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 751633847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1480171939}
+        m_TargetAssemblyTypeName: BagController, Assembly-CSharp
+        m_MethodName: Bag_Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &751633847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11854,7 +11878,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1480171941}
         m_TargetAssemblyTypeName: TaskController, Assembly-CSharp
-        m_MethodName: Back_Button
+        m_MethodName: Task_Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
