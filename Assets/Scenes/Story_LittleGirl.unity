@@ -9104,6 +9104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskUI: {fileID: 1040374827}
+  imageUI: {fileID: 1901342545}
   taskText: {fileID: 1179799646}
   taskFile: {fileID: 4900000, guid: d5cbe7f94081764489e85cebb2a44a71, type: 3}
 --- !u!82 &718922190
