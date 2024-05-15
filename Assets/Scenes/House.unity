@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 1945832966}
+  m_Sun: {fileID: 1176681220}
   m_IndirectSpecularColor: {r: 0.124239944, g: 0.18104434, b: 0.26285878, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -4013,6 +4013,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: bb43620e3a7eec948a5fecdde564920e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: bb43620e3a7eec948a5fecdde564920e,
         type: 3}
@@ -8753,7 +8758,7 @@ Transform:
   m_GameObject: {fileID: 1034155314}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.19094086, y: 8.33683, z: -9.413792}
+  m_LocalPosition: {x: 0.19094086, y: 8.213, z: -9.413792}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8833,7 +8838,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -11161,8 +11166,8 @@ Transform:
   m_GameObject: {fileID: 1613432034}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -1.666, y: 0, z: 0.065}
-  m_LocalScale: {x: 1, y: 0.5, z: 1.68828}
+  m_LocalPosition: {x: -1.666, y: 0, z: -0.171}
+  m_LocalScale: {x: 1, y: 0.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 801190726}
@@ -12402,7 +12407,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1748583988
 Transform:
   m_ObjectHideFlags: 0
@@ -14369,7 +14374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2038502995
 Transform:
   m_ObjectHideFlags: 0
@@ -14383,9 +14388,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1176681221}
   - {fileID: 1771372252}
   - {fileID: 1241686527}
-  - {fileID: 1176681221}
   - {fileID: 1034155315}
   - {fileID: 2062327054}
   - {fileID: 963722771}
