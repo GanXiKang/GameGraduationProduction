@@ -7727,7 +7727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 13029d996e21a22438de15c281829c91, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 90463e6bc7dae1c4b91f7ff1302a4a64, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9196,12 +9196,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bagUI: {fileID: 1110120772}
+  zipper: {fileID: 1158939993}
   itemSlot:
   - {fileID: 0}
   - {fileID: 1800800666}
   - {fileID: 870114835}
   - {fileID: 125702945}
   - {fileID: 1001439073}
+  bagOpen: {fileID: 437996474}
+  bagOpenAnim:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 90463e6bc7dae1c4b91f7ff1302a4a64, type: 3}
+  - {fileID: 21300000, guid: 4849236bdf2859740bed6e0ecfb78b8b, type: 3}
+  - {fileID: 21300000, guid: 13029d996e21a22438de15c281829c91, type: 3}
   quantity_Text: {fileID: 1587567781}
 --- !u!114 &718922189
 MonoBehaviour:
@@ -11086,7 +11093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1158939994
 RectTransform:
   m_ObjectHideFlags: 0
