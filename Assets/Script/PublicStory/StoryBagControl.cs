@@ -21,7 +21,6 @@ public class StoryBagControl : MonoBehaviour
 
     void Update()
     {
-        bagUI.SetActive(isBagActive);
         ItemSlotActive();
 
         if (!StoryLittleGirlUIControl.isContentActive && !TaskController.isTaskActive && GameControl._day != 1)
@@ -58,6 +57,7 @@ public class StoryBagControl : MonoBehaviour
 
     IEnumerator OpenBagAnimation()
     {
+        bagUI.SetActive(isBagActive);
         yield return new WaitForSeconds(0.5f);
         bagOpen.sprite = bagOpenAnim[2];
         yield return new WaitForSeconds(0.5f);
@@ -72,6 +72,7 @@ public class StoryBagControl : MonoBehaviour
         zipper.SetActive(false);
         itemUI.SetActive(false);
         yield return new WaitForSeconds(0.5f);
-        bagOpen.sprite = bagOpenAnim[1]; 
+        bagOpen.sprite = bagOpenAnim[1];
+        bagUI.SetActive(isBagActive);
     }
 }
