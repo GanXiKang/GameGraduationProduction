@@ -6483,7 +6483,7 @@ PrefabInstance:
     - target: {fileID: 1651303618123701024, guid: c8a354d996923f245aee49bb1155e804,
         type: 3}
       propertyPath: dragForce
-      value: 0.1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3798499885636412130, guid: c8a354d996923f245aee49bb1155e804,
         type: 3}
