@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class StoryLittleGirlUIControl : MonoBehaviour
 {
+    [Header("Interaction")]
+    public GameObject interactionUI;
+    public GameObject bagButton;
+    public GameObject taskButton;
+
     [Header("InteractionButton")]
     public GameObject interactionButton;
     public Text interactionButton_text;
@@ -31,6 +36,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
         interactionButton.SetActive(isInteractionButtonActive);
         content.SetActive(isContentActive);
 
+        InteractableUI();
         ColliderObjectName();
 
         if (isFantasyAnimation)
@@ -39,6 +45,13 @@ public class StoryLittleGirlUIControl : MonoBehaviour
         }
     }
 
+    void InteractableUI()
+    {
+        if (GameControl._day == 1)
+        {
+            interactionUI.SetActive(false);
+        }
+    }
     void ColliderObjectName()
     {
         switch (_conveyColliderNumber)
