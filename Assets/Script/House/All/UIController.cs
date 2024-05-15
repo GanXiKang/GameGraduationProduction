@@ -75,12 +75,20 @@ public class UIController : MonoBehaviour
             }
         }
 
+        InteractableUI();
         ColliderObjectName();
         MaterialWindowInformation();
         JudgmentMakeButtonInteractable();
         JudgmentFinish();
     }
 
+    void InteractableUI()
+    {
+        if (GameControl._day == 1)
+        {
+            interactionUI.SetActive(false);
+        }
+    }
     void ColliderObjectName()
     {
         switch (_conveyColliderNumber)
