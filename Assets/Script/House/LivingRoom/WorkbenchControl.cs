@@ -31,16 +31,9 @@ public class WorkbenchControl : MonoBehaviour
             Drawing();
         }
 
-        if (CameraController.isLookMake)
-        {
-            MakeMaterialUI();
-        }
+        makeMaterial.SetActive(CameraController.isLookMake);
     }
 
-    void MakeMaterialUI()
-    {
-        
-    }
     void Drawing()
     {
         Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2.5f);
@@ -76,6 +69,7 @@ public class WorkbenchControl : MonoBehaviour
                 BedControl.isNight = true;           //•º•rµÄ
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
+                makeMaterial.GetComponent<SpriteRenderer>().sprite = finishMakeMaterial;
                 CameraController.isLookWorkbench = true;
                 CameraController.isLookMake = false;
                 if (GameControl._day == 2)
