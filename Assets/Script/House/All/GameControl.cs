@@ -11,7 +11,6 @@ public class GameControl : MonoBehaviour
     int _whichStory;
     bool isFullScreen;
 
-
     [Header("Object")]
     public GameObject[] colliderObject;
 
