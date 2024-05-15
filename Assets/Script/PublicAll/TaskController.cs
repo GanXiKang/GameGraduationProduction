@@ -30,7 +30,7 @@ public class TaskController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.T))
             {
-                Back_Button();
+                Task_Button();
             }
         }
 
@@ -56,7 +56,7 @@ public class TaskController : MonoBehaviour
         }
     }
 
-    public void Back_Button()
+    public void Task_Button()
     {
         isTaskActive = !isTaskActive;
     }

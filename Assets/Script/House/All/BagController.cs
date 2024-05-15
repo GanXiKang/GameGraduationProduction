@@ -66,7 +66,7 @@ public class BagController : MonoBehaviour
         }
     }
 
-    public void BagClose_Button()
+    public void Bag_Button()
     {
         isBagActive = !isBagActive;
     }
