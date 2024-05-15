@@ -248,7 +248,6 @@ public class GameControl : MonoBehaviour
         CameraController.isLookBed = true;
         CameraController.isLookBookCase = false;
         UIController.isChooseStoryActive = false;
-        BedControl.isNight = false;
     }
     public void Story_Crystal()
     {
@@ -261,6 +260,5 @@ public class GameControl : MonoBehaviour
         CameraController.isLookBed = true;
         CameraController.isLookBookCase = false;
         UIController.isChooseStoryActive = false;
-        BedControl.isNight = false;
     }
 }
