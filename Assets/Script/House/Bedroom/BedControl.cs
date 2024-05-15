@@ -8,18 +8,17 @@ public class BedControl : MonoBehaviour
     public GameObject player;
     public GameObject bedCollider;
     public static bool isSleep;
-    public static bool isNight;
+    public static bool isNight = true;
 
     void Start()
     {
         isSleep = false;
-        isNight = false;
-        bedCollider.SetActive(isNight);
     }
 
     void Update()
     {
         bedCollider.SetActive(isNight);
+
         if (isSleep)
         {
             player.transform.position = sleepPoint.position;
