@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class StoryBagControl : MonoBehaviour
 {
     public GameObject bagUI;
+    public GameObject zipper;
     public GameObject[] itemSlot;
+    public Image bagOpen;
+    public Sprite[] bagOpenAnim;
     public Text quantity_Text;
-
     public static bool isBagActive;
 
     void Start()
@@ -23,7 +25,7 @@ public class StoryBagControl : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.B))
         {
-            isBagActive = !isBagActive;
+            Zipper_Button();
         }
     }
 
@@ -35,5 +37,35 @@ public class StoryBagControl : MonoBehaviour
         }
 
         quantity_Text.text = BagController._itemQuantity.ToString();
+    }
+
+    public void Zipper_Button()
+    {
+        isBagActive = !isBagActive;
+        if (isBagActive)
+        {
+            StartCoroutine(OpenBagAnimation());
+        }
+        else
+        {
+            StartCoroutine(CloseBagAnimation());
+        }
+    }
+
+    IEnumerator OpenBagAnimation()
+    {
+        yield return new WaitForSeconds(0.5f);
+        bagOpen.sprite = bagOpenAnim[2];
+        yield return new WaitForSeconds(0.5f);
+        bagOpen.sprite = bagOpenAnim[3];
+        zipper.SetActive(true);
+    }
+    IEnumerator CloseBagAnimation()
+    {
+        yield return new WaitForSeconds(0.5f);
+        bagOpen.sprite = bagOpenAnim[2];
+        zipper.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        bagOpen.sprite = bagOpenAnim[1]; 
     }
 }
