@@ -204,7 +204,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         StoryLittleGirlUIControl.isContentActive = true;
         isFantasyEndContent = true;
         StoryTextControl.textCount = 6;
-        TextControl.textCount = 7;
+        TaskController._taskNumber = 7;
     }
     void CloseLoadingUI()
     {
