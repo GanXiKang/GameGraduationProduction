@@ -23,9 +23,12 @@ public class StoryBagControl : MonoBehaviour
         bagUI.SetActive(isBagActive);
         ItemSlotActive();
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (!StoryLittleGirlUIControl.isContentActive && !TaskController.isTaskActive && GameControl._day != 1)
         {
-            Zipper_Button();
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                Zipper_Button();
+            }
         }
     }
 
