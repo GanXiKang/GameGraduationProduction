@@ -70,8 +70,6 @@ public class WorkbenchControl : MonoBehaviour
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
                 makeMaterial.GetComponent<SpriteRenderer>().sprite = finishMakeMaterial;
-                CameraController.isLookWorkbench = true;
-                CameraController.isLookMake = false;
                 if (GameControl._day == 2)
                 {
                     UIController.isContentActive = true;
@@ -79,7 +77,7 @@ public class WorkbenchControl : MonoBehaviour
                     GameControl.isFinishSweaterContent = true;
                     TaskController._taskNumber = 6;
                 }
-                Invoke("Drawing_ClearAllPencils", 0.5f);
+                Invoke("Drawing_ClearAllPencils", 1f);
             }
         }
     }
@@ -92,6 +90,8 @@ public class WorkbenchControl : MonoBehaviour
         pencils.Clear();
         UIController.isFinish = true;
         drawFinishText.SetActive(false);
+        CameraController.isLookWorkbench = true;
+        CameraController.isLookMake = false;
     }
 
     bool Drawing_isWithInBoundary(Vector3 pos)
