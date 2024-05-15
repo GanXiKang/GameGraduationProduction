@@ -8,6 +8,8 @@ public class WorkbenchControl : MonoBehaviour
     public static bool isDrawing;
     public GameObject pencil;
     public GameObject drawFinishText;
+    public GameObject makeMaterial;
+    public Sprite finishMakeMaterial;
     public BoxCollider boxC;
     public bool isDrawingComplete;
     public float _completionThreshold;
@@ -28,8 +30,17 @@ public class WorkbenchControl : MonoBehaviour
         {
             Drawing();
         }
+
+        if (CameraController.isLookMake)
+        {
+            MakeMaterialUI();
+        }
     }
 
+    void MakeMaterialUI()
+    {
+        
+    }
     void Drawing()
     {
         Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2.5f);
