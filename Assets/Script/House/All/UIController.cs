@@ -5,7 +5,12 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    [Header("InteractionButton")]
+    [Header("Interaction")]
+    public GameObject interactionUI;
+    public GameObject bagButton;
+    public GameObject taskButton;
+
+    [Header("Button")]
     public GameObject interactionButton;
     public Text interactionButton_text;
     public static bool isInteractionButtonActive;
