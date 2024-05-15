@@ -51,6 +51,10 @@ public class StoryLittleGirlUIControl : MonoBehaviour
         {
             interactionUI.SetActive(true);
         }
+        else
+        {
+            interactionUI.SetActive(false);
+        }
     }
     void ColliderObjectName()
     {
