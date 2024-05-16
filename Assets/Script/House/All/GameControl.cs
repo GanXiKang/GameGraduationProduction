@@ -16,6 +16,7 @@ public class GameControl : MonoBehaviour
     public AudioClip doorOpen;
     public AudioClip doorClose;
     public AudioClip pickFlower;
+    public AudioClip interact;
     AudioSource BGM;
 
     [Header("Object")]
@@ -150,6 +151,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 3:                                                     //case
+                        BGM.PlayOneShot(interact);
                         switch (_day)
                         {
                             case 3:
