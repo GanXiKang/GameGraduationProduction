@@ -53,12 +53,14 @@ public class PlayerController : MonoBehaviour
     {
         if (!CameraController.isLookWorkbench && !UIController.isContentActive && !BedControl.isSleep && !BagController.isBagActive && !GameControl.isOpeningStopMove && !TaskController.isTaskActive && !SettingControl.isSettingActive && !isNoMove)
         {
+            SoundControl.isWalk = true;
             Vector2 input = value.Get<Vector2>();
             _moveInput = new Vector3(input.x, 0f, input.y);
             _lookDirection = new Vector3(_moveInput.x, 0f, _moveInput.z).normalized;
         }
         else
         {
+            SoundControl.isWalk = false;
             _moveInput = Vector3.zero;
         }
     }
