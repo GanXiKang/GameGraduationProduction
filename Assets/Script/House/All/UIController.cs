@@ -7,10 +7,9 @@ public class UIController : MonoBehaviour
 {
     [Header("Interaction")]
     public GameObject interactionUI;
-    public GameObject panel;
+    public GameObject panelA, panelB;
     public GameObject bagButton;
     public GameObject taskButton;
-    public static bool isPanelActive = false;
     public static bool isTeachOpenBag = false;
     public static bool isTeachOpenTask = false;
 
@@ -94,19 +93,27 @@ public class UIController : MonoBehaviour
 
             if (GameControl._day == 2)
             {
-                panel.SetActive(isPanelActive);
+                
                 if (isTeachOpenBag)
                 {
                     PlayerController.isNoMove = true;
-                    isPanelActive = true;
+                    panelA.SetActive(true);
                     bagButton.SetActive(true);
                     taskButton.SetActive(false);
+                }
+                else
+                {
+                    panelA.SetActive(false);
                 }
                 if (isTeachOpenTask)
                 {
                     PlayerController.isNoMove = true;
-                    isPanelActive = true;
+                    panelB.SetActive(true);
                     taskButton.SetActive(true);
+                }
+                else
+                {
+                    panelB.SetActive(false);
                 }
             }
         }
