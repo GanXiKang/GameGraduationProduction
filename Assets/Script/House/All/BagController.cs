@@ -19,7 +19,7 @@ public class BagController : MonoBehaviour
 
     void Start()
     {
-        BGM.GetComponent<AudioSource>();
+        BGM = GetComponent<AudioSource>();
 
         isBagActive = false;
        

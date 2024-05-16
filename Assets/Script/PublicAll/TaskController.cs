@@ -22,7 +22,7 @@ public class TaskController : MonoBehaviour
 
     void Start()
     {
-        BGM.GetComponent<AudioSource>();
+        BGM = GetComponent<AudioSource>();
 
         isTaskActive = false;
         GetTextFormFile(taskFile);
