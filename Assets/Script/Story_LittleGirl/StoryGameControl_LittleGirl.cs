@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
     [Header("Musia")]
-    public AudioClip a;
+    public AudioClip find;
+    public AudioClip fire;
+    public AudioClip elf;
+    public AudioClip interact;
     AudioSource BGM;
 
     [Header("GameObject")]
@@ -82,11 +85,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 switch (StoryObjectColliderControl._nowNumber)
                 {
                     case 1:                                                               //clothing&hat
+                        BGM.PlayOneShot(find);
                         _task++;
                         BagController.isItemSlotAcite[2] = true;
                         break;
 
                     case 2:                                                               //Elf
+                        BGM.PlayOneShot(elf);
                         _task++;
                         BagController._itemQuantity++;
                         BagController.isItemSlotAcite[1] = true;
@@ -95,6 +100,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         break;
 
                     case 3:                                                               //insfirepoint
+                        BGM.PlayOneShot(fire);
                         Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
                         StoryArrowTipControl_LittleGirl.isDestory = true;
                         BagController.isItemSlotAcite[3] = false;
@@ -102,6 +108,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         break;
 
                     case 4:                                                               //GoAlley
+                        BGM.PlayOneShot(interact);
                         loadingUI.SetActive(true);
                         Invoke("CloseLoadingUI", 4f);
                         break;
@@ -148,6 +155,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     if (!isUseMatches)
                     {
+                        BGM.PlayOneShot(fire);
                         if (!isFirstUseMatches)
                         {
                             isUseMatchesUI = false;
