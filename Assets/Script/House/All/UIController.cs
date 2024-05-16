@@ -93,9 +93,8 @@ public class UIController : MonoBehaviour
         {
             interactionUI.SetActive(true);
 
-            if (GameControl._day == 2 && !isFinishTeach)
+            if (GameControl._day == 2)
             {
-                print("ok");
                 panel.SetActive(isPanelActive);
                 if (isTeachOpenBag)
                 {
