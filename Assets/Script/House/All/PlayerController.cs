@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 _lookDirection;
 
     [Header("Movement")]
+    public static bool isNoMove;
     public float _moveSpeed = 10f;
     public float _turnSpeed = 15f;
     float _targetRotation;
@@ -50,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (!CameraController.isLookWorkbench && !UIController.isContentActive && !BedControl.isSleep && !BagController.isBagActive && !GameControl.isOpeningStopMove && !TaskController.isTaskActive && !SettingControl.isSettingActive)
+        if (!CameraController.isLookWorkbench && !UIController.isContentActive && !BedControl.isSleep && !BagController.isBagActive && !GameControl.isOpeningStopMove && !TaskController.isTaskActive && !SettingControl.isSettingActive && !isNoMove)
         {
             Vector2 input = value.Get<Vector2>();
             _moveInput = new Vector3(input.x, 0f, input.y);
