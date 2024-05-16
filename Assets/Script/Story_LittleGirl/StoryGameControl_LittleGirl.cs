@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class StoryGameControl_LittleGirl : MonoBehaviour
 {
+    [Header("Musia")]
+    public AudioClip a;
+    AudioSource BGM;
+
+    [Header("GameObject")]
     public GameObject player;
     public GameObject camera;
     public GameObject[] chapter;
@@ -44,6 +49,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
     void Start()
     {
+        BGM = GetComponent<AudioSource>();
+
         switch (_chapter)
         {
             case 1:
