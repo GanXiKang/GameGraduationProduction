@@ -95,8 +95,9 @@ public class UIController : MonoBehaviour
 
             if (GameControl._day == 2 && !isFinishTeach)
             {
+                print("ok");
                 panel.SetActive(isPanelActive);
-                if (isTeachOpenBag && !isTeachOpenTask)
+                if (isTeachOpenBag)
                 {
                     PlayerController.isNoMove = true;
                     isPanelActive = true;
