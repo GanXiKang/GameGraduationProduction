@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class EffectsSoundControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    AudioSource BGM;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        BGM.volume = SettingControl.volumeBGM;
     }
 }
