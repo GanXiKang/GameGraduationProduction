@@ -59,5 +59,9 @@ public class TaskController : MonoBehaviour
     public void Task_Button()
     {
         isTaskActive = !isTaskActive;
+        if (GameControl._day == 2)
+        {
+            UIController.isPanelActive = false;
+        }
     }
 }

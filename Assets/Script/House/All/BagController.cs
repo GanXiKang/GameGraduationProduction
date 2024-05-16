@@ -40,15 +40,7 @@ public class BagController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
-                isBagActive = !isBagActive;
-                if (GameControl._day == 2 && GameControl.isFirstOpenBag)
-                {
-                    UIController.isContentActive = true;
-                    TextControl.textCount = 4;
-                    GameControl.isFirstOpenBag = false;
-                    GameControl.isOpenBagContent = true;
-                    TaskController._taskNumber = 3;
-                }
+                Bag_Button();
             }
         }
     }
@@ -69,5 +61,14 @@ public class BagController : MonoBehaviour
     public void Bag_Button()
     {
         isBagActive = !isBagActive;
+        if (GameControl._day == 2 && GameControl.isFirstOpenBag)
+        {
+            UIController.isPanelActive = false;
+            UIController.isContentActive = true;
+            TextControl.textCount = 4;
+            GameControl.isFirstOpenBag = false;
+            GameControl.isOpenBagContent = true;
+            TaskController._taskNumber = 3;
+        }
     }
 }
