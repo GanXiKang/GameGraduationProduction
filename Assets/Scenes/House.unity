@@ -10932,8 +10932,8 @@ GameObject:
   - component: {fileID: 1480171939}
   - component: {fileID: 1480171941}
   - component: {fileID: 1480171943}
-  - component: {fileID: 1480171942}
   - component: {fileID: 1480171944}
+  - component: {fileID: 1480171942}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
