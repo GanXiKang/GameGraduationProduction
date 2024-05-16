@@ -7,8 +7,11 @@ public class UIController : MonoBehaviour
 {
     [Header("Interaction")]
     public GameObject interactionUI;
+    public GameObject panel;
     public GameObject bagButton;
     public GameObject taskButton;
+    public static bool isTeachOpenBag;
+    public static bool isTeachOpenTask;
 
     [Header("Button")]
     public GameObject interactionButton;
@@ -91,6 +94,19 @@ public class UIController : MonoBehaviour
         else
         {
             interactionUI.SetActive(false);
+        }
+
+        if (GameControl._day == 2)
+        {
+            if (isTeachOpenBag && !isTeachOpenTask)
+            {
+                
+            }
+
+            if (isTeachOpenTask)
+            {
+                
+            }
         }
     }
     void ColliderObjectName()
