@@ -11038,6 +11038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f761d47e0f19794fabc23373c365d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open: {fileID: 8300000, guid: ca0c7c89099c3ce43aa68ec0510e3906, type: 3}
   taskUI: {fileID: 1766127584}
   imageUI: {fileID: 1745859478}
   taskText: {fileID: 976034454}
