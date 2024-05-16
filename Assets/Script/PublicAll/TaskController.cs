@@ -62,6 +62,7 @@ public class TaskController : MonoBehaviour
         if (GameControl._day == 2)
         {
             UIController.isPanelActive = false;
+            UIController.isFinishTeach = true;
         }
     }
 }
