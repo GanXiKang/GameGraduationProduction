@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class WorkbenchControl : MonoBehaviour
 {
+    [Header("Musia")]
+    public AudioClip complete;
+    public AudioClip draw;
+    public AudioSource BGM;
+
     [Header("Drawing")]
     public static bool isDrawing;
     public GameObject pencil;
@@ -40,6 +45,7 @@ public class WorkbenchControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            BGM.PlayOneShot(draw);
             isPress = true;
             pencils.Add(Instantiate(pencil, Camera.main.ScreenToWorldPoint(mousePos), Quaternion.Euler(Vector3.zero), this.transform));
         }
@@ -66,6 +72,7 @@ public class WorkbenchControl : MonoBehaviour
         {
             if (_drawnArea >= _completionThreshold)
             {
+                BGM.PlayOneShot(complete);
                 BedControl.isNight = true;           //•º•rµÄ
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
