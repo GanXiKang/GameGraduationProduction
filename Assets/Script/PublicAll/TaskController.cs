@@ -70,7 +70,6 @@ public class TaskController : MonoBehaviour
         if (GameControl._day == 2)
         {
             PlayerController.isNoMove = false;
-            UIController.isPanelActive = false;
             UIController.isTeachOpenTask = false;
         }
     }
