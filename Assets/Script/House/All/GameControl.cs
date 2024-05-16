@@ -131,6 +131,7 @@ public class GameControl : MonoBehaviour
                         CameraController.isLookWorkbench = true;
                         if (_day == 2 && isFirstOpenWorkbench)
                         {
+                            UIController.isTeachOpenTask = true;
                             UIController.isContentActive = true;
                             TextControl.textCount = 6;
                             isFirstOpenWorkbench = false;

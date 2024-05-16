@@ -77,6 +77,10 @@ public class TextControl : MonoBehaviour
         if (GameControl.isOpeningContent)
         {
             GameControl.isOpeningContent = false;
+            if (GameControl._day == 2)
+            {
+                UIController.isTeachOpenBag = true;
+            }
         }
         else if (GameControl.isSleepingContent)
         {
