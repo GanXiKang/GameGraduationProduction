@@ -63,6 +63,7 @@ public class BagController : MonoBehaviour
         isBagActive = !isBagActive;
         if (GameControl._day == 2 && GameControl.isFirstOpenBag)
         {
+            PlayerController.isNoMove = false;
             UIController.isPanelActive = false;
             UIController.isContentActive = true;
             TextControl.textCount = 4;

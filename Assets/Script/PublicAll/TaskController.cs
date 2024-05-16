@@ -61,6 +61,7 @@ public class TaskController : MonoBehaviour
         isTaskActive = !isTaskActive;
         if (GameControl._day == 2)
         {
+            PlayerController.isNoMove = false;
             UIController.isPanelActive = false;
             UIController.isFinishTeach = true;
         }
