@@ -17,6 +17,8 @@ public class GameControl : MonoBehaviour
     public AudioClip doorClose;
     public AudioClip pickFlower;
     public AudioClip interact;
+    public AudioClip pickUp;
+    public AudioClip useWorkbench;
     AudioSource BGM;
 
     [Header("Object")]
@@ -137,6 +139,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 2:                                                     //workbench
+                        BGM.PlayOneShot(useWorkbench);
                         CameraController.isFollow = false;
                         CameraController.isLookWorkbench = true;
                         if (_day == 2 && isFirstOpenWorkbench)
@@ -174,6 +177,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 4:                                                     //storybook_crystal
+                        BGM.PlayOneShot(pickUp);
                         isFindStoryBookContent = true;
                         UIController.isContentActive = true;
                         TextControl.textCount = 11;
