@@ -45,7 +45,6 @@ public class WorkbenchControl : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            BGM.PlayOneShot(draw);
             isPress = true;
             pencils.Add(Instantiate(pencil, Camera.main.ScreenToWorldPoint(mousePos), Quaternion.Euler(Vector3.zero), this.transform));
         }
@@ -56,6 +55,7 @@ public class WorkbenchControl : MonoBehaviour
 
         if (!isDrawingComplete && isPress)
         {
+            BGM.PlayOneShot(draw);
             if (Drawing_isWithInBoundary(Camera.main.ScreenToWorldPoint(mousePos)))
             {
                 pencils[pencils.Count - 1].transform.position = Camera.main.ScreenToWorldPoint(mousePos);
