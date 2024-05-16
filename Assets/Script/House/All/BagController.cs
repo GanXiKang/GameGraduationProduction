@@ -65,7 +65,7 @@ public class BagController : MonoBehaviour
 
     public void Bag_Button()
     {
-        bgm.PlayOneShot();
+        bgm.PlayOneShot(open);
         isBagActive = !isBagActive;
         if (GameControl._day == 2 && GameControl.isFirstOpenBag)
         {
