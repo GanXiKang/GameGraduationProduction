@@ -942,7 +942,7 @@ Transform:
   m_GameObject: {fileID: 115781841}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -962,6 +962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec95210793a7f142964a9e96ed055d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  complete: {fileID: 8300000, guid: 8943fa1a48682c04caf46e66d99b9915, type: 3}
+  draw: {fileID: 8300000, guid: 77ad1a0b123a0e34da4719063740404e, type: 3}
+  BGM: {fileID: 1480171942}
   pencil: {fileID: 6877726313400018096, guid: ccf20313e1fdcfa40aea926af31c3761, type: 3}
   drawFinishText: {fileID: 1762746756}
   makeMaterial: {fileID: 1169955804}
@@ -3374,8 +3377,8 @@ Transform:
   - {fileID: 722432147}
   - {fileID: 90188955}
   - {fileID: 1924202686}
-  - {fileID: 115781842}
   - {fileID: 908317542}
+  - {fileID: 115781842}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &457392849
