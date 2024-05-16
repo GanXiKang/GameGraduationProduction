@@ -57,6 +57,15 @@ public class StoryPlayerController : MonoBehaviour
         else
         {
             _storyMoveInput = Vector3.zero;
-        }   
+        }
+
+        if (_storyMoveInput != Vector3.zero)
+        {
+            SoundControl.isWalk = true;
+        }
+        else
+        {
+            SoundControl.isWalk = false;
+        }
     }
 }
