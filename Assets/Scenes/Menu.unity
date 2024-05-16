@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc42c25bc398e804e9204a2f9450aa4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onClick: {fileID: 8300000, guid: be2afbaf654b3304093e068dc2c937c1, type: 3}
   interactiveUI: {fileID: 1960029093}
 --- !u!4 &269828604
 Transform:
