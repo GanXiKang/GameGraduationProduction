@@ -9226,6 +9226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f761d47e0f19794fabc23373c365d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open: {fileID: 8300000, guid: ca0c7c89099c3ce43aa68ec0510e3906, type: 3}
   taskUI: {fileID: 1040374827}
   imageUI: {fileID: 1901342545}
   taskText: {fileID: 1179799646}
@@ -9338,6 +9339,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0615d713d8fe849a662ea0084b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onClick: {fileID: 8300000, guid: be2afbaf654b3304093e068dc2c937c1, type: 3}
+  flipBook: {fileID: 8300000, guid: 794a9f22c97bd4347be2d65c0f2b70b0, type: 3}
+  open: {fileID: 8300000, guid: 8651bec12aa7f36489ecf7ce62e7feb9, type: 3}
+  save: {fileID: 8300000, guid: 8e2f92d3095720c4891378e6e502fcaa, type: 3}
+  leave: {fileID: 8300000, guid: ed07cd7a178520c4387ff3f7034325b2, type: 3}
   bookUI: {fileID: 688025303}
   sliderBGM: {fileID: 215752315}
   fullScreen: {fileID: 1380474299}
