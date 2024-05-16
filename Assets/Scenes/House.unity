@@ -7624,7 +7624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionUI: {fileID: 1349851333}
-  panel: {fileID: 0}
+  panel: {fileID: 2131942110}
   bagButton: {fileID: 751633844}
   taskButton: {fileID: 81219949}
   interactionButton: {fileID: 1756793600}
