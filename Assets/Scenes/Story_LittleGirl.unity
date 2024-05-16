@@ -9274,6 +9274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c6bfa9d8f5cb6643a6ddc51bad7b236, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open: {fileID: 8300000, guid: e6bdc9804cb05f64bb43bb4b9b6c19ba, type: 3}
   bagUI: {fileID: 1110120772}
   zipper: {fileID: 1158939993}
   itemUI: {fileID: 1428416550}
