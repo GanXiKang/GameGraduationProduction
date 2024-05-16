@@ -121,11 +121,13 @@ public class SettingControl : MonoBehaviour
     }
     public void Volume_BGM()
     {
+        BGM.PlayOneShot(onClick);
         volumeBGM = sliderBGM.value;
         BGM.volume = volumeBGM;
     }
     public void FullScreen(bool isFullScreen)
     {
+        BGM.PlayOneShot(onClick);
         Screen.fullScreen = isFullScreen;
         isFullS = isFullScreen;
     }
