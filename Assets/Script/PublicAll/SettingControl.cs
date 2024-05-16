@@ -5,8 +5,15 @@ using UnityEngine.UI;
 
 public class SettingControl : MonoBehaviour
 {
+    [Header("Musia")]
+    public AudioClip onClick;
+    public AudioClip flipBook;
+    public AudioClip open;
+    public AudioClip save;
+    public AudioClip leave;
     AudioSource BGM;
 
+    [Header("UI")]
     public Image bookUI;
     public Slider sliderBGM;
     public Toggle fullScreen;
@@ -18,7 +25,6 @@ public class SettingControl : MonoBehaviour
     public static bool isFullS;
     public static bool isSettingActive = false;
     public static int _page = 1;
-
     bool isUIInteractable;
 
     void Start()
@@ -40,6 +46,7 @@ public class SettingControl : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                BGM.PlayOneShot(open);
                 isSettingActive = !isSettingActive;
             }
         }
@@ -89,23 +96,27 @@ public class SettingControl : MonoBehaviour
     public void LabelGreen_Button()             //ÔO¶¨
     {
         _page = 1;
+        BGM.PlayOneShot(onClick);
         StartCoroutine(TurnPageRight()); 
     }
     public void LabelBlue_Button()              //²Ù×÷
     {
         _page = 2;
+        BGM.PlayOneShot(onClick);
         StartCoroutine(TurnPageLeft());
     }
     public void Close_Button()               //êPé]
     {
+        BGM.PlayOneShot(onClick);
         isSettingActive = !isSettingActive;
     }
     public void Save_Button() 
-    { 
-
+    {
+        BGM.PlayOneShot(save);
     }
     public void ExitGame_Button() 
     {
+        BGM.PlayOneShot(leave);
         Application.Quit();
     }
     public void Volume_BGM()
@@ -127,6 +138,7 @@ public class SettingControl : MonoBehaviour
         UIInteractable();
         bookUI.sprite = turnPage[1];
         yield return new WaitForSeconds(0.2f);
+        BGM.PlayOneShot(flipBook);
         bookUI.sprite = turnPage[2];
         yield return new WaitForSeconds(0.2f);
         bookUI.sprite = turnPage[4];
@@ -144,6 +156,7 @@ public class SettingControl : MonoBehaviour
         UIInteractable();
         bookUI.sprite = turnPage[3];
         yield return new WaitForSeconds(0.2f);
+        BGM.PlayOneShot(flipBook);
         LabelInteractable();
         bookUI.sprite = turnPage[4];
         yield return new WaitForSeconds(0.2f);
