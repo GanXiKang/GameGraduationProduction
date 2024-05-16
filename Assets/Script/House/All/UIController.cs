@@ -13,7 +13,6 @@ public class UIController : MonoBehaviour
     public static bool isPanelActive = false;
     public static bool isTeachOpenBag = false;
     public static bool isTeachOpenTask = false;
-    public static bool isFinishTeach = false;
 
     [Header("Button")]
     public GameObject interactionButton;
