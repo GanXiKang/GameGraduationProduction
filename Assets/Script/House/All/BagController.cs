@@ -5,17 +5,22 @@ using UnityEngine.UI;
 
 public class BagController : MonoBehaviour
 {
+    [Header("Musia")]
+    AudioSource bgm;
+    public AudioClip open;
+
+    [Header("UI")]
     public GameObject bagUI;
     public GameObject[] itemSlot;
     public Text quantity_Text;
-
+    public static bool isBagActive;
     public static bool[] isItemSlotAcite;
     public static int _itemQuantity = 0;
 
-    public static bool isBagActive;
-
     void Start()
     {
+        bgm.GetComponent<AudioSource>();
+
         isBagActive = false;
        
         if (MenuGameControl.isNewGameModel)
@@ -60,6 +65,7 @@ public class BagController : MonoBehaviour
 
     public void Bag_Button()
     {
+        bgm.PlayOneShot();
         isBagActive = !isBagActive;
         if (GameControl._day == 2 && GameControl.isFirstOpenBag)
         {
