@@ -65,6 +65,7 @@ public class BagController : MonoBehaviour
         {
             PlayerController.isNoMove = false;
             UIController.isPanelActive = false;
+            UIController.isTeachOpenBag = false;
             UIController.isContentActive = true;
             TextControl.textCount = 4;
             GameControl.isFirstOpenBag = false;

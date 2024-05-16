@@ -63,6 +63,7 @@ public class TaskController : MonoBehaviour
         {
             PlayerController.isNoMove = false;
             UIController.isPanelActive = false;
+            UIController.isTeachOpenTask = false;
             UIController.isFinishTeach = true;
         }
     }
