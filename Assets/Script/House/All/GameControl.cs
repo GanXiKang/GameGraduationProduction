@@ -11,6 +11,13 @@ public class GameControl : MonoBehaviour
     int _whichStory;
     bool isFullScreen;
 
+    [Header("Musia")]
+    public AudioClip ClimbIntoBed;
+    public AudioClip doorOpen;
+    public AudioClip doorClose;
+    public AudioClip pickFlower;
+    AudioSource BGM;
+
     [Header("Object")]
     public GameObject[] colliderObject;
 
@@ -43,6 +50,7 @@ public class GameControl : MonoBehaviour
     void Start()
     {
         DayStart();
+        BGM = GetComponent<AudioSource>();
         isGotoStroy = false;
         isChooseStoryBook = false;
         _whichStory = 0;
@@ -103,6 +111,7 @@ public class GameControl : MonoBehaviour
                 switch (PlayerColliderControl._nowNumber)
                 {
                     case 1:                                                     //bed
+                        BGM.PlayOneShot(ClimbIntoBed);
                         CameraController.isFollow = false;
                         CameraController.isLookBed = true;
                         BedControl.isSleep = true;
@@ -174,6 +183,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 5:                                                     //gotoLivingroom
+                        BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
                         DoorControl.isLivingRoom = true;
                         DoorControl.isBedroom = false;
@@ -182,6 +192,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 6:                                                     //gotoBedroom
+                        BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
                         DoorControl.isBedroom = true;
                         DoorControl.isLivingRoom = false;
@@ -190,6 +201,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 7:                                                     //gotoLivingroom
+                        BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
                         DoorControl.isOutDoor = false;
                         player.position = doorPoint[4].position;
@@ -197,6 +209,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 8:                                                     //gotoOutdoor
+                        BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
                         DoorControl.isOutDoor = true;
                         player.position = doorPoint[3].position;
@@ -204,6 +217,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 9:                                                     //GradenA
+                        BGM.PlayOneShot(pickFlower);
                         GardenControl.isGardenA = false;
                         FlowerControl.isDestory = true;
                         if (_day == 2)
@@ -214,6 +228,7 @@ public class GameControl : MonoBehaviour
                         break;
 
                     case 10:                                                    //GradenB
+                        BGM.PlayOneShot(pickFlower);
                         GardenControl.isGardenB = false;
                         FlowerControl.isDestory = true;
                         break;
@@ -223,6 +238,7 @@ public class GameControl : MonoBehaviour
     }
     void AutoFalseisNextPlace()
     {
+        BGM.PlayOneShot(doorClose);
         isNextPlace = false;
     }
 
