@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class StoryBagControl : MonoBehaviour
 {
+    [Header("Musia")]
+    public AudioClip open;
+    AudioSource BGM;
+
+    [Header("UI")]
     public GameObject bagUI;
     public GameObject zipper;
     public GameObject itemUI;
@@ -16,6 +21,8 @@ public class StoryBagControl : MonoBehaviour
 
     void Start()
     {
+        BGM = GetComponent<AudioSource>();
+
         isBagActive = false;
     }
 
@@ -44,6 +51,7 @@ public class StoryBagControl : MonoBehaviour
 
     public void Zipper_Button()
     {
+        BGM.PlayOneShot(open);
         isBagActive = !isBagActive;
         if (isBagActive)
         {
