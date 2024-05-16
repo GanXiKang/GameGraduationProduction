@@ -7,7 +7,7 @@ public class TaskController : MonoBehaviour
 {
     [Header("Musia")]
     public AudioClip open;
-    AudioSource bgm;
+    AudioSource BGM;
 
     [Header("UI")]
     public GameObject taskUI;
@@ -22,7 +22,7 @@ public class TaskController : MonoBehaviour
 
     void Start()
     {
-        bgm.GetComponent<AudioSource>();
+        BGM.GetComponent<AudioSource>();
 
         isTaskActive = false;
         GetTextFormFile(taskFile);
@@ -65,7 +65,7 @@ public class TaskController : MonoBehaviour
 
     public void Task_Button()
     {
-        bgm.PlayOneShot(open);
+        BGM.PlayOneShot(open);
         isTaskActive = !isTaskActive;
         if (GameControl._day == 2)
         {

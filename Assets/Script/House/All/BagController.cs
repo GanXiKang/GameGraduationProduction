@@ -7,7 +7,7 @@ public class BagController : MonoBehaviour
 {
     [Header("Musia")]
     public AudioClip open;
-    AudioSource bgm;
+    AudioSource BGM;
 
     [Header("UI")]
     public GameObject bagUI;
@@ -19,7 +19,7 @@ public class BagController : MonoBehaviour
 
     void Start()
     {
-        bgm.GetComponent<AudioSource>();
+        BGM.GetComponent<AudioSource>();
 
         isBagActive = false;
        
@@ -65,7 +65,7 @@ public class BagController : MonoBehaviour
 
     public void Bag_Button()
     {
-        bgm.PlayOneShot(open);
+        BGM.PlayOneShot(open);
         isBagActive = !isBagActive;
         if (GameControl._day == 2 && GameControl.isFirstOpenBag)
         {
