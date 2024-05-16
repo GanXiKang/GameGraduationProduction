@@ -9243,6 +9243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f861a8131e30144b83bbf293d587d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  find: {fileID: 8300000, guid: 17966959760c79a4bba6bb410935d1b5, type: 3}
+  fire: {fileID: 8300000, guid: 1deae7bc40fb8e74daa159e2ff7e4708, type: 3}
+  elf: {fileID: 8300000, guid: 44441f3d8189c654992b92163a4811f9, type: 3}
+  interact: {fileID: 8300000, guid: 7108d75205206544080116a95b05e411, type: 3}
   player: {fileID: 47488463}
   camera: {fileID: 1820943386}
   chapter:
