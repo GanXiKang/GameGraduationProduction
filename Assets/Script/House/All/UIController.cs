@@ -89,7 +89,7 @@ public class UIController : MonoBehaviour
 
     void InteractableUI()
     {
-        if (GameControl._day != 1 && CameraController.isFollow && !isContentActive && !BagController.isBagActive && !TaskController.isTaskActive)
+        if (GameControl._day != 1 && CameraController.isFollow && !isContentActive && !BagController.isBagActive && !TaskController.isTaskActive && !GameControl.isOpeningStopMove)
         {
             interactionUI.SetActive(true);
 
@@ -98,12 +98,14 @@ public class UIController : MonoBehaviour
                 panel.SetActive(isPanelActive);
                 if (isTeachOpenBag && !isTeachOpenTask)
                 {
+                    PlayerController.isNoMove = true;
                     isPanelActive = true;
                     bagButton.SetActive(true);
                     taskButton.SetActive(false);
                 }
                 if (isTeachOpenTask)
                 {
+                    PlayerController.isNoMove = true;
                     isPanelActive = true;
                     taskButton.SetActive(true);
                 }
