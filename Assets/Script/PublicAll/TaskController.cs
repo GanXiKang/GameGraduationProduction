@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class TaskController : MonoBehaviour
 {
     [Header("Musia")]
-    AudioSource bgm;
     public AudioClip open;
+    AudioSource bgm;
 
     [Header("UI")]
     public GameObject taskUI;

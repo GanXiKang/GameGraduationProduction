@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class BagController : MonoBehaviour
 {
     [Header("Musia")]
-    AudioSource bgm;
     public AudioClip open;
+    AudioSource bgm;
 
     [Header("UI")]
     public GameObject bagUI;
