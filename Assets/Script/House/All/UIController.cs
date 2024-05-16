@@ -10,8 +10,10 @@ public class UIController : MonoBehaviour
     public GameObject panel;
     public GameObject bagButton;
     public GameObject taskButton;
-    public static bool isTeachOpenBag;
-    public static bool isTeachOpenTask;
+    public static bool isPanelActive = false;
+    public static bool isTeachOpenBag = false;
+    public static bool isTeachOpenTask = false;
+    public static bool isFinishTeach = false;
 
     [Header("Button")]
     public GameObject interactionButton;
@@ -90,23 +92,26 @@ public class UIController : MonoBehaviour
         if (GameControl._day != 1 && CameraController.isFollow && !isContentActive && !BagController.isBagActive && !TaskController.isTaskActive)
         {
             interactionUI.SetActive(true);
+
+            if (GameControl._day == 2 && !isFinishTeach)
+            {
+                panel.SetActive(isPanelActive);
+                if (isTeachOpenBag && !isTeachOpenTask)
+                {
+                    isPanelActive = true;
+                    bagButton.SetActive(true);
+                    taskButton.SetActive(false);
+                }
+                if (isTeachOpenTask)
+                {
+                    isPanelActive = true;
+                    taskButton.SetActive(true);
+                }
+            }
         }
         else
         {
             interactionUI.SetActive(false);
-        }
-
-        if (GameControl._day == 2)
-        {
-            if (isTeachOpenBag && !isTeachOpenTask)
-            {
-                
-            }
-
-            if (isTeachOpenTask)
-            {
-                
-            }
         }
     }
     void ColliderObjectName()
