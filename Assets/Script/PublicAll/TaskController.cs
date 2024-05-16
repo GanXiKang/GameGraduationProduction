@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class TaskController : MonoBehaviour
 {
+    [Header("Musia")]
+    AudioSource bgm;
+    public AudioClip open;
+
+    [Header("UI")]
     public GameObject taskUI;
     public GameObject imageUI;
     public Text taskText;
@@ -17,6 +22,8 @@ public class TaskController : MonoBehaviour
 
     void Start()
     {
+        bgm.GetComponent<AudioSource>();
+
         isTaskActive = false;
         GetTextFormFile(taskFile);
     }
@@ -58,6 +65,7 @@ public class TaskController : MonoBehaviour
 
     public void Task_Button()
     {
+        bgm.PlayOneShot(open);
         isTaskActive = !isTaskActive;
         if (GameControl._day == 2)
         {
