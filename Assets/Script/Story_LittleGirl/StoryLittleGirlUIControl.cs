@@ -47,7 +47,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
 
     void InteractableUI()
     {
-        if (GameControl._day != 1 && !isContentActive && !StoryBagControl.isBagActive && !TaskController.isTaskActive)
+        if (GameControl._day != 1 && !isContentActive && !StoryBagControl.isBagActive && !TaskController.isTaskActive && !isFantasyAnimation && !SettingControl.isSettingActive)
         {
             interactionUI.SetActive(true);
         }
