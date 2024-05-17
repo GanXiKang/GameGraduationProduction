@@ -5,7 +5,6 @@ using UnityEngine;
 public class CaseControl : MonoBehaviour
 {
     public GameObject caseCollider;
-    Vector3 highlightedMovingDistance;
     bool isMoveOnce;
 
     [Header("StoryBookLitteGirl")]
@@ -13,30 +12,40 @@ public class CaseControl : MonoBehaviour
     public GameObject storyLittleGirl_Button;
     public static bool isStoryBookLittleGirl = true;
     public static bool isStoryBookLittleGirlFinish = false;
+    Transform originalLocation_LittleGirl;
+    Transform highlightLocation_LittleGirl;
 
     [Header("StoryBookCrystal")]
     public GameObject storyBookCrystal;
     public GameObject storyCrystal_Button;
     public static bool isStoryBookCrystal = false;
     public static bool isStoryBookCrystalFinish = false;
+    Transform originalLocation_Crystal;
+    Transform highlightLocation_Crystal;
 
     [Header("StoryBookMomotaro")]
     public GameObject storyBookMomotaro;
     public GameObject storyMomotaro_Button;
     public static bool isStoryBookMomotaro = false;
     public static bool isStoryBookMomotaroFinish = false;
+    Transform originalLocation_Momotaro;
+    Transform highlightLocation_Momotaro;
 
     [Header("StoryBookBeanstalk")]
     public GameObject storyBookBeanstalk;
     public GameObject storyBeanstalk_Button;
     public static bool isStoryBookBeanstalk = false;
     public static bool isStoryBookBeanstalkFinish = false;
+    Transform originalLocation_Beanstalk;
+    Transform highlightLocation_Beanstalk;
 
     [Header("StoryBookCinderella")]
     public GameObject storyBookCinderella;
     public GameObject storyCinderella_Button;
     public static bool isStoryBookCinderella = false;
     public static bool isStoryBookCinderellaFinish = false;
+    Transform originalLocation_Cinderella;
+    Transform highlightLocation_Cinderella;
 
     void Start()
     {
@@ -48,7 +57,16 @@ public class CaseControl : MonoBehaviour
                 break;
         }
 
-        highlightedMovingDistance = new Vector3(0.145f, 0f, 0f);
+        originalLocation_LittleGirl.position = storyBookLitteGirl.transform.position;
+        highlightLocation_LittleGirl.position = storyBookLitteGirl.transform.position + new Vector3(0f, 0.2f, 0f);
+        originalLocation_Crystal.position = storyBookCrystal.transform.position;
+        highlightLocation_Crystal.position = storyBookCrystal.transform.position + new Vector3(0f, 0.2f, 0f);
+        originalLocation_Momotaro.position = storyBookMomotaro.transform.position;
+        highlightLocation_Momotaro.position = storyBookMomotaro.transform.position + new Vector3(0f, 0.2f, 0f);
+        originalLocation_Beanstalk.position = storyBookBeanstalk.transform.position;
+        highlightLocation_Beanstalk.position = storyBookBeanstalk.transform.position + new Vector3(0f, 0.2f, 0f);
+        originalLocation_Cinderella.position = storyBookCinderella.transform.position;
+        highlightLocation_Cinderella.position = storyBookCinderella.transform.position + new Vector3(0f, 0.2f, 0f);
     }
 
     void Update()
@@ -107,54 +125,58 @@ public class CaseControl : MonoBehaviour
     }
     void ChooseStoryBookButtonisHighlighter()
     {
-        if (ButtonHighlightedControl.isProtrudeStoryBook && isMoveOnce)
+        if (ButtonHighlightedControl.isProtrudeStoryBook)
         {
-            switch (ButtonHighlightedControl._whichStoryBook)
+            if (isMoveOnce)
             {
-                case 1:
-                    storyBookLitteGirl.transform.position -= highlightedMovingDistance;
-                    break;
+                switch (ButtonHighlightedControl._whichStoryBook)
+                {
+                    case 1:
+                        storyBookLitteGirl.transform.position = highlightLocation_LittleGirl.position;
+                        break;
 
-                case 2:
-                    storyBookCrystal.transform.position -= highlightedMovingDistance;
-                    break;
+                    case 2:
+                        storyBookCrystal.transform.position = highlightLocation_Crystal.position;
+                        break;
 
-                case 3:
-                    storyBookMomotaro.transform.position -= highlightedMovingDistance;
-                    break;
+                    case 3:
+                        storyBookMomotaro.transform.position = highlightLocation_Momotaro.position;
+                        break;
 
-                case 4:
-                    storyBookBeanstalk.transform.position -= highlightedMovingDistance;
-                    break;
+                    case 4:
+                        storyBookBeanstalk.transform.position = highlightLocation_Beanstalk.position;
+                        break;
 
-                case 5:
-                    storyBookCinderella.transform.position -= highlightedMovingDistance;
-                    break;
+                    case 5:
+                        storyBookCinderella.transform.position = highlightLocation_Cinderella.position;
+                        break;
+                }
+                isMoveOnce = false;
             }
-            isMoveOnce = false;
         }
         else
         {
+            print("OK");
             switch (ButtonHighlightedControl._whichStoryBook)
             {
                 case 1:
-                    storyBookLitteGirl.transform.position += highlightedMovingDistance;
+                    storyBookLitteGirl.transform.position = originalLocation_LittleGirl.position;
                     break;
 
                 case 2:
-                    storyBookCrystal.transform.position += highlightedMovingDistance;
+                    storyBookCrystal.transform.position = originalLocation_Crystal.position;
                     break;
 
                 case 3:
-                    storyBookMomotaro.transform.position += highlightedMovingDistance;
+                    storyBookMomotaro.transform.position = originalLocation_Momotaro.position;
                     break;
 
                 case 4:
-                    storyBookBeanstalk.transform.position += highlightedMovingDistance;
+                    storyBookBeanstalk.transform.position = originalLocation_Beanstalk.position;
                     break;
 
                 case 5:
-                    storyBookCinderella.transform.position += highlightedMovingDistance;
+                    storyBookCinderella.transform.position = originalLocation_Cinderella.position;
                     break;
             }
             ButtonHighlightedControl._whichStoryBook = 0;
