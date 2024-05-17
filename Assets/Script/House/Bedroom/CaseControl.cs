@@ -12,16 +12,16 @@ public class CaseControl : MonoBehaviour
     public GameObject storyLittleGirl_Button;
     public static bool isStoryBookLittleGirl = true;
     public static bool isStoryBookLittleGirlFinish = false;
-    Transform originalLocation_LittleGirl;
-    Transform highlightLocation_LittleGirl;
+    Vector3 originalLocation_LittleGirl;
+    Vector3 highlightLocation_LittleGirl;
 
     [Header("StoryBookCrystal")]
     public GameObject storyBookCrystal;
     public GameObject storyCrystal_Button;
     public static bool isStoryBookCrystal = false;
     public static bool isStoryBookCrystalFinish = false;
-    Transform originalLocation_Crystal;
-    Transform highlightLocation_Crystal;
+    Vector3 originalLocation_Crystal;
+    Vector3 highlightLocation_Crystal;
 
     [Header("StoryBookMomotaro")]
     public GameObject storyBookMomotaro;
@@ -57,18 +57,23 @@ public class CaseControl : MonoBehaviour
                 break;
         }
 
-        originalLocation_LittleGirl.position = storyBookLitteGirl.transform.position;
-        highlightLocation_LittleGirl.position = storyBookLitteGirl.transform.position + new Vector3(0f, 0.2f, 0f);
-        originalLocation_Crystal.position = storyBookCrystal.transform.position;
-        highlightLocation_Crystal.position = storyBookCrystal.transform.position + new Vector3(0f, 0.2f, 0f);
-        originalLocation_Momotaro.position = storyBookMomotaro.transform.position;
-        highlightLocation_Momotaro.position = storyBookMomotaro.transform.position + new Vector3(0f, 0.2f, 0f);
-        originalLocation_Beanstalk.position = storyBookBeanstalk.transform.position;
-        highlightLocation_Beanstalk.position = storyBookBeanstalk.transform.position + new Vector3(0f, 0.2f, 0f);
-        originalLocation_Cinderella.position = storyBookCinderella.transform.position;
-        highlightLocation_Cinderella.position = storyBookCinderella.transform.position + new Vector3(0f, 0.2f, 0f);
-        print(originalLocation_LittleGirl.position);
-        print(highlightLocation_LittleGirl.position);
+        originalLocation_LittleGirl = storyBookLitteGirl.transform.position;
+        highlightLocation_LittleGirl = originalLocation_LittleGirl + new Vector3(0f, 0.2f, 0f);
+
+        originalLocation_Crystal = storyBookCrystal.transform.position;
+        highlightLocation_Crystal = originalLocation_Crystal + new Vector3(0f, 0.2f, 0f);
+
+        //originalLocation_Momotaro.position = storyBookMomotaro.transform.position;
+        //highlightLocation_Momotaro.position = storyBookMomotaro.transform.position + new Vector3(0f, 0.2f, 0f);
+
+        //originalLocation_Beanstalk.position = storyBookBeanstalk.transform.position;
+        //highlightLocation_Beanstalk.position = storyBookBeanstalk.transform.position + new Vector3(0f, 0.2f, 0f);
+
+        //originalLocation_Cinderella.position = storyBookCinderella.transform.position;
+        //highlightLocation_Cinderella.position = storyBookCinderella.transform.position + new Vector3(0f, 0.2f, 0f);
+
+        print(originalLocation_LittleGirl);
+        print(highlightLocation_LittleGirl);
     }
 
     void Update()
@@ -134,11 +139,11 @@ public class CaseControl : MonoBehaviour
                 switch (ButtonHighlightedControl._whichStoryBook)
                 {
                     case 1:
-                        storyBookLitteGirl.transform.position = highlightLocation_LittleGirl.position;
+                        storyBookLitteGirl.transform.position = highlightLocation_LittleGirl;
                         break;
 
                     case 2:
-                        storyBookCrystal.transform.position = highlightLocation_Crystal.position;
+                        storyBookCrystal.transform.position = highlightLocation_Crystal;
                         break;
 
                     case 3:
@@ -162,11 +167,11 @@ public class CaseControl : MonoBehaviour
             switch (ButtonHighlightedControl._whichStoryBook)
             {
                 case 1:
-                    storyBookLitteGirl.transform.position = originalLocation_LittleGirl.position;
+                    storyBookLitteGirl.transform.position = originalLocation_LittleGirl;
                     break;
 
                 case 2:
-                    storyBookCrystal.transform.position = originalLocation_Crystal.position;
+                    storyBookCrystal.transform.position = originalLocation_Crystal;
                     break;
 
                 case 3:
