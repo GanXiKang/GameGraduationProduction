@@ -147,15 +147,15 @@ public class CaseControl : MonoBehaviour
                         break;
 
                     case 3:
-                        storyBookMomotaro.transform.position = highlightLocation_Momotaro.position;
+                        storyBookMomotaro.transform.position = highlightLocation_Momotaro;
                         break;
 
                     case 4:
-                        storyBookBeanstalk.transform.position = highlightLocation_Beanstalk.position;
+                        storyBookBeanstalk.transform.position = highlightLocation_Beanstalk;
                         break;
 
                     case 5:
-                        storyBookCinderella.transform.position = highlightLocation_Cinderella.position;
+                        storyBookCinderella.transform.position = highlightLocation_Cinderella;
                         break;
                 }
                 isMoveOnce = false;
@@ -174,15 +174,15 @@ public class CaseControl : MonoBehaviour
                     break;
 
                 case 3:
-                    storyBookMomotaro.transform.position = originalLocation_Momotaro.position;
+                    storyBookMomotaro.transform.position = originalLocation_Momotaro;
                     break;
 
                 case 4:
-                    storyBookBeanstalk.transform.position = originalLocation_Beanstalk.position;
+                    storyBookBeanstalk.transform.position = originalLocation_Beanstalk;
                     break;
 
                 case 5:
-                    storyBookCinderella.transform.position = originalLocation_Cinderella.position;
+                    storyBookCinderella.transform.position = originalLocation_Cinderella;
                     break;
             }
             ButtonHighlightedControl._whichStoryBook = 0;
