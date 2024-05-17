@@ -6936,6 +6936,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1525923191912945089, guid: c8a354d996923f245aee49bb1155e804,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525923191912945089, guid: c8a354d996923f245aee49bb1155e804,
+        type: 3}
+      propertyPath: isWindActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1651303618123701024, guid: c8a354d996923f245aee49bb1155e804,
         type: 3}
       propertyPath: dragForce
