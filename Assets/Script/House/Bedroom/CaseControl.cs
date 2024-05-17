@@ -48,7 +48,12 @@ public class CaseControl : MonoBehaviour
     }
 
     void Update()
-    { 
+    {
+        StoryBookFinish();
+    }
+
+    void StoryBookFinish()
+    {
         if (isStoryBookLittleGirlFinish)
         {
             storyLittleGirl_Button.SetActive(false);
