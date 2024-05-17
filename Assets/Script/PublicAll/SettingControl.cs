@@ -130,7 +130,6 @@ public class SettingControl : MonoBehaviour
         isFullS = isFullScreen;
     }
 
-
     //·­•ø„Ó®‹
     IEnumerator TurnPageLeft()
     {
