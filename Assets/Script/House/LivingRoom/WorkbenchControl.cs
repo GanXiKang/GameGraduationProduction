@@ -55,7 +55,7 @@ public class WorkbenchControl : MonoBehaviour
 
         if (!isDrawingComplete && isPress)
         {
-            BGM.PlayOneShot(draw);
+            SoundControl.isDraw = true;
             if (Drawing_isWithInBoundary(Camera.main.ScreenToWorldPoint(mousePos)))
             {
                 pencils[pencils.Count - 1].transform.position = Camera.main.ScreenToWorldPoint(mousePos);
@@ -73,6 +73,7 @@ public class WorkbenchControl : MonoBehaviour
             if (_drawnArea >= _completionThreshold)
             {
                 BGM.PlayOneShot(complete);
+                SoundControl.isDraw = false;
                 BedControl.isNight = true;           //•º•rµÄ
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
