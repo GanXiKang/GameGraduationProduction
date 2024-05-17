@@ -61,7 +61,7 @@ public class CaseControl : MonoBehaviour
 
     void Update()
     {
-        //StoryBookFinish();
+        StoryBookFinish();
         ChooseStoryBookButtonisHighlighter();
     }
 
