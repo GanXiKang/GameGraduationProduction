@@ -28,24 +28,24 @@ public class CaseControl : MonoBehaviour
     public GameObject storyMomotaro_Button;
     public static bool isStoryBookMomotaro = false;
     public static bool isStoryBookMomotaroFinish = false;
-    Transform originalLocation_Momotaro;
-    Transform highlightLocation_Momotaro;
+    Vector3 originalLocation_Momotaro;
+    Vector3 highlightLocation_Momotaro;
 
     [Header("StoryBookBeanstalk")]
     public GameObject storyBookBeanstalk;
     public GameObject storyBeanstalk_Button;
     public static bool isStoryBookBeanstalk = false;
     public static bool isStoryBookBeanstalkFinish = false;
-    Transform originalLocation_Beanstalk;
-    Transform highlightLocation_Beanstalk;
+    Vector3 originalLocation_Beanstalk;
+    Vector3 highlightLocation_Beanstalk;
 
     [Header("StoryBookCinderella")]
     public GameObject storyBookCinderella;
     public GameObject storyCinderella_Button;
     public static bool isStoryBookCinderella = false;
     public static bool isStoryBookCinderellaFinish = false;
-    Transform originalLocation_Cinderella;
-    Transform highlightLocation_Cinderella;
+    Vector3 originalLocation_Cinderella;
+    Vector3 highlightLocation_Cinderella;
 
     void Start()
     {
@@ -56,25 +56,8 @@ public class CaseControl : MonoBehaviour
                 caseCollider.SetActive(false);
                 break;
         }
-
-        originalLocation_LittleGirl = storyBookLitteGirl.transform.position;
-        highlightLocation_LittleGirl = originalLocation_LittleGirl + new Vector3(0f, 0.2f, 0f);
-
-        originalLocation_Crystal = storyBookCrystal.transform.position;
-        highlightLocation_Crystal = originalLocation_Crystal + new Vector3(0f, 0.2f, 0f);
-
-        //originalLocation_Momotaro.position = storyBookMomotaro.transform.position;
-        //highlightLocation_Momotaro.position = storyBookMomotaro.transform.position + new Vector3(0f, 0.2f, 0f);
-
-        //originalLocation_Beanstalk.position = storyBookBeanstalk.transform.position;
-        //highlightLocation_Beanstalk.position = storyBookBeanstalk.transform.position + new Vector3(0f, 0.2f, 0f);
-
-        //originalLocation_Cinderella.position = storyBookCinderella.transform.position;
-        //highlightLocation_Cinderella.position = storyBookCinderella.transform.position + new Vector3(0f, 0.2f, 0f);
-
-        print(originalLocation_LittleGirl);
-        print(highlightLocation_LittleGirl);
-    }
+        StoryBookLocationRecord();
+    } 
 
     void Update()
     {
@@ -82,6 +65,23 @@ public class CaseControl : MonoBehaviour
         ChooseStoryBookButtonisHighlighter();
     }
 
+    void StoryBookLocationRecord() 
+    {
+        originalLocation_LittleGirl = storyBookLitteGirl.transform.position;
+        highlightLocation_LittleGirl = originalLocation_LittleGirl + new Vector3(0f, 0.2f, 0f);
+
+        originalLocation_Crystal = storyBookCrystal.transform.position;
+        highlightLocation_Crystal = originalLocation_Crystal + new Vector3(0f, 0.2f, 0f);
+
+        originalLocation_Momotaro = storyBookMomotaro.transform.position;
+        highlightLocation_Momotaro = originalLocation_Momotaro + new Vector3(0f, 0.2f, 0f);
+
+        originalLocation_Beanstalk = storyBookBeanstalk.transform.position;
+        highlightLocation_Beanstalk = originalLocation_Beanstalk + new Vector3(0f, 0.2f, 0f);
+
+        originalLocation_Cinderella = storyBookCinderella.transform.position;
+        highlightLocation_Cinderella = originalLocation_Cinderella + new Vector3(0f, 0.2f, 0f);
+    }
     void StoryBookFinish()
     {
         if (isStoryBookLittleGirlFinish)
@@ -163,7 +163,6 @@ public class CaseControl : MonoBehaviour
         }
         else
         {
-            print("OK");
             switch (ButtonHighlightedControl._whichStoryBook)
             {
                 case 1:
