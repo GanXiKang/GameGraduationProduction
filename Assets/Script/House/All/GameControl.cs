@@ -251,12 +251,8 @@ public class GameControl : MonoBehaviour
         BGM.PlayOneShot(doorClose);
         isNextPlace = false;
     }
-
-    //button
-    public void Story_LittleGirl()
+    void ListenStory_LitteGirl()
     {
-        _whichStory = 2;
-        StoryGameControl_LittleGirl._chapter++;
         switch (StoryGameControl_LittleGirl._chapter)
         {
             case 1:
@@ -271,9 +267,15 @@ public class GameControl : MonoBehaviour
                 isSleepingContent = true;
                 break;
         }
-        CameraController.isLookBed = true;
-        CameraController.isLookBookCase = false;
+    }
+
+    //button
+    public void Story_LittleGirl()
+    {
+        _whichStory = 2;
+        StoryGameControl_LittleGirl._chapter++;
         UIController.isChooseStoryActive = false;
+        Invoke("ListenStory_LitteGirl", 8f);
     }
     public void Story_Crystal()
     {
@@ -283,8 +285,6 @@ public class GameControl : MonoBehaviour
         TextControl.textCount = 13;
         isSleepingContent = true;
 
-        CameraController.isLookBed = true;
-        CameraController.isLookBookCase = false;
         UIController.isChooseStoryActive = false;
     }
 }
