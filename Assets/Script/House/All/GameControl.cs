@@ -253,6 +253,17 @@ public class GameControl : MonoBehaviour
     }
     void ListenStory_LitteGirl()
     {
+        UIController.isContentActive = true;
+        TextControl.textCount = 8;
+        isSleepingContent = true;
+    }
+
+    //button
+    public void Story_LittleGirl()
+    {
+        _whichStory = 2;
+        StoryGameControl_LittleGirl._chapter++;
+        UIController.isChooseStoryActive = false;
         switch (StoryGameControl_LittleGirl._chapter)
         {
             case 1:
@@ -262,21 +273,10 @@ public class GameControl : MonoBehaviour
                 break;
 
             case 2:
-                UIController.isContentActive = true;
-                TextControl.textCount = 8;
-                isSleepingContent = true;
+                CaseStoryBookControl.isChooseWhichStoryBook = true;
+                Invoke("ListenStory_LitteGirl", 8f);
                 break;
         }
-    }
-
-    //button
-    public void Story_LittleGirl()
-    {
-        _whichStory = 2;
-        StoryGameControl_LittleGirl._chapter++;
-        UIController.isChooseStoryActive = false;
-        CaseStoryBookControl.isChooseWhichStoryBook = true;
-        Invoke("ListenStory_LitteGirl", 8f);
     }
     public void Story_Crystal()
     {
