@@ -35,6 +35,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject loadingUI;
     public GameObject pileWood;
     public Transform pileWoodPoint;
+    public static bool isLoading = false;
     public static bool isChapter2Finish = false;
     public static bool isUseMatchesUI = false;
     public static bool isUseMatches = false;
@@ -109,6 +110,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
                     case 4:                                                               //GoAlley
                         BGM.PlayOneShot(interact);
+                        isLoading = true;
                         loadingUI.SetActive(true);
                         Invoke("CloseLoadingUI", 4f);
                         break;
@@ -223,6 +225,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     }
     void CloseLoadingUI()
     {
+        isLoading = false;
         loadingUI.SetActive(false);
         chapter[1].SetActive(false);
         chapter[2].SetActive(true);  
