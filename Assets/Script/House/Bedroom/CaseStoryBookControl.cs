@@ -22,10 +22,12 @@ public class CaseStoryBookControl : MonoBehaviour
             {
                 case 1:
                     anim.SetBool("isChooseStoryBook", true);
+                    CaseControl.isStoryBookLittleGirl = false;
                     break;
 
                 case 2:
                     anim.SetBool("isChooseStoryBook", true);
+                    CaseControl.isStoryBookCrystal = false;
                     break;
             }
             isChooseWhichStoryBook = false;
