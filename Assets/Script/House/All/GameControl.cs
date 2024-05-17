@@ -275,6 +275,7 @@ public class GameControl : MonoBehaviour
         _whichStory = 2;
         StoryGameControl_LittleGirl._chapter++;
         UIController.isChooseStoryActive = false;
+        CaseStoryBookControl.isChooseWhichStoryBook = true;
         Invoke("ListenStory_LitteGirl", 8f);
     }
     public void Story_Crystal()
