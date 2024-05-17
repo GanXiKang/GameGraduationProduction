@@ -6,6 +6,7 @@ public class CaseControl : MonoBehaviour
 {
     public GameObject caseCollider;
     Vector3 highlightedMovingDistance;
+    bool isMoveOnce;
 
     [Header("StoryBookLitteGirl")]
     public GameObject storyBookLitteGirl;
@@ -106,7 +107,7 @@ public class CaseControl : MonoBehaviour
     }
     void ChooseStoryBookButtonisHighlighter()
     {
-        if (ButtonHighlightedControl.isProtrudeStoryBook)
+        if (ButtonHighlightedControl.isProtrudeStoryBook && isMoveOnce)
         {
             switch (ButtonHighlightedControl._whichStoryBook)
             {
@@ -130,6 +131,7 @@ public class CaseControl : MonoBehaviour
                     storyBookCinderella.transform.position -= highlightedMovingDistance;
                     break;
             }
+            isMoveOnce = false;
         }
         else
         {
@@ -155,6 +157,8 @@ public class CaseControl : MonoBehaviour
                     storyBookCinderella.transform.position += highlightedMovingDistance;
                     break;
             }
+            ButtonHighlightedControl._whichStoryBook = 0;
+            isMoveOnce = true;
         }
     }
 }
