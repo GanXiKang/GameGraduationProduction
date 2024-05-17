@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class CaseStoryBookControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Animator anim;
+
+    public int storyNumber;
+    public static bool isChooseWhichStoryBook;
+
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (isChooseWhichStoryBook)
+        {
+            switch (storyNumber)
+            {
+                case 1:
+                    anim.SetBool("isChooseStoryBook", true);
+                    break;
+
+                case 2:
+                    anim.SetBool("isChooseStoryBook", true);
+                    break;
+            }
+            isChooseWhichStoryBook = false;
+        }
     }
 }
