@@ -75,7 +75,7 @@ public class StoryBagControl : MonoBehaviour
     }
     IEnumerator CloseBagAnimation()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.8f);
         bagOpen.sprite = bagOpenAnim[2];
         zipper.SetActive(false);
         itemUI.SetActive(false);
