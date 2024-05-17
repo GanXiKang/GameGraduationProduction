@@ -6,6 +6,7 @@ public class CaseControl : MonoBehaviour
 {
     public GameObject caseCollider;
     bool isMoveOnce;
+    Vector3 distance;
 
     [Header("StoryBookLitteGirl")]
     public GameObject storyBookLitteGirl;
@@ -67,20 +68,22 @@ public class CaseControl : MonoBehaviour
 
     void StoryBookLocationRecord() 
     {
+        distance = new Vector3(0.1f, 0f, 0f);
+
         originalLocation_LittleGirl = storyBookLitteGirl.transform.position;
-        highlightLocation_LittleGirl = originalLocation_LittleGirl + new Vector3(0f, 0.2f, 0f);
+        highlightLocation_LittleGirl = originalLocation_LittleGirl - distance;
 
         originalLocation_Crystal = storyBookCrystal.transform.position;
-        highlightLocation_Crystal = originalLocation_Crystal + new Vector3(0f, 0.2f, 0f);
+        highlightLocation_Crystal = originalLocation_Crystal - distance;
 
         originalLocation_Momotaro = storyBookMomotaro.transform.position;
-        highlightLocation_Momotaro = originalLocation_Momotaro + new Vector3(0f, 0.2f, 0f);
+        highlightLocation_Momotaro = originalLocation_Momotaro - distance;
 
         originalLocation_Beanstalk = storyBookBeanstalk.transform.position;
-        highlightLocation_Beanstalk = originalLocation_Beanstalk + new Vector3(0f, 0.2f, 0f);
+        highlightLocation_Beanstalk = originalLocation_Beanstalk - distance;
 
         originalLocation_Cinderella = storyBookCinderella.transform.position;
-        highlightLocation_Cinderella = originalLocation_Cinderella + new Vector3(0f, 0.2f, 0f);
+        highlightLocation_Cinderella = originalLocation_Cinderella - distance;
     }
     void StoryBookFinish()
     {
