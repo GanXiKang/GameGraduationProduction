@@ -67,6 +67,8 @@ public class CaseControl : MonoBehaviour
         highlightLocation_Beanstalk.position = storyBookBeanstalk.transform.position + new Vector3(0f, 0.2f, 0f);
         originalLocation_Cinderella.position = storyBookCinderella.transform.position;
         highlightLocation_Cinderella.position = storyBookCinderella.transform.position + new Vector3(0f, 0.2f, 0f);
+        print(originalLocation_LittleGirl.position);
+        print(highlightLocation_LittleGirl.position);
     }
 
     void Update()
