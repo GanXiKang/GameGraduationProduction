@@ -71,9 +71,9 @@ public class GameControl : MonoBehaviour
         if (isChooseStoryBook)
         {
             isChooseStoryBook = false;
-            UIController.isChooseStoryActive = true;
-            CameraController.isLookBookCase = true;
             CameraController.isLookBed = false;
+            CameraController.isLookBookCase = true;
+            Invoke("ChooseStoryAcitce", 1f);
         }
     }
 
@@ -241,6 +241,10 @@ public class GameControl : MonoBehaviour
                 }
             }
         }
+    }
+    void ChooseStoryAcitce()
+    {
+        UIController.isChooseStoryActive = true;
     }
     void AutoFalseisNextPlace()
     {
