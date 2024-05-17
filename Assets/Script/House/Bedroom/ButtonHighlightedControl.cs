@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class ButtonHighlightedControl : MonoBehaviour
+public class ButtonHighlightedControl : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool isHighlighted = false;
+
+    public void OnPointEnter(PointerEventData eventData)
     {
-        
+        isHighlighted = true;
+        print("Yes");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPointExit(PointerEventData eventData)
     {
-        
+        isHighlighted = false;
+        print("no");
     }
 }
