@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ButtonHighlightedControl : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
+public class ButtonHighlightedControl : MonoBehaviour
 {
     private bool isHighlighted = false;
 
