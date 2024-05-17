@@ -73,7 +73,7 @@ public class GameControl : MonoBehaviour
             isChooseStoryBook = false;
             CameraController.isLookBed = false;
             CameraController.isLookBookCase = true;
-            Invoke("ChooseStoryAcitce", 1.5f);
+            Invoke("ChooseStoryAcitce", 2f);
         }
     }
 
