@@ -66,6 +66,7 @@ public class GameControl : MonoBehaviour
         if (isGotoStroy)
         {
             SceneManager.LoadScene(_whichStory);
+            CaseStoryBook();
             isGotoStroy = false;
         }
         if (isChooseStoryBook)
@@ -250,6 +251,19 @@ public class GameControl : MonoBehaviour
     {
         BGM.PlayOneShot(doorClose);
         isNextPlace = false;
+    }
+    void CaseStoryBook()
+    {
+        switch (_whichStory)
+        {
+            case 2:
+                CaseControl.isStoryBookLittleGirl = true;
+                break;
+
+            case 3:
+                CaseControl.isStoryBookCrystal = true;
+                break;
+        }
     }
     void ListenStory_LitteGirl()
     {
