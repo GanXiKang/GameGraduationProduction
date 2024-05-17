@@ -5,6 +5,7 @@ using UnityEngine;
 public class CaseControl : MonoBehaviour
 {
     public GameObject caseCollider;
+    Vector3 highlightedMovingDistance;
 
     [Header("StoryBookLitteGirl")]
     public GameObject storyBookLitteGirl;
@@ -45,11 +46,14 @@ public class CaseControl : MonoBehaviour
                 caseCollider.SetActive(false);
                 break;
         }
+
+        highlightedMovingDistance = new Vector3(0.145f, 0f, 0f);
     }
 
     void Update()
     {
-        StoryBookFinish();
+        //StoryBookFinish();
+        ChooseStoryBookButtonisHighlighter();
     }
 
     void StoryBookFinish()
@@ -98,6 +102,59 @@ public class CaseControl : MonoBehaviour
         {
             storyBookCinderella.SetActive(isStoryBookCinderella);
             storyCinderella_Button.SetActive(isStoryBookCinderella);
+        }
+    }
+    void ChooseStoryBookButtonisHighlighter()
+    {
+        if (ButtonHighlightedControl.isProtrudeStoryBook)
+        {
+            switch (ButtonHighlightedControl._whichStoryBook)
+            {
+                case 1:
+                    storyBookLitteGirl.transform.position -= highlightedMovingDistance;
+                    break;
+
+                case 2:
+                    storyBookCrystal.transform.position -= highlightedMovingDistance;
+                    break;
+
+                case 3:
+                    storyBookMomotaro.transform.position -= highlightedMovingDistance;
+                    break;
+
+                case 4:
+                    storyBookBeanstalk.transform.position -= highlightedMovingDistance;
+                    break;
+
+                case 5:
+                    storyBookCinderella.transform.position -= highlightedMovingDistance;
+                    break;
+            }
+        }
+        else
+        {
+            switch (ButtonHighlightedControl._whichStoryBook)
+            {
+                case 1:
+                    storyBookLitteGirl.transform.position += highlightedMovingDistance;
+                    break;
+
+                case 2:
+                    storyBookCrystal.transform.position += highlightedMovingDistance;
+                    break;
+
+                case 3:
+                    storyBookMomotaro.transform.position += highlightedMovingDistance;
+                    break;
+
+                case 4:
+                    storyBookBeanstalk.transform.position += highlightedMovingDistance;
+                    break;
+
+                case 5:
+                    storyBookCinderella.transform.position += highlightedMovingDistance;
+                    break;
+            }
         }
     }
 }
