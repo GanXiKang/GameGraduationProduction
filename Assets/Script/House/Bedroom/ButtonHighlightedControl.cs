@@ -6,17 +6,18 @@ using UnityEngine.UI;
 
 public class ButtonHighlightedControl : MonoBehaviour
 {
-    private bool isHighlighted = false;
+    public int _storyNumber;
+    public static int _whichStoryBook;
+    public static bool isProtrudeStoryBook;
 
-    public void OnPointEnter(PointerEventData eventData)
+    public void OnPointEnter()
     {
-        isHighlighted = true;
-        print("Yes");
+        isProtrudeStoryBook = true;
+        _whichStoryBook = _storyNumber;
     }
 
-    public void OnPointExit(PointerEventData eventData)
+    public void OnPointExit()
     {
-        isHighlighted = false;
-        print("no");
+        isProtrudeStoryBook = false;
     }
 }
