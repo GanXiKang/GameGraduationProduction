@@ -274,7 +274,7 @@ public class GameControl : MonoBehaviour
 
             case 2:
                 CaseStoryBookControl.isChooseWhichStoryBook = true;
-                Invoke("ListenStory_LitteGirl", 8f);
+                Invoke("ListenStory_LitteGirl", 5f);
                 break;
         }
     }
