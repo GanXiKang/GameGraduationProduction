@@ -7149,9 +7149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 058529e3bcacbd64f9f7b361d6d6aaa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sleepPoint: {fileID: 1249810888}
-  player: {fileID: 925480131}
   bedCollider: {fileID: 1613432034}
+  sleepPoint: {fileID: 1249810888}
 --- !u!65 &801190731
 BoxCollider:
   m_ObjectHideFlags: 0
