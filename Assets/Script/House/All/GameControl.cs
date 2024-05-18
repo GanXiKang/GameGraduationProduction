@@ -269,8 +269,14 @@ public class GameControl : MonoBehaviour
     }
     void ListenStory_LitteGirl()
     {
-        UIController.isContentActive = true;
         TextControl.textCount = 8;
+        UIController.isContentActive = true;
+        isSleepingContent = true;
+    }
+    void ListenStory_Crystal()
+    {
+        TextControl.textCount = 13;
+        UIController.isContentActive = true;
         isSleepingContent = true;
     }
 
@@ -289,6 +295,7 @@ public class GameControl : MonoBehaviour
                 break;
 
             case 2:
+                CaseStoryBookControl._chooseWhichStoryWorld = 1;
                 CaseStoryBookControl.isChooseWhichStoryBook = true;
                 Invoke("ListenStory_LitteGirl", 5f);
                 break;
@@ -297,11 +304,9 @@ public class GameControl : MonoBehaviour
     public void Story_Crystal()
     {
         _whichStoryScene = 3;
-
-        UIController.isContentActive = true;
-        TextControl.textCount = 13;
-        isSleepingContent = true;
-
         UIController.isChooseStoryActive = false;
+        CaseStoryBookControl._chooseWhichStoryWorld = 2;
+        CaseStoryBookControl.isChooseWhichStoryBook = true;
+        Invoke("ListenStory_Crystal", 5f);
     }
 }
