@@ -7150,7 +7150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepPoint: {fileID: 1249810888}
-  player: {fileID: 0}
+  player: {fileID: 925480131}
   bedCollider: {fileID: 1613432034}
 --- !u!65 &801190731
 BoxCollider:
