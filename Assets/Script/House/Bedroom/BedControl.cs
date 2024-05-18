@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class BedControl : MonoBehaviour
 {
-    public Transform sleepPoint;
-    public GameObject player;
+    GameObject player;
     public GameObject bedCollider;
+    public Transform sleepPoint;
     public static bool isSleep;
     public static bool isNight = true;
 
     void Start()
     {
+        player = GameObject.Find("Player");
         isSleep = false;
     }
 
