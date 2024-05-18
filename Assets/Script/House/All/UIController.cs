@@ -25,7 +25,6 @@ public class UIController : MonoBehaviour
 
     [Header("Content")]
     public GameObject content;
-    public Transform target;
     public Text content_text;
     public static bool isContentActive;
     public static bool isAutoCloseContent;
@@ -33,6 +32,7 @@ public class UIController : MonoBehaviour
 
     [Header("Workbench")]
     public GameObject workbench;
+    public GameObject backTip;
     public GameObject storyBook;
     public GameObject materialWindow;
     public GameObject[] materialNeeded;
@@ -171,6 +171,7 @@ public class UIController : MonoBehaviour
     }
     void WorkbenchUI()
     {
+        backTip.SetActive(CameraController.isLookWorkbench);
         if (!isFinish)
         {
             workbench.SetActive(CameraController.isLookWorkbench);
