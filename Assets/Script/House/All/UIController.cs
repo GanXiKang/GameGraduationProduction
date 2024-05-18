@@ -160,7 +160,7 @@ public class UIController : MonoBehaviour
 
             case 9:
             case 10:
-                interactionButton_text.text = "²É¼¯";
+                interactionButton_text.text = "’ñ¼¯";
                 break;
         }
     }
