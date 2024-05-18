@@ -368,6 +368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 169518612}
   - component: {fileID: 169518615}
+  - component: {fileID: 169518616}
   m_Layer: 0
   m_Name: GameControl
   m_TagString: Untagged
@@ -486,6 +487,41 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &169518616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169518611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a0615d713d8fe849a662ea0084b36a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onClick: {fileID: 8300000, guid: be2afbaf654b3304093e068dc2c937c1, type: 3}
+  flipBook: {fileID: 8300000, guid: 794a9f22c97bd4347be2d65c0f2b70b0, type: 3}
+  open: {fileID: 8300000, guid: 8651bec12aa7f36489ecf7ce62e7feb9, type: 3}
+  save: {fileID: 8300000, guid: 8e2f92d3095720c4891378e6e502fcaa, type: 3}
+  leave: {fileID: 8300000, guid: ed07cd7a178520c4387ff3f7034325b2, type: 3}
+  bookUI: {fileID: 2067395579}
+  sliderBGM: {fileID: 644861118}
+  fullScreen: {fileID: 1273243683}
+  settingUI:
+  - {fileID: 1773465050}
+  - {fileID: 1449657640}
+  - {fileID: 996585795}
+  labelColor:
+  - {fileID: 0}
+  - {fileID: 79426521}
+  - {fileID: 1550442188}
+  - {fileID: 1844374059}
+  turnPage:
+  - {fileID: 21300000, guid: 88f36bbcbb4cb824abe7b11d79aaaa5b, type: 3}
+  - {fileID: 21300000, guid: 2ea3245a93a86974eb818d48b12d1a5a, type: 3}
+  - {fileID: 21300000, guid: 0c6157c30a49a1543850c4758d3bb915, type: 3}
+  - {fileID: 21300000, guid: 5382caa5f09239743997aa6f3393f053, type: 3}
+  - {fileID: 21300000, guid: 0745f6520680aa94faa349f1c7b19bc1, type: 3}
 --- !u!1 &219037762
 GameObject:
   m_ObjectHideFlags: 0
