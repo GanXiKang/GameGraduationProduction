@@ -47,11 +47,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isFantasyEndContent = false;
     public static bool isFindElfContent = false;
     public static bool isInsFireWoodContent = false;
-    public static bool isPutPileWood = false;
     public static bool isChapter2EndContent = false;
     public static bool isStoryFinish = false;
     bool isEnough = false;
-    
+    bool isPutPileWood = false;
     bool isIgnite = false;
 
     void Start()
@@ -108,6 +107,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         pileWood.SetActive(true);
                         StoryArrowTipControl_LittleGirl.isDestory = true;
                         BagController.isItemSlotAcite[3] = false;
+                        gameCollider[4].SetActive(false);
                         isPutPileWood = true;
                         break;
 
