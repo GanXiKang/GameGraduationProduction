@@ -65,6 +65,7 @@ public class StoryBagControl : MonoBehaviour
 
     IEnumerator OpenBagAnimation()
     {
+        StoryLittleGirlUIControl.isInteractionUIActive = false;
         bagUI.SetActive(isBagActive);
         yield return new WaitForSeconds(0.5f);
         bagOpen.sprite = bagOpenAnim[2];
@@ -82,5 +83,6 @@ public class StoryBagControl : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         bagOpen.sprite = bagOpenAnim[1];
         bagUI.SetActive(isBagActive);
+        StoryLittleGirlUIControl.isInteractionUIActive = true;
     }
 }
