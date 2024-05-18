@@ -26,7 +26,7 @@ public class SoundControl : MonoBehaviour
             {
                 BGM.PlayOneShot(walk);
                 isPlay = false;
-                Invoke("TrueOfisPlay", 1f);
+                Invoke("TrueOfisPlay", 0.5f);
             }
         }
         if (isDraw)
