@@ -171,11 +171,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         }
                         else
                         {
-                            if (isPutPileWood)
+                            if (isPutPileWood && StoryNearPileWood_LittleGirl.isPileWoodNear)
                             {
                                 fireEffect.SetActive(true);
                                 isIgnite = true;
                                 isPutPileWood = false;
+                                StoryNearPileWood_LittleGirl.isPileWoodNear = false;
                             }
                             Invoke("MatchBurned", 3f);
                         } 
