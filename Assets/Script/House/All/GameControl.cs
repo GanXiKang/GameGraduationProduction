@@ -8,7 +8,7 @@ public class GameControl : MonoBehaviour
     public static int _day = 1;
     public static bool isGotoStroy;
     public static bool isChooseStoryBook;
-    int _whichStory;
+    int _whichStoryScene;
     bool isFullScreen;
 
     [Header("Musia")]
@@ -25,9 +25,9 @@ public class GameControl : MonoBehaviour
     public GameObject[] colliderObject;
 
     [Header("Door")]
-    public Transform player;
     public Transform[] doorPoint;
     public static bool isNextPlace = false;
+    GameObject player;
 
     //Content
     public static bool isOpeningStopMove;
@@ -56,7 +56,9 @@ public class GameControl : MonoBehaviour
         BGM = GetComponent<AudioSource>();
         isGotoStroy = false;
         isChooseStoryBook = false;
-        _whichStory = 0;
+        _whichStoryScene = 0;
+
+        player = GameObject.Find("Player");
     }
 
     void Update()
@@ -65,7 +67,7 @@ public class GameControl : MonoBehaviour
 
         if (isGotoStroy)
         {
-            SceneManager.LoadScene(_whichStory);
+            SceneManager.LoadScene(_whichStoryScene);
             CaseStoryBook();
             isGotoStroy = false;
         }
@@ -194,7 +196,7 @@ public class GameControl : MonoBehaviour
                         isNextPlace = true;
                         DoorControl.isLivingRoom = true;
                         DoorControl.isBedroom = false;
-                        player.position = doorPoint[2].position;                
+                        player.transform.position = doorPoint[2].position;                
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
@@ -203,7 +205,7 @@ public class GameControl : MonoBehaviour
                         isNextPlace = true;
                         DoorControl.isBedroom = true;
                         DoorControl.isLivingRoom = false;
-                        player.position = doorPoint[1].position;                
+                        player.transform.position = doorPoint[1].position;                
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
@@ -211,7 +213,7 @@ public class GameControl : MonoBehaviour
                         BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
                         DoorControl.isOutDoor = false;
-                        player.position = doorPoint[4].position;
+                        player.transform.position = doorPoint[4].position;
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
@@ -219,7 +221,7 @@ public class GameControl : MonoBehaviour
                         BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
                         DoorControl.isOutDoor = true;
-                        player.position = doorPoint[3].position;
+                        player.transform.position = doorPoint[3].position;
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
 
@@ -254,7 +256,7 @@ public class GameControl : MonoBehaviour
     }
     void CaseStoryBook()
     {
-        switch (_whichStory)
+        switch (_whichStoryScene)
         {
             case 2:
                 CaseControl.isStoryBookLittleGirl = true;
@@ -275,7 +277,7 @@ public class GameControl : MonoBehaviour
     //button
     public void Story_LittleGirl()
     {
-        _whichStory = 2;
+        _whichStoryScene = 2;
         StoryGameControl_LittleGirl._chapter++;
         UIController.isChooseStoryActive = false;
         switch (StoryGameControl_LittleGirl._chapter)
@@ -294,7 +296,7 @@ public class GameControl : MonoBehaviour
     }
     public void Story_Crystal()
     {
-        _whichStory = 3;
+        _whichStoryScene = 3;
 
         UIController.isContentActive = true;
         TextControl.textCount = 13;
