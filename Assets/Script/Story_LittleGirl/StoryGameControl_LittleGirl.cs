@@ -28,12 +28,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isChapter1EndContent = false;
     public static bool isWear = false;
 
-    //Chatper2
+    [Header("Chapter2")]
     public GameObject matchesLight;
     public GameObject useMatchesUI;
     public GameObject fantasyUI;
     public GameObject loadingUI;
     public GameObject pileWood;
+    public GameObject fireEffect;
     public Transform pileWoodPoint;
     public static bool isLoading = false;
     public static bool isChapter2Finish = false;
@@ -49,6 +50,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isChapter2EndContent = false;
     public static bool isStoryFinish = false;
     bool isEnough = false;
+    bool isPutPileWood = false;
     bool isIgnite = false;
 
     void Start()
@@ -101,11 +103,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         break;
 
                     case 3:                                                               //insfirepoint
-                        BGM.PlayOneShot(fire);
-                        Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
+                        BGM.PlayOneShot(interact);
+                        //Instantiate(pileWood, pileWoodPoint.position, pileWoodPoint.rotation);
+                        pileWood.SetActive(true);
                         StoryArrowTipControl_LittleGirl.isDestory = true;
                         BagController.isItemSlotAcite[3] = false;
-                        isIgnite = true;
+                        isPutPileWood = true;
                         break;
 
                     case 4:                                                               //GoAlley
@@ -168,6 +171,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         }
                         else
                         {
+                            if (isPutPileWood)
+                            {
+                                fireEffect.SetActive(true);
+                                isIgnite = true;
+                                isPutPileWood = false;
+                            }
                             Invoke("MatchBurned", 3f);
                         } 
                         isUseMatches = true;
