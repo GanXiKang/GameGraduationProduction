@@ -9,6 +9,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
     public GameObject interactionUI;
     public GameObject bagButton;
     public GameObject taskButton;
+    public static bool isInteractionUIActive;
 
     [Header("InteractionButton")]
     public GameObject interactionButton;
@@ -27,6 +28,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
 
     void Start()
     {
+        isInteractionUIActive = true;
         isInteractionButtonActive = false;
         isContentActive = false;
     }
@@ -47,7 +49,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
 
     void InteractableUI()
     {
-        if (GameControl._day != 1 && !isContentActive && !StoryBagControl.isBagActive && !TaskController.isTaskActive && !SettingControl.isSettingActive  && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isLoading)
+        if (isInteractionUIActive && GameControl._day != 1 && !isContentActive && !TaskController.isTaskActive && !SettingControl.isSettingActive  && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isLoading)
         {
             interactionUI.SetActive(true);
         }
