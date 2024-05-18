@@ -1048,7 +1048,7 @@ MonoBehaviour:
   finishMakeMaterial: {fileID: 21300000, guid: d23a264a6870fea468b5da61f361efa7, type: 3}
   boxC: {fileID: 1091245016}
   isDrawingComplete: 0
-  _completionThreshold: 75
+  _completionThreshold: 80
   _completionPercentage: 20
 --- !u!1 &118951025
 GameObject:
