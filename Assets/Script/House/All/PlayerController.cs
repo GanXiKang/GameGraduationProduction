@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         }
 
         anim.SetFloat("isWalk", _moveInput.magnitude);
-        anim.SetBool("isSleep", BedControl.isSleep);
+        //anim.SetBool("isSleep", BedControl.isSleep);
     }
 
     void OnMove(InputValue value)
