@@ -14,12 +14,10 @@ public class ButtonHighlightedControl : MonoBehaviour
     {
         isProtrudeStoryBook = true;
         _whichStoryBook = _storyNumber;
-        print("true");
     }
 
     public void OnPointExit()
     {
         isProtrudeStoryBook = false;
-        print("false");
     }
 }
