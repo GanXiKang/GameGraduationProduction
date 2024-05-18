@@ -37,7 +37,12 @@ public class CaseStoryBookControl : MonoBehaviour
                     }
                     break;
             }
-            isChooseWhichStoryBook = false;
+            Invoke("AutoFalseOfisChooseWhichStoryBook", 0.5f);
         }
+    }
+
+    void AutoFalseOfisChooseWhichStoryBook()
+    {
+        isChooseWhichStoryBook = false;
     }
 }
