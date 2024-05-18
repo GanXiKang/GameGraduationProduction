@@ -2347,7 +2347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778e0f315eea28a45be529dbca688850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyNumber: 2
+  _storyNumber: 2
 --- !u!95 &227016933
 Animator:
   serializedVersion: 5
@@ -16101,7 +16101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778e0f315eea28a45be529dbca688850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyNumber: 1
+  _storyNumber: 1
 --- !u!1 &1994146841
 GameObject:
   m_ObjectHideFlags: 0
