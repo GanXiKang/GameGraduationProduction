@@ -6,7 +6,8 @@ public class CaseStoryBookControl : MonoBehaviour
 {
     Animator anim;
 
-    public int storyNumber;
+    public int _storyNumber;
+    public static int _chooseWhichStoryWorld;
     public static bool isChooseWhichStoryBook;
 
     void Start()
@@ -18,16 +19,22 @@ public class CaseStoryBookControl : MonoBehaviour
     {
         if (isChooseWhichStoryBook)
         {
-            switch (storyNumber)
+            switch (_storyNumber)
             {
                 case 1:
-                    anim.SetBool("isChooseStoryBook", true);
-                    CaseControl.isStoryBookLittleGirl = false;
+                    if (_storyNumber == _chooseWhichStoryWorld)
+                    {
+                        anim.SetBool("isChooseStoryBook", true);
+                        CaseControl.isStoryBookLittleGirl = false;
+                    }
                     break;
 
                 case 2:
-                    anim.SetBool("isChooseStoryBook", true);
-                    CaseControl.isStoryBookCrystal = false;
+                    if (_storyNumber == _chooseWhichStoryWorld)
+                    {
+                        anim.SetBool("isChooseStoryBook", true);
+                        CaseControl.isStoryBookCrystal = false;
+                    }
                     break;
             }
             isChooseWhichStoryBook = false;
