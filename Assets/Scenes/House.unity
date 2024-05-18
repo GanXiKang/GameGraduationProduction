@@ -1640,7 +1640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99324d4a9ed401c43990fac2b2f1b41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 925480136}
   _smoothTime: 0.5
   lookBedPoint: {fileID: 969992880}
   lookBookCasePoint: {fileID: 49753307}
@@ -8891,12 +8890,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!4 &925480136 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f2d15b5fe24df44498d222ecabbf5afd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1470347916}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &940431817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10600,7 +10593,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249810887}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.2700001, z: 0.78000134}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
