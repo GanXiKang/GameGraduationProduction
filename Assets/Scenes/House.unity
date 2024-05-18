@@ -8254,6 +8254,7 @@ MonoBehaviour:
   target: {fileID: 0}
   content_text: {fileID: 188864412}
   workbench: {fileID: 1791062033}
+  backTip: {fileID: 937616047}
   storyBook: {fileID: 247843901}
   materialWindow: {fileID: 436594121}
   materialNeeded:
