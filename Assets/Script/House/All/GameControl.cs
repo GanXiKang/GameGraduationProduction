@@ -168,6 +168,7 @@ public class GameControl : MonoBehaviour
                                 }
                                 if (isFindCrystalStoryBook)
                                 {
+                                    BedControl.isNight = true;
                                     isFindCrystalStoryBook = false;
                                     BagController.isItemSlotAcite[29] = false;
                                     CaseControl.isStoryBookCrystal = true;
@@ -185,7 +186,6 @@ public class GameControl : MonoBehaviour
                         Destroy(colliderObject[1]);
                         BagController.isItemSlotAcite[29] = true;
                         isFindCrystalStoryBook = true;
-                        BedControl.isNight = true;
                         TaskController._taskNumber = 10;
                         break;
 
