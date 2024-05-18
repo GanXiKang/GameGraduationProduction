@@ -5,10 +5,10 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [Header("CameraMovement")]
-    GameObject target;
     public float _smoothTime = 0.5f;
     public static bool isFollow;
     private Vector3 velocity = Vector3.zero;
+    GameObject target;
 
     [Header("LookBed")]
     public Transform lookBedPoint;
