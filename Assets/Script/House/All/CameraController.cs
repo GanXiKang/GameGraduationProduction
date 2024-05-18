@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [Header("CameraMovement")]
-    public Transform target;
+    GameObject target;
     public float _smoothTime = 0.5f;
     public static bool isFollow;
     private Vector3 velocity = Vector3.zero;
@@ -32,6 +32,8 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
+        target = GameObject.Find("Player");
+
         isFollow = true;
         isLookBed = false;
         isLookBookCase = false;
@@ -43,7 +45,7 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        _distance = Vector3.Distance(transform.position, target.position);
+        _distance = Vector3.Distance(transform.position, target.transform.position);
 
         //if (transform.position.z <= -20f)
         //{
@@ -72,7 +74,7 @@ public class CameraController : MonoBehaviour
     {
         if (isFollow)
         {
-            Vector3 _targetPosition = target.position + new Vector3(0f, 7f, -7f);
+            Vector3 _targetPosition = target.transform.position + new Vector3(0f, 7f, -7f);
 
             transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref velocity, _smoothTime);
             transform.rotation = Quaternion.Euler(30f, 0f, 0f);
