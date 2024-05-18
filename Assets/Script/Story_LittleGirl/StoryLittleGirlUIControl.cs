@@ -35,10 +35,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
 
     void Update()
     {
-        if (!StoryGameControl_LittleGirl.isPutPileWood)
-        {
-            interactionButton.SetActive(isInteractionButtonActive);
-        }
+        interactionButton.SetActive(isInteractionButtonActive);
         content.SetActive(isContentActive);
 
         InteractableUI();
