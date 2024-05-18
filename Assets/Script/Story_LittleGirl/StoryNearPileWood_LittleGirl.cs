@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class StoryNearPileWood_LittleGirl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static bool isPileWoodNear = false;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag == "Player")
+        {
+            isPileWoodNear = true;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        if (other.tag == "Player")
+        {
+            isPileWoodNear = false;
+        }
     }
 }
