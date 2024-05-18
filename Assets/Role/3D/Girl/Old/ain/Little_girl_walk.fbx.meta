@@ -33,7 +33,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Girl_Walk
+      name: Girl_Walk_Old
       takeName: Armature|ArmatureAction.002
       internalID: 6093225430303232669
       firstFrame: 0
