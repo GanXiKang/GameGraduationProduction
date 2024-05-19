@@ -67,6 +67,12 @@ public class UIController : MonoBehaviour
             Invoke("WorkbenchUI", 2.8f);
             PopUpBookControl.isOpenBook = true;
             isOnce = true;
+            storyBook.SetActive(CameraController.isLookWorkbench);
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                PopUpBookControl.isCloseBook = true;
+                Invoke("LeaveWorkbench", 1.8f);
+            }
         }
         else
         {
@@ -240,6 +246,11 @@ public class UIController : MonoBehaviour
                 }
                 break;
         }
+    }
+    void LeaveWorkbench()
+    {
+        CameraController.isLookWorkbench = false;
+        CameraController.isFollow = true;
     }
 
     //Button

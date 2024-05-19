@@ -39,16 +39,7 @@ public class WorkbenchControl : MonoBehaviour
         {
             Drawing();
         }
-        if (CameraController.isLookWorkbench)
-        {
-            storyBook.SetActive(CameraController.isLookWorkbench);
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                PopUpBookControl.isCloseBook = true;
-                Invoke("LeaveWorkbench", 1.8f);
-            }
-        }
-        
+  
         makeMaterial.SetActive(CameraController.isLookMake);
     }
 
@@ -113,11 +104,6 @@ public class WorkbenchControl : MonoBehaviour
         drawFinishText.SetActive(false);
         CameraController.isLookWorkbench = true;
         CameraController.isLookMake = false;
-    }
-    void LeaveWorkbench()
-    {
-        CameraController.isLookWorkbench = false;
-        CameraController.isFollow = true;
     }
 
     bool Drawing_isWithInBoundary(Vector3 pos)
