@@ -145,6 +145,7 @@ public class GameControl : MonoBehaviour
                         BGM.PlayOneShot(useWorkbench);
                         CameraController.isFollow = false;
                         CameraController.isLookWorkbench = true;
+                        UIController.isWorkbenchUIActive = true;
                         if (_day == 2 && isFirstOpenWorkbench)
                         {
                             UIController.isTeachOpenTask = true;
