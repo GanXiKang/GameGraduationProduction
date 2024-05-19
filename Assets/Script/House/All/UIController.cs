@@ -56,6 +56,7 @@ public class UIController : MonoBehaviour
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
         content.SetActive(isContentActive);
+        backTip.SetActive(CameraController.isLookWorkbench);
 
         if (isAutoCloseContent)
         {
@@ -63,7 +64,7 @@ public class UIController : MonoBehaviour
         }
         if (CameraController.isLookWorkbench)
         {
-            Invoke("WorkbenchUI", 3.5f);
+            Invoke("WorkbenchUI", 3.2f);
             PopUpBookControl.isOpenBook = true;
             isOnce = true;
         }
@@ -171,7 +172,6 @@ public class UIController : MonoBehaviour
     }
     void WorkbenchUI()
     {
-        backTip.SetActive(CameraController.isLookWorkbench);
         if (!isFinish)
         {
             workbench.SetActive(CameraController.isLookWorkbench);
