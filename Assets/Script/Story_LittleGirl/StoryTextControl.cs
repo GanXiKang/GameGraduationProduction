@@ -103,8 +103,8 @@ public class StoryTextControl : MonoBehaviour
         }
         else if (StoryGameControl_LittleGirl.isGetSweaterAndHatContent)
         {
+            Invoke("WaitTrueOfisWear", 2.4f);
             StoryGameControl_LittleGirl.isGetSweaterAndHatContent = false;
-            StoryGameControl_LittleGirl.isWear = true;
             BagController.isItemSlotAcite[2] = true;
             GetItemUIControl.isGetItemActice = true;
             GetItemUIControl._howMuchToGet = 1;
@@ -147,6 +147,10 @@ public class StoryTextControl : MonoBehaviour
             StoryGameControl_LittleGirl.isChapter2EndContent = false;
             StoryGameControl_LittleGirl.isChapter2Finish = true;
         }
+    }
+    void WaitTrueOfisWear()
+    {
+        StoryGameControl_LittleGirl.isWear = true;
     }
 
     IEnumerator SetTextLabelIndexUI()
