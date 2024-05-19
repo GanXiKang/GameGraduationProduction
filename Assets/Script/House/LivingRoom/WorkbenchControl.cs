@@ -42,7 +42,7 @@ public class WorkbenchControl : MonoBehaviour
 
     void Drawing()
     {
-        Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 2f);
+        Vector3 mousePos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1.8f);
 
         if (Input.GetMouseButtonDown(0))
         {
