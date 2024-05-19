@@ -8494,6 +8494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 865770026}
   - component: {fileID: 865770027}
+  - component: {fileID: 865770028}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -8569,6 +8570,31 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7dcb9b08352c61841bd7fe95b289ecef, type: 3}
   - {fileID: 21300000, guid: 2fad51aa26a1f174a95fede434391bbd, type: 3}
   makeButton: {fileID: 385361699}
+--- !u!114 &865770028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865770025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd40dec9daf36d43a0946632fa0674f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getItemUI: {fileID: 1716848822}
+  panel: {fileID: 1585847843}
+  theme: {fileID: 64062634}
+  group: {fileID: 833312159}
+  item:
+  - {fileID: 0}
+  - {fileID: 1903423868}
+  - {fileID: 34249785}
+  - {fileID: 932121105}
+  itemImage:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: f921b3d57e7f9d4469f3ac4f6fc4b73e, type: 3}
+  - {fileID: 21300000, guid: 2fad51aa26a1f174a95fede434391bbd, type: 3}
 --- !u!1 &873830858
 GameObject:
   m_ObjectHideFlags: 0
@@ -9601,7 +9627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &932121106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9616,10 +9642,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 833312158}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 650, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &932121107
 MonoBehaviour:
