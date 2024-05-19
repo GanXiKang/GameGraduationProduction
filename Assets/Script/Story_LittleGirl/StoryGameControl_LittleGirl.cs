@@ -95,9 +95,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     case 2:                                                               //Elf
                         BGM.PlayOneShot(elf);
                         _task++;
-                        BagController._itemQuantity++;
-                        BagController.isItemSlotAcite[1] = true;
-                        BagController.isItemSlotAcite[3] = true;
                         StoryElfControl.isAppear = true;
                         break;
 
