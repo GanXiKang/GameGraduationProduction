@@ -114,7 +114,7 @@ public class TextControl : MonoBehaviour
             BagController.isItemSlotAcite[29] = true;
             GetItemUIControl.isGetItemActice = true;
             GetItemUIControl._howMuchToGet = 1;
-            GetItemUIControl._getItemNumber[1] = 29;
+            GetItemUIControl._getItemNumber = 29;
         }
     }
 

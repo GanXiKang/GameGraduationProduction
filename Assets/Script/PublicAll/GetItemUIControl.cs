@@ -20,7 +20,7 @@ public class GetItemUIControl : MonoBehaviour
 
     public static bool isGetItemActice = false;
     public static int _howMuchToGet;
-    public static int[] _getItemNumber;
+    public static int _getItemNumber;
     bool isAnim;
 
     void Start()
@@ -61,7 +61,7 @@ public class GetItemUIControl : MonoBehaviour
             if (i <= _howMuchToGet)
             {
                 item[i].SetActive(true);
-                item[i].GetComponent<Image>().sprite = itemImage[_getItemNumber[i]];
+                item[i].GetComponent<Image>().sprite = itemImage[_getItemNumber];
             }
             else
             {
