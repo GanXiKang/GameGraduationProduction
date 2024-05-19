@@ -51,6 +51,7 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         _distance = Vector3.Distance(transform.position, target.transform.position);
+        CameraMode();
 
         //if (transform.position.z <= -20f)
         //{
@@ -63,16 +64,6 @@ public class CameraController : MonoBehaviour
         //        isFollow = false;
         //    }
         //}
-        if (isLookWorkbench)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                isLookWorkbench = false;
-                isFollow = true;
-                PopUpBookControl.isCloseBook = true;
-            }
-        }
-        CameraMode();
     }
 
     void CameraMode()
