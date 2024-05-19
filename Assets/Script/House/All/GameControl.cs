@@ -186,7 +186,6 @@ public class GameControl : MonoBehaviour
                         UIController.isContentActive = true;
                         TextControl.textCount = 11;
                         Destroy(colliderObject[1]);
-                        BagController.isItemSlotAcite[29] = true;
                         isFindCrystalStoryBook = true;
                         TaskController._taskNumber = 10;
                         break;
@@ -231,8 +230,11 @@ public class GameControl : MonoBehaviour
                         FlowerControl.isDestory = true;
                         if (_day == 2)
                         {
-                            BagController.isItemSlotAcite[33] = true;
                             TaskController._taskNumber = 5;
+                            BagController.isItemSlotAcite[33] = true;
+                            GetItemUIControl.isGetItemActice = true;
+                            GetItemUIControl._howMuchToGet = 1;
+                            GetItemUIControl._getItemNumber[1] = 33;
                         }
                         break;
 
