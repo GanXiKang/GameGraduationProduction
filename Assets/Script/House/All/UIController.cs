@@ -131,7 +131,7 @@ public class UIController : MonoBehaviour
                 break;
 
             case 2:
-                interactionButton_text.text = "製作台";
+                interactionButton_text.text = "工作台";
                 break;
 
             case 3:
