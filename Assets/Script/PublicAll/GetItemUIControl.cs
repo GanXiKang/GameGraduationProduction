@@ -11,12 +11,31 @@ public class GetItemUIControl : MonoBehaviour
 
     public GridLayoutGroup group;
     public GameObject[] item;
-    public Image[] itemImage;
+    public Sprite[] itemImage;
 
     public static bool isGetItemActice = false;
+    public static int _howMuchToGet = 2;
 
     void Update()
     {
-        
+        GridLayoutGroupControl();
+    }
+
+    void GridLayoutGroupControl()
+    {
+        switch (_howMuchToGet)
+        {
+            case 1:
+                group.padding.right = 0;
+                break;
+
+            case 2:
+                group.padding.right = 300;
+                break;
+
+            case 3:
+                group.padding.right = 600;
+                break;
+        }
     }
 }
