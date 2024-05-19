@@ -41,6 +41,7 @@ public class UIController : MonoBehaviour
     public Button makeButton;
     public static int _whatDate;
     public static bool isFinish;
+    public static bool isWorkbenchUIActive;
     int needMaterialQuantity;
     bool isOnce;
 
@@ -57,21 +58,24 @@ public class UIController : MonoBehaviour
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
         content.SetActive(isContentActive);
-        backTip.SetActive(CameraController.isLookWorkbench);
 
         if (isAutoCloseContent)
         {
             Invoke("CloseContent", 1f);
         }
-        if (CameraController.isLookWorkbench)
+        if (isWorkbenchUIActive)
         {
             Invoke("WorkbenchUI", 2.8f);
             PopUpBookControl.isOpenBook = true;
+            backTip.SetActive(true);
+            storyBook.SetActive(true);
             isOnce = true;
-            storyBook.SetActive(CameraController.isLookWorkbench);
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                isWorkbenchUIActive = false;
+                backTip.SetActive(false);
                 storyQuiz.SetActive(false);
+                materialWindow.SetActive(false);
                 PopUpBookControl.isCloseBook = true;
                 Invoke("LeaveWorkbench", 1.8f);
             }
