@@ -20,7 +20,7 @@ public class GetItemUIControl : MonoBehaviour
     void Update()
     {
         GridLayoutGroupControl();
-
+        panel.GetComponent<RectTransform>().localScale = new Vector3(20f, 1f, 1f);
         //item[1].GetComponent<Image>().sprite = itemImage[1];
     }
 
