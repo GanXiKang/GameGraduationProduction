@@ -19,13 +19,13 @@ public class GetItemUIControl : MonoBehaviour
     public Sprite[] itemImage;
 
     public static bool isGetItemActice = false;
-    public static int _howMuchToGet = 2;
+    public static int _howMuchToGet = 1;
     public static int _getItemNumber;
 
     void Update()
     {
         GridLayoutGroupControl();
-        panel.GetComponent<RectTransform>().localScale = new Vector3(20f, 1f, 1f);
+        //panel.GetComponent<RectTransform>().localScale = new Vector3(20f, 1f, 1f);
         //item[1].GetComponent<Image>().sprite = itemImage[1];
     }
 
