@@ -23,5 +23,10 @@ public class BedControl : MonoBehaviour
         bedCollider.SetActive(isNight);
         bedNoSleep.SetActive(!isSleep);
         bedSleep.SetActive(isSleep);
+
+        if (isSleep)
+        {
+            SoundControl.isWalk = false;
+        }
     }
 }
