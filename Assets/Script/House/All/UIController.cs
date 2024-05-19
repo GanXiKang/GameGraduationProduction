@@ -71,6 +71,7 @@ public class UIController : MonoBehaviour
             storyBook.SetActive(CameraController.isLookWorkbench);
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                storyQuiz.SetActive(false);
                 PopUpBookControl.isCloseBook = true;
                 Invoke("LeaveWorkbench", 1.8f);
             }
