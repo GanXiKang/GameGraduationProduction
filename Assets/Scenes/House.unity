@@ -717,7 +717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &64062635
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8083,7 +8083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &833312158
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8589,7 +8589,7 @@ MonoBehaviour:
   theme: {fileID: 64062634}
   group: {fileID: 833312159}
   item:
-  - {fileID: 0}
+  - {fileID: 833312157}
   - {fileID: 1903423868}
   - {fileID: 34249785}
   - {fileID: 932121105}
@@ -14324,7 +14324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1716848823
 RectTransform:
   m_ObjectHideFlags: 0
