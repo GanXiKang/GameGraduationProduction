@@ -51,6 +51,7 @@ public class CameraController : MonoBehaviour
     void LateUpdate()
     {
         _distance = Vector3.Distance(transform.position, target.transform.position);
+
         CameraMode();
     }
 
