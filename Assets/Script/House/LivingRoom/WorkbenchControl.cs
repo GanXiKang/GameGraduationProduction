@@ -40,6 +40,7 @@ public class WorkbenchControl : MonoBehaviour
             Drawing();
         }
 
+        storyBook.SetActive(!CameraController.isLookMake);
         makeMaterial.SetActive(CameraController.isLookMake);
     }
 
