@@ -33,6 +33,7 @@ public class UIController : MonoBehaviour
     [Header("Workbench")]
     public GameObject workbench;
     public GameObject backTip;
+    public GameObject storyQuiz;
     public GameObject storyBook;
     public GameObject materialWindow;
     public GameObject[] materialNeeded;
@@ -80,7 +81,7 @@ public class UIController : MonoBehaviour
             if (isOnce)
             {
                 isOnce = false;
-                storyBook.SetActive(true);
+                storyQuiz.SetActive(true);
                 materialWindow.SetActive(false);
             }
         }
