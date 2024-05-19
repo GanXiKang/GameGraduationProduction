@@ -71,7 +71,7 @@ public class StoryLittleGirlUIControl : MonoBehaviour
                 break;
 
             case 3:
-                interactionButton_text.text = "Éú»ð";
+                interactionButton_text.text = "”[·Å";
                 break;
 
             case 4:
