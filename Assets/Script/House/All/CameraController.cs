@@ -18,6 +18,10 @@ public class CameraController : MonoBehaviour
     public Transform lookBookCasePoint;
     public static bool isLookBookCase;
 
+    [Header("LookStoryWorld")]
+    public Transform lookStoryWorldPoint;
+    public static bool isLookStoryWorld;
+
     [Header("LookWorkbench")]
     public Transform lookWorkbenchPoint;
     public static bool isLookWorkbench;
