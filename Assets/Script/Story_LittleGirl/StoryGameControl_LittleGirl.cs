@@ -127,9 +127,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 }
                 if (!isChapter1EndContent && isWear && !isChapter1Finish)
                 {
-                    StoryLittleGirlUIControl.isContentActive = true;
                     isChapter1EndContent = true;
-                    StoryTextControl.textCount = 3;
+                    Invoke(" Chapter1End", 2.5f);
                 }
                 if (_chapter == 1 && isChapter1Finish && once)
                 {
@@ -210,6 +209,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 }
                 break;
         }
+    }
+    void Chapter1End()
+    {
+        StoryLittleGirlUIControl.isContentActive = true;
+        StoryTextControl.textCount = 3;
     }
 
     void MatchBurned()
