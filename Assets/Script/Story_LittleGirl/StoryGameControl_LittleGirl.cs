@@ -248,7 +248,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         {
             case 2:
                 CaseControl.isStoryBookLittleGirlFinish = true;
-                BagController.isItemSlotAcite[4] = true;
                 break;
         }
     }   

@@ -167,6 +167,7 @@ public class GameControl : MonoBehaviour
                                     isCheckStoryBookContent = true;
                                     UIController.isContentActive = true;
                                     TextControl.textCount = 10;
+                                    BagController.isItemSlotAcite[4] = true;
                                 }
                                 if (isFindCrystalStoryBook)
                                 {
