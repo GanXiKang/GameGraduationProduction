@@ -9,9 +9,6 @@ public class WorkbenchControl : MonoBehaviour
     public AudioClip draw;
     public AudioSource BGM;
 
-    [Header("StoryBook")]
-    public GameObject storyBook;
-
     [Header("Drawing")]
     public GameObject pencil;
     public GameObject drawFinishText;
