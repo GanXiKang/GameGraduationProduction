@@ -96,6 +96,12 @@ public class CameraController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, lookBookCasePoint.rotation, _moveTime * Time.deltaTime);
         }
 
+        if (isLookStoryWorld)
+        {
+            transform.position = Vector3.Lerp(transform.position, lookStoryWorldPoint.position, _moveTime * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookStoryWorldPoint.rotation, _moveTime * Time.deltaTime);
+        }
+
         if (isLookWorkbench)
         {
             transform.position = Vector3.Lerp(transform.position, lookWorkbenchPoint.position, _moveTime * Time.deltaTime);
