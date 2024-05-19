@@ -21,13 +21,19 @@ public class GetItemUIControl : MonoBehaviour
     public static bool isGetItemActice = false;
     public static int _howMuchToGet = 2;
     public static int _getItemNumber;
-    bool isAnim = true;
+    bool isAnim;
+
+    void Start()
+    {
+        isAnim = false;
+    }
 
     void Update()
     {
-        if (isGetItemActice && isAnim)
+        if (isGetItemActice && !isAnim)
         {
-            isAnim = false;
+            BGM.PlayOneShot(get);
+            isAnim = true;
             GridLayoutGroupControl();
             StartCoroutine(GetItemAnimation());
             item[1].GetComponent<Image>().sprite = itemImage[_getItemNumber];
@@ -70,5 +76,12 @@ public class GetItemUIControl : MonoBehaviour
             panel.GetComponent<RectTransform>().localScale = new Vector3(20f, v, 1f);
             yield return new WaitForSeconds(0.2f);
         }
+        theme.SetActive(true);
+        item[0].SetActive(true);
+        yield return new WaitForSeconds(2f);
+        theme.SetActive(false);
+        item[0].SetActive(false);
+        isGetItemActice = false;
+        isAnim = false;
     }
 }
