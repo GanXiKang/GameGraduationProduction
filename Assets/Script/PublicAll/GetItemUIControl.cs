@@ -19,15 +19,19 @@ public class GetItemUIControl : MonoBehaviour
     public Sprite[] itemImage;
 
     public static bool isGetItemActice = false;
-    public static int _howMuchToGet = 1;
+    public static int _howMuchToGet = 2;
     public static int _getItemNumber;
     bool isAnim = true;
 
     void Update()
     {
-        GridLayoutGroupControl();
-        //panel.GetComponent<RectTransform>().localScale = new Vector3(20f, 1f, 1f);
-        //item[1].GetComponent<Image>().sprite = itemImage[1];
+        if (isGetItemActice && isAnim)
+        {
+            isAnim = false;
+            GridLayoutGroupControl();
+            StartCoroutine(GetItemAnimation());
+            item[1].GetComponent<Image>().sprite = itemImage[_getItemNumber];
+        }
     }
 
     void GridLayoutGroupControl()
@@ -45,6 +49,26 @@ public class GetItemUIControl : MonoBehaviour
             case 3:
                 group.padding.right = 600;
                 break;
+        }
+        for (int i = 1; i < item.Length; i++)
+        {
+            if (i <= _howMuchToGet)
+            {
+                item[i].SetActive(true);
+            }
+            else
+            {
+                item[i].SetActive(false);
+            }
+        }
+    }
+
+    IEnumerator GetItemAnimation()
+    {
+        for (int v = 0; v <= 5; v++)
+        {
+            panel.GetComponent<RectTransform>().localScale = new Vector3(20f, v, 1f);
+            yield return new WaitForSeconds(0.2f);
         }
     }
 }
