@@ -6,7 +6,8 @@ public class BedControl : MonoBehaviour
 {
     GameObject player;
     public GameObject bedCollider;
-    public Transform sleepPoint;
+    public GameObject bedNoSleep;
+    public GameObject bedSleep;
     public static bool isSleep;
     public static bool isNight = true;
 
@@ -18,12 +19,9 @@ public class BedControl : MonoBehaviour
 
     void Update()
     {
+        player.SetActive(!isSleep);
         bedCollider.SetActive(isNight);
-
-        if (isSleep)
-        {
-            player.transform.position = sleepPoint.position;
-            player.transform.rotation = Quaternion.Euler(-90f, 90f, -270f);
-        }
+        bedNoSleep.SetActive(!isSleep);
+        bedSleep.SetActive(isSleep);
     }
 }
