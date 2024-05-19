@@ -19,8 +19,8 @@ public class GetItemUIControl : MonoBehaviour
     public Sprite[] itemImage;
 
     public static bool isGetItemActice = false;
-    public static int _howMuchToGet = 2;
-    public static int _getItemNumber;
+    public static int _howMuchToGet;
+    public static int[] _getItemNumber;
     bool isAnim;
 
     void Start()
@@ -36,7 +36,6 @@ public class GetItemUIControl : MonoBehaviour
             isAnim = true;
             GridLayoutGroupControl();
             StartCoroutine(GetItemAnimation());
-            item[1].GetComponent<Image>().sprite = itemImage[_getItemNumber];
         }
     }
 
@@ -61,6 +60,7 @@ public class GetItemUIControl : MonoBehaviour
             if (i <= _howMuchToGet)
             {
                 item[i].SetActive(true);
+                item[i].GetComponent<Image>().sprite = itemImage[_getItemNumber[i]];
             }
             else
             {
