@@ -21,6 +21,7 @@ public class GetItemUIControl : MonoBehaviour
     public static bool isGetItemActice = false;
     public static int _howMuchToGet = 1;
     public static int _getItemNumber;
+    bool isAnim = true;
 
     void Update()
     {
