@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class GetItemUIControl : MonoBehaviour
 {
+    [Header("Musia")]
+    public AudioClip get;
+    public AudioSource BGM;
+
+    [Header("UI")]
     public GameObject getItemUI;
     public GameObject panel;
     public GameObject theme;
