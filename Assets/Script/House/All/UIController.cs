@@ -251,7 +251,7 @@ public class UIController : MonoBehaviour
     public void Vacancy_Button(int date)
     {
         _whatDate = date;
-        storyBook.SetActive(false);
+        storyQuiz.SetActive(false);
         materialWindow.SetActive(true);
     }
     public void Make_Button()
@@ -260,12 +260,12 @@ public class UIController : MonoBehaviour
         WorkbenchControl.isDrawing = true;
         CameraController.isLookMake = true;
         CameraController.isLookWorkbench = false;
-        storyBook.SetActive(false);
+        storybook.SetActive(false);
         materialWindow.SetActive(false);
     }
     public void Back_Button()
     {
-        storyBook.SetActive(true);
+        storyQuiz.SetActive(true);
         materialWindow.SetActive(false);
     }
 }
