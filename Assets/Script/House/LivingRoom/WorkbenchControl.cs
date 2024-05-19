@@ -39,8 +39,17 @@ public class WorkbenchControl : MonoBehaviour
         {
             Drawing();
         }
-
-        storyBook.SetActive(CameraController.isLookWorkbench);
+        if (CameraController.isLookWorkbench)
+        {
+            storyBook.SetActive(CameraController.isLookWorkbench);
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                CameraController.isLookWorkbench = false;
+                CameraController.isFollow = true;
+                PopUpBookControl.isCloseBook = true;
+            }
+        }
+        
         makeMaterial.SetActive(CameraController.isLookMake);
     }
 
