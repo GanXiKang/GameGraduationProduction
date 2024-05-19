@@ -64,7 +64,7 @@ public class UIController : MonoBehaviour
         }
         if (isWorkbenchUIActive)
         {
-            Invoke("WorkbenchUI", 2.8f);
+            workbench.SetActive(!isFinish);
             PopUpBookControl.isOpenBook = true;
             backTip.SetActive(true);
             storyBook.SetActive(true);
@@ -169,10 +169,6 @@ public class UIController : MonoBehaviour
     {
         isContentActive = false;
         isAutoCloseContent = false;
-    }
-    void WorkbenchUI()
-    {
-        workbench.SetActive(!isFinish);
     }
     void MaterialWindowInformation()
     {
