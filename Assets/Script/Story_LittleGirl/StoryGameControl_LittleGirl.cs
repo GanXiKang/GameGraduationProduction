@@ -128,7 +128,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 if (!isChapter1EndContent && isWear && !isChapter1Finish)
                 {
                     isChapter1EndContent = true;
-                    Invoke(" Chapter1End", 2.5f);
+                    Invoke("Chapter1End", 2.5f);
                 }
                 if (_chapter == 1 && isChapter1Finish && once)
                 {
