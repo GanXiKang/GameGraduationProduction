@@ -43,7 +43,6 @@ public class UIController : MonoBehaviour
     public static bool isFinish;
     public static bool isWorkbenchUIActive;
     int needMaterialQuantity;
-    bool isOnce;
 
     void Start()
     {
@@ -69,7 +68,6 @@ public class UIController : MonoBehaviour
             PopUpBookControl.isOpenBook = true;
             backTip.SetActive(true);
             storyBook.SetActive(true);
-            isOnce = true;
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 isWorkbenchUIActive = false;
@@ -80,16 +78,7 @@ public class UIController : MonoBehaviour
                 Invoke("LeaveWorkbench", 1.8f);
             }
         }
-        else
-        {
-            WorkbenchUI();
-            if (isOnce)
-            {
-                isOnce = false;
-                storyQuiz.SetActive(true);
-                materialWindow.SetActive(false);
-            }
-        }
+        
 
         InteractableUI();
         ColliderObjectName();
@@ -184,10 +173,7 @@ public class UIController : MonoBehaviour
     }
     void WorkbenchUI()
     {
-        if (!isFinish)
-        {
-            workbench.SetActive(CameraController.isLookWorkbench);
-        }
+        workbench.SetActive(!isFinish);
     }
     void MaterialWindowInformation()
     {
@@ -257,6 +243,8 @@ public class UIController : MonoBehaviour
     {
         CameraController.isLookWorkbench = false;
         CameraController.isFollow = true;
+        storyQuiz.SetActive(true);
+        materialWindow.SetActive(false);
     }
 
     //Button
