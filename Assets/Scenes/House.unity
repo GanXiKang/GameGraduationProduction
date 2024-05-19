@@ -1847,6 +1847,7 @@ MonoBehaviour:
   _smoothTime: 0.5
   lookBedPoint: {fileID: 969992880}
   lookBookCasePoint: {fileID: 49753307}
+  lookStoryWorldPoint: {fileID: 1643115078}
   lookWorkbenchPoint: {fileID: 1936532658}
   lookMakePoint: {fileID: 1319492827}
   _moveTime: 2
