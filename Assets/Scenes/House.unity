@@ -1245,7 +1245,6 @@ MonoBehaviour:
   complete: {fileID: 8300000, guid: 8943fa1a48682c04caf46e66d99b9915, type: 3}
   draw: {fileID: 8300000, guid: 77ad1a0b123a0e34da4719063740404e, type: 3}
   BGM: {fileID: 1480171942}
-  storyBook: {fileID: 278694539}
   pencil: {fileID: 6877726313400018096, guid: ccf20313e1fdcfa40aea926af31c3761, type: 3}
   drawFinishText: {fileID: 1762746756}
   makeMaterial: {fileID: 1169955804}
@@ -2641,7 +2640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 247843902}
   m_Layer: 5
-  m_Name: StoryBook
+  m_Name: StoryQuiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8590,7 +8589,8 @@ MonoBehaviour:
   content_text: {fileID: 188864412}
   workbench: {fileID: 1791062033}
   backTip: {fileID: 937616047}
-  storyBook: {fileID: 247843901}
+  storyQuiz: {fileID: 247843901}
+  storyBook: {fileID: 278694539}
   materialWindow: {fileID: 436594121}
   materialNeeded:
   - {fileID: 0}
