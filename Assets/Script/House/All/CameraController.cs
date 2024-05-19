@@ -41,6 +41,7 @@ public class CameraController : MonoBehaviour
         isFollow = true;
         isLookBed = false;
         isLookBookCase = false;
+        isLookStoryWorld = false;
         isLookWorkbench = false;
         isLookMake = false;
 
