@@ -90,7 +90,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     case 1:                                                               //clothing&hat
                         BGM.PlayOneShot(find);
                         _task++;
-                        BagController.isItemSlotAcite[2] = true;
                         break;
 
                     case 2:                                                               //Elf

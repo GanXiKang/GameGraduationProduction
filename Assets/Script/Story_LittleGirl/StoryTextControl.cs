@@ -105,6 +105,7 @@ public class StoryTextControl : MonoBehaviour
         {
             StoryGameControl_LittleGirl.isGetSweaterAndHatContent = false;
             StoryGameControl_LittleGirl.isWear = true;
+            BagController.isItemSlotAcite[2] = true;
         }
         else if (StoryGameControl_LittleGirl.isChapter1EndContent)
         {
