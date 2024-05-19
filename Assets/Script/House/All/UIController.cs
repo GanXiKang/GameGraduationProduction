@@ -72,8 +72,7 @@ public class UIController : MonoBehaviour
             {
                 isWorkbenchUIActive = false;
                 backTip.SetActive(false);
-                storyQuiz.SetActive(false);
-                materialWindow.SetActive(false);
+                workbench.SetActive(false);
                 PopUpBookControl.isCloseBook = true;
                 Invoke("LeaveWorkbench", 1.8f);
             }
