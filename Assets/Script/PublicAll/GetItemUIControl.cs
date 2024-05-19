@@ -30,6 +30,7 @@ public class GetItemUIControl : MonoBehaviour
 
     void Update()
     {
+        getItemUI.SetActive(isGetItemActice);
         if (isGetItemActice && !isAnim)
         {
             BGM.PlayOneShot(get);
