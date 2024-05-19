@@ -260,7 +260,7 @@ public class UIController : MonoBehaviour
         WorkbenchControl.isDrawing = true;
         CameraController.isLookMake = true;
         CameraController.isLookWorkbench = false;
-        storybook.SetActive(false);
+        storyBook.SetActive(false);
         materialWindow.SetActive(false);
     }
     public void Back_Button()
