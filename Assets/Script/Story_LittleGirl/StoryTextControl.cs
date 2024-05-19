@@ -128,6 +128,14 @@ public class StoryTextControl : MonoBehaviour
         {
             StoryGameControl_LittleGirl.isFindElfContent = false;
             StoryElfControl.isFlyLeave = true;
+            BagController._itemQuantity++;
+            BagController.isItemSlotAcite[1] = true;
+            BagController.isItemSlotAcite[3] = true;
+            GetItemUIControl.isGetItemActice = true;
+            GetItemUIControl._howMuchToGet = 2;
+            GetItemUIControl._getItemNumber[1] = 1;
+            GetItemUIControl._getItemNumber[2] = 3;
+
         }
         else if (StoryGameControl_LittleGirl.isInsFireWoodContent)
         {
