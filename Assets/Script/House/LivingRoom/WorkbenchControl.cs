@@ -45,7 +45,7 @@ public class WorkbenchControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 PopUpBookControl.isCloseBook = true;
-                Invoke("LeaveWorkbench", 1.5f);
+                Invoke("LeaveWorkbench", 1.8f);
             }
         }
         
