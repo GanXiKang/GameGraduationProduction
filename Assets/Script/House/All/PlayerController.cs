@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement")]
     public static bool isNoMove;
-    public float _moveSpeed = 10f;
+    public float _moveSpeed = 7f;
     public float _turnSpeed = 15f;
     float _targetRotation;
 
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            _moveSpeed = 10f;
+            _moveSpeed = 7f;
         }
 
         if (!GameControl.isNextPlace)
