@@ -728,8 +728,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1613432035}
-  - {fileID: 1230789324}
   - {fileID: 801190726}
+  - {fileID: 1230789324}
   m_Father: {fileID: 722432147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &66202885
@@ -745,7 +745,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bedCollider: {fileID: 1613432034}
-  sleepPoint: {fileID: 1249810888}
+  bedNoSleep: {fileID: 801190727}
+  bedSleep: {fileID: 216293148}
 --- !u!1 &67998843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,6 +1888,12 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &216293148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e5d27f9422de0747b76d015531005fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1230789323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &223962741
 GameObject:
   m_ObjectHideFlags: 0
@@ -7616,7 +7623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bedCollider: {fileID: 1613432034}
-  sleepPoint: {fileID: 1249810888}
+  bedNoSleep: {fileID: 0}
+  bedSleep: {fileID: 0}
 --- !u!65 &801190731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10939,7 +10947,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2e5d27f9422de0747b76d015531005fb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2e5d27f9422de0747b76d015531005fb,
         type: 3}
@@ -11029,7 +11037,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2e5d27f9422de0747b76d015531005fb,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 2e5d27f9422de0747b76d015531005fb,
         type: 3}
