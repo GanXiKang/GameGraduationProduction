@@ -19,6 +19,8 @@ public class GetItemUIControl : MonoBehaviour
     void Update()
     {
         GridLayoutGroupControl();
+
+        //item[1].GetComponent<Image>().sprite = itemImage[1];
     }
 
     void GridLayoutGroupControl()
