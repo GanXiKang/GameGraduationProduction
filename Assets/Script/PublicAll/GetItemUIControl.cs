@@ -8,13 +8,9 @@ public class GetItemUIControl : MonoBehaviour
     public GameObject getItemUI;
     public GameObject panel;
     public GameObject theme;
+    public GridLayoutGroup group;
     public Image item;
-    public static bool isGetItemActice;
-
-    void Start()
-    {
-        isGetItemActice = false;
-    }
+    public static bool isGetItemActice = false;
 
     void Update()
     {
