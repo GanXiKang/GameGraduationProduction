@@ -61,7 +61,7 @@ public class GetItemUIControl : MonoBehaviour
             if (i <= _howMuchToGet)
             {
                 item[i].SetActive(true);
-                item[i].GetComponent<Image>().sprite = itemImage[_getItemNumber[1]];
+                item[i].GetComponent<Image>().sprite = itemImage[_getItemNumber[i]];
             }
             else
             {
