@@ -82,6 +82,11 @@ public class GetItemUIControl : MonoBehaviour
         yield return new WaitForSeconds(2f);
         theme.SetActive(false);
         item[0].SetActive(false);
+        for (int v = 5; v >= 0; v--)
+        {
+            panel.GetComponent<RectTransform>().localScale = new Vector3(20f, v, 1f);
+            yield return new WaitForSeconds(0.05f);
+        }
         isGetItemActice = false;
         isAnim = false;
     }
