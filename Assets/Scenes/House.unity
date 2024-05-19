@@ -8582,6 +8582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd40dec9daf36d43a0946632fa0674f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  get: {fileID: 8300000, guid: 58ec6967bada6124f99192e10b4a4ace, type: 3}
+  BGM: {fileID: 1480171942}
   getItemUI: {fileID: 1716848822}
   panel: {fileID: 1585847843}
   theme: {fileID: 64062634}
@@ -13204,7 +13206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2754717, g: 0.2718334, b: 0.2718334, a: 0.5058824}
+  m_Color: {r: 0.2754717, g: 0.2718334, b: 0.2718334, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
