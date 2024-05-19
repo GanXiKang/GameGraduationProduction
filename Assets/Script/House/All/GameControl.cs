@@ -234,7 +234,7 @@ public class GameControl : MonoBehaviour
                             BagController.isItemSlotAcite[33] = true;
                             GetItemUIControl.isGetItemActice = true;
                             GetItemUIControl._howMuchToGet = 1;
-                            GetItemUIControl._getItemNumber = 33;
+                            GetItemUIControl._getItemNumber[1] = 33;
                         }
                         break;
 

@@ -20,7 +20,7 @@ public class GetItemUIControl : MonoBehaviour
 
     public static bool isGetItemActice = false;
     public static int _howMuchToGet;
-    public static int _getItemNumber;
+    public static int[] _getItemNumber = new int[4];
     bool isAnim;
 
     void Start()
@@ -61,7 +61,7 @@ public class GetItemUIControl : MonoBehaviour
             if (i <= _howMuchToGet)
             {
                 item[i].SetActive(true);
-                item[i].GetComponent<Image>().sprite = itemImage[_getItemNumber];
+                item[i].GetComponent<Image>().sprite = itemImage[_getItemNumber[1]];
             }
             else
             {
@@ -75,7 +75,7 @@ public class GetItemUIControl : MonoBehaviour
         for (int v = 0; v <= 5; v++)
         {
             panel.GetComponent<RectTransform>().localScale = new Vector3(20f, v, 1f);
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.04f);
         }
         theme.SetActive(true);
         item[0].SetActive(true);
@@ -85,7 +85,7 @@ public class GetItemUIControl : MonoBehaviour
         for (int v = 5; v >= 0; v--)
         {
             panel.GetComponent<RectTransform>().localScale = new Vector3(20f, v, 1f);
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.04f);
         }
         isGetItemActice = false;
         isAnim = false;
