@@ -57,6 +57,7 @@ public class UIController : MonoBehaviour
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
         content.SetActive(isContentActive);
+        storyBook.SetActive(CameraController.isLookWorkbench);
 
         if (isAutoCloseContent)
         {
@@ -67,7 +68,6 @@ public class UIController : MonoBehaviour
             workbench.SetActive(!isFinish);
             PopUpBookControl.isOpenBook = true;
             backTip.SetActive(true);
-            storyBook.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 isWorkbenchUIActive = false;
@@ -78,7 +78,6 @@ public class UIController : MonoBehaviour
             }
         }
         
-
         InteractableUI();
         ColliderObjectName();
         MaterialWindowInformation();
@@ -255,7 +254,6 @@ public class UIController : MonoBehaviour
         WorkbenchControl.isDrawing = true;
         CameraController.isLookMake = true;
         CameraController.isLookWorkbench = false;
-        storyBook.SetActive(false);
         materialWindow.SetActive(false);
     }
     public void Back_Button()
