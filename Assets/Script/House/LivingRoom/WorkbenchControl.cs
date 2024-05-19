@@ -9,19 +9,23 @@ public class WorkbenchControl : MonoBehaviour
     public AudioClip draw;
     public AudioSource BGM;
 
+    [Header("StoryBook")]
+    public GameObject storyBook;
+
     [Header("Drawing")]
-    public static bool isDrawing;
     public GameObject pencil;
     public GameObject drawFinishText;
     public GameObject makeMaterial;
     public Sprite finishMakeMaterial;
     public BoxCollider boxC;
+    List<GameObject> pencils = new List<GameObject>(0);
+
+    public static bool isDrawing;
     public bool isDrawingComplete;
     public float _completionThreshold;
     public float _completionPercentage;
     float _drawnArea;
     bool isPress;
-    List<GameObject> pencils = new List<GameObject>(0);
 
     void Start()
     {
