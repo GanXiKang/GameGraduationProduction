@@ -162,7 +162,7 @@ public class GameControl : MonoBehaviour
                         switch (_day)
                         {
                             case 3:
-                                if (!isLittleGirlStoryFinish && TaskController._taskNumber == 9)
+                                if (!isLittleGirlStoryFinish)
                                 {
                                     isLittleGirlStoryFinish = true;
                                     isCheckStoryBookContent = true;
