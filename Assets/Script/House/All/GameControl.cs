@@ -175,7 +175,7 @@ public class GameControl : MonoBehaviour
                                     TaskController._taskNumber = 10;
 
                                 }
-                                if (isFindCrystalStoryBook)
+                                if (isFindCrystalStoryBook && TaskController._taskNumber == 11)
                                 {
                                     BedControl.isNight = true;
                                     isFindCrystalStoryBook = false;
