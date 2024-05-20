@@ -97,7 +97,6 @@ public class GameControl : MonoBehaviour
             case 3:
                 Invoke("OpeningText", 1f);
                 TextControl.textCount = 9;
-                colliderObject[1].SetActive(true);
                 break;
         }
     }
@@ -164,6 +163,7 @@ public class GameControl : MonoBehaviour
                             case 3:
                                 if (!isLittleGirlStoryFinish)
                                 {
+                                    colliderObject[1].SetActive(true);
                                     isLittleGirlStoryFinish = true;
                                     isCheckStoryBookContent = true;
                                     UIController.isContentActive = true;
@@ -175,7 +175,7 @@ public class GameControl : MonoBehaviour
                                     TaskController._taskNumber = 10;
 
                                 }
-                                if (isFindCrystalStoryBook && TaskController._taskNumber == 11)
+                                if (isFindCrystalStoryBook)
                                 {
                                     BedControl.isNight = true;
                                     isFindCrystalStoryBook = false;
