@@ -161,7 +161,7 @@ public class UIController : MonoBehaviour
         {
             workbench.SetActive(!isFinish);
             PopUpBookControl.isOpenBook = true;
-            backTip.SetActive(true);
+            backTip.SetActive(CameraController.isLookWorkbench);
             if (CameraController.isLookWorkbench)
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
