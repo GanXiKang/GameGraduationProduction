@@ -34,20 +34,19 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            _moveSpeed = 18f;
+            _moveSpeed = 10f;
+            anim.SetFloat("MoveSpeed", _moveInput.magnitude);
         }
         else
         {
             _moveSpeed = 7f;
+            anim.SetFloat("MoveSpeed", _moveInput.magnitude/3);
         }
 
         if (!GameControl.isNextPlace)
         {
             cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
         }
-
-        anim.SetFloat("MoveSpeed", _moveInput.magnitude);
-        print(_moveInput.magnitude);
     }
 
     void OnMove(InputValue value)
