@@ -108,7 +108,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 6093225430303232669, guid: 35ef63c64d1714b41b5e06bb432f450e,
+    m_Motion: {fileID: 6093225430303232669, guid: 72c5e617730fca04f9969f7fc7f6c2ee,
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -168,7 +168,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
