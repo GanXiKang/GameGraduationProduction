@@ -213,12 +213,12 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
         }
     }
+
     void Chapter1End()
     {
         StoryLittleGirlUIControl.isContentActive = true;
         StoryTextControl.textCount = 3;
     }
-
     void MatchBurned()
     {
         isUseMatches = false;
