@@ -63,8 +63,7 @@ public class UIController : MonoBehaviour
         {
             Invoke("CloseContent", 1f);
         }
-        
-        
+            
         InteractableUI();
         ColliderObjectName();
         WorkbenchUI();
@@ -81,7 +80,6 @@ public class UIController : MonoBehaviour
 
             if (GameControl._day == 2)
             {
-                
                 if (isTeachOpenBag)
                 {
                     PlayerController.isNoMove = true;
