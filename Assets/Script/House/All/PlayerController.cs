@@ -46,7 +46,8 @@ public class PlayerController : MonoBehaviour
             cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
         }
 
-        anim.SetFloat("isWalk", _moveInput.magnitude);
+        anim.SetFloat("MoveSpeed", _moveInput.magnitude);
+        print(_moveInput.magnitude);
     }
 
     void OnMove(InputValue value)
