@@ -150,34 +150,37 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     Invoke("FantasyEnd", 3f);
                 }
 
-                if (Input.GetKeyDown(KeyCode.E))
+                if (!StoryLittleGirlUIControl.isContentActive)
                 {
-                    if (!isUseMatches)
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
-                        BGM.PlayOneShot(fire);
-                        if (!isFirstUseMatches)
+                        if (!isUseMatches)
                         {
-                            isUseMatchesUI = false;
-                            isFirstUseMatches = true;
-                            StoryLittleGirlUIControl.isContentActive = true;
-                            isFirstUseMatchesContent = true;
-                            StoryTextControl.textCount = 5;
-                        }
-                        else
-                        {
-                            if (isPutPileWood && StoryNearPileWood_LittleGirl.isPileWoodNear)
+                            BGM.PlayOneShot(fire);
+                            if (!isFirstUseMatches)
                             {
-                                fireEffect.SetActive(true);
-                                isIgnite = true;
-                                isPutPileWood = false;
-                                StoryNearPileWood_LittleGirl.isPileWoodNear = false;
+                                isUseMatchesUI = false;
+                                isFirstUseMatches = true;
+                                StoryLittleGirlUIControl.isContentActive = true;
+                                isFirstUseMatchesContent = true;
+                                StoryTextControl.textCount = 5;
                             }
-                            Invoke("MatchBurned", 3f);
-                        } 
-                        isUseMatches = true;
-                        matchesLight.SetActive(true);
+                            else
+                            {
+                                if (isPutPileWood && StoryNearPileWood_LittleGirl.isPileWoodNear)
+                                {
+                                    fireEffect.SetActive(true);
+                                    isIgnite = true;
+                                    isPutPileWood = false;
+                                    StoryNearPileWood_LittleGirl.isPileWoodNear = false;
+                                }
+                                Invoke("MatchBurned", 3f);
+                            }
+                            isUseMatches = true;
+                            matchesLight.SetActive(true);
+                        }
                     }
-                }
+                }     //useMatch
 
                 if (!isFindElfContent && _task >= 2 && !isEnough)
                 {
