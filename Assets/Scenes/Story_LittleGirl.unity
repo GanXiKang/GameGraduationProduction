@@ -11731,7 +11731,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 718922189}
         m_TargetAssemblyTypeName: TaskController, Assembly-CSharp
         m_MethodName: Task_Button
         m_Mode: 1
