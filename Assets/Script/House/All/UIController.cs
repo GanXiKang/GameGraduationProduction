@@ -63,23 +63,11 @@ public class UIController : MonoBehaviour
         {
             Invoke("CloseContent", 1f);
         }
-        if (isWorkbenchUIActive)
-        {
-            workbench.SetActive(!isFinish);
-            PopUpBookControl.isOpenBook = true;
-            backTip.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                isWorkbenchUIActive = false;
-                backTip.SetActive(false);
-                workbench.SetActive(false);
-                PopUpBookControl.isCloseBook = true;
-                Invoke("LeaveWorkbench", 1.8f);
-            }
-        }
+        
         
         InteractableUI();
         ColliderObjectName();
+        WorkbenchUI();
         MaterialWindowInformation();
         JudgmentMakeButtonInteractable();
         JudgmentFinish();
@@ -169,6 +157,26 @@ public class UIController : MonoBehaviour
         isContentActive = false;
         isAutoCloseContent = false;
     }
+    void WorkbenchUI()
+    {
+        if (isWorkbenchUIActive)
+        {
+            workbench.SetActive(!isFinish);
+            PopUpBookControl.isOpenBook = true;
+            backTip.SetActive(true);
+            if (CameraController.isLookWorkbench)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    isWorkbenchUIActive = false;
+                    backTip.SetActive(false);
+                    workbench.SetActive(false);
+                    PopUpBookControl.isCloseBook = true;
+                    Invoke("LeaveWorkbench", 1.8f);
+                }
+            }
+        }
+    }    
     void MaterialWindowInformation()
     {
         switch (_whatDate)
