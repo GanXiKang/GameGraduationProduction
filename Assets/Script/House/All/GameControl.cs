@@ -172,6 +172,7 @@ public class GameControl : MonoBehaviour
                                     GetItemUIControl.isGetItemActice = true;
                                     GetItemUIControl._howMuchToGet = 1;
                                     GetItemUIControl._getItemNumber[1] = 4;
+                                    TaskController._taskNumber = 10;
 
                                 }
                                 if (isFindCrystalStoryBook)
@@ -180,7 +181,7 @@ public class GameControl : MonoBehaviour
                                     isFindCrystalStoryBook = false;
                                     BagController.isItemSlotAcite[29] = false;
                                     CaseControl.isStoryBookCrystal = true;
-                                    TaskController._taskNumber = 11;
+                                    TaskController._taskNumber = 12;
                                 }
                                 break;
                         }
@@ -193,7 +194,7 @@ public class GameControl : MonoBehaviour
                         TextControl.textCount = 11;
                         Destroy(colliderObject[1]);
                         isFindCrystalStoryBook = true;
-                        TaskController._taskNumber = 10;
+                        TaskController._taskNumber = 11;
                         break;
 
                     case 5:                                                     //gotoLivingroom
