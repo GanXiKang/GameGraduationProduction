@@ -28,7 +28,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            _moveSpeed = 15f;
+            _moveSpeed = 12f;
         }
         else
         {
