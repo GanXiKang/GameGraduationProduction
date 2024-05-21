@@ -167,7 +167,7 @@ public class UIController : MonoBehaviour
             if (isWaitOpenBook)
             {
                 isWaitOpenBook = false;
-                Invoke("StoryQuizWaitOpenBook", 2.4f);
+                Invoke("StoryQuizWaitOpenBook", 3f);
             }
             if (CameraController.isLookWorkbench)
             {
