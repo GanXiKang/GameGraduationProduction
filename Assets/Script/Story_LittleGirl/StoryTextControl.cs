@@ -70,7 +70,7 @@ public class StoryTextControl : MonoBehaviour
     {
         if (textFinish)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                 textSpend = 0.1f;
                 StartCoroutine(SetTextLabelIndexUI());
@@ -85,7 +85,7 @@ public class StoryTextControl : MonoBehaviour
         }
         else
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
                 textSpend = 0f;
             }
