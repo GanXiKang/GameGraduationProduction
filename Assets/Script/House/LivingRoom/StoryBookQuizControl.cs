@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class StoryBookQuizControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject storyQuiz;
+
     void Start()
     {
-        
+        Invoke("WaitOpenBookAnim", 2.4f);
+        print("OK");
     }
 
-    // Update is called once per frame
-    void Update()
+    void WaitOpenBookAnim()
     {
-        
+        storyQuiz.SetActive(true);
     }
 }
