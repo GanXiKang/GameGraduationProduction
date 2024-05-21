@@ -43,6 +43,7 @@ public class UIController : MonoBehaviour
     public static bool isFinish;
     public static bool isWorkbenchUIActive;
     int needMaterialQuantity;
+    bool isWaitOpenBook;
 
     void Start()
     {
@@ -50,6 +51,7 @@ public class UIController : MonoBehaviour
         isChooseStoryActive = false;
         isContentActive = false;
         isAutoCloseContent = false;
+        isWaitOpenBook = true; 
     }
 
     void Update()
@@ -162,6 +164,11 @@ public class UIController : MonoBehaviour
             workbench.SetActive(!isFinish);
             PopUpBookControl.isOpenBook = true;
             backTip.SetActive(CameraController.isLookWorkbench);
+            if (isWaitOpenBook)
+            {
+                isWaitOpenBook = false;
+                Invoke("StoryQuizWaitOpenBook", 2.4f);
+            }
             if (CameraController.isLookWorkbench)
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
@@ -170,7 +177,11 @@ public class UIController : MonoBehaviour
                 }
             }
         }
-    }    
+    }
+    void StoryQuizWaitOpenBook()
+    {
+        storyQuiz.SetActive(true);
+    }
     void MaterialWindowInformation()
     {
         switch (_whatDate)
@@ -239,8 +250,8 @@ public class UIController : MonoBehaviour
     {
         CameraController.isLookWorkbench = false;
         CameraController.isFollow = true;
-        //storyQuiz.SetActive(true);
         materialWindow.SetActive(false);
+        isWaitOpenBook = true;
     }
 
     //Button
