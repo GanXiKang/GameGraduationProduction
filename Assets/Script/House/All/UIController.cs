@@ -74,6 +74,16 @@ public class UIController : MonoBehaviour
         JudgmentFinish();
     }
 
+    void FixedUpdate()        //²»”àµÄ™z²é
+    {
+        if (!CameraController.isLookWorkbench)
+        {
+            materialWindow.SetActive(false);
+            storyQuiz.SetActive(false);
+            isWaitOpenBook = true;
+        }
+    }
+
     void InteractableUI()
     {
         if (GameControl._day != 1 && CameraController.isFollow && !isContentActive && !BagController.isBagActive && !TaskController.isTaskActive && !GameControl.isOpeningStopMove && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice)
