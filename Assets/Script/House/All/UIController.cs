@@ -239,7 +239,7 @@ public class UIController : MonoBehaviour
     {
         CameraController.isLookWorkbench = false;
         CameraController.isFollow = true;
-        storyQuiz.SetActive(true);
+        //storyQuiz.SetActive(true);
         materialWindow.SetActive(false);
     }
 
