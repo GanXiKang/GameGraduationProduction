@@ -251,6 +251,7 @@ public class UIController : MonoBehaviour
         CameraController.isLookWorkbench = false;
         CameraController.isFollow = true;
         materialWindow.SetActive(false);
+        storyQuiz.SetActive(false);
         isWaitOpenBook = true;
     }
 
