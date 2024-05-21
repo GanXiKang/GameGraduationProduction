@@ -166,11 +166,7 @@ public class UIController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    isWorkbenchUIActive = false;
-                    backTip.SetActive(false);
-                    workbench.SetActive(false);
-                    PopUpBookControl.isCloseBook = true;
-                    Invoke("LeaveWorkbench", 1.8f);
+                    LeaveWorkbench_Button();
                 }
             }
         }
@@ -266,5 +262,13 @@ public class UIController : MonoBehaviour
     {
         storyQuiz.SetActive(true);
         materialWindow.SetActive(false);
+    }
+    public void LeaveWorkbench_Button()
+    {
+        isWorkbenchUIActive = false;
+        backTip.SetActive(false);
+        workbench.SetActive(false);
+        PopUpBookControl.isCloseBook = true;
+        Invoke("LeaveWorkbench", 1.8f);
     }
 }
