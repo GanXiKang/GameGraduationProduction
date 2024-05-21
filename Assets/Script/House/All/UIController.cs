@@ -74,9 +74,9 @@ public class UIController : MonoBehaviour
         JudgmentFinish();
     }
 
-    void FixedUpdate()        //不斷的檢查
+    void FixedUpdate()
     {
-        if (!CameraController.isLookWorkbench)
+        if (!CameraController.isLookWorkbench && !CameraController.isLookMake)   //不斷的檢查
         {
             materialWindow.SetActive(false);
             storyQuiz.SetActive(false);
