@@ -6,6 +6,11 @@ public class EffectsSoundControl : MonoBehaviour
 {
     AudioSource BGM;
 
+    void Start()
+    {
+        BGM = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         BGM.volume = SettingControl.volumeBGM;
