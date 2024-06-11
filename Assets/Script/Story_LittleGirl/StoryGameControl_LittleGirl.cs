@@ -80,7 +80,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
     void Update()
     {
-        if (StoryLittleGirlUIControl.isInteractionButtonActive)
+        if (StoryUIControl_LittleGirl.isInteractionButtonActive)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
