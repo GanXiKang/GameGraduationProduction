@@ -83,6 +83,6 @@ public class StoryBagControl : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         bagOpen.sprite = bagOpenAnim[1];
         bagUI.SetActive(isBagActive);
-        StoryLittleGirlUIControl.isInteractionUIActive = true;
+        StoryUIControl_LittleGirl.isInteractionUIActive = true;
     }
 }
