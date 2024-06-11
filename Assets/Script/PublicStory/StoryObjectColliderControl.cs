@@ -11,8 +11,8 @@ public class StoryObjectColliderControl : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            StoryLittleGirlUIControl.isInteractionButtonActive = true;
-            StoryLittleGirlUIControl._conveyColliderNumber = _serialNumber;
+            StoryUIControl_LittleGirl.isInteractionButtonActive = true;
+            StoryUIControl_LittleGirl._conveyColliderNumber = _serialNumber;
         }
     }
 
@@ -28,7 +28,7 @@ public class StoryObjectColliderControl : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            StoryLittleGirlUIControl.isInteractionButtonActive = false;
+            StoryUIControl_LittleGirl.isInteractionButtonActive = false;
         }
     }
 }
