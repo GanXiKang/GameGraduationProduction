@@ -30,7 +30,7 @@ public class StoryBagControl : MonoBehaviour
     {
         ItemSlotActive();
 
-        if (!StoryLittleGirlUIControl.isContentActive && !GetItemUIControl.isGetItemActice  && !TaskController.isTaskActive && GameControl._day != 1 && !StoryGameControl_LittleGirl.isUseMatchesUI)
+        if (!StoryUIControl_LittleGirl.isContentActive && !GetItemUIControl.isGetItemActice  && !TaskController.isTaskActive && GameControl._day != 1 && !StoryGameControl_LittleGirl.isUseMatchesUI)
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
