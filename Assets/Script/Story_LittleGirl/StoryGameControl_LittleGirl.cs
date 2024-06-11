@@ -73,7 +73,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         StoryUIControl_LittleGirl.isContentActive = true;
         if (isChapter1Finish && !isChapter2Finish)
         {
-            StoryTextControl.textCount = 4;
+            StoryTextControl_LittleGirl.textCount = 4;
         }
         once = true;
     }
@@ -123,7 +123,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 {
                     StoryUIControl_LittleGirl.isContentActive = true;
                     isGetSweaterAndHatContent = true;
-                    StoryTextControl.textCount = 2;
+                    StoryTextControl_LittleGirl.textCount = 2;
                 }
                 if (!isChapter1EndContent && isWear && !isChapter1Finish)
                 {
@@ -188,7 +188,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isFindElfContent = true;
                     gameCollider[3].SetActive(true);
                     StoryUIControl_LittleGirl.isContentActive = true;
-                    StoryTextControl.textCount = 7;
+                    StoryTextControl_LittleGirl.textCount = 7;
                     TaskController._taskNumber = 8;
                 }
                 if (!isInsFireWoodContent && isIgnite)
@@ -196,13 +196,13 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isIgnite = false;
                     StoryUIControl_LittleGirl.isContentActive = true;
                     isInsFireWoodContent = true;
-                    StoryTextControl.textCount = 8;
+                    StoryTextControl_LittleGirl.textCount = 8;
                 }
                 if (!isChapter2EndContent && isStoryFinish && !isChapter2Finish)
                 {
                     StoryUIControl_LittleGirl.isContentActive = true;
                     isChapter2EndContent = true;
-                    StoryTextControl.textCount = 9;
+                    StoryTextControl_LittleGirl.textCount = 9;
                 }
                 if (_chapter == 2 && isChapter2Finish && once)
                 {
@@ -217,7 +217,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     void Chapter1End()
     {
         StoryUIControl_LittleGirl.isContentActive = true;
-        StoryTextControl.textCount = 3;
+        StoryTextControl_LittleGirl.textCount = 3;
     }
     void MatchBurned()
     {
@@ -232,7 +232,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         matchesLight.SetActive(false);
         StoryUIControl_LittleGirl.isContentActive = true;
         isFantasyEndContent = true;
-        StoryTextControl.textCount = 6;
+        StoryTextControl_LittleGirl.textCount = 6;
         TaskController._taskNumber = 7;
     }
     void CloseLoadingUI()
