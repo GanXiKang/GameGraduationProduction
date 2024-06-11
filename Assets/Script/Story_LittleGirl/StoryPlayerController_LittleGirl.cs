@@ -54,7 +54,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (!StoryLittleGirlUIControl.isContentActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI && !GetItemUIControl.isGetItemActice && !TaskController.isTaskActive && !StoryBagControl.isBagActive && !SettingControl.isSettingActive)
+        if (!StoryUIControl_LittleGirl.isContentActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI && !GetItemUIControl.isGetItemActice && !TaskController.isTaskActive && !StoryBagControl.isBagActive && !SettingControl.isSettingActive)
         {
             Vector2 input = value.Get<Vector2>();
             _storyMoveInput = new Vector3(input.x, 0, input.y);
