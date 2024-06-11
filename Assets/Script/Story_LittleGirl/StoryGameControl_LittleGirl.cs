@@ -121,7 +121,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             case 1:
                 if (!isGetSweaterAndHatContent && _task >= 1 && !isWear)
                 {
-                    StoryLittleGirlUIControl.isContentActive = true;
+                    StoryUIControl_LittleGirl.isContentActive = true;
                     isGetSweaterAndHatContent = true;
                     StoryTextControl.textCount = 2;
                 }
