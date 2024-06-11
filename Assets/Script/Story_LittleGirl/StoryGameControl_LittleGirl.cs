@@ -84,7 +84,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                StoryLittleGirlUIControl.isInteractionButtonActive = false;
+                StoryUIControl_LittleGirl.isInteractionButtonActive = false;
                 switch (StoryObjectColliderControl._nowNumber)
                 {
                     case 1:                                                               //clothing&hat
