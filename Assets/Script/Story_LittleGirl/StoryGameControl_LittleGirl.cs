@@ -216,7 +216,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
     void Chapter1End()
     {
-        StoryLittleGirlUIControl.isContentActive = true;
+        StoryUIControl_LittleGirl.isContentActive = true;
         StoryTextControl.textCount = 3;
     }
     void MatchBurned()
