@@ -78,7 +78,7 @@ public class StoryTextControl : MonoBehaviour
                 if (index == textList.Count)
                 {
                     index = 0;
-                    StoryLittleGirlUIControl.isContentActive = false;
+                    StoryUIControl_LittleGirl.isContentActive = false;
                     JudgmentAfterTheTextEnds();
                 }
             }
