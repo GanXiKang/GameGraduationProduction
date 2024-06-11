@@ -163,7 +163,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                                 isFirstUseMatches = true;
                                 StoryUIControl_LittleGirl.isContentActive = true;
                                 isFirstUseMatchesContent = true;
-                                StoryTextControl.textCount = 5;
+                                StoryTextControl_LittleGirl.textCount = 5;
                             }
                             else
                             {
