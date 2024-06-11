@@ -42,7 +42,7 @@ public class SettingControl : MonoBehaviour
         settingUI[0].SetActive(isSettingActive);
 
         if (!CameraController.isLookWorkbench && !UIController.isContentActive && !BagController.isBagActive && !TaskController.isTaskActive &&
-            !StoryLittleGirlUIControl.isContentActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI && !StoryBagControl.isBagActive)
+            !StoryUIControl_LittleGirl.isContentActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI && !StoryBagControl.isBagActive)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
