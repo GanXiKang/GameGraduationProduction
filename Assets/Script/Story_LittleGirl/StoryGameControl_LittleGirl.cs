@@ -146,11 +146,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isFantasy = false;
                     isSeeFantasy = true;
                     fantasyUI.SetActive(true);
-                    StoryLittleGirlUIControl.isFantasyAnimation = true;
+                    StoryUIControl_LittleGirl.isFantasyAnimation = true;
                     Invoke("FantasyEnd", 3f);
                 }
 
-                if (!StoryLittleGirlUIControl.isContentActive)
+                if (!StoryUIControl_LittleGirl.isContentActive)
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
@@ -200,7 +200,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 }
                 if (!isChapter2EndContent && isStoryFinish && !isChapter2Finish)
                 {
-                    StoryLittleGirlUIControl.isContentActive = true;
+                    StoryUIControl_LittleGirl.isContentActive = true;
                     isChapter2EndContent = true;
                     StoryTextControl.textCount = 9;
                 }
