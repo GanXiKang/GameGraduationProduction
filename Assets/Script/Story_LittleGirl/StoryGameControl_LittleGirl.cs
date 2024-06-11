@@ -230,7 +230,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         isSeeFantasy = false;
         fantasyUI.SetActive(false);
         matchesLight.SetActive(false);
-        StoryLittleGirlUIControl.isContentActive = true;
+        StoryUIControl_LittleGirl.isContentActive = true;
         isFantasyEndContent = true;
         StoryTextControl.textCount = 6;
         TaskController._taskNumber = 7;
