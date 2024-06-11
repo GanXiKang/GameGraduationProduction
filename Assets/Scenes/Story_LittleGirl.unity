@@ -8561,7 +8561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 509659325}
-  - component: {fileID: 509659327}
+  - component: {fileID: 509659330}
   - component: {fileID: 509659328}
   - component: {fileID: 509659329}
   m_Layer: 5
@@ -8600,33 +8600,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &509659327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509659324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e6b37e44ec20b4eaca818fa632d9b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionUI: {fileID: 1367258996}
-  bagButton: {fileID: 1546460836}
-  taskButton: {fileID: 1932674194}
-  interactionButton: {fileID: 187569270}
-  interactionButton_text: {fileID: 2095987345}
-  content: {fileID: 1777243499}
-  fantasy: {fileID: 170488287}
-  fantasyPicture:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 9414a8c6ea0bb644f9d7c1025d47fc2f, type: 3}
-  - {fileID: 21300000, guid: b522a394af9d3414c86b299650ab4e9e, type: 3}
-  - {fileID: 21300000, guid: 71ab5ecacf8ade7429983589b37341b0, type: 3}
-  - {fileID: 21300000, guid: ab1a4290a22f75444869ce53812135f6, type: 3}
-  - {fileID: 21300000, guid: 6f64356002fa0074ab6834719173a90a, type: 3}
-  - {fileID: 21300000, guid: f5728a80196bce44283a16eaeb337790, type: 3}
 --- !u!114 &509659328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8706,6 +8679,33 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &509659330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509659324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d185d2de67dd0f42b04be36a3cf1ecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionUI: {fileID: 1367258996}
+  bagButton: {fileID: 1546460836}
+  taskButton: {fileID: 1932674194}
+  interactionButton: {fileID: 187569270}
+  interactionButton_text: {fileID: 2095987345}
+  content: {fileID: 1777243499}
+  fantasy: {fileID: 170488287}
+  fantasyPicture:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 9414a8c6ea0bb644f9d7c1025d47fc2f, type: 3}
+  - {fileID: 21300000, guid: b522a394af9d3414c86b299650ab4e9e, type: 3}
+  - {fileID: 21300000, guid: 71ab5ecacf8ade7429983589b37341b0, type: 3}
+  - {fileID: 21300000, guid: ab1a4290a22f75444869ce53812135f6, type: 3}
+  - {fileID: 21300000, guid: 6f64356002fa0074ab6834719173a90a, type: 3}
+  - {fileID: 21300000, guid: f5728a80196bce44283a16eaeb337790, type: 3}
 --- !u!1 &514095332
 GameObject:
   m_ObjectHideFlags: 0
