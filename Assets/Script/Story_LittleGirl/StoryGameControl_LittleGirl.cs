@@ -161,7 +161,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                             {
                                 isUseMatchesUI = false;
                                 isFirstUseMatches = true;
-                                StoryLittleGirlUIControl.isContentActive = true;
+                                StoryUIControl_LittleGirl.isContentActive = true;
                                 isFirstUseMatchesContent = true;
                                 StoryTextControl.textCount = 5;
                             }
@@ -187,14 +187,14 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     isEnough = true;
                     isFindElfContent = true;
                     gameCollider[3].SetActive(true);
-                    StoryLittleGirlUIControl.isContentActive = true;
+                    StoryUIControl_LittleGirl.isContentActive = true;
                     StoryTextControl.textCount = 7;
                     TaskController._taskNumber = 8;
                 }
                 if (!isInsFireWoodContent && isIgnite)
                 {
                     isIgnite = false;
-                    StoryLittleGirlUIControl.isContentActive = true;
+                    StoryUIControl_LittleGirl.isContentActive = true;
                     isInsFireWoodContent = true;
                     StoryTextControl.textCount = 8;
                 }
