@@ -65,7 +65,7 @@ public class StoryBagControl : MonoBehaviour
 
     IEnumerator OpenBagAnimation()
     {
-        StoryLittleGirlUIControl.isInteractionUIActive = false;
+        StoryUIControl_LittleGirl.isInteractionUIActive = false;
         bagUI.SetActive(isBagActive);
         yield return new WaitForSeconds(0.5f);
         bagOpen.sprite = bagOpenAnim[2];
