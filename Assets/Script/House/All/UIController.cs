@@ -275,7 +275,7 @@ public class UIController : MonoBehaviour
     public void Make_Button()
     {
         isFinish = false;
-        WorkbenchControl.isDrawing = true;
+        WorkbenchControl_LivingRoom.isDrawing = true;
         CameraController.isLookMake = true;
         CameraController.isLookWorkbench = false;
         materialWindow.SetActive(false);
