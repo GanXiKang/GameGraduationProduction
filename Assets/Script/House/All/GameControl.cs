@@ -233,7 +233,7 @@ public class GameControl : MonoBehaviour
 
                     case 9:                                                     //GradenA
                         BGM.PlayOneShot(pickFlower);
-                        GardenControl.isGardenA = false;
+                        PlantControl_Garden.isGardenA = false;
                         FlowerControl_Garden.isDestory = true;
                         if (_day == 2)
                         {
@@ -247,7 +247,7 @@ public class GameControl : MonoBehaviour
 
                     case 10:                                                    //GradenB
                         BGM.PlayOneShot(pickFlower);
-                        GardenControl.isGardenB = false;
+                        PlantControl_Garden.isGardenB = false;
                         FlowerControl_Garden.isDestory = true;
                         break;
                 }
