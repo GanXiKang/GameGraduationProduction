@@ -1130,6 +1130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 115781842}
   - component: {fileID: 115781843}
+  - component: {fileID: 115781844}
   m_Layer: 0
   m_Name: WorkbenchControl
   m_TagString: Untagged
@@ -1161,9 +1162,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115781841}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ec95210793a7f142964a9e96ed055d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  complete: {fileID: 8300000, guid: 8943fa1a48682c04caf46e66d99b9915, type: 3}
+  draw: {fileID: 8300000, guid: 77ad1a0b123a0e34da4719063740404e, type: 3}
+  BGM: {fileID: 1480171942}
+  pencil: {fileID: 6877726313400018096, guid: ccf20313e1fdcfa40aea926af31c3761, type: 3}
+  drawFinishText: {fileID: 1762746756}
+  makeMaterial: {fileID: 1169955804}
+  finishMakeMaterial: {fileID: 21300000, guid: d23a264a6870fea468b5da61f361efa7, type: 3}
+  boxC: {fileID: 1091245016}
+  isDrawingComplete: 0
+  _completionThreshold: 80
+  _completionPercentage: 20
+--- !u!114 &115781844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115781841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501e14aef25a43548a5bb3ba8c0ac7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   complete: {fileID: 8300000, guid: 8943fa1a48682c04caf46e66d99b9915, type: 3}
