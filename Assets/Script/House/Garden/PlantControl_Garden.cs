@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class PlantControl_Garden : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Transform[] insFlowerPoint;
+    public GameObject flowerPerfab;
+    public GameObject gardenA_Collider;
+    public GameObject gardenB_Collider;
+
+    public static bool isGardenA = false;
+    public static bool isGardenB = false;
+
     void Start()
     {
-        
+        if (GameControl._day == 2)
+        {
+            for (int i = 1; i < 4; i++)
+            {
+                isGardenA = true;
+                Instantiate(flowerPerfab, insFlowerPoint[i].position, insFlowerPoint[i].rotation);
+            }
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        gardenA_Collider.SetActive(isGardenA);
+        gardenB_Collider.SetActive(isGardenB);
     }
 }
