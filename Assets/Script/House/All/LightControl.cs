@@ -14,11 +14,11 @@ public class LightControl : MonoBehaviour
 
     void Update()
     {
-        night.SetActive(BedControl.isNight);
-        daytime.SetActive(!BedControl.isNight);
-        roof.SetActive(BedControl.isNight);
+        night.SetActive(BedControl_Bedroom.isNight);
+        daytime.SetActive(!BedControl_Bedroom.isNight);
+        roof.SetActive(BedControl_Bedroom.isNight);
 
-        if (BedControl.isNight)
+        if (BedControl_Bedroom.isNight)
         {
             catLamp.sharedMaterial = catLamp_Light;
         }

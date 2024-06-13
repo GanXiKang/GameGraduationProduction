@@ -119,7 +119,7 @@ public class GameControl : MonoBehaviour
                         BGM.PlayOneShot(ClimbIntoBed);
                         CameraController.isFollow = false;
                         CameraController.isLookBed = true;
-                        BedControl.isSleep = true;
+                        BedControl_Bedroom.isSleep = true;
                         switch (_day)
                         {
                             case 1:
@@ -177,7 +177,7 @@ public class GameControl : MonoBehaviour
                                 }
                                 if (isFindCrystalStoryBook)
                                 {
-                                    BedControl.isNight = true;
+                                    BedControl_Bedroom.isNight = true;
                                     isFindCrystalStoryBook = false;
                                     BagController.isItemSlotAcite[29] = false;
                                     CaseControl.isStoryBookCrystal = true;

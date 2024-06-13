@@ -75,7 +75,7 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
             {
                 BGM.PlayOneShot(complete);
                 SoundControl.isDraw = false;
-                BedControl.isNight = true;           //•º•rµÄ
+                BedControl_Bedroom.isNight = true;           //•º•rµÄ
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
                 makeMaterial.GetComponent<SpriteRenderer>().sprite = finishMakeMaterial;

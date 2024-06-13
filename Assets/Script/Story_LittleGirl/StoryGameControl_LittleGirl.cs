@@ -246,7 +246,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         GameControl._day += 1;
-        BedControl.isNight = false;
+        BedControl_Bedroom.isNight = false;
         switch (_chapter)
         {
             case 2:
