@@ -1788,7 +1788,7 @@ GameObject:
   - component: {fileID: 201630911}
   - component: {fileID: 201630910}
   - component: {fileID: 201630914}
-  - component: {fileID: 201630913}
+  - component: {fileID: 201630915}
   m_Layer: 5
   m_Name: StoryCrystal_Button
   m_TagString: Untagged
@@ -1909,19 +1909,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201630908}
   m_CullTransparentMesh: 1
---- !u!114 &201630913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201630908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 360a071143127844dacea2a38f0fa539, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _storyNumber: 2
 --- !u!114 &201630914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1939,8 +1926,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 201630913}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 201630915}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointEnter
           m_Mode: 1
           m_Arguments:
@@ -1955,8 +1942,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 201630913}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 201630915}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointExit
           m_Mode: 1
           m_Arguments:
@@ -1967,6 +1954,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &201630915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201630908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986ea3965259eb343ad6dfa6a3a6d282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyNumber: 2
 --- !u!1 &216293148 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2e5d27f9422de0747b76d015531005fb,
@@ -2603,7 +2603,7 @@ GameObject:
   - component: {fileID: 257446199}
   - component: {fileID: 257446198}
   - component: {fileID: 257446202}
-  - component: {fileID: 257446201}
+  - component: {fileID: 257446203}
   m_Layer: 5
   m_Name: StoryLittleGirl_Button
   m_TagString: Untagged
@@ -2724,19 +2724,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257446196}
   m_CullTransparentMesh: 1
---- !u!114 &257446201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257446196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 360a071143127844dacea2a38f0fa539, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _storyNumber: 1
 --- !u!114 &257446202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2754,8 +2741,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 257446201}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 257446203}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointEnter
           m_Mode: 1
           m_Arguments:
@@ -2770,8 +2757,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 257446201}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 257446203}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointExit
           m_Mode: 1
           m_Arguments:
@@ -2782,6 +2769,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &257446203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257446196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986ea3965259eb343ad6dfa6a3a6d282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyNumber: 1
 --- !u!1 &272354312
 GameObject:
   m_ObjectHideFlags: 0
@@ -11254,7 +11254,7 @@ GameObject:
   - component: {fileID: 1204274973}
   - component: {fileID: 1204274972}
   - component: {fileID: 1204274976}
-  - component: {fileID: 1204274975}
+  - component: {fileID: 1204274977}
   m_Layer: 5
   m_Name: StoryBeanstalk_Button
   m_TagString: Untagged
@@ -11375,19 +11375,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204274970}
   m_CullTransparentMesh: 1
---- !u!114 &1204274975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204274970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 360a071143127844dacea2a38f0fa539, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _storyNumber: 4
 --- !u!114 &1204274976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11405,8 +11392,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1204274975}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 1204274977}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointEnter
           m_Mode: 1
           m_Arguments:
@@ -11421,8 +11408,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1204274975}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 1204274977}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointExit
           m_Mode: 1
           m_Arguments:
@@ -11433,6 +11420,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1204274977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204274970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986ea3965259eb343ad6dfa6a3a6d282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyNumber: 4
 --- !u!1001 &1230789323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13915,7 +13915,7 @@ GameObject:
   - component: {fileID: 1670668468}
   - component: {fileID: 1670668467}
   - component: {fileID: 1670668471}
-  - component: {fileID: 1670668470}
+  - component: {fileID: 1670668472}
   m_Layer: 5
   m_Name: StoryMomotaro_Button
   m_TagString: Untagged
@@ -14036,19 +14036,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670668465}
   m_CullTransparentMesh: 1
---- !u!114 &1670668470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670668465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 360a071143127844dacea2a38f0fa539, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _storyNumber: 3
 --- !u!114 &1670668471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14066,8 +14053,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1670668470}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 1670668472}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointEnter
           m_Mode: 1
           m_Arguments:
@@ -14082,8 +14069,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1670668470}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 1670668472}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointExit
           m_Mode: 1
           m_Arguments:
@@ -14094,6 +14081,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1670668472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670668465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986ea3965259eb343ad6dfa6a3a6d282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyNumber: 3
 --- !u!1 &1677107056
 GameObject:
   m_ObjectHideFlags: 0
@@ -16077,7 +16077,7 @@ GameObject:
   - component: {fileID: 1949732813}
   - component: {fileID: 1949732812}
   - component: {fileID: 1949732816}
-  - component: {fileID: 1949732815}
+  - component: {fileID: 1949732817}
   m_Layer: 5
   m_Name: StoryCinderella_Button
   m_TagString: Untagged
@@ -16198,19 +16198,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949732810}
   m_CullTransparentMesh: 1
---- !u!114 &1949732815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949732810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 360a071143127844dacea2a38f0fa539, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _storyNumber: 5
 --- !u!114 &1949732816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16228,8 +16215,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1949732815}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 1949732817}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointEnter
           m_Mode: 1
           m_Arguments:
@@ -16244,8 +16231,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1949732815}
-          m_TargetAssemblyTypeName: ButtonHighlightedControl, Assembly-CSharp
+        - m_Target: {fileID: 1949732817}
+          m_TargetAssemblyTypeName: ButtonHighlightedControl_Bedroom, Assembly-CSharp
           m_MethodName: OnPointExit
           m_Mode: 1
           m_Arguments:
@@ -16256,6 +16243,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1949732817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949732810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986ea3965259eb343ad6dfa6a3a6d282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _storyNumber: 5
 --- !u!1 &1968065695
 GameObject:
   m_ObjectHideFlags: 0
