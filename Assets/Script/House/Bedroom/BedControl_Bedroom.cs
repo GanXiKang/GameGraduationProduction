@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class BedControl_Bedroom : MonoBehaviour
 {
-    // Start is called before the first frame update
+    GameObject player;
+    public GameObject bedCollider;
+    public GameObject bedNoSleep;
+    public GameObject bedSleep;
+    public static bool isSleep;
+    public static bool isNight = true;
+
     void Start()
     {
-        
+        player = GameObject.Find("Player");
+        isSleep = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        player.SetActive(!isSleep);
+        bedCollider.SetActive(isNight);
+        bedNoSleep.SetActive(!isSleep);
+        bedSleep.SetActive(isSleep);
+
+        if (isSleep)
+        {
+            SoundControl.isWalk = false;
+        }
     }
 }
