@@ -180,7 +180,7 @@ public class GameControl : MonoBehaviour
                                     BedControl_Bedroom.isNight = true;
                                     isFindCrystalStoryBook = false;
                                     BagController.isItemSlotAcite[29] = false;
-                                    CaseControl.isStoryBookCrystal = true;
+                                    CaseControl_Bedroom.isStoryBookCrystal = true;
                                     TaskController._taskNumber = 12;
                                 }
                                 break;
@@ -268,11 +268,11 @@ public class GameControl : MonoBehaviour
         switch (_whichStoryScene)
         {
             case 2:
-                CaseControl.isStoryBookLittleGirl = true;
+                CaseControl_Bedroom.isStoryBookLittleGirl = true;
                 break;
 
             case 3:
-                CaseControl.isStoryBookCrystal = true;
+                CaseControl_Bedroom.isStoryBookCrystal = true;
                 break;
         }
     }

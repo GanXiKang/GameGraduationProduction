@@ -25,7 +25,7 @@ public class CaseStoryBookControl : MonoBehaviour
                     if (_storyNumber == _chooseWhichStoryWorld)
                     {
                         anim.SetBool("isChooseStoryBook", true);
-                        CaseControl.isStoryBookLittleGirl = false;
+                        CaseControl_Bedroom.isStoryBookLittleGirl = false;
                     }
                     break;
 
@@ -33,7 +33,7 @@ public class CaseStoryBookControl : MonoBehaviour
                     if (_storyNumber == _chooseWhichStoryWorld)
                     {
                         anim.SetBool("isChooseStoryBook", true);
-                        CaseControl.isStoryBookCrystal = false;
+                        CaseControl_Bedroom.isStoryBookCrystal = false;
                     }
                     break;
             }
