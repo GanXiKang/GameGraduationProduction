@@ -820,7 +820,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 66202883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058529e3bcacbd64f9f7b361d6d6aaa0, type: 3}
+  m_Script: {fileID: 11500000, guid: f36431d015c26f243810fb69fb56aa27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bedCollider: {fileID: 1613432034}
