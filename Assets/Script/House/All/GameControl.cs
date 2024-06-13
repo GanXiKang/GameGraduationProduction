@@ -234,7 +234,7 @@ public class GameControl : MonoBehaviour
                     case 9:                                                     //GradenA
                         BGM.PlayOneShot(pickFlower);
                         GardenControl.isGardenA = false;
-                        FlowerControl.isDestory = true;
+                        FlowerControl_Garden.isDestory = true;
                         if (_day == 2)
                         {
                             TaskController._taskNumber = 5;
@@ -248,7 +248,7 @@ public class GameControl : MonoBehaviour
                     case 10:                                                    //GradenB
                         BGM.PlayOneShot(pickFlower);
                         GardenControl.isGardenB = false;
-                        FlowerControl.isDestory = true;
+                        FlowerControl_Garden.isDestory = true;
                         break;
                 }
             }
