@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Workbench_LivingRoom : MonoBehaviour
+public class WorkbenchControl_LivingRoom : MonoBehaviour
 {
     [Header("Musia")]
     public AudioClip complete;
