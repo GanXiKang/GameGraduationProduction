@@ -305,8 +305,8 @@ public class GameControl : MonoBehaviour
 
             case 2:
                 CameraController.isLookStoryWorld = true;
-                CaseStoryBookControl._chooseWhichStoryWorld = 1;
-                CaseStoryBookControl.isChooseWhichStoryBook = true;
+                StoryBookAnimationControl_Bedroom._chooseWhichStoryWorld = 1;
+                StoryBookAnimationControl_Bedroom.isChooseWhichStoryBook = true;
                 Invoke("ListenStory_LitteGirl", 5f);
                 break;
         }
@@ -316,8 +316,8 @@ public class GameControl : MonoBehaviour
         _whichStoryScene = 3;
         UIController.isChooseStoryActive = false;
         CameraController.isLookStoryWorld = true;
-        CaseStoryBookControl._chooseWhichStoryWorld = 2;
-        CaseStoryBookControl.isChooseWhichStoryBook = true;
+        StoryBookAnimationControl_Bedroom._chooseWhichStoryWorld = 2;
+        StoryBookAnimationControl_Bedroom.isChooseWhichStoryBook = true;
         Invoke("ListenStory_Crystal", 5f);
     }
 }
