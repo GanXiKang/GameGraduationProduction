@@ -172,7 +172,7 @@ public class UIController : MonoBehaviour
         if (isWorkbenchUIActive)
         {
             workbench.SetActive(!isFinish);
-            PopUpBookControl.isOpenBook = true;
+            BookWorkbenchControl_LivingRoom.isOpenBook = true;
             backTip.SetActive(CameraController.isLookWorkbench);
             if (isWaitOpenBook)
             {
@@ -237,7 +237,7 @@ public class UIController : MonoBehaviour
             case 1:                               //Ã«ÒÂ
                 if (isFinish)
                 {
-                    PopUpBookControl.isFinishQuiz = true;
+                    BookWorkbenchControl_LivingRoom.isFinishQuiz = true;
                     DeleteUsedMaterial();
                 }
                 break;
@@ -290,7 +290,7 @@ public class UIController : MonoBehaviour
         isWorkbenchUIActive = false;
         backTip.SetActive(false);
         workbench.SetActive(false);
-        PopUpBookControl.isCloseBook = true;
+        BookWorkbenchControl_LivingRoom.isCloseBook = true;
         Invoke("LeaveWorkbench", 1.8f);
     }
 }
