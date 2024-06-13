@@ -135,11 +135,11 @@ public class CaseControl : MonoBehaviour
     }
     void ChooseStoryBookButtonisHighlighter()
     {
-        if (ButtonHighlightedControl.isProtrudeStoryBook)
+        if (ButtonHighlightedControl_Bedroom.isProtrudeStoryBook)
         {
             if (isMoveOnce)
             {
-                switch (ButtonHighlightedControl._whichStoryBook)
+                switch (ButtonHighlightedControl_Bedroom._whichStoryBook)
                 {
                     case 1:
                         storyBookLitteGirl.transform.position = highlightLocation_LittleGirl;
@@ -166,7 +166,7 @@ public class CaseControl : MonoBehaviour
         }
         else
         {
-            switch (ButtonHighlightedControl._whichStoryBook)
+            switch (ButtonHighlightedControl_Bedroom._whichStoryBook)
             {
                 case 1:
                     storyBookLitteGirl.transform.position = originalLocation_LittleGirl;
@@ -188,7 +188,7 @@ public class CaseControl : MonoBehaviour
                     storyBookCinderella.transform.position = originalLocation_Cinderella;
                     break;
             }
-            ButtonHighlightedControl._whichStoryBook = 0;
+            ButtonHighlightedControl_Bedroom._whichStoryBook = 0;
             isMoveOnce = true;
         }
     }
