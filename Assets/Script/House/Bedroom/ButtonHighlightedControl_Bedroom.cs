@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class ButtonHighlightedControl_Bedroom : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int _storyNumber;
+    public static int _whichStoryBook;
+    public static bool isProtrudeStoryBook;
+
+    public void OnPointEnter()
     {
-        
+        isProtrudeStoryBook = true;
+        _whichStoryBook = _storyNumber;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPointExit()
     {
-        
+        isProtrudeStoryBook = false;
     }
 }
