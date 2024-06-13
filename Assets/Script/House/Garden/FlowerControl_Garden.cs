@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class FlowerControl_Garden : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static bool isDestory;
+
     void Start()
     {
-        
+        isDestory = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (isDestory)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
