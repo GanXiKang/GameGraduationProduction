@@ -91,12 +91,12 @@ public class GameControl_House : MonoBehaviour
 
             case 2:
                 Invoke("OpeningText", 1f);
-                TextControl.textCount = 3;
+                TextControl_House.textCount = 3;
                 break;
 
             case 3:
                 Invoke("OpeningText", 1f);
-                TextControl.textCount = 9;
+                TextControl_House.textCount = 9;
                 break;
         }
     }
@@ -129,13 +129,13 @@ public class GameControl_House : MonoBehaviour
                             case 2:
                                 UIController.isContentActive = true;
                                 isBedContent = true;
-                                TextControl.textCount = 12;
+                                TextControl_House.textCount = 12;
                                 break;
 
                             case 3:
                                 UIController.isContentActive = true;
                                 isBedContent = true;
-                                TextControl.textCount = 12;
+                                TextControl_House.textCount = 12;
                                 break;
                         }
                         break;
@@ -149,7 +149,7 @@ public class GameControl_House : MonoBehaviour
                         {
                             UIController.isTeachOpenTask = true;
                             UIController.isContentActive = true;
-                            TextControl.textCount = 6;
+                            TextControl_House.textCount = 6;
                             isFirstOpenWorkbench = false;
                             isOpenWorkbenchContent = true;
                             TaskController._taskNumber = 4;
@@ -167,7 +167,7 @@ public class GameControl_House : MonoBehaviour
                                     isLittleGirlStoryFinish = true;
                                     isCheckStoryBookContent = true;
                                     UIController.isContentActive = true;
-                                    TextControl.textCount = 10;
+                                    TextControl_House.textCount = 10;
                                     BagControl_House.isItemSlotAcite[4] = true;
                                     GetItemUIControl.isGetItemActice = true;
                                     GetItemUIControl._howMuchToGet = 1;
@@ -191,7 +191,7 @@ public class GameControl_House : MonoBehaviour
                         BGM.PlayOneShot(pickUp);
                         isFindStoryBookContent = true;
                         UIController.isContentActive = true;
-                        TextControl.textCount = 11;
+                        TextControl_House.textCount = 11;
                         Destroy(colliderObject[1]);
                         isFindCrystalStoryBook = true;
                         TaskController._taskNumber = 11;
@@ -278,13 +278,13 @@ public class GameControl_House : MonoBehaviour
     }
     void ListenStory_LitteGirl()
     {
-        TextControl.textCount = 8;
+        TextControl_House.textCount = 8;
         UIController.isContentActive = true;
         isSleepingContent = true;
     }
     void ListenStory_Crystal()
     {
-        TextControl.textCount = 13;
+        TextControl_House.textCount = 13;
         UIController.isContentActive = true;
         isSleepingContent = true;
     }
@@ -299,7 +299,7 @@ public class GameControl_House : MonoBehaviour
         {
             case 1:
                 UIController.isContentActive = true;
-                TextControl.textCount = 2;
+                TextControl_House.textCount = 2;
                 isSleepingContent = true;
                 break;
 

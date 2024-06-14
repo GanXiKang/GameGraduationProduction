@@ -73,7 +73,7 @@ public class BagControl_House : MonoBehaviour
             PlayerControl_House.isNoMove = false;
             UIController.isTeachOpenBag = false;
             UIController.isContentActive = true;
-            TextControl.textCount = 4;
+            TextControl_House.textCount = 4;
             GameControl_House.isFirstOpenBag = false;
             GameControl_House.isOpenBagContent = true;
             TaskController._taskNumber = 3;

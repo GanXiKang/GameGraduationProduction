@@ -82,7 +82,7 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
                 if (GameControl_House._day == 2)
                 {
                     UIController.isContentActive = true;
-                    TextControl.textCount = 7;
+                    TextControl_House.textCount = 7;
                     GameControl_House.isFinishSweaterContent = true;
                     TaskController._taskNumber = 6;
                 }
