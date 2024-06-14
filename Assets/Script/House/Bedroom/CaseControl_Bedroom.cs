@@ -50,7 +50,7 @@ public class CaseControl_Bedroom : MonoBehaviour
 
     void Start()
     {
-        switch (GameControl._day)
+        switch (GameControl_House._day)
         {
             case 1:
             case 2:

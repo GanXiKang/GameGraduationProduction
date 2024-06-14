@@ -11,7 +11,7 @@ public class PlayerColliderControl : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (!GameControl.isNextPlace)
+            if (!GameControl_House.isNextPlace)
             {
                 UIController.isInteractionButtonActive = true;
                 UIController._conveyColliderNumber = _serialNumber;

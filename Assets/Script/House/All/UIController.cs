@@ -86,11 +86,11 @@ public class UIController : MonoBehaviour
 
     void InteractableUI()
     {
-        if (GameControl._day != 1 && CameraControl_House.isFollow && !isContentActive && !BagControl_House.isBagActive && !TaskController.isTaskActive && !GameControl.isOpeningStopMove && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice)
+        if (GameControl_House._day != 1 && CameraControl_House.isFollow && !isContentActive && !BagControl_House.isBagActive && !TaskController.isTaskActive && !GameControl_House.isOpeningStopMove && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice)
         {
             interactionUI.SetActive(true);
 
-            if (GameControl._day == 2)
+            if (GameControl_House._day == 2)
             {
                 if (isTeachOpenBag)
                 {

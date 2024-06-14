@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
             anim.SetFloat("MoveSpeed", _moveInput.magnitude/3);
         }
 
-        if (!GameControl.isNextPlace)
+        if (!GameControl_House.isNextPlace)
         {
             cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
         }

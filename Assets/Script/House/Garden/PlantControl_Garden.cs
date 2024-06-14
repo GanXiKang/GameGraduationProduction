@@ -14,7 +14,7 @@ public class PlantControl_Garden : MonoBehaviour
 
     void Start()
     {
-        if (GameControl._day == 2)
+        if (GameControl_House._day == 2)
         {
             for (int i = 1; i < 4; i++)
             {

@@ -26,10 +26,10 @@ public class TextControl : MonoBehaviour
 
     void Update()
     {
-        if (GameControl.isOpeningContent || GameControl.isSleepingContent || 
-            GameControl.isOpenBagContent || GameControl.isOpenWorkbenchContent || 
-            GameControl.isFinishSweaterContent || GameControl.isBedContent ||
-            GameControl.isCheckStoryBookContent || GameControl.isFindStoryBookContent)
+        if (GameControl_House.isOpeningContent || GameControl_House.isSleepingContent ||
+            GameControl_House.isOpenBagContent || GameControl_House.isOpenWorkbenchContent ||
+            GameControl_House.isFinishSweaterContent || GameControl_House.isBedContent ||
+            GameControl_House.isCheckStoryBookContent || GameControl_House.isFindStoryBookContent)
         {
             TextController();
         }
