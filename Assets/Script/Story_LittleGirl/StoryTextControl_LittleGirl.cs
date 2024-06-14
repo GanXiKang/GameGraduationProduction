@@ -105,7 +105,7 @@ public class StoryTextControl_LittleGirl : MonoBehaviour
         {
             StoryGameControl_LittleGirl.isWear = true;
             StoryGameControl_LittleGirl.isGetSweaterAndHatContent = false;
-            BagController.isItemSlotAcite[2] = true;
+            BagControl_House.isItemSlotAcite[2] = true;
             GetItemUIControl.isGetItemActice = true;
             GetItemUIControl._howMuchToGet = 1;
             GetItemUIControl._getItemNumber[1] = 2;
@@ -128,9 +128,9 @@ public class StoryTextControl_LittleGirl : MonoBehaviour
         {
             StoryGameControl_LittleGirl.isFindElfContent = false;
             StoryElfControl.isFlyLeave = true;
-            BagController._itemQuantity++;
-            BagController.isItemSlotAcite[1] = true;
-            BagController.isItemSlotAcite[3] = true;
+            BagControl_House._itemQuantity++;
+            BagControl_House.isItemSlotAcite[1] = true;
+            BagControl_House.isItemSlotAcite[3] = true;
             GetItemUIControl.isGetItemActice = true;
             GetItemUIControl._howMuchToGet = 2;
             GetItemUIControl._getItemNumber[1] = 1;

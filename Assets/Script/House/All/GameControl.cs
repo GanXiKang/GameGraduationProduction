@@ -168,7 +168,7 @@ public class GameControl : MonoBehaviour
                                     isCheckStoryBookContent = true;
                                     UIController.isContentActive = true;
                                     TextControl.textCount = 10;
-                                    BagController.isItemSlotAcite[4] = true;
+                                    BagControl_House.isItemSlotAcite[4] = true;
                                     GetItemUIControl.isGetItemActice = true;
                                     GetItemUIControl._howMuchToGet = 1;
                                     GetItemUIControl._getItemNumber[1] = 4;
@@ -179,7 +179,7 @@ public class GameControl : MonoBehaviour
                                 {
                                     BedControl_Bedroom.isNight = true;
                                     isFindCrystalStoryBook = false;
-                                    BagController.isItemSlotAcite[29] = false;
+                                    BagControl_House.isItemSlotAcite[29] = false;
                                     CaseControl_Bedroom.isStoryBookCrystal = true;
                                     TaskController._taskNumber = 12;
                                 }
@@ -238,7 +238,7 @@ public class GameControl : MonoBehaviour
                         if (_day == 2)
                         {
                             TaskController._taskNumber = 5;
-                            BagController.isItemSlotAcite[33] = true;
+                            BagControl_House.isItemSlotAcite[33] = true;
                             GetItemUIControl.isGetItemActice = true;
                             GetItemUIControl._howMuchToGet = 1;
                             GetItemUIControl._getItemNumber[1] = 33;

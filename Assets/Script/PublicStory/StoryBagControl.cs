@@ -43,7 +43,7 @@ public class StoryBagControl : MonoBehaviour
     {
         for (int k = 1; k < itemSlot.Length; k++)
         {
-            itemSlot[k].SetActive(BagController.isItemSlotAcite[k]);
+            itemSlot[k].SetActive(BagControl_House.isItemSlotAcite[k]);
         }
 
         quantity_Text.text = BagControl_House._itemQuantity.ToString();

@@ -101,7 +101,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                     case 3:                                                               //insfirepoint
                         BGM.PlayOneShot(interact);
                         pileWood.SetActive(true);
-                        BagController.isItemSlotAcite[3] = false;
+                        BagControl_House.isItemSlotAcite[3] = false;
                         gameCollider[3].SetActive(false);
                         isPutPileWood = true;
                         break;

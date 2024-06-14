@@ -219,7 +219,7 @@ public class UIController : MonoBehaviour
         switch (_whatDate)
         {
             case 1:                               //√´“¬&À{…´ÓÅ¡œ
-                if (BagController.isItemSlotAcite[2] && BagController.isItemSlotAcite[33])
+                if (BagControl_House.isItemSlotAcite[2] && BagControl_House.isItemSlotAcite[33])
                 {
                     makeButton.interactable = true;
                 }
@@ -250,8 +250,8 @@ public class UIController : MonoBehaviour
             case 1:                              
                 if (isFinish)
                 {
-                    BagController.isItemSlotAcite[2] = false;
-                    BagController.isItemSlotAcite[33] = false;
+                    BagControl_House.isItemSlotAcite[2] = false;
+                    BagControl_House.isItemSlotAcite[33] = false;
                 }
                 break;
         }
