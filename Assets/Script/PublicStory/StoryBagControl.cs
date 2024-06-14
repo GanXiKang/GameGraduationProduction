@@ -46,7 +46,7 @@ public class StoryBagControl : MonoBehaviour
             itemSlot[k].SetActive(BagController.isItemSlotAcite[k]);
         }
 
-        quantity_Text.text = BagController._itemQuantity.ToString();
+        quantity_Text.text = BagControl_House._itemQuantity.ToString();
     }
 
     public void Zipper_Button()

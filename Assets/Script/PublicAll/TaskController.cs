@@ -32,7 +32,7 @@ public class TaskController : MonoBehaviour
     {
         taskUI.SetActive(isTaskActive);
         taskText.text = taskList[_taskNumber - 1];       //ÅäºÏnotepadµÄÐÐ”µ
-        if (GameControl._day != 1 && !UIController.isContentActive && !BagController.isBagActive && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice && !CameraController.isLookWorkbench && !CameraController.isLookMake &&
+        if (GameControl._day != 1 && !UIController.isContentActive && !BagControl_House.isBagActive && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice && !CameraController.isLookWorkbench && !CameraController.isLookMake &&
             !StoryUIControl_LittleGirl.isContentActive && !StoryBagControl.isBagActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI)
         {
             if (Input.GetKeyDown(KeyCode.T))
