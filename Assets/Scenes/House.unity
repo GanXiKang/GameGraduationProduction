@@ -2932,8 +2932,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865770027}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+      - m_Target: {fileID: 865770029}
+        m_TargetAssemblyTypeName: UIControl_House, Assembly-CSharp
         m_MethodName: Vacancy_Button
         m_Mode: 3
         m_Arguments:
@@ -3513,8 +3513,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865770027}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+      - m_Target: {fileID: 865770029}
+        m_TargetAssemblyTypeName: UIControl_House, Assembly-CSharp
         m_MethodName: Make_Button
         m_Mode: 1
         m_Arguments:
@@ -5500,8 +5500,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BagController, Assembly-CSharp
+      - m_Target: {fileID: 1480171945}
+        m_TargetAssemblyTypeName: BagControl_House, Assembly-CSharp
         m_MethodName: Bag_Button
         m_Mode: 1
         m_Arguments:
@@ -8613,7 +8613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 865770026}
-  - component: {fileID: 865770027}
+  - component: {fileID: 865770029}
   - component: {fileID: 865770028}
   m_Layer: 5
   m_Name: UI
@@ -8652,45 +8652,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &865770027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865770025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb3283b50ee3b9740bb537fe3256065f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionUI: {fileID: 1349851333}
-  panelA: {fileID: 2131942110}
-  panelB: {fileID: 1556967024}
-  bagButton: {fileID: 751633844}
-  taskButton: {fileID: 81219949}
-  interactionButton: {fileID: 1756793600}
-  interactionButton_text: {fileID: 355064774}
-  chooseStory: {fileID: 236709880}
-  content: {fileID: 1677107056}
-  content_text: {fileID: 188864412}
-  workbench: {fileID: 1791062033}
-  backTip: {fileID: 937616047}
-  storyQuiz: {fileID: 247843901}
-  storyBook: {fileID: 278694539}
-  materialWindow: {fileID: 436594121}
-  materialNeeded:
-  - {fileID: 0}
-  - {fileID: 659062063}
-  - {fileID: 426991115}
-  - {fileID: 876513907}
-  - {fileID: 2106451154}
-  - {fileID: 1558994223}
-  itemImage:
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 7dcb9b08352c61841bd7fe95b289ecef, type: 3}
-  - {fileID: 21300000, guid: 2fad51aa26a1f174a95fede434391bbd, type: 3}
-  makeButton: {fileID: 385361699}
 --- !u!114 &865770028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8753,6 +8714,45 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &865770029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865770025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd4caf9c276b46488003181380780dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionUI: {fileID: 1349851333}
+  panelA: {fileID: 2131942110}
+  panelB: {fileID: 1556967024}
+  bagButton: {fileID: 751633844}
+  taskButton: {fileID: 81219949}
+  interactionButton: {fileID: 1756793600}
+  interactionButton_text: {fileID: 355064774}
+  chooseStory: {fileID: 236709880}
+  content: {fileID: 1677107056}
+  content_text: {fileID: 188864412}
+  workbench: {fileID: 1791062033}
+  backTip: {fileID: 937616047}
+  storyQuiz: {fileID: 247843901}
+  storyBook: {fileID: 278694539}
+  materialWindow: {fileID: 436594121}
+  materialNeeded:
+  - {fileID: 0}
+  - {fileID: 659062063}
+  - {fileID: 426991115}
+  - {fileID: 876513907}
+  - {fileID: 2106451154}
+  - {fileID: 1558994223}
+  itemImage:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 7dcb9b08352c61841bd7fe95b289ecef, type: 3}
+  - {fileID: 21300000, guid: 2fad51aa26a1f174a95fede434391bbd, type: 3}
+  makeButton: {fileID: 385361699}
 --- !u!1 &873830858
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,8 +9520,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865770027}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+      - m_Target: {fileID: 865770029}
+        m_TargetAssemblyTypeName: UIControl_House, Assembly-CSharp
         m_MethodName: Back_Button
         m_Mode: 1
         m_Arguments:
@@ -9884,8 +9884,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 865770027}
-        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+      - m_Target: {fileID: 865770029}
+        m_TargetAssemblyTypeName: UIControl_House, Assembly-CSharp
         m_MethodName: LeaveWorkbench_Button
         m_Mode: 1
         m_Arguments:
