@@ -70,7 +70,7 @@ public class BagControl_House : MonoBehaviour
         isBagActive = !isBagActive;
         if (GameControl_House._day == 2 && GameControl_House.isFirstOpenBag)
         {
-            PlayerController.isNoMove = false;
+            PlayerControl_House.isNoMove = false;
             UIController.isTeachOpenBag = false;
             UIController.isContentActive = true;
             TextControl.textCount = 4;

@@ -94,7 +94,7 @@ public class UIController : MonoBehaviour
             {
                 if (isTeachOpenBag)
                 {
-                    PlayerController.isNoMove = true;
+                    PlayerControl_House.isNoMove = true;
                     panelA.SetActive(true);
                     bagButton.SetActive(true);
                     taskButton.SetActive(false);
@@ -105,7 +105,7 @@ public class UIController : MonoBehaviour
                 }
                 if (isTeachOpenTask)
                 {
-                    PlayerController.isNoMove = true;
+                    PlayerControl_House.isNoMove = true;
                     panelB.SetActive(true);
                     taskButton.SetActive(true);
                 }

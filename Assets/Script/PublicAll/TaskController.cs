@@ -69,7 +69,7 @@ public class TaskController : MonoBehaviour
         isTaskActive = !isTaskActive;
         if (GameControl_House._day == 2)
         {
-            PlayerController.isNoMove = false;
+            PlayerControl_House.isNoMove = false;
             UIController.isTeachOpenTask = false;
         }
     }
