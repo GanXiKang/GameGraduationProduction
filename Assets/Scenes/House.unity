@@ -1983,7 +1983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223962742}
   - component: {fileID: 223962744}
-  - component: {fileID: 223962743}
+  - component: {fileID: 223962745}
   m_Layer: 0
   m_Name: Collider10
   m_TagString: Untagged
@@ -2006,19 +2006,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 757821371}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &223962743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223962741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _serialNumber: 10
 --- !u!65 &223962744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2040,6 +2027,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &223962745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223962741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serialNumber: 10
 --- !u!1 &224430476
 GameObject:
   m_ObjectHideFlags: 0
@@ -4789,7 +4789,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 488191344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 6
@@ -6032,7 +6032,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 665225829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 7
@@ -7232,7 +7232,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 738855416}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 3
@@ -11904,7 +11904,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1284703751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 8
@@ -13367,7 +13367,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1592677213}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 4
@@ -13434,7 +13434,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613432034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 1
@@ -13534,7 +13534,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1626772736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 2
@@ -15369,7 +15369,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1849971114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _serialNumber: 5
@@ -15870,7 +15870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1940249848}
   - component: {fileID: 1940249850}
-  - component: {fileID: 1940249849}
+  - component: {fileID: 1940249851}
   m_Layer: 0
   m_Name: Collider9
   m_TagString: Untagged
@@ -15893,19 +15893,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1766649076}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1940249849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940249847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e2c6f67a78901c49890f1a7014eaff4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _serialNumber: 9
 --- !u!65 &1940249850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15927,6 +15914,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1940249851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940249847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40973016593b8824e8c900225a9ce31a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serialNumber: 9
 --- !u!1 &1945832963
 GameObject:
   m_ObjectHideFlags: 0
