@@ -200,8 +200,8 @@ public class GameControl : MonoBehaviour
                     case 5:                                                     //gotoLivingroom
                         BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
-                        DoorControl.isLivingRoom = true;
-                        DoorControl.isBedroom = false;
+                        DoorControl_House.isLivingRoom = true;
+                        DoorControl_House.isBedroom = false;
                         player.transform.position = doorPoint[2].position;                
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
@@ -209,8 +209,8 @@ public class GameControl : MonoBehaviour
                     case 6:                                                     //gotoBedroom
                         BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
-                        DoorControl.isBedroom = true;
-                        DoorControl.isLivingRoom = false;
+                        DoorControl_House.isBedroom = true;
+                        DoorControl_House.isLivingRoom = false;
                         player.transform.position = doorPoint[1].position;                
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
@@ -218,7 +218,7 @@ public class GameControl : MonoBehaviour
                     case 7:                                                     //gotoLivingroom
                         BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
-                        DoorControl.isOutDoor = false;
+                        DoorControl_House.isOutDoor = false;
                         player.transform.position = doorPoint[4].position;
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
@@ -226,7 +226,7 @@ public class GameControl : MonoBehaviour
                     case 8:                                                     //gotoOutdoor
                         BGM.PlayOneShot(doorOpen);
                         isNextPlace = true;
-                        DoorControl.isOutDoor = true;
+                        DoorControl_House.isOutDoor = true;
                         player.transform.position = doorPoint[3].position;
                         Invoke("AutoFalseisNextPlace", 0.5f);
                         break;
