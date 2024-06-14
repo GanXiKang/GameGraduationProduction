@@ -74,43 +74,43 @@ public class TextControl : MonoBehaviour
     }
     void JudgmentAfterTheTextEnds()
     {
-        if (GameControl.isOpeningContent)
+        if (GameControl_House.isOpeningContent)
         {
-            GameControl.isOpeningContent = false;
-            if (GameControl._day == 2)
+            GameControl_House.isOpeningContent = false;
+            if (GameControl_House._day == 2)
             {
                 UIController.isTeachOpenBag = true;
             }
         }
-        else if (GameControl.isSleepingContent)
+        else if (GameControl_House.isSleepingContent)
         {
-            GameControl.isSleepingContent = false;
-            GameControl.isGotoStroy = true;
+            GameControl_House.isSleepingContent = false;
+            GameControl_House.isGotoStroy = true;
         }
-        else if (GameControl.isOpenBagContent)
+        else if (GameControl_House.isOpenBagContent)
         {
-            GameControl.isOpenBagContent = false;
+            GameControl_House.isOpenBagContent = false;
         }
-        else if (GameControl.isOpenWorkbenchContent)
+        else if (GameControl_House.isOpenWorkbenchContent)
         {
-            GameControl.isOpenWorkbenchContent = false;
+            GameControl_House.isOpenWorkbenchContent = false;
         }
-        else if (GameControl.isFinishSweaterContent)
+        else if (GameControl_House.isFinishSweaterContent)
         {
-            GameControl.isFinishSweaterContent = false;
+            GameControl_House.isFinishSweaterContent = false;
         }
-        else if (GameControl.isBedContent)
+        else if (GameControl_House.isBedContent)
         {
-            GameControl.isBedContent = false;
-            GameControl.isChooseStoryBook = true;
+            GameControl_House.isBedContent = false;
+            GameControl_House.isChooseStoryBook = true;
         }
-        else if (GameControl.isCheckStoryBookContent)
+        else if (GameControl_House.isCheckStoryBookContent)
         {
-            GameControl.isCheckStoryBookContent = false;
+            GameControl_House.isCheckStoryBookContent = false;
         }
-        else if (GameControl.isFindStoryBookContent)
+        else if (GameControl_House.isFindStoryBookContent)
         {
-            GameControl.isFindStoryBookContent = false;
+            GameControl_House.isFindStoryBookContent = false;
             BagControl_House.isItemSlotAcite[29] = true;
             GetItemUIControl.isGetItemActice = true;
             GetItemUIControl._howMuchToGet = 1;
