@@ -4683,7 +4683,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 485770666}
-  - component: {fileID: 485770667}
   - component: {fileID: 485770668}
   m_Layer: 0
   m_Name: Light
@@ -4709,24 +4708,6 @@ Transform:
   - {fileID: 1748583988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &485770667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485770665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de95e8e0d1762d34689fbef7bb926781, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  night: {fileID: 2038502994}
-  daytime: {fileID: 1748583987}
-  roof: {fileID: 998907066}
-  catLamp: {fileID: 1801351161}
-  catLamp_Light: {fileID: 2100000, guid: b00778bc532a6dc439db6dcc3c6d0fad, type: 2}
-  catLamp_noLight: {fileID: 2100000, guid: 7d013e0ed92ae814e855013564f2f53d, type: 2}
 --- !u!114 &485770668
 MonoBehaviour:
   m_ObjectHideFlags: 0
