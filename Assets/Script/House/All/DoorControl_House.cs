@@ -28,14 +28,14 @@ public class DoorControl_House : MonoBehaviour
 
     void FixedUpdate()
     {
-        switch (GameControl._day)
+        switch (GameControl_House._day)
         {
             case 1:
                 door[1].SetActive(false);
                 break;
 
             case 2:
-                if (GameControl.isFirstOpenBag)
+                if (GameControl_House.isFirstOpenBag)
                 {
                     door[1].SetActive(false);
                 }
@@ -43,7 +43,7 @@ public class DoorControl_House : MonoBehaviour
                 {
                     door[1].SetActive(true);
                 }
-                if (GameControl.isFirstOpenWorkbench)
+                if (GameControl_House.isFirstOpenWorkbench)
                 {
                     door[4].SetActive(false);
                 }

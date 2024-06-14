@@ -49,7 +49,7 @@ public class StoryUIControl_LittleGirl : MonoBehaviour
 
     void InteractableUI()
     {
-        if (isInteractionUIActive && GameControl._day != 1 && !isContentActive && !GetItemUIControl.isGetItemActice && !TaskController.isTaskActive && !SettingControl.isSettingActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isLoading && !StoryGameControl_LittleGirl.isUseMatchesUI)
+        if (isInteractionUIActive && GameControl_House._day != 1 && !isContentActive && !GetItemUIControl.isGetItemActice && !TaskController.isTaskActive && !SettingControl.isSettingActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isLoading && !StoryGameControl_LittleGirl.isUseMatchesUI)
         {
             interactionUI.SetActive(true);
         }

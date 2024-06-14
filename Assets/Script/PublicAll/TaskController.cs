@@ -32,7 +32,7 @@ public class TaskController : MonoBehaviour
     {
         taskUI.SetActive(isTaskActive);
         taskText.text = taskList[_taskNumber - 1];       //ÅäºÏnotepadµÄÐÐ”µ
-        if (GameControl._day != 1 && !UIController.isContentActive && !BagControl_House.isBagActive && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice && !CameraControl_House.isLookWorkbench && !CameraControl_House.isLookMake &&
+        if (GameControl_House._day != 1 && !UIController.isContentActive && !BagControl_House.isBagActive && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice && !CameraControl_House.isLookWorkbench && !CameraControl_House.isLookMake &&
             !StoryUIControl_LittleGirl.isContentActive && !StoryBagControl.isBagActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI)
         {
             if (Input.GetKeyDown(KeyCode.T))
@@ -67,7 +67,7 @@ public class TaskController : MonoBehaviour
     {
         BGM.PlayOneShot(open);
         isTaskActive = !isTaskActive;
-        if (GameControl._day == 2)
+        if (GameControl_House._day == 2)
         {
             PlayerController.isNoMove = false;
             UIController.isTeachOpenTask = false;
