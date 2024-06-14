@@ -7452,8 +7452,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1480171939}
-        m_TargetAssemblyTypeName: BagController, Assembly-CSharp
+      - m_Target: {fileID: 1480171945}
+        m_TargetAssemblyTypeName: BagControl_House, Assembly-CSharp
         m_MethodName: Bag_Button
         m_Mode: 1
         m_Arguments:
@@ -12541,6 +12541,7 @@ GameObject:
   - component: {fileID: 1480171937}
   - component: {fileID: 1480171938}
   - component: {fileID: 1480171939}
+  - component: {fileID: 1480171945}
   - component: {fileID: 1480171941}
   - component: {fileID: 1480171943}
   - component: {fileID: 1480171944}
@@ -12811,6 +12812,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walk: {fileID: 8300000, guid: 44a8deac8bdd4074ebc30c5325767b02, type: 3}
   draw: {fileID: 0}
+--- !u!114 &1480171945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480171936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d961350e3cca35342a9250a80ec653fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: {fileID: 0}
+  bagUI: {fileID: 0}
+  itemSlot: []
+  quantity_Text: {fileID: 0}
 --- !u!1 &1502073259
 GameObject:
   m_ObjectHideFlags: 0
