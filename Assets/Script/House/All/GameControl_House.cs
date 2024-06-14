@@ -113,7 +113,7 @@ public class GameControl_House : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 UIController.isInteractionButtonActive = false;
-                switch (PlayerColliderControl._nowNumber)
+                switch (ColliderControl_House._nowNumber)
                 {
                     case 1:                                                     //bed
                         BGM.PlayOneShot(ClimbIntoBed);
