@@ -258,8 +258,8 @@ public class UIController : MonoBehaviour
     }
     void LeaveWorkbench()
     {
-        CameraController.isLookWorkbench = false;
-        CameraController.isFollow = true;
+        CameraControl_House.isLookWorkbench = false;
+        CameraControl_House.isFollow = true;
         materialWindow.SetActive(false);
         storyQuiz.SetActive(false);
         isWaitOpenBook = true;
@@ -276,8 +276,8 @@ public class UIController : MonoBehaviour
     {
         isFinish = false;
         WorkbenchControl_LivingRoom.isDrawing = true;
-        CameraController.isLookMake = true;
-        CameraController.isLookWorkbench = false;
+        CameraControl_House.isLookMake = true;
+        CameraControl_House.isLookWorkbench = false;
         materialWindow.SetActive(false);
     }
     public void Back_Button()
