@@ -1859,8 +1859,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1480171938}
-        m_TargetAssemblyTypeName: GameControl, Assembly-CSharp
+      - m_Target: {fileID: 1480171946}
+        m_TargetAssemblyTypeName: GameControl_House, Assembly-CSharp
         m_MethodName: Story_Crystal
         m_Mode: 1
         m_Arguments:
@@ -2674,8 +2674,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1480171938}
-        m_TargetAssemblyTypeName: GameControl, Assembly-CSharp
+      - m_Target: {fileID: 1480171946}
+        m_TargetAssemblyTypeName: GameControl_House, Assembly-CSharp
         m_MethodName: Story_LittleGirl
         m_Mode: 1
         m_Arguments:
@@ -11325,7 +11325,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1480171938}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameControl, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
@@ -12539,7 +12539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1480171937}
-  - component: {fileID: 1480171938}
+  - component: {fileID: 1480171946}
   - component: {fileID: 1480171945}
   - component: {fileID: 1480171941}
   - component: {fileID: 1480171943}
@@ -12567,34 +12567,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1480171938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480171936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d33d9d3cc033cef4f910be9a059215d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ClimbIntoBed: {fileID: 8300000, guid: 74d093be393d39744a7a961376c24993, type: 3}
-  doorOpen: {fileID: 8300000, guid: 1050eac0a0c19cc43aa83daaf19f3c11, type: 3}
-  doorClose: {fileID: 8300000, guid: 07fe9bc20d243484dbe1f899016152dc, type: 3}
-  pickFlower: {fileID: 8300000, guid: 2b096cc4ab9a3624883301a7345d6a78, type: 3}
-  interact: {fileID: 8300000, guid: 7108d75205206544080116a95b05e411, type: 3}
-  pickUp: {fileID: 8300000, guid: ed912c949e6adb04e9e34b7e2a63e664, type: 3}
-  useWorkbench: {fileID: 8300000, guid: c33720d34edc1ad458af8d93697e2a9a, type: 3}
-  colliderObject:
-  - {fileID: 0}
-  - {fileID: 1924202687}
-  doorPoint:
-  - {fileID: 0}
-  - {fileID: 1849971115}
-  - {fileID: 488191345}
-  - {fileID: 665225830}
-  - {fileID: 1284703752}
 --- !u!114 &1480171941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12811,6 +12783,34 @@ MonoBehaviour:
   - {fileID: 1398368695}
   - {fileID: 1916895715}
   quantity_Text: {fileID: 1451764541}
+--- !u!114 &1480171946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480171936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3500c09e4b2814aa814094fb059d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClimbIntoBed: {fileID: 8300000, guid: 74d093be393d39744a7a961376c24993, type: 3}
+  doorOpen: {fileID: 8300000, guid: 1050eac0a0c19cc43aa83daaf19f3c11, type: 3}
+  doorClose: {fileID: 8300000, guid: 07fe9bc20d243484dbe1f899016152dc, type: 3}
+  pickFlower: {fileID: 8300000, guid: 2b096cc4ab9a3624883301a7345d6a78, type: 3}
+  interact: {fileID: 8300000, guid: 7108d75205206544080116a95b05e411, type: 3}
+  pickUp: {fileID: 8300000, guid: ed912c949e6adb04e9e34b7e2a63e664, type: 3}
+  useWorkbench: {fileID: 8300000, guid: c33720d34edc1ad458af8d93697e2a9a, type: 3}
+  colliderObject:
+  - {fileID: 0}
+  - {fileID: 1924202687}
+  doorPoint:
+  - {fileID: 0}
+  - {fileID: 1849971115}
+  - {fileID: 488191345}
+  - {fileID: 665225830}
+  - {fileID: 1284703752}
 --- !u!1 &1502073259
 GameObject:
   m_ObjectHideFlags: 0
@@ -13986,7 +13986,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1480171938}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameControl, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
@@ -16148,7 +16148,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1480171938}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameControl, Assembly-CSharp
         m_MethodName: 
         m_Mode: 1
