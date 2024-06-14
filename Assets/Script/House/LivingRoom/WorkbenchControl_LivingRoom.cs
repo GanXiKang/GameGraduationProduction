@@ -37,7 +37,7 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
             Drawing();
         }
 
-        makeMaterial.SetActive(CameraController.isLookMake);
+        makeMaterial.SetActive(CameraControl_House.isLookMake);
     }
 
     void Drawing()
@@ -99,8 +99,8 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
         pencils.Clear();
         UIController.isFinish = true;
         drawFinishText.SetActive(false);
-        CameraController.isLookWorkbench = true;
-        CameraController.isLookMake = false;
+        CameraControl_House.isLookWorkbench = true;
+        CameraControl_House.isLookMake = false;
     }
 
     bool Drawing_isWithInBoundary(Vector3 pos)

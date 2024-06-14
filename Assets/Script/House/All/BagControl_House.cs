@@ -42,7 +42,7 @@ public class BagControl_House : MonoBehaviour
         bagUI.SetActive(isBagActive);
         ItemSlotActive();
 
-        if (!UIController.isContentActive && !TaskController.isTaskActive && GameControl._day != 1 && CameraController.isFollow && !GetItemUIControl.isGetItemActice)
+        if (!UIController.isContentActive && !TaskController.isTaskActive && GameControl._day != 1 && CameraControl_House.isFollow && !GetItemUIControl.isGetItemActice)
         {
             if (Input.GetKeyDown(KeyCode.B))
             {

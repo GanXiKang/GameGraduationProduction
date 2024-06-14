@@ -59,7 +59,7 @@ public class UIController : MonoBehaviour
         interactionButton.SetActive(isInteractionButtonActive);
         chooseStory.SetActive(isChooseStoryActive);
         content.SetActive(isContentActive);
-        storyBook.SetActive(CameraController.isLookWorkbench);
+        storyBook.SetActive(CameraControl_House.isLookWorkbench);
 
         if (isAutoCloseContent)
         {
@@ -76,7 +76,7 @@ public class UIController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!CameraController.isLookWorkbench && !CameraController.isLookMake)   //不斷的檢查
+        if (!CameraControl_House.isLookWorkbench && !CameraControl_House.isLookMake)   //不斷的檢查
         {
             materialWindow.SetActive(false);
             storyQuiz.SetActive(false);
