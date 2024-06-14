@@ -70,7 +70,7 @@ public class TaskController : MonoBehaviour
         if (GameControl_House._day == 2)
         {
             PlayerControl_House.isNoMove = false;
-            UIController.isTeachOpenTask = false;
+            UIControl_House.isTeachOpenTask = false;
         }
     }
 }
