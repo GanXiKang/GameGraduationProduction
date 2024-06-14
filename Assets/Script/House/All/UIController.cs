@@ -86,7 +86,7 @@ public class UIController : MonoBehaviour
 
     void InteractableUI()
     {
-        if (GameControl._day != 1 && CameraController.isFollow && !isContentActive && !BagControl_House.isBagActive && !TaskController.isTaskActive && !GameControl.isOpeningStopMove && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice)
+        if (GameControl._day != 1 && CameraControl_House.isFollow && !isContentActive && !BagControl_House.isBagActive && !TaskController.isTaskActive && !GameControl.isOpeningStopMove && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice)
         {
             interactionUI.SetActive(true);
 
@@ -173,13 +173,13 @@ public class UIController : MonoBehaviour
         {
             workbench.SetActive(!isFinish);
             BookWorkbenchControl_LivingRoom.isOpenBook = true;
-            backTip.SetActive(CameraController.isLookWorkbench);
+            backTip.SetActive(CameraControl_House.isLookWorkbench);
             if (isWaitOpenBook)
             {
                 isWaitOpenBook = false;
                 Invoke("StoryQuizWaitOpenBook", 3f);
             }
-            if (CameraController.isLookWorkbench)
+            if (CameraControl_House.isLookWorkbench)
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {

@@ -117,8 +117,8 @@ public class GameControl : MonoBehaviour
                 {
                     case 1:                                                     //bed
                         BGM.PlayOneShot(ClimbIntoBed);
-                        CameraController.isFollow = false;
-                        CameraController.isLookBed = true;
+                        CameraControl_House.isFollow = false;
+                        CameraControl_House.isLookBed = true;
                         BedControl_Bedroom.isSleep = true;
                         switch (_day)
                         {
@@ -142,8 +142,8 @@ public class GameControl : MonoBehaviour
 
                     case 2:                                                     //workbench
                         BGM.PlayOneShot(useWorkbench);
-                        CameraController.isFollow = false;
-                        CameraController.isLookWorkbench = true;
+                        CameraControl_House.isFollow = false;
+                        CameraControl_House.isLookWorkbench = true;
                         UIController.isWorkbenchUIActive = true;
                         if (_day == 2 && isFirstOpenWorkbench)
                         {
