@@ -79,11 +79,11 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
                 drawFinishText.SetActive(true);
                 isDrawingComplete = true;
                 makeMaterial.GetComponent<SpriteRenderer>().sprite = finishMakeMaterial;
-                if (GameControl._day == 2)
+                if (GameControl_House._day == 2)
                 {
                     UIController.isContentActive = true;
                     TextControl.textCount = 7;
-                    GameControl.isFinishSweaterContent = true;
+                    GameControl_House.isFinishSweaterContent = true;
                     TaskController._taskNumber = 6;
                 }
                 Invoke("Drawing_ClearAllPencils", 1f);
