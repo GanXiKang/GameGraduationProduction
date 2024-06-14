@@ -42,7 +42,7 @@ public class BagControl_House : MonoBehaviour
         bagUI.SetActive(isBagActive);
         ItemSlotActive();
 
-        if (!UIController.isContentActive && !TaskController.isTaskActive && GameControl_House._day != 1 && CameraControl_House.isFollow && !GetItemUIControl.isGetItemActice)
+        if (!UIControl_House.isContentActive && !TaskController.isTaskActive && GameControl_House._day != 1 && CameraControl_House.isFollow && !GetItemUIControl.isGetItemActice)
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
@@ -71,8 +71,8 @@ public class BagControl_House : MonoBehaviour
         if (GameControl_House._day == 2 && GameControl_House.isFirstOpenBag)
         {
             PlayerControl_House.isNoMove = false;
-            UIController.isTeachOpenBag = false;
-            UIController.isContentActive = true;
+            UIControl_House.isTeachOpenBag = false;
+            UIControl_House.isContentActive = true;
             TextControl_House.textCount = 4;
             GameControl_House.isFirstOpenBag = false;
             GameControl_House.isOpenBagContent = true;

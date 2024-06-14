@@ -59,7 +59,7 @@ public class TextControl_House : MonoBehaviour
                 if (index == textList.Count)
                 {
                     index = 0;
-                    UIController.isContentActive = false;
+                    UIControl_House.isContentActive = false;
                     JudgmentAfterTheTextEnds();
                 }
             }
@@ -79,7 +79,7 @@ public class TextControl_House : MonoBehaviour
             GameControl_House.isOpeningContent = false;
             if (GameControl_House._day == 2)
             {
-                UIController.isTeachOpenBag = true;
+                UIControl_House.isTeachOpenBag = true;
             }
         }
         else if (GameControl_House.isSleepingContent)

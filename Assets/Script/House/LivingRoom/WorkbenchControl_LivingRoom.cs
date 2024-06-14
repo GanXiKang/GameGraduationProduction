@@ -81,7 +81,7 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
                 makeMaterial.GetComponent<SpriteRenderer>().sprite = finishMakeMaterial;
                 if (GameControl_House._day == 2)
                 {
-                    UIController.isContentActive = true;
+                    UIControl_House.isContentActive = true;
                     TextControl_House.textCount = 7;
                     GameControl_House.isFinishSweaterContent = true;
                     TaskController._taskNumber = 6;
@@ -97,7 +97,7 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
             Destroy(pencils[i]);
         }
         pencils.Clear();
-        UIController.isFinish = true;
+        UIControl_House.isFinish = true;
         drawFinishText.SetActive(false);
         CameraControl_House.isLookWorkbench = true;
         CameraControl_House.isLookMake = false;

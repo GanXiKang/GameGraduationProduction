@@ -52,7 +52,7 @@ public class PlayerControl_House : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (!CameraControl_House.isLookWorkbench && !UIController.isContentActive && !BedControl_Bedroom.isSleep && !BagControl_House.isBagActive && !GameControl_House.isOpeningStopMove && !TaskController.isTaskActive && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice && !isNoMove)
+        if (!CameraControl_House.isLookWorkbench && !UIControl_House.isContentActive && !BedControl_Bedroom.isSleep && !BagControl_House.isBagActive && !GameControl_House.isOpeningStopMove && !TaskController.isTaskActive && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice && !isNoMove)
         {
             Vector2 input = value.Get<Vector2>();
             _moveInput = new Vector3(input.x, 0f, input.y);
