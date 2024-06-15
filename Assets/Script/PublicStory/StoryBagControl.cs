@@ -30,13 +30,22 @@ public class StoryBagControl : MonoBehaviour
     {
         ItemSlotActive();
 
-        if (!StoryUIControl_LittleGirl.isContentActive && !GetItemUIControl.isGetItemActice  && !TaskController.isTaskActive && GameControl_House._day != 1 && !StoryGameControl_LittleGirl.isUseMatchesUI)
+        if (isCanUseStoryBag())
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
                 Zipper_Button();
             }
         }
+    }
+
+    bool isCanUseStoryBag()
+    {
+        return GameControl_House._day != 1 &&
+               !TaskController.isTaskActive &&
+               !GetItemUIControl.isGetItemActice &&
+               !StoryUIControl_LittleGirl.isContentActive &&
+               !StoryGameControl_LittleGirl.isUseMatchesUI;
     }
 
     void ItemSlotActive()

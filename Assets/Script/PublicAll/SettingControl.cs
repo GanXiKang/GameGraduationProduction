@@ -62,7 +62,6 @@ public class SettingControl : MonoBehaviour
                !StoryUIControl_LittleGirl.isContentActive &&
                !StoryGameControl_LittleGirl.isSeeFantasy &&
                !StoryGameControl_LittleGirl.isUseMatchesUI;
-               
     }
 
     void UIInteractable()
