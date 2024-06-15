@@ -26,13 +26,23 @@ public class TextControl_House : MonoBehaviour
 
     void Update()
     {
-        if (GameControl_House.isOpeningContent || GameControl_House.isSleepingContent ||
-            GameControl_House.isOpenBagContent || GameControl_House.isOpenWorkbenchContent ||
-            GameControl_House.isFinishSweaterContent || GameControl_House.isBedContent ||
-            GameControl_House.isCheckStoryBookContent || GameControl_House.isFindStoryBookContent)
+        print(TextSystem());
+        if (TextSystem())
         {
             TextController();
         }
+    }
+
+    bool TextSystem()
+    {
+        return GameControl_House.isOpeningContent ||
+               GameControl_House.isSleepingContent ||
+               GameControl_House.isOpenBagContent ||
+               GameControl_House.isOpenWorkbenchContent ||
+               GameControl_House.isFinishSweaterContent ||
+               GameControl_House.isBedContent ||
+               GameControl_House.isCheckStoryBookContent ||
+               GameControl_House.isFindStoryBookContent;
     }
 
     void GetTextFormFile(TextAsset file)
