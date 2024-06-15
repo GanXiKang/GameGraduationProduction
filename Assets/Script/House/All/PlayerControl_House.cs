@@ -52,7 +52,7 @@ public class PlayerControl_House : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (!CameraControl_House.isLookWorkbench && !UIControl_House.isContentActive && !BedControl_Bedroom.isSleep && !BagControl_House.isBagActive && !GameControl_House.isOpeningStopMove && !TaskController.isTaskActive && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice && !isNoMove)
+        if (isCanMove())
         {
             Vector2 input = value.Get<Vector2>();
             _moveInput = new Vector3(input.x, 0f, input.y);
@@ -71,5 +71,18 @@ public class PlayerControl_House : MonoBehaviour
         {
             SoundControl.isWalk = false;
         }
+    }
+
+    bool isCanMove()
+    {
+        return !GameControl_House.isOpeningStopMove &&
+               !CameraControl_House.isLookWorkbench &&
+               !UIControl_House.isContentActive &&
+               !BagControl_House.isBagActive &&
+               !BedControl_Bedroom.isSleep &&
+               !TaskController.isTaskActive &&
+               !SettingControl.isSettingActive &&
+               !GetItemUIControl.isGetItemActice &&
+               !isNoMove;
     }
 }
