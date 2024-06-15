@@ -54,7 +54,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (!StoryUIControl_LittleGirl.isContentActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI && !GetItemUIControl.isGetItemActice && !TaskController.isTaskActive && !StoryBagControl.isBagActive && !SettingControl.isSettingActive)
+        if (isCanMove())
         {
             Vector2 input = value.Get<Vector2>();
             _storyMoveInput = new Vector3(input.x, 0, input.y);
@@ -71,6 +71,17 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
     void ForceMoveDirection()
     {
         anim.SetFloat("Direction", 1);
+    }
+
+    bool isCanMove()
+    {
+        return !TaskController.isTaskActive &&
+               !SettingControl.isSettingActive &&
+               !GetItemUIControl.isGetItemActice &&
+               !StoryBagControl.isBagActive &&
+               !StoryUIControl_LittleGirl.isContentActive &&
+               !StoryGameControl_LittleGirl.isSeeFantasy &&
+               !StoryGameControl_LittleGirl.isUseMatchesUI;
     }
         
 }
