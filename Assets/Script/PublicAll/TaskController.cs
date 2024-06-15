@@ -15,6 +15,7 @@ public class TaskController : MonoBehaviour
     public Text taskText;
     public TextAsset taskFile;
 
+    public static bool isCanUseTask;
     public static bool isTaskActive;
     public static int _taskNumber = 1;                    //在text裏的第1行 = C#的第0行
 
@@ -32,6 +33,9 @@ public class TaskController : MonoBehaviour
     {
         taskUI.SetActive(isTaskActive);
         taskText.text = taskList[_taskNumber - 1];       //配合notepad的行數
+
+        if (isCanUseTask) 
+        { 
         if (GameControl_House._day != 1 && !UIControl_House.isContentActive && !BagControl_House.isBagActive && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice && !CameraControl_House.isLookWorkbench && !CameraControl_House.isLookMake &&
             !StoryUIControl_LittleGirl.isContentActive && !StoryBagControl.isBagActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI)
         {
@@ -40,6 +44,8 @@ public class TaskController : MonoBehaviour
                 Task_Button();
             }
         }
+
+        }  
 
         switch (_taskNumber)
         {
