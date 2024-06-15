@@ -32,10 +32,7 @@ public class StoryTextControl_LittleGirl : MonoBehaviour
 
     void Update()
     {
-        if (StoryGameControl_LittleGirl.isStartStoryContent || StoryGameControl_LittleGirl.isGetSweaterAndHatContent ||
-            StoryGameControl_LittleGirl.isChapter1EndContent || StoryGameControl_LittleGirl.isFirstUseMatchesContent ||
-            StoryGameControl_LittleGirl.isFantasyEndContent || StoryGameControl_LittleGirl.isFindElfContent ||
-            StoryGameControl_LittleGirl.isInsFireWoodContent || StoryGameControl_LittleGirl.isChapter2EndContent)
+        if (StoryTextSystem())
         {
             TextController();
         }
@@ -52,6 +49,18 @@ public class StoryTextControl_LittleGirl : MonoBehaviour
             Vector3 p = Camera.main.WorldToScreenPoint(target.position);
             characterContent.transform.position = p + offset;
         }
+    }
+
+    bool StoryTextSystem()
+    {
+        return StoryGameControl_LittleGirl.isStartStoryContent || 
+               StoryGameControl_LittleGirl.isGetSweaterAndHatContent ||
+               StoryGameControl_LittleGirl.isChapter1EndContent || 
+               StoryGameControl_LittleGirl.isFirstUseMatchesContent ||
+               StoryGameControl_LittleGirl.isFantasyEndContent || 
+               StoryGameControl_LittleGirl.isFindElfContent ||
+               StoryGameControl_LittleGirl.isInsFireWoodContent || 
+               StoryGameControl_LittleGirl.isChapter2EndContent
     }
 
     void GetTextFormFile(TextAsset file)
