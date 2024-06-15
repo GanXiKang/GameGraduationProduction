@@ -84,9 +84,21 @@ public class UIControl_House : MonoBehaviour
         }
     }
 
+    bool isCanInteractable()
+    {
+        return GameControl_House._day != 1 &&
+               CameraControl_House.isFollow &&
+               !GameControl_House.isOpeningStopMove &&
+               !TaskController.isTaskActive &&
+               !BagControl_House.isBagActive && 
+               !SettingControl.isSettingActive && 
+               !GetItemUIControl.isGetItemActice &&
+               !isContentActive;
+    }
+
     void InteractableUI()
     {
-        if (GameControl_House._day != 1 && CameraControl_House.isFollow && !isContentActive && !BagControl_House.isBagActive && !TaskController.isTaskActive && !GameControl_House.isOpeningStopMove && !SettingControl.isSettingActive && !GetItemUIControl.isGetItemActice)
+        if (isCanInteractable())
         {
             interactionUI.SetActive(true);
 
