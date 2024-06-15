@@ -26,7 +26,6 @@ public class TextControl_House : MonoBehaviour
 
     void Update()
     {
-        print(TextSystem());
         if (TextSystem())
         {
             TextController();
