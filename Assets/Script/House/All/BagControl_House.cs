@@ -42,7 +42,7 @@ public class BagControl_House : MonoBehaviour
         bagUI.SetActive(isBagActive);
         ItemSlotActive();
 
-        if (!UIControl_House.isContentActive && !TaskController.isTaskActive && GameControl_House._day != 1 && CameraControl_House.isFollow && !GetItemUIControl.isGetItemActice)
+        if (isCanUseBag())
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
@@ -62,6 +62,15 @@ public class BagControl_House : MonoBehaviour
 
             quantity_Text.text = _itemQuantity.ToString();
         }
+    }
+
+    bool isCanUseBag()
+    {
+        return GameControl_House._day != 1 &&
+               CameraControl_House.isFollow &&
+               !UIControl_House.isContentActive && 
+               !TaskController.isTaskActive && 
+               !GetItemUIControl.isGetItemActice
     }
 
     public void Bag_Button()
