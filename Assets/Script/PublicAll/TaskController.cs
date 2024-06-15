@@ -33,7 +33,6 @@ public class TaskController : MonoBehaviour
         taskUI.SetActive(isTaskActive);
         taskText.text = taskList[_taskNumber - 1];       //ÅäºÏnotepadµÄÐÐ”µ
 
-        print(isCanUseTask());
         if (isCanUseTask())
         {
             if (Input.GetKeyDown(KeyCode.T))
@@ -69,12 +68,12 @@ public class TaskController : MonoBehaviour
         return GameControl_House._day != 1 &&
                !UIControl_House.isContentActive &&
                !BagControl_House.isBagActive &&
-               !SettingControl.isSettingActive &&
-               !GetItemUIControl.isGetItemActice &&
                !CameraControl_House.isLookWorkbench &&
                !CameraControl_House.isLookMake &&
-               !StoryUIControl_LittleGirl.isContentActive &&
+               !SettingControl.isSettingActive &&
+               !GetItemUIControl.isGetItemActice &&
                !StoryBagControl.isBagActive &&
+               !StoryUIControl_LittleGirl.isContentActive &&
                !StoryGameControl_LittleGirl.isSeeFantasy &&
                !StoryGameControl_LittleGirl.isUseMatchesUI;
     }
