@@ -87,6 +87,7 @@ public class GameControl_House : MonoBehaviour
         {
             case 1:
                 Invoke("OpeningText", 1f);
+                TaskController.isCanUseTask = false;
                 break;
 
             case 2:
