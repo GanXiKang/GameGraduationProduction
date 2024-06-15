@@ -53,14 +53,14 @@ public class StoryTextControl_LittleGirl : MonoBehaviour
 
     bool StoryTextSystem()
     {
-        return StoryGameControl_LittleGirl.isStartStoryContent || 
+        return StoryGameControl_LittleGirl.isStartStoryContent ||
                StoryGameControl_LittleGirl.isGetSweaterAndHatContent ||
-               StoryGameControl_LittleGirl.isChapter1EndContent || 
+               StoryGameControl_LittleGirl.isChapter1EndContent ||
                StoryGameControl_LittleGirl.isFirstUseMatchesContent ||
-               StoryGameControl_LittleGirl.isFantasyEndContent || 
+               StoryGameControl_LittleGirl.isFantasyEndContent ||
                StoryGameControl_LittleGirl.isFindElfContent ||
-               StoryGameControl_LittleGirl.isInsFireWoodContent || 
-               StoryGameControl_LittleGirl.isChapter2EndContent
+               StoryGameControl_LittleGirl.isInsFireWoodContent ||
+               StoryGameControl_LittleGirl.isChapter2EndContent;
     }
 
     void GetTextFormFile(TextAsset file)
