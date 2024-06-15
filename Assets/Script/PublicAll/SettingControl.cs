@@ -41,8 +41,7 @@ public class SettingControl : MonoBehaviour
     {
         settingUI[0].SetActive(isSettingActive);
 
-        if (!CameraControl_House.isLookWorkbench && !UIControl_House.isContentActive && !BagControl_House.isBagActive && !TaskController.isTaskActive &&
-            !StoryUIControl_LittleGirl.isContentActive && !StoryGameControl_LittleGirl.isSeeFantasy && !StoryGameControl_LittleGirl.isUseMatchesUI && !StoryBagControl.isBagActive)
+        if (isCanUseSetting())
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -51,6 +50,19 @@ public class SettingControl : MonoBehaviour
             }
         }
              
+    }
+
+    bool isCanUseSetting()
+    {
+        return !CameraControl_House.isLookWorkbench && 
+               !UIControl_House.isContentActive && 
+               !BagControl_House.isBagActive && 
+               !TaskController.isTaskActive &&
+               !StoryBagControl.isBagActive &&
+               !StoryUIControl_LittleGirl.isContentActive &&
+               !StoryGameControl_LittleGirl.isSeeFantasy &&
+               !StoryGameControl_LittleGirl.isUseMatchesUI;
+               
     }
 
     void UIInteractable()
