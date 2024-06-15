@@ -68,9 +68,9 @@ public class BagControl_House : MonoBehaviour
     {
         return GameControl_House._day != 1 &&
                CameraControl_House.isFollow &&
-               !UIControl_House.isContentActive && 
-               !TaskController.isTaskActive && 
-               !GetItemUIControl.isGetItemActice
+               !UIControl_House.isContentActive &&
+               !TaskController.isTaskActive &&
+               !GetItemUIControl.isGetItemActice;
     }
 
     public void Bag_Button()
