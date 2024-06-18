@@ -18,6 +18,7 @@ public class CaseControl_Bedroom : MonoBehaviour
 
     [Header("StoryBookCrystal")]
     public GameObject storyBookCrystal;
+    public GameObject storyBookCrystalAnimation;
     public GameObject storyCrystal_Button;
     public static bool isStoryBookCrystal = false;
     public static bool isStoryBookCrystalFinish = false;
@@ -104,6 +105,7 @@ public class CaseControl_Bedroom : MonoBehaviour
         else
         {
             storyBookCrystal.SetActive(isStoryBookCrystal);
+            storyBookCrystalAnimation.SetActive(isStoryBookCrystal);
             storyCrystal_Button.SetActive(isStoryBookCrystal);
         }
 
