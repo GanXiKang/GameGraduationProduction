@@ -96,6 +96,7 @@ public class CaseControl_Bedroom : MonoBehaviour
             storyBookLitteGirl.SetActive(isStoryBookLittleGirl);
             storyLittleGirl_Button.SetActive(isStoryBookLittleGirl);
         }
+
         if (isStoryBookCrystalFinish)
         {
             storyCrystal_Button.SetActive(false);
@@ -105,6 +106,7 @@ public class CaseControl_Bedroom : MonoBehaviour
             storyBookCrystal.SetActive(isStoryBookCrystal);
             storyCrystal_Button.SetActive(isStoryBookCrystal);
         }
+
         if (isStoryBookMomotaroFinish)
         {
             storyMomotaro_Button.SetActive(false);
@@ -114,6 +116,7 @@ public class CaseControl_Bedroom : MonoBehaviour
             storyBookMomotaro.SetActive(isStoryBookMomotaro);
             storyMomotaro_Button.SetActive(isStoryBookMomotaro);
         }
+
         if (isStoryBookBeanstalkFinish)
         {
             storyBeanstalk_Button.SetActive(false);
@@ -123,6 +126,7 @@ public class CaseControl_Bedroom : MonoBehaviour
             storyBookBeanstalk.SetActive(isStoryBookBeanstalk);
             storyBeanstalk_Button.SetActive(isStoryBookBeanstalk);
         }
+
         if (isStoryBookCinderellaFinish)
         {
             storyCinderella_Button.SetActive(false);
