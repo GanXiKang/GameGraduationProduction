@@ -6826,6 +6826,7 @@ MonoBehaviour:
   storyBookLitteGirl: {fileID: 921488039}
   storyLittleGirl_Button: {fileID: 257446196}
   storyBookCrystal: {fileID: 2013799724}
+  storyBookCrystalAnimation: {fileID: 227016931}
   storyCrystal_Button: {fileID: 201630908}
   storyBookMomotaro: {fileID: 1251110214}
   storyMomotaro_Button: {fileID: 1670668465}
