@@ -105,8 +105,11 @@ public class CaseControl_Bedroom : MonoBehaviour
         else
         {
             storyBookCrystal.SetActive(isStoryBookCrystal);
-            storyBookCrystalAnimation.SetActive(isStoryBookCrystal);
             storyCrystal_Button.SetActive(isStoryBookCrystal);
+            if (!storyBookCrystalAnimation.activeSelf)
+            {
+                storyBookCrystalAnimation.SetActive(isStoryBookCrystal);
+            }
         }
 
         if (isStoryBookMomotaroFinish)
