@@ -70,13 +70,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 gameCollider[1].SetActive(false);
                 if (input != null)
                 {
-                    input.enabled = false;
-
-                    player.transform.position = new Vector3(36f, 1.43f, 3f);
-                    camera.transform.position = new Vector3(36f, 3.6f, 0f);
-
-                    StartCoroutine(ReEnableInput());
+                    input.enabled = false;  
                 }
+                player.transform.position = new Vector3(36f, 1.43f, 3f);
+                camera.transform.position = new Vector3(36f, 3.6f, 0f);
+                StartCoroutine(ReEnableInput());
                 break;
         }
         isStartStoryContent = true;
@@ -270,6 +268,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         print("ok1");
         yield return new WaitForSeconds(2f);
         print("ok2");
-        input.enabled = true;
+        if (input != null)
+        {
+            input.enabled = true;
+        }
     }
 }
