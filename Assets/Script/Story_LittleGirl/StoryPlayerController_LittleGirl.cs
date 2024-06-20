@@ -7,7 +7,6 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
 {
     CharacterController cc;
     Animator anim;
-    PlayerInput input;
 
     private Vector3 _storyMoveInput;
 
@@ -21,15 +20,8 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
     {
         cc = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        input = GetComponent<PlayerInput>();
 
         anim.SetInteger("Chapter", StoryGameControl_LittleGirl._chapter);
-
-        if (input != null)
-        {
-            input.enabled = false;
-            StartCoroutine(ReEnableInput());
-        }
     }
 
     void Update()
@@ -90,13 +82,5 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
                !StoryUIControl_LittleGirl.isContentActive &&
                !StoryGameControl_LittleGirl.isSeeFantasy &&
                !StoryGameControl_LittleGirl.isUseMatchesUI;
-    }
-
-    IEnumerator ReEnableInput()
-    {
-        print("ok1");
-        yield return new WaitForSeconds(2f);
-        print("ok2");
-        input.enabled = true;
     }
 }
