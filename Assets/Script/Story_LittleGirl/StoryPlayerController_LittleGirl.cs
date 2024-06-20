@@ -6,26 +6,32 @@ using UnityEngine.InputSystem;
 public class StoryPlayerController_LittleGirl : MonoBehaviour
 {
     CharacterController cc;
+    PlayerInput input;
     Animator anim;
 
     private Vector3 _storyMoveInput;
 
     [Header("Movement")]
+    public static bool isInputSystemEnable;
     public float _moveSpeed = 10f;
     public float _gravity = 20f;
-
     float _direction = 1;
 
     void Start()
     {
         cc = GetComponent<CharacterController>();
+        input = GetComponent<PlayerInput>();
         anim = GetComponent<Animator>();
 
         anim.SetInteger("Chapter", StoryGameControl_LittleGirl._chapter);
+
+        isInputSystemEnable = false;
     }
 
     void Update()
     {
+        input.enabled = isInputSystemEnable;
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             _moveSpeed = 12f;
