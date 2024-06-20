@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameControl_House : MonoBehaviour
 {
-    public static int _day = 2;
+    public static int _day = 1;
     public static bool isGotoStroy;
     public static bool isChooseStoryBook;
     int _whichStoryScene;
