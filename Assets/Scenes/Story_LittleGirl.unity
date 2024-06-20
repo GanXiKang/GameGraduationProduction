@@ -559,7 +559,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47488463}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -9444,7 +9444,6 @@ MonoBehaviour:
   - {fileID: 826992579}
   - {fileID: 1132585152}
   - {fileID: 529175222}
-  input: {fileID: 47488466}
   matchesLight: {fileID: 82637035}
   useMatchesUI: {fileID: 556707799}
   fantasyUI: {fileID: 1284490896}
