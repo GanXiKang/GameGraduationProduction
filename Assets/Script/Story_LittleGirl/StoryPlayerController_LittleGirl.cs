@@ -28,6 +28,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
         if (input != null)
         {
             input.enabled = false;
+            StartCoroutine(ReEnableInput());
         }
     }
 
@@ -93,8 +94,9 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
 
     IEnumerator ReEnableInput()
     {
-        yield return new WaitForEndOfFrame();
+        print("ok1");
+        yield return new WaitForSeconds(2f);
+        print("ok2");
         input.enabled = true;
-
     }
 }
