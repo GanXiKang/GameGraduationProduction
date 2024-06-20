@@ -9444,6 +9444,7 @@ MonoBehaviour:
   - {fileID: 826992579}
   - {fileID: 1132585152}
   - {fileID: 529175222}
+  input: {fileID: 47488466}
   matchesLight: {fileID: 82637035}
   useMatchesUI: {fileID: 556707799}
   fantasyUI: {fileID: 1284490896}
