@@ -82,6 +82,5 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
                !StoryUIControl_LittleGirl.isContentActive &&
                !StoryGameControl_LittleGirl.isSeeFantasy &&
                !StoryGameControl_LittleGirl.isUseMatchesUI;
-    }
-        
+    }  
 }
