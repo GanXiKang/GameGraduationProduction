@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class StoryGameControl_LittleGirl : MonoBehaviour
@@ -18,7 +17,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public GameObject camera;
     public GameObject[] chapter;
     public GameObject[] gameCollider;
-    public PlayerInput input;
     public static int _task = 0;
     public static int _chapter = 0;
     public static bool isStartStoryContent = false;
@@ -58,7 +56,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     void Start()
     {
         BGM = GetComponent<AudioSource>();
-        input = GetComponent<PlayerInput>();
 
         switch (_chapter)
         {
@@ -68,13 +65,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
             case 2:
                 gameCollider[1].SetActive(false);
-                if (input != null)
-                {
-                    input.enabled = false;  
-                }
                 player.transform.position = new Vector3(36f, 1.43f, 3f);
                 camera.transform.position = new Vector3(36f, 3.6f, 0f);
-                StartCoroutine(ReEnableInput());
                 break;
         }
         isStartStoryContent = true;
@@ -260,17 +252,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             case 2:
                 CaseControl_Bedroom.isStoryBookLittleGirlFinish = true;
                 break;
-        }
-    }
-
-    IEnumerator ReEnableInput()
-    {
-        print("ok1");
-        yield return new WaitForSeconds(2f);
-        print("ok2");
-        if (input != null)
-        {
-            input.enabled = true;
         }
     }
 }
