@@ -46,8 +46,11 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            isPress = true;
-            pencils.Add(Instantiate(pencil, Camera.main.ScreenToWorldPoint(mousePos), Quaternion.Euler(Vector3.zero), this.transform));
+            if (Drawing_isWithInBoundary(Camera.main.ScreenToWorldPoint(mousePos)))
+            {
+                isPress = true;
+                pencils.Add(Instantiate(pencil, Camera.main.ScreenToWorldPoint(mousePos), Quaternion.Euler(Vector3.zero), this.transform));
+            }
         }
         if (Input.GetMouseButtonUp(0))
         {
