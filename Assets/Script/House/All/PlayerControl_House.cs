@@ -75,14 +75,14 @@ public class PlayerControl_House : MonoBehaviour
 
     bool isCanMove()
     {
-        return !GameControl_House.isOpeningStopMove &&
+        return !TaskController.isTaskActive &&
+               !SettingControl.isSettingActive &&
+               !GetItemUIControl.isGetItemActice &&
+               !GameControl_House.isOpeningStopMove &&
                !CameraControl_House.isLookWorkbench &&
                !UIControl_House.isContentActive &&
                !BagControl_House.isBagActive &&
                !BedControl_Bedroom.isSleep &&
-               !TaskController.isTaskActive &&
-               !SettingControl.isSettingActive &&
-               !GetItemUIControl.isGetItemActice &&
                !isNoMove;
     }
 }
