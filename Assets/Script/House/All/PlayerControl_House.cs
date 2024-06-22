@@ -46,22 +46,25 @@ public class PlayerControl_House : MonoBehaviour
 
         if (!GameControl_House.isNextPlace)
         {
-            cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
+            if (isCanMove())
+            {
+                cc.Move(_moveInput * _moveSpeed * Time.fixedDeltaTime);
+            }
         }
     }
 
     void OnMove(InputValue value)
     {
-        if (isCanMove())
-        {
+        //if (isCanMove())
+        //{
             Vector2 input = value.Get<Vector2>();
             _moveInput = new Vector3(input.x, 0f, input.y);
             _lookDirection = new Vector3(_moveInput.x, 0f, _moveInput.z).normalized;
-        }
-        else
-        {
-            _moveInput = Vector3.zero;
-        }
+        //}
+        //else
+        //{
+        //    _moveInput = Vector3.zero;
+        //}
 
         if (_moveInput != Vector3.zero)
         {

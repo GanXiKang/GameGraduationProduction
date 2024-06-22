@@ -46,7 +46,10 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
             _storyMoveInput.y -= _gravity * Time.fixedDeltaTime;
         }
 
-        cc.Move(_storyMoveInput * _moveSpeed * Time.deltaTime);
+        if (isCanMove())
+        {
+            cc.Move(_storyMoveInput * _moveSpeed * Time.deltaTime);
+        }
 
         anim.SetFloat("Direction", _direction);
         anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
@@ -60,8 +63,8 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        if (isCanMove())
-        {
+        //if (isCanMove())
+        //{
             Vector2 input = value.Get<Vector2>();
             _storyMoveInput = new Vector3(input.x, 0, input.y);
             if (input.x != 0)
@@ -72,11 +75,11 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
                     _direction = 0f;
                 }
             }
-        }
-        else
-        {
-            _storyMoveInput = Vector3.zero;
-        }
+        //}
+        //else
+        //{
+        //    _storyMoveInput = Vector3.zero;
+        //}
     }
     void ForceMoveDirection()
     {
