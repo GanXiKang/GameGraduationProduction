@@ -55,24 +55,20 @@ public class PlayerControl_House : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        //if (isCanMove())
-        //{
+        if (isCanMove())
+        {
             Vector2 input = value.Get<Vector2>();
             _moveInput = new Vector3(input.x, 0f, input.y);
             _lookDirection = new Vector3(_moveInput.x, 0f, _moveInput.z).normalized;
-        //}
-        //else
-        //{
-        //    _moveInput = Vector3.zero;
-        //}
 
-        if (_moveInput != Vector3.zero)
-        {
-            SoundControl.isWalk = true;
-        }
-        else
-        {
-            SoundControl.isWalk = false;
+            if (_moveInput != Vector3.zero)
+            {
+                SoundControl.isWalk = true;
+            }
+            else
+            {
+                SoundControl.isWalk = false;
+            }
         }
     }
 

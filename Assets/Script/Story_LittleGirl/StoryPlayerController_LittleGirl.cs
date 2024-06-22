@@ -63,8 +63,8 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        //if (isCanMove())
-        //{
+        if (isCanMove())
+        {
             Vector2 input = value.Get<Vector2>();
             _storyMoveInput = new Vector3(input.x, 0, input.y);
             if (input.x != 0)
@@ -75,11 +75,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
                     _direction = 0f;
                 }
             }
-        //}
-        //else
-        //{
-        //    _storyMoveInput = Vector3.zero;
-        //}
+        }
     }
     void ForceMoveDirection()
     {
