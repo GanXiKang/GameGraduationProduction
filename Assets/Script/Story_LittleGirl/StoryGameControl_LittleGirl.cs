@@ -212,6 +212,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 }
                 break;
         }
+
+        RestartScene();
     }
 
     void Chapter1End()
@@ -252,6 +254,14 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             case 2:
                 CaseControl_Bedroom.isStoryBookLittleGirlFinish = true;
                 break;
+        }
+    }
+
+    void RestartScene()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(2);
         }
     }
 }
