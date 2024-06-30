@@ -76,20 +76,20 @@ public class StoryBagControl : MonoBehaviour
     {
         StoryUIControl_LittleGirl.isInteractionUIActive = false;
         bagUI.SetActive(isBagActive);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         bagOpen.sprite = bagOpenAnim[2];
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         bagOpen.sprite = bagOpenAnim[3];
         zipper.SetActive(true);
         itemUI.SetActive(true);
     }
     IEnumerator CloseBagAnimation()
     {
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.7f);
         bagOpen.sprite = bagOpenAnim[2];
         zipper.SetActive(false);
         itemUI.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         bagOpen.sprite = bagOpenAnim[1];
         bagUI.SetActive(isBagActive);
         StoryUIControl_LittleGirl.isInteractionUIActive = true;
