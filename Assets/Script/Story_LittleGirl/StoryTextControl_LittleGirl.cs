@@ -105,7 +105,7 @@ public class StoryTextControl_LittleGirl : MonoBehaviour
         if (StoryGameControl_LittleGirl.isStartStoryContent)
         {
             StoryGameControl_LittleGirl.isStartStoryContent = false;
-            StoryPlayerController_LittleGirl.isInputSystemEnable = true;
+            //StoryPlayerController_LittleGirl.isInputSystemEnable = true;
             if (StoryGameControl_LittleGirl._chapter == 2)
             {
                 StoryGameControl_LittleGirl.isUseMatchesUI = true;
