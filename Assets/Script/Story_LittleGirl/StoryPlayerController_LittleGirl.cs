@@ -26,6 +26,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
         anim.SetInteger("Chapter", StoryGameControl_LittleGirl._chapter);
 
         isInputSystemEnable = false;
+        Invoke("OpenInputSystemEnable", 2f);
     }
 
     void Update()
@@ -84,6 +85,10 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
     void ForceMoveDirection()
     {
         anim.SetFloat("Direction", 1);
+    }
+    void OpenInputSystemEnable()
+    {
+        isInputSystemEnable = true;
     }
 
     bool isCanMove()
