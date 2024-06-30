@@ -49,6 +49,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isInsFireWoodContent = false;
     public static bool isChapter2EndContent = false;
     public static bool isStoryFinish = false;
+    public static bool isRestart = false;
     bool isEnough = false;
     bool isPutPileWood = false;
     bool isIgnite = false;
@@ -69,11 +70,14 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 camera.transform.position = new Vector3(36f, 3.6f, 0f);
                 break;
         }
-        isStartStoryContent = true;
-        StoryUIControl_LittleGirl.isContentActive = true;
-        if (isChapter1Finish && !isChapter2Finish)
+        if (!isRestart)
         {
-            StoryTextControl_LittleGirl.textCount = 4;
+            isStartStoryContent = true;
+            StoryUIControl_LittleGirl.isContentActive = true;
+            if (isChapter1Finish && !isChapter2Finish)
+            {
+                StoryTextControl_LittleGirl.textCount = 4;
+            }
         }
         once = true;
     }
@@ -261,6 +265,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            isRestart = true;
             SceneManager.LoadScene(2);
         }
     }
