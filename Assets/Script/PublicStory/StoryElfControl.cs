@@ -10,6 +10,7 @@ public class StoryElfControl : MonoBehaviour
 
     public static bool isAppear = false;
     public static bool isFlyLeave = false;
+    public static bool isDestory = false;
 
     float speed = 5f;
 
@@ -30,6 +31,10 @@ public class StoryElfControl : MonoBehaviour
             anim.SetBool("isFlyLeave", isFlyLeave);
             transform.Translate(Vector3.up * speed * Time.deltaTime);
             Invoke("DestroyElf", 3f);
+        }
+        if (isDestory)
+        {
+            DestroyElf();
         }
     }
 
