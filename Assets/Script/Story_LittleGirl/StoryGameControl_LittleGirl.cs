@@ -86,6 +86,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             if (_task >= 2)
             {
                 isEnough = true;
+                StoryElfControl.isDestory = true;
                 chapter[1].SetActive(false);
                 chapter[2].SetActive(true);
                 player.transform.position = gameCollider[4].transform.position;
