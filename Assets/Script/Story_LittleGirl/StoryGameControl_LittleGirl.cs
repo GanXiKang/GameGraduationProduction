@@ -49,10 +49,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isInsFireWoodContent = false;
     public static bool isChapter2EndContent = false;
     public static bool isStoryFinish = false;
-    public static bool isRestart = false;
     bool isEnough = false;
     bool isPutPileWood = false;
     bool isIgnite = false;
+    bool isRestart = false;
 
     void Start()
     {
