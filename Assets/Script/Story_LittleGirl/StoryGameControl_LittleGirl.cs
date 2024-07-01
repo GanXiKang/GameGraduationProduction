@@ -79,6 +79,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 StoryTextControl_LittleGirl.textCount = 4;
             }
         }
+        else
+        {
+            isRestart = false;
+        }    
         once = true;
     }
 
@@ -266,13 +270,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             isRestart = true;
-            Invoke("CloseisRestartBool", 5f);
             SceneManager.LoadScene(2);
         }
-    }
-    void CloseisRestartBool()
-    {
-        isRestart = false;
-        print("Yes is Restart");
     }
 }
