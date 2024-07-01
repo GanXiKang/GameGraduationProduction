@@ -70,6 +70,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 camera.transform.position = new Vector3(36f, 3.6f, 0f);
                 break;
         }
+
         if (!isRestart)
         {
             isStartStoryContent = true;
@@ -83,6 +84,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         {
             isRestart = false;
         }    
+
         once = true;
     }
 
