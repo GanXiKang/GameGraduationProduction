@@ -12,7 +12,6 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
     private Vector3 _storyMoveInput;
 
     [Header("Movement")]
-    public static bool isInputSystemEnable;
     public float _moveSpeed = 10f;
     public float _gravity = 20f;
     float _direction = 1;
@@ -25,14 +24,12 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
 
         anim.SetInteger("Chapter", StoryGameControl_LittleGirl._chapter);
 
-        isInputSystemEnable = false;
+        input.enabled = false;
         Invoke("OpenInputSystemEnable", 2f);
     }
 
     void Update()
     {
-        input.enabled = isInputSystemEnable;
-
         if (Input.GetKey(KeyCode.LeftShift))
         {
             _moveSpeed = 12f;
@@ -88,7 +85,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
     }
     void OpenInputSystemEnable()
     {
-        isInputSystemEnable = true;
+        input.enabled = true;
     }
 
     bool isCanMove()
