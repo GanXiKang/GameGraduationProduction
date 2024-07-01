@@ -83,6 +83,14 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         else
         {
             isRestart = false;
+            if (_task >= 2)
+            {
+                isEnough = true;
+                chapter[1].SetActive(false);
+                chapter[2].SetActive(true);
+                player.transform.position = gameCollider[4].transform.position;
+                camera.transform.position = gameCollider[4].transform.position + new Vector3(0f, 2.17f, 0f);
+            }
         }    
 
         once = true;
