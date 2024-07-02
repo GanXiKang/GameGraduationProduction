@@ -66,8 +66,22 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
             case 2:
                 gameCollider[1].SetActive(false);
-                player.transform.position = new Vector3(36f, 1.43f, 3f);
-                camera.transform.position = new Vector3(36f, 3.6f, 0f);
+                if (_task < 2)
+                {
+                    player.transform.position = new Vector3(36f, 1.43f, 3f);
+                    print(player.transform.position);
+                    camera.transform.position = new Vector3(36f, 3.6f, 0f);
+                }
+                else 
+                {
+                    isEnough = true;
+                    StoryElfControl.isDestory = true;
+                    chapter[1].SetActive(false);
+                    chapter[2].SetActive(true);
+                    gameCollider[3].SetActive(true);
+                    player.transform.position = gameCollider[4].transform.position;
+                    camera.transform.position = gameCollider[4].transform.position + new Vector3(0f, 2.17f, 0f);
+                }
                 break;
         }
         
@@ -82,16 +96,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         }
         else
         {
-            if (_task >= 2)
-            {
-                isEnough = true;
-                StoryElfControl.isDestory = true;
-                chapter[1].SetActive(false);
-                chapter[2].SetActive(true);
-                gameCollider[3].SetActive(true);
-                player.transform.position = gameCollider[4].transform.position;
-                camera.transform.position = gameCollider[4].transform.position + new Vector3(0f, 2.17f, 0f);
-            }
             isRestart = false;
         }
         once = true;
