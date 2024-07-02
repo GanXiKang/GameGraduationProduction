@@ -61,10 +61,8 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
 
     void OnMove(InputValue value)
     {
-        print("PlayerStartPos:" + transform.position);
         if (isCanMove())
         {
-            print("PlayerCanMovePos:" + transform.position);
             Vector2 input = value.Get<Vector2>();
             _storyMoveInput = new Vector3(input.x, 0f, input.y);
             if (input.x != 0)
