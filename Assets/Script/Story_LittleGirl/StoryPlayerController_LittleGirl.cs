@@ -25,7 +25,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
         anim.SetInteger("Chapter", StoryGameControl_LittleGirl._chapter);
 
         input.enabled = false;
-        Invoke("OpenInputSystemEnable", 2f);
+        Invoke("OpenInputSystemEnable", 1f);
     }
 
     void Update()
@@ -97,6 +97,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
                !StoryBagControl.isBagActive &&
                !StoryUIControl_LittleGirl.isContentActive &&
                !StoryGameControl_LittleGirl.isSeeFantasy &&
-               !StoryGameControl_LittleGirl.isUseMatchesUI;
+               !StoryGameControl_LittleGirl.isUseMatchesUI &&
+               !StoryGameControl_LittleGirl.isRestart;
     }
 }
