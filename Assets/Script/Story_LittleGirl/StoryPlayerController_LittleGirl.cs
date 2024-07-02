@@ -48,7 +48,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
         {
             cc.Move(_storyMoveInput * _moveSpeed * Time.deltaTime);
         }
-        print(cc.Move(_storyMoveInput * _moveSpeed * Time.deltaTime));
+        print(_storyMoveInput * _moveSpeed * Time.deltaTime);
 
         anim.SetFloat("Direction", _direction);
         anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
