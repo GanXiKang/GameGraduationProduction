@@ -64,7 +64,7 @@ public class WorkbenchControl_LivingRoom : MonoBehaviour
             {
                 pencils[pencils.Count - 1].transform.position = Camera.main.ScreenToWorldPoint(mousePos);
                 _drawnArea += _completionPercentage * Time.deltaTime;
-                print(_drawnArea);
+                //print(_drawnArea);
             }
         }
 
