@@ -86,7 +86,6 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
     void OpenInputSystemEnable()
     {
         input.enabled = true;
-        print("Open Input System");
     }
 
     bool isCanMove()
