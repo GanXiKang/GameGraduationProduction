@@ -25,7 +25,7 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
         anim.SetInteger("Chapter", StoryGameControl_LittleGirl._chapter);
 
         input.enabled = false;
-        //Invoke("OpenInputSystemEnable", 1f);
+        Invoke("OpenInputSystemEnable", 1f);
     }
 
     void Update()
