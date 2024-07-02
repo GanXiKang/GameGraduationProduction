@@ -69,7 +69,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 if (_task < 2)
                 {
                     player.transform.position = new Vector3(36f, 1.43f, 3f);
-                    print(player.transform.position);
                     camera.transform.position = new Vector3(36f, 3.6f, 0f);
                 }
                 else 
