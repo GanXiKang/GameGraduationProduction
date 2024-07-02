@@ -49,10 +49,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     public static bool isInsFireWoodContent = false;
     public static bool isChapter2EndContent = false;
     public static bool isStoryFinish = false;
+    public static bool isRestart = false;
     bool isEnough = false;
     bool isPutPileWood = false;
     bool isIgnite = false;
-    bool isRestart = false;
 
     void Start()
     {
@@ -82,6 +82,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         }
         else
         {
+            isRestart = false;
+            print(isRestart);
             //Invoke("FalseisRestart", 5f);
             //if (_task >= 2)
             //{
@@ -92,7 +94,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             //    player.transform.position = gameCollider[4].transform.position;
             //    camera.transform.position = gameCollider[4].transform.position + new Vector3(0f, 2.17f, 0f);
             //}
-        }    
+        }
 
         once = true;
     }
