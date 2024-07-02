@@ -82,11 +82,11 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         }
         else
         {
-            isRestart = false;
+            Invoke("FalseisRestart", 5f);
             if (_task >= 2)
             {
-                isEnough = true;
-                StoryElfControl.isDestory = true;
+                //isEnough = true;
+                //StoryElfControl.isDestory = true;
                 chapter[1].SetActive(false);
                 chapter[2].SetActive(true);
                 player.transform.position = gameCollider[4].transform.position;
@@ -283,5 +283,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             isRestart = true;
             SceneManager.LoadScene(2);
         }
+    }
+    void FalseisRestart()
+    {
+        isRestart = false;
+        print("isRestart");
     }
 }
