@@ -48,10 +48,6 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
         {
             cc.Move(_storyMoveInput * _moveSpeed * Time.deltaTime);
         }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            print(_storyMoveInput * _moveSpeed * Time.deltaTime);
-        }
 
         anim.SetFloat("Direction", _direction);
         anim.SetInteger("Move", Mathf.RoundToInt(_storyMoveInput.magnitude));
@@ -100,7 +96,6 @@ public class StoryPlayerController_LittleGirl : MonoBehaviour
                !StoryBagControl.isBagActive &&
                !StoryUIControl_LittleGirl.isContentActive &&
                !StoryGameControl_LittleGirl.isSeeFantasy &&
-               !StoryGameControl_LittleGirl.isUseMatchesUI &&
-               !StoryGameControl_LittleGirl.isRestart;
+               !StoryGameControl_LittleGirl.isUseMatchesUI;
     }
 }
