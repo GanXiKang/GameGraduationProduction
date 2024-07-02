@@ -70,7 +70,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 camera.transform.position = new Vector3(36f, 3.6f, 0f);
                 break;
         }
-
+        print(isRestart);
         if (!isRestart)
         {
             isStartStoryContent = true;
@@ -82,16 +82,16 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         }
         else
         {
-            Invoke("FalseisRestart", 5f);
-            if (_task >= 2)
-            {
-                //isEnough = true;
-                //StoryElfControl.isDestory = true;
-                chapter[1].SetActive(false);
-                chapter[2].SetActive(true);
-                player.transform.position = gameCollider[4].transform.position;
-                camera.transform.position = gameCollider[4].transform.position + new Vector3(0f, 2.17f, 0f);
-            }
+            //Invoke("FalseisRestart", 5f);
+            //if (_task >= 2)
+            //{
+            //    isEnough = true;
+            //    StoryElfControl.isDestory = true;
+            //    chapter[1].SetActive(false);
+            //    chapter[2].SetActive(true);
+            //    player.transform.position = gameCollider[4].transform.position;
+            //    camera.transform.position = gameCollider[4].transform.position + new Vector3(0f, 2.17f, 0f);
+            //}
         }    
 
         once = true;
@@ -284,9 +284,9 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
             SceneManager.LoadScene(2);
         }
     }
-    void FalseisRestart()
-    {
-        isRestart = false;
-        print("isRestart");
-    }
+    //void FalseisRestart()
+    //{
+    //    isRestart = false;
+    //    print("isRestart");
+    //}
 }
