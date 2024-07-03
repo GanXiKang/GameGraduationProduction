@@ -284,7 +284,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             isRestart = true;
-            Invoke("LoadThisScene",2f);
+            LoadThisScene();
         }
     }
     void LoadThisScene()
