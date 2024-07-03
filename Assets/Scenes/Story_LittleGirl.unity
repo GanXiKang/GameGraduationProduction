@@ -519,7 +519,6 @@ GameObject:
   - component: {fileID: 47488464}
   - component: {fileID: 47488469}
   - component: {fileID: 47488470}
-  - component: {fileID: 47488472}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -688,41 +687,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 10
   _gravity: 20
---- !u!114 &47488472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47488463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f861a8131e30144b83bbf293d587d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  find: {fileID: 8300000, guid: 17966959760c79a4bba6bb410935d1b5, type: 3}
-  fire: {fileID: 8300000, guid: 1deae7bc40fb8e74daa159e2ff7e4708, type: 3}
-  elf: {fileID: 8300000, guid: 44441f3d8189c654992b92163a4811f9, type: 3}
-  interact: {fileID: 8300000, guid: 7108d75205206544080116a95b05e411, type: 3}
-  player: {fileID: 47488463}
-  camera: {fileID: 1820943386}
-  chapter:
-  - {fileID: 0}
-  - {fileID: 1345698618}
-  - {fileID: 639973674}
-  gameCollider:
-  - {fileID: 0}
-  - {fileID: 570331219}
-  - {fileID: 826992579}
-  - {fileID: 1132585152}
-  - {fileID: 529175222}
-  matchesLight: {fileID: 82637035}
-  useMatchesUI: {fileID: 556707799}
-  fantasyUI: {fileID: 1284490896}
-  loadingUI: {fileID: 419310311}
-  pileWood: {fileID: 2050463552}
-  fireEffect: {fileID: 2050463551}
-  pileWoodPoint: {fileID: 1132585153}
 --- !u!1 &59848962
 GameObject:
   m_ObjectHideFlags: 0
@@ -9425,6 +9389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718922185}
+  - component: {fileID: 718922193}
   - component: {fileID: 718922188}
   - component: {fileID: 718922189}
   - component: {fileID: 718922191}
@@ -9643,6 +9608,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walk: {fileID: 8300000, guid: a7c114a4cded8a044a4561cf3dbd4435, type: 3}
   draw: {fileID: 0}
+--- !u!114 &718922193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718922184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f861a8131e30144b83bbf293d587d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  find: {fileID: 8300000, guid: 17966959760c79a4bba6bb410935d1b5, type: 3}
+  fire: {fileID: 8300000, guid: 1deae7bc40fb8e74daa159e2ff7e4708, type: 3}
+  elf: {fileID: 8300000, guid: 44441f3d8189c654992b92163a4811f9, type: 3}
+  interact: {fileID: 8300000, guid: 7108d75205206544080116a95b05e411, type: 3}
+  player: {fileID: 47488463}
+  camera: {fileID: 1820943386}
+  chapter:
+  - {fileID: 0}
+  - {fileID: 1345698618}
+  - {fileID: 639973674}
+  gameCollider:
+  - {fileID: 0}
+  - {fileID: 570331219}
+  - {fileID: 826992579}
+  - {fileID: 1132585152}
+  - {fileID: 529175222}
+  matchesLight: {fileID: 82637035}
+  useMatchesUI: {fileID: 556707799}
+  fantasyUI: {fileID: 1284490896}
+  loadingUI: {fileID: 419310311}
+  pileWood: {fileID: 2050463552}
+  fireEffect: {fileID: 2050463551}
+  pileWoodPoint: {fileID: 1132585153}
 --- !u!1 &734193279
 GameObject:
   m_ObjectHideFlags: 0
