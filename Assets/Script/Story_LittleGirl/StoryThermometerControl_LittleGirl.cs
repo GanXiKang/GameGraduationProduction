@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class StoryThermometerControl_LittleGirl : MonoBehaviour
 {
-    public static bool isThermometer = false;
+    public static bool isThermometer = true;
     public static bool isDead;
     float _temperature;
     float _decline;
