@@ -137,7 +137,8 @@ public class StoryTextControl_LittleGirl : MonoBehaviour
         else if (StoryGameControl_LittleGirl.isFindElfContent)
         {
             StoryGameControl_LittleGirl.isFindElfContent = false;
-            StoryElfControl.isFlyLeave = true;
+            StoryThermometerControl_LittleGirl.isThermometer = true;
+            StoryElfControl.isFlyLeave = true;  
             BagControl_House._itemQuantity++;
             BagControl_House.isItemSlotAcite[1] = true;
             BagControl_House.isItemSlotAcite[3] = true;
