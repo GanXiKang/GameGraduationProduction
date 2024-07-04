@@ -132,6 +132,7 @@ public class StoryTextControl_LittleGirl : MonoBehaviour
         else if (StoryGameControl_LittleGirl.isFantasyEndContent)
         {
             StoryGameControl_LittleGirl.isFantasyEndContent = false;
+            StoryThermometerControl_LittleGirl.isThermometer = true;
         }
         else if (StoryGameControl_LittleGirl.isFindElfContent)
         {
