@@ -118,6 +118,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         BGM.PlayOneShot(elf);
                         _task++;
                         StoryElfControl.isAppear = true;
+                        StoryThermometerControl_LittleGirl.isThermometer = false;
                         break;
 
                     case 3:                                                               //insfirepoint
@@ -132,6 +133,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                         BGM.PlayOneShot(interact);
                         isLoading = true;
                         loadingUI.SetActive(true);
+                        StoryThermometerControl_LittleGirl.isThermometer = false;
                         Invoke("CloseLoadingUI", 4f);
                         break;
                 }
@@ -195,6 +197,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                                     isIgnite = true;
                                     isPutPileWood = false;
                                     StoryNearPileWood_LittleGirl.isPileWoodNear = false;
+                                    StoryThermometerControl_LittleGirl.isThermometer = false;
                                 }
                                 Invoke("MatchBurned", 3f);
                             }
@@ -264,7 +267,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
         isLoading = false;
         loadingUI.SetActive(false);
         chapter[1].SetActive(false);
-        chapter[2].SetActive(true);  
+        chapter[2].SetActive(true);
+        StoryThermometerControl_LittleGirl.isThermometer = true;
     }
     void GoHouseScene()
     {
@@ -281,9 +285,10 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
     void RestartScene()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) || StoryThermometerControl_LittleGirl.isDead)
         {
             isRestart = true;
+            StoryThermometerControl_LittleGirl.isDead = false;
             LoadThisScene();
         }
     }
