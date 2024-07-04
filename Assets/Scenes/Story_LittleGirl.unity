@@ -8564,6 +8564,7 @@ GameObject:
   - component: {fileID: 509659330}
   - component: {fileID: 509659328}
   - component: {fileID: 509659329}
+  - component: {fileID: 509659331}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -8707,6 +8708,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ab1a4290a22f75444869ce53812135f6, type: 3}
   - {fileID: 21300000, guid: 6f64356002fa0074ab6834719173a90a, type: 3}
   - {fileID: 21300000, guid: f5728a80196bce44283a16eaeb337790, type: 3}
+--- !u!114 &509659331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509659324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88621dcb8c043f45adb7270b491c000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thermometerUI: {fileID: 1919914305}
+  energyBar: {fileID: 826042260}
 --- !u!1 &514095332
 GameObject:
   m_ObjectHideFlags: 0
@@ -8840,10 +8855,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -9969,11 +9984,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 8ce67b7ac0e80534fb14565f31d4932b, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -11074,7 +11089,7 @@ GameObject:
   - component: {fileID: 1006131933}
   - component: {fileID: 1006131932}
   m_Layer: 5
-  m_Name: Number
+  m_Name: Temperature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
