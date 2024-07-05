@@ -26,11 +26,16 @@ public class StoryUIControl_LittleGirl : MonoBehaviour
     public Sprite[] fantasyPicture;
     public static bool isFantasyAnimation;
 
+    [Header("Match")]
+    public Text quantity;
+    public static float _matchQuantity;
+
     void Start()
     {
         isInteractionUIActive = true;
         isInteractionButtonActive = false;
         isContentActive = false;
+        _matchQuantity = 10;
     }
 
     void Update()
