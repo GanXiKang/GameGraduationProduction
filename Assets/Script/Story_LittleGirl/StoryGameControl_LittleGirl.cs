@@ -274,7 +274,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     //button
     public void UseMatch()
     {
-        if (!isUseMatches)
+        if (!isUseMatches && StoryUIControl_LittleGirl._matchQuantity > 0)
         {
             BGM.PlayOneShot(fire);
             if (!isFirstUseMatches)
@@ -297,6 +297,7 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 }
                 Invoke("MatchBurned", 3f);
             }
+            StoryUIControl_LittleGirl._matchQuantity--;
             isUseMatches = true;
             matchesLight.SetActive(true);
         }
