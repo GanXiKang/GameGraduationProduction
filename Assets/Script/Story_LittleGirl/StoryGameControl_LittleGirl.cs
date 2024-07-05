@@ -282,7 +282,6 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
                 break;
         }
     }
-
     void RestartScene()
     {
         if (Input.GetKeyDown(KeyCode.R) || StoryThermometerControl_LittleGirl.isDead)
