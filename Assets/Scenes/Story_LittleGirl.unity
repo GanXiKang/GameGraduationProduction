@@ -8841,7 +8841,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ab1a4290a22f75444869ce53812135f6, type: 3}
   - {fileID: 21300000, guid: 6f64356002fa0074ab6834719173a90a, type: 3}
   - {fileID: 21300000, guid: f5728a80196bce44283a16eaeb337790, type: 3}
-  quantity: {fileID: 0}
+  quantity: {fileID: 843565382}
 --- !u!114 &509659331
 MonoBehaviour:
   m_ObjectHideFlags: 0
