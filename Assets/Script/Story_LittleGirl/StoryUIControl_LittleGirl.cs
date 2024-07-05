@@ -28,7 +28,7 @@ public class StoryUIControl_LittleGirl : MonoBehaviour
 
     [Header("Match")]
     public Text quantity;
-    public static float _matchQuantity;
+    public static int _matchQuantity;
 
     void Start()
     {
@@ -42,6 +42,7 @@ public class StoryUIControl_LittleGirl : MonoBehaviour
     {
         interactionButton.SetActive(isInteractionButtonActive);
         content.SetActive(isContentActive);
+        quantity.text = _matchQuantity.ToString();
 
         InteractableUI();
         ColliderObjectName();
