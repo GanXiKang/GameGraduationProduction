@@ -176,36 +176,8 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
 
                 if (!StoryUIControl_LittleGirl.isContentActive)
                 {
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        if (!isUseMatches)
-                        {
-                            BGM.PlayOneShot(fire);
-                            if (!isFirstUseMatches)
-                            {
-                                isUseMatchesUI = false;
-                                isFirstUseMatches = true;
-                                StoryUIControl_LittleGirl.isContentActive = true;
-                                isFirstUseMatchesContent = true;
-                                StoryTextControl_LittleGirl.textCount = 5;
-                            }
-                            else
-                            {
-                                if (isPutPileWood && StoryNearPileWood_LittleGirl.isPileWoodNear)
-                                {
-                                    fireEffect.SetActive(true);
-                                    isIgnite = true;
-                                    isPutPileWood = false;
-                                    StoryNearPileWood_LittleGirl.isPileWoodNear = false;
-                                    StoryThermometerControl_LittleGirl.isThermometer = false;
-                                }
-                                Invoke("MatchBurned", 3f);
-                            }
-                            isUseMatches = true;
-                            matchesLight.SetActive(true);
-                        }
-                    }
-                }     //useMatch
+                    UseMatch();
+                }     
 
                 if (!isFindElfContent && _task >= 2 && !isEnough)
                 {
@@ -245,6 +217,38 @@ public class StoryGameControl_LittleGirl : MonoBehaviour
     {
         StoryUIControl_LittleGirl.isContentActive = true;
         StoryTextControl_LittleGirl.textCount = 3;
+    }
+    void UseMatch()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (!isUseMatches)
+            {
+                BGM.PlayOneShot(fire);
+                if (!isFirstUseMatches)
+                {
+                    isUseMatchesUI = false;
+                    isFirstUseMatches = true;
+                    StoryUIControl_LittleGirl.isContentActive = true;
+                    isFirstUseMatchesContent = true;
+                    StoryTextControl_LittleGirl.textCount = 5;
+                }
+                else
+                {
+                    if (isPutPileWood && StoryNearPileWood_LittleGirl.isPileWoodNear)
+                    {
+                        fireEffect.SetActive(true);
+                        isIgnite = true;
+                        isPutPileWood = false;
+                        StoryNearPileWood_LittleGirl.isPileWoodNear = false;
+                        StoryThermometerControl_LittleGirl.isThermometer = false;
+                    }
+                    Invoke("MatchBurned", 3f);
+                }
+                isUseMatches = true;
+                matchesLight.SetActive(true);
+            }
+        }
     }
     void MatchBurned()
     {
