@@ -35,7 +35,7 @@ public class StoryUIControl_LittleGirl : MonoBehaviour
         isInteractionUIActive = true;
         isInteractionButtonActive = false;
         isContentActive = false;
-        _matchQuantity = 10;
+        _matchQuantity = 8;
     }
 
     void Update()
