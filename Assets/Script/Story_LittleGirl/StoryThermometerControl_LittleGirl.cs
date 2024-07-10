@@ -7,6 +7,7 @@ public class StoryThermometerControl_LittleGirl : MonoBehaviour
 {
     public static bool isThermometer = false;
     public static bool isDead;
+  
     float _temperature;
     float _decline;
     float _rise;
@@ -14,6 +15,7 @@ public class StoryThermometerControl_LittleGirl : MonoBehaviour
     [Header("UI")]
     public GameObject thermometerUI;
     public Image energyBar;
+    public Text temperature;
 
     void Start()
     {
@@ -26,6 +28,7 @@ public class StoryThermometerControl_LittleGirl : MonoBehaviour
     {
         thermometerUI.SetActive(isThermometer);
         energyBar.fillAmount = (_temperature - 35f) / 2;
+        temperature.text = _temperature.ToString("F1");
 
         if (isThermometer)
         {
