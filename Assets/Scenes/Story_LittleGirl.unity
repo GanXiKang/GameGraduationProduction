@@ -8856,6 +8856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thermometerUI: {fileID: 1919914305}
   energyBar: {fileID: 826042260}
+  temperature: {fileID: 1006131932}
 --- !u!1 &514095332
 GameObject:
   m_ObjectHideFlags: 0
